@@ -1,5 +1,5 @@
 import './App.css'
-import Department from './component/department/department.jsx'
+import Department from './Components/department/department.jsx'
 import Layout from './Components/Layout'
 
 function App() {
