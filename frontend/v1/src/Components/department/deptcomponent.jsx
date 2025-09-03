@@ -1,6 +1,6 @@
 import React from 'react'
-import SidebarHod from './component/department/SidebarHod'
-import Departmentinfo from './component/department/Departmentinfo'
+import SidebarHod from './Component/department/SidebarHod'
+import Departmentinfo from './Component/department/Departmentinfo'
 
 const deptcomponent = () => {
   return (
