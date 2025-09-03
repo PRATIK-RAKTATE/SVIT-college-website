@@ -1,14 +1,17 @@
 import { useEffect, useState } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
-import { NavLink } from "react-router-dom";
+
+import {Link,NavLink} from 'react-router-dom'
 
 export default function HomeNav() {
-  const [isOpen, setIsOpen] = useState(false);
-  const [openMenu, setOpenMenu] = useState(null); 
-  const [mobileOpenMenu, setMobileOpenMenu] = useState(null); 
+  const [isOpen, setIsOpen] = useState(false); // mobile menu
+  const [openMenu, setOpenMenu] = useState(null); // desktop dropdown
 
-  
   const toggleMenu = () => setIsOpen(!isOpen);
+
+  const toggleDropdown = (menu) => {
+    setOpenMenu(openMenu === menu ? null : menu);
+  };
 
   useEffect(() => {
     if (isOpen) {
@@ -76,10 +79,12 @@ export default function HomeNav() {
     },
   ];
 
+
   return (
     <nav className="bg-white px-4 py-3 shadow-md relative z-50">
       {/* Desktop Menu */}
       <ul className="hidden md:flex md:justify-center md:gap-6 font-medium">
+
         <NavLink
           to="/"
           className={({ isActive }) => `${isActive ? "text-red-500" : "text-blue-500"}`}
@@ -121,6 +126,7 @@ export default function HomeNav() {
             <li key={idx}>{item}</li>
           )
         )}
+
       </ul>
 
       {/* Mobile Menu Button */}
@@ -136,6 +142,7 @@ export default function HomeNav() {
           isOpen ? "translate-x-0" : "-translate-x-full"
         } transition-transform duration-300 ease-in-out z-50 p-6 flex flex-col gap-6`}
       >
+
         <NavLink to="/" className="text-10px font-semibold">
           Home
         </NavLink>
@@ -176,6 +183,141 @@ export default function HomeNav() {
             </span>
           )
         )}
+
+        <a href="" className="text-10px font-semibold">Home</a>
+
+        {/* Department Dropdown Mobile */}
+        <div className=" gap-1">
+          <button
+            onClick={() => setOpenMenu(openMenu === "dept" ? null : "dept")}
+            className="flex items-center justify-between w-full text-10px font-semibold"
+          >
+            Department
+            <ChevronDown
+              size={20}
+              className={`transition-transform ${
+                openMenu === "dept" ? "rotate-180" : ""
+              }`}
+            />
+          </button>
+          {openMenu === "dept" && (
+            <ul className="pl-4 mt-2  space-y-2 text-base">
+              <li><a href="">Basic Science and Humanities(FE)</a></li>
+              <li><a href="">Computer Engineering</a></li>
+              <li><a href="">Electronics & Computer Engineering</a></li>
+              <li> <a href="">Information Technology Engineering</a></li>
+              <li><a href="">Electrical Engineering (In Progressive Closure)</a></li>
+              <li><a href="">Mechanical Engineering (In Progressive Closure)</a></li>
+            </ul>
+          )}
+        </div>
+        <div>
+          <button
+            onClick={() => setOpenMenu(openMenu === "alumin" ? null : "alumin")}
+            className="flex items-center justify-between w-full text-10px font-semibold"
+          >
+            Alumin
+            <ChevronDown
+              size={20}
+              className={`transition-transform ${
+                openMenu === "alumin" ? "rotate-180" : ""
+              }`}
+            />
+          </button>
+          {openMenu === "alumin" && (
+            <ul className="pl-4 mt-2 space-y-2 text-base">
+              <li><a href="">Alumni Information</a></li>
+              <li><a href="">Alumni Registration</a></li>
+              <li><a href="">Alumni Search</a></li>
+              <li><a href="">View All Alumni</a></li>
+              <li><a href="">Alumni Chapters and Alumni Meet Info.</a></li>
+            </ul>
+          )}
+        </div>
+        <div>
+          <button
+            onClick={() => setOpenMenu(openMenu === "TPC" ? null : "TPC")}
+            className="flex items-center justify-between w-full text-10px font-semibold"
+          >
+            TPC Section
+            <ChevronDown
+              size={20}
+              className={`transition-transform ${
+                openMenu === "TPC" ? "rotate-180" : ""
+              }`}
+            />
+          </button>
+          {openMenu === "TPC" && (
+            <ul className="pl-4 mt-2 space-y-2 text-base">
+              <li><a href="">TPC Information</a></li>
+              <li><a href="">Registration Form</a></li>
+              <li><a href="">Placement Process</a></li>
+              <li><a href="">List Of Companies</a></li>
+            </ul>
+          )}
+        </div>
+        <div>
+          <button
+            onClick={() => setOpenMenu(openMenu === "NAAC" ? null : "NAAC")}
+            className="flex items-center justify-between w-full text-10px font-semibold"
+          >
+            NAAC
+            <ChevronDown
+              size={20}
+              className={`transition-transform ${
+                openMenu === "NAAC" ? "rotate-180" : ""
+              }`}
+            />
+          </button>
+          {openMenu === "NAAC" && (
+            <ul className="pl-4 mt-2 space-y-2 text-base">
+             <li><a href="">NAAC UNDERTAKING</a></li>
+              <li><a href="">NAAC SELF DECLARATION</a></li>
+              <li><a href="">Extended Profile</a></li>
+              <li><a href="">Criteria 1</a></li>
+              <li><a href="">Criteria 2</a></li>
+              <li><a href="">Criteria 3</a></li>
+              <li><a href="">Criteria 4</a></li>
+              <li><a href="">Criteria 5</a></li>
+              <li><a href="">Criteria 6</a></li>
+              <li><a href="">Criteria 7</a></li>
+            </ul>
+          )}
+        </div>
+        <div>
+          <button
+            onClick={() => setOpenMenu(openMenu === "Imp" ? null : "Imp")}
+            className="flex items-center justify-between w-full text-10px font-semibold"
+          >
+            Important Links
+            <ChevronDown
+              size={20}
+              className={`transition-transform ${
+                openMenu === "Imp" ? "rotate-180" : ""
+              }`}
+            />
+          </button>
+          {openMenu === "Imp" && (
+            <ul className="pl-4 mt-2 space-y-2 text-base">
+             <li><a href="">AICTE</a></li>
+              <li><a href="">DTE</a></li>
+              <li><a href="">NBA</a></li>
+              <li><a href="">UGC</a></li>
+              <li><a href="">Shikshan Shulk Samiti</a></li>
+              <li><a href="">Unipune</a></li>
+            </ul>
+          )}
+        </div>
+
+        <a href="" className="text-10px font-semibold">RTI</a>
+        <a href="" className="text-10px font-semibold">ERP</a>
+        <a href="" className="text-10px font-semibold">Library</a>
+        <a href="" className="text-10px font-semibold">Gallery</a>
+        <a href="" className="text-10px font-semibold">Examination</a>
+        <a href="" className="text-10px font-semibold">Contact us</a>
+        <a href="" className="text-10px font-semibold">About us</a>
+        <a href="" className="text-10px font-semibold">Site map</a>
+
       </div>
     </nav>
   );
