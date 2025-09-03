@@ -1,13 +1,14 @@
 import './App.css'
-import Department from './Components/department/department.jsx'
-import Layout from './Components/Layout'
+import Footer from './Components/Footer'
+import Header from './Components/Header'
+
 
 function App() {
+
   return (
     <>
-      <Department />
-      <Layout/>
-
+      <Header/>
+      <Footer/>
     </>
   )
 }
