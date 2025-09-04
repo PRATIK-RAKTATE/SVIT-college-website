@@ -1,29 +1,23 @@
-@import "tailwindcss";
-@tailwind utilities;
-
 /* Custom marquee animation */
-@layer utilities {
-  @keyframes marquee {
-    0% {
-      transform: translateY(100%);
-    }
-    100% {
-      transform: translateY(-100%);
-    }
+@keyframes marquee {
+  0% {
+    transform: translateY(100%);
   }
-
-  .marquee {
-    animation: marquee 10s linear infinite; /* reduce time for faster restart */
+  100% {
+    transform: translateY(-100%);
   }
 }
 
+.marquee {
+  animation: marquee 10s linear infinite;
+}
 
-/* In your global CSS file (e.g., index.css or App.css) */
+/* Hide scrollbar globally */
 ::-webkit-scrollbar {
-  display: none; /* For Chrome, Safari */
+  display: none; /* Chrome, Safari */
 }
 
 html, body {
-  scrollbar-width: none;   /* For Firefox */
-  -ms-overflow-style: none; /* For IE & Edge */
+  scrollbar-width: none;   /* Firefox */
+  -ms-overflow-style: none; /* IE & Edge */
 }

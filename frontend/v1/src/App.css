@@ -1,1 +1,24 @@
 @import "tailwindcss";
+/* Custom marquee animation */
+@keyframes marquee {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
+.marquee {
+  animation: marquee 10s linear infinite;
+}
+
+/* Hide scrollbar globally */
+::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+html, body {
+  scrollbar-width: none;   /* Firefox */
+  -ms-overflow-style: none; /* IE & Edge */
+}
