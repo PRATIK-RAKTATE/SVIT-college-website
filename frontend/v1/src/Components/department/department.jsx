@@ -3,17 +3,18 @@ import Carousel from './HeroCarousel'
 import SidebarHod from './SidebarHod'
 import Departmentinfo from './Departmentinfo'
 
-const department = () => {
+
+const department = ({slides,vision,mission,hodDesk,Hodimg,Hodname,hodQ,Department}) => {
   return (
     <div className='flex flex-col'>
      <div>
-        <Carousel />
+        <Carousel slides={slides} />
       </div> 
 
       <div >
-        <SidebarHod />
+        <SidebarHod Hodimg={Hodimg} Hodname={Hodname} hodQ={hodQ} Department={Department}/>
         <main className="flex-1 p-4">
-          <Departmentinfo />
+          <Departmentinfo vision={vision} mission={mission} hodDesk={hodDesk} />
         </main>
       </div>
     </div>
