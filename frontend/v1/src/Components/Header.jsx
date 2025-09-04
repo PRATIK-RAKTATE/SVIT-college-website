@@ -4,7 +4,7 @@ import HomeNav from "./HomeNav";
 export default function Header() {
   return (
     <>
-      <div className="flex  w-full h-auto md:flex-row  justify-between bg-white p-4 md:pl-20 md:pr-20">
+      <div className="flex  w-full h-auto relative  md:flex-row z-0  justify-between bg-white p-4 md:pl-20 md:pr-20">
       
     {/* left logo */}
       <div className="flex-shrink-0">

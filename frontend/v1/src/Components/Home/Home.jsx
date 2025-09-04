@@ -1,0 +1,30 @@
+import WT from "./WT"
+import HomeSideBar from "./HomeSideBar"
+import PreDesk from "./PreDesk"
+import SideLink from "./Useful"
+import ImagText from "./ImgText"
+import Imp from "./News"
+import MinorMajor from "./Minor&Major"
+
+export default function Home()
+{
+    return(
+        <div className="m-3">
+            <WT/>
+            <div className="md:flex md:justify-between mt-5">
+                <div className="flex flex-col ml-5">
+                    <HomeSideBar/>
+                    <MinorMajor/>
+                </div>
+                <div>
+                    <PreDesk/>
+                    <ImagText/> 
+                </div>
+                <div className="flex flex-col gap-6">
+                    <Imp/>
+                    <SideLink/>
+                </div>
+            </div>
+        </div>
+    )
+}

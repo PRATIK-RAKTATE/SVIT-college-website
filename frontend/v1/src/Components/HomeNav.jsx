@@ -72,7 +72,7 @@ export default function HomeNav() {
     {
       label: "Important Links",
       key: "links",
-      items: ["AICTE", "DTE", "NBA", "UGC", "Shikshan Shulk Samiti", "Unipune"],
+      items: ["AICTE", "DTE", "MBA", "UGC", "Shikshan Shulk Samiti", "Unipune"],
     },
   ];
 
@@ -90,7 +90,7 @@ export default function HomeNav() {
         {desktopMenu.map((menu) => (
           <li
             key={menu.key}
-            className="relative cursor-pointer"
+            className="relative cursor-pointer transition-border duration-300  hover:border-b-2  "
             onMouseEnter={() => setOpenMenu(menu.key)}
             onMouseLeave={() => setOpenMenu(null)}
           >
@@ -118,7 +118,7 @@ export default function HomeNav() {
         {/* Static links */}
         {["RTI", "ERP", "Library", "Gallery", "Contact us", "About us", "Site map"].map(
           (item, idx) => (
-            <li key={idx}>{item}</li>
+            <li className="relative cursor-pointer transition-border duration-300  hover:border-b-3 border-red " key={idx}>{item}</li>
           )
         )}
       </ul>
