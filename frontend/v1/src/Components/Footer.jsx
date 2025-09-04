@@ -54,8 +54,6 @@ export default function Footer()
                 <li><Link to='' className="text-white">Computer Engineering</Link></li>
                 <li><Link to='' className="text-white">Chemical Engineering</Link></li>
                 <li><Link to='' className="text-white">E&TC Engineering</Link></li>
-                <li><Link to='' className="text-white">Electrical Engineering</Link></li>
-                <li><Link to='' className="text-white">Mechanical Engineering</Link></li>
                 <li><Link to='' className="text-white">IT Engineering</Link></li>
                 <li><Link to='' className="text-white">M.B.A.</Link></li>
             </ul>

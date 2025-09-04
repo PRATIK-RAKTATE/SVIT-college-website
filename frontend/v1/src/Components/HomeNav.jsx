@@ -38,26 +38,32 @@ export default function HomeNav() {
           </button>
           {openMenu === "dept" && (
             <ul className="absolute left-0 mt-2 bg-white shadow-md rounded-md opacity-100 transition-opacity duration-200 z-50">
-              <li className="px-4 py-2 hover:bg-gray-100 w-60">
-                Basic Science and Humanities(FE)
-              </li>
-              <li className="px-4 py-2 hover:bg-gray-100 w-60">
+              <Link to={"/Department/first-year"}>
+              <li className="px-4 py-2 hover:bg-gray-100 w-60" >
+                Basic Science and Humanities(FE) 
+               </li>
+              </Link>
+              <li>
+                <Link className="px-4 py-2 hover:bg-gray-100 w-60" to={"/Department/computerDept"}>
                 Computer Engineering
+              </Link>
               </li>
+              <Link to={"/Department/ChemicalDept"}>
               <li className="px-4 py-2 hover:bg-gray-100 w-60">Chemical Engineering</li>
+              </Link>
+              <Link to={"/Department/ece"}>
               <li className="px-4 py-2 hover:bg-gray-100 w-60">
                 Electronics & Computer Engineering
               </li>
+              </Link>
+              <Link to={"/Department/InformationTechDept"}>
               <li className="px-4 py-2 hover:bg-gray-100 w-60">
                 Information Technology Engineering
               </li>
+              </Link>
+              <Link to={"/Department/MBA"}>
               <li className="px-4 py-2 hover:bg-gray-100 w-60">M.B.A.</li>
-              <li className="px-4 py-2 hover:bg-gray-100 w-60">
-                Electrical Engineering (In Progressive Closure)
-              </li>
-              <li className="px-4 py-2 hover:bg-gray-100 w-60">
-                Mechanical Engineering (In Progressive Closure)
-              </li>
+              </Link>
             </ul>
           )}
         </li>

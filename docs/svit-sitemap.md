@@ -61,28 +61,6 @@
 - Student Corner
 - Extra Activity
 
-### Electrical Department
-- Department Profile
-- Faculty
-- Labs
-- Syllabus
-- Event
-- Results
-- Placement
-- Student Corner
-- Extra Activity
-
-### Mechanical Department
-- Department Profile
-- Faculty
-- Labs
-- Syllabus
-- Event
-- Results
-- Placement
-- Student Corner
-- Extra Activity
-
 ### Information Technology Department
 - Department Profile
 - Faculty
