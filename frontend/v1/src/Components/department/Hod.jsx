@@ -1,23 +1,21 @@
 import React from 'react';
 
-const Hod = () => {
+const Hod = ({Hodimg,Hodname,hodQ}) => {
   return (
-    <section className="flex-1 flex flex-col items-center justify-center p-4">
-      <h1 className="text-4xl md:text-5xl font-serif font-bold text-slate-800 mb-6 text-center">
-        Department of Computer Engineering
-      </h1>
+    <section className="w-full p-4 max-w-5xl md:mt-12 items-center mx-auto">
+    
 
-      <figure className="w-full max-w-4xl">
+      <figure className="w-full max-w-md sm:max-w-lg md:max-w-xl mx-auto">
         <img
-          src="https://svitnashik.in/Images/Profile%20Images/Default/Dr_GBShinde.jpg"
+          src={Hodimg}
           alt="Head of Department"
-          className="w-full h-auto rounded-xl shadow-2xl"
+          className="w-full h-60 sm:h-72 md:h-96 lg:h-auto rounded-md shadow-xl object-contain"
         />
         <figcaption className="mt-4 text-center">
-          <p className="text-xl font-semibold text-slate-800">
-            Prof. Sharad M. Rokade (Associate Professor), HOD
+          <p className="text-lg sm:text-xl font-semibold text-slate-800">
+            {Hodname}
           </p>
-          <p className="text-sm text-slate-600">M.E. (CE), PhD (Pursuing)</p>
+          <p className="text-sm text-slate-600">{hodQ}</p>
         </figcaption>
       </figure>
     </section>
