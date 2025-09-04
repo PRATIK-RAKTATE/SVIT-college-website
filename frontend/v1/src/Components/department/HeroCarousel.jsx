@@ -32,14 +32,14 @@ export default function Carousel({ interval = 4500 }) {
   }, [interval]);
 
   return (
-    <div className=" inset-0 w-screen h-screen overflow-hidden bg-black">
+    <div className=" inset-0 w-screen h-screen overflow-hidden  bg-black">
       {/* Images */}
       {slides.map((slide, i) => (
         <img
           key={i}
           src={slide.img}
           alt=""
-          className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-[1500ms] ease-in-out ${
+          className={` inset-0 w-full h-full object-cover transition-opacity duration-[1500ms] ease-in-out ${
             i === index ? "opacity-100 z-10" : "opacity-0"
           }`}
         />
