@@ -4,6 +4,7 @@ export default function Carousel({ slides, interval = 4500 }) {
   const [index, setIndex] = useState(0);
   const [progress, setProgress] = useState(0);
 
+  // Progress bar effect
   useEffect(() => {
     setProgress(0);
     const start = Date.now();
@@ -14,6 +15,7 @@ export default function Carousel({ slides, interval = 4500 }) {
     return () => clearInterval(timer);
   }, [index, interval]);
 
+  // Auto-slide effect
   useEffect(() => {
     const slideTimer = setInterval(
       () => setIndex((i) => (i + 1) % slides.length),
@@ -23,13 +25,13 @@ export default function Carousel({ slides, interval = 4500 }) {
   }, [slides.length, interval]);
 
   return (
-    <div className="inset-0 relative w-screen h-screen overflow-hidden bg-black">
+    <div className="relative inset-0 w-screen h-screen overflow-hidden bg-black">
       {/* Images */}
       {slides.map((slide, i) => (
         <img
           key={i}
           src={slide.img}
-          alt=""
+          alt={`Slide ${i}`}
           className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-[1500ms] ease-in-out ${
             i === index ? "opacity-100 z-10" : "opacity-0"
           }`}
@@ -46,7 +48,7 @@ export default function Carousel({ slides, interval = 4500 }) {
           {slides[index].text}
         </h1>
 
-        {/* Progress loader – short centered bar */}
+        {/* Progress loader */}
         <div className="w-80 h-2 bg-white/30 rounded-full overflow-hidden">
           <div
             className="h-full bg-white transition-[width] duration-75"
