@@ -211,11 +211,22 @@ export default function HomeNav() {
         </li>
 
         {/* Static links */}
-        {["RTI", "ERP", "Library", "Gallery", "Contact us", "About us", "Site map"].map(
-          (item, idx) => (
-            <li className="relative cursor-pointer transition-border duration-300 hover:border-b-2 border-red-500" key={idx}>{item}</li>
-          )
-        )}
+       {[
+  { name: "RTI", url: "/rti" },
+  { name: "ERP", url: "/erp" },
+  { name: "Library", url: "/library" },
+  { name: "Gallery", url: "/gallery" },
+  { name: "Contact us", url: "/contact" },
+  { name: "About us", url: "/about" },
+  { name: "Site map", url: "/sitemap" }
+].map((link, idx) => (
+  <li
+    key={idx}
+    className="relative cursor-pointer transition-border duration-300 hover:border-b-2 border-red-500"
+  >
+    <Link to={link.url}>{link.name}</Link>
+  </li>
+))}
       </ul>
 
       {/* Mobile Menu Button */}
