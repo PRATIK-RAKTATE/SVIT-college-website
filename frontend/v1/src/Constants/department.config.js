@@ -1,17 +1,17 @@
+import firstYear from "./firstYear";
 import computerEngineering from "./computerEngineering";
-import chemicalDept from "./chemicalDept";
-import etcDept from "./ece";
-import itDept from "./InformationTech";
-import mbaDept from "./Mbadept";
-import feDept from "./first-year";
+import chemicalEngineering from "./chemical-engineering";
+import electronicsAndComputerEngineering from "./electronicsAndComputerEngineering";
+import informationTechnology from "./informationTechnology";
+import mba from "./mba";
 
 const DEPARTMENTS = {
-  "first-year": feDept,
+  firstYear,
   computerEngineering,
-  ChemicalDept: chemicalDept,
-  ece: etcDept,
-  InformationTechDept: itDept,
-  MBA: mbaDept,
+  chemicalEngineering,
+  electronicsAndComputerEngineering,
+  informationTechnology,
+  mba
 };
 
 export default DEPARTMENTS;

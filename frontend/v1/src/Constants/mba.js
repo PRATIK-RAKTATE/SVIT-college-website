@@ -1,4 +1,4 @@
-const mbaDept = {
+const mba = {
   vision:
     "Shaping a better future for mankind by developing effective and socially responsible professionals to lead organizations.",
 
@@ -40,4 +40,4 @@ Our institute has got a separate dedicated Training & Placement cell which takes
   ],
 };
 
-export default mbaDept;
+export default mba;

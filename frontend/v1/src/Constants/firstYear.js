@@ -1,4 +1,4 @@
-const feDept = {
+const firstYear = {
   vision: "xyz",
 
   mission: "pqr",
@@ -34,4 +34,4 @@ We also believe that overall personality development of students can be achieved
   ],
 };
 
-export default feDept;
+export default firstYear;
