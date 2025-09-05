@@ -2,23 +2,54 @@ import React from 'react'
 import Carousel from './HeroCarousel'
 import SidebarHod from './SidebarHod'
 import Departmentinfo from './Departmentinfo'
+import SEO from '../../seo/SEO';
+import SEO_CONFIG from '../../seo/seo.config';
+import DEPARTMENTS from '../../Constants/department.config';
+import { useParams } from "react-router-dom";
 
+const DepartmentPage = () => {
+  const { deptId } = useParams();  
+  console.log(deptId)
 
-const department = ({slides,vision,mission,hodDesk,Hodimg,Hodname,hodQ,Department}) => {
+  const data = DEPARTMENTS[deptId];
+  if (!data) {
+    return <div className="text-center p-8 text-red-600">Department not found</div>;
+  }
+
+  const seoData = SEO_CONFIG.departments[deptId] || {};
+
+  console.log("SEO Data:", seoData, "deptId:", deptId);
+
   return (
-    <div className='flex flex-col'>
-     <div>
-        <Carousel slides={slides} />
-      </div> 
+    <div className="flex flex-col">
+      <SEO
+        title={seoData.title}
+        description={seoData.description}
+        url={seoData.url}
+        image={seoData.image}
+      />
 
-      <div >
-        <SidebarHod Hodimg={Hodimg} Hodname={Hodname} hodQ={hodQ} Department={Department}/>
+      <div>
+        <Carousel slides={data.carousel} />
+      </div>
+
+      <div>
+        <SidebarHod
+          Hodimg={data.img}
+          Hodname={data.hodname}
+          hodQ={data.hodqualification}
+          Department={deptId}  
+        />
         <main className="flex-1 p-4">
-          <Departmentinfo vision={vision} mission={mission} hodDesk={hodDesk} />
+          <Departmentinfo
+            vision={data.vision}
+            mission={data.mission}
+            hodDesk={data.HODDesk}
+          />
         </main>
       </div>
     </div>
   )
 }
 
-export default department
+export default DepartmentPage
