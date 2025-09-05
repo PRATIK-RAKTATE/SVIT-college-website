@@ -1,8 +1,11 @@
 import React from 'react'
 import Sidebar from './Sidebar'
 import Hod from './Hod'
+import { useParams } from 'react-router-dom';
 
 function SidebarHod({Hodimg,Hodname,hodQ,Department}) {
+
+  const {deptId}=useParams();
   return (
   <>
   <h1
@@ -16,7 +19,7 @@ function SidebarHod({Hodimg,Hodname,hodQ,Department}) {
 
 
   <main className="flex flex-col md:flex-row w-screen overflow-hidden bg-white">
-    <Sidebar  />
+    <Sidebar deptId={deptId} />
     <Hod Hodimg={Hodimg} Hodname={Hodname} hodQ={hodQ}/>
   </main>
   </>

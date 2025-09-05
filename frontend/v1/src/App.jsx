@@ -11,13 +11,14 @@ import firstYear from "./Constants/firstYear.js";
 import WholeSociety from "./Components/About/wholeSociety.jsx";
 import { Routes, Route } from "react-router-dom";
 import DEPARTMENTS from "./Constants/department.config.js";
+import Faculty from "./Components/SideBar/faculty.jsx";
+import Course from "./Components/SideBar/Course.jsx";
 
 function App() {
   return (
     <>
       <Header />
       <Routes>
-       
         <Route path="/about" element={<WholeSociety />} />
         <Route path="/about/AbouttheSociety" element={<WholeSociety />} />
 
@@ -37,8 +38,11 @@ function App() {
                 Department={data.Department}
               />
             }
-          />
-        ))}
+         
+            />
+          ))}
+          <Route path="/Department/:deptId/faculty" element={<Faculty/>}></Route>
+          <Route path="/Department/:deptId/courses" element={<Course/>}></Route>
       </Routes>
       <Footer />
     </>
