@@ -13,7 +13,7 @@ function App() {
         {Object.entries(DEPARTMENTS).map(([key, data]) => (
           <Route
             key={key}
-            path={`/Department/${key}`}
+            path={`/Department/:deptId`}
             element={
               <Department
                 slides={data.carousel}
