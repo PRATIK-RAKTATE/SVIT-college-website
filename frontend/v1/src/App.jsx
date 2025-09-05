@@ -9,6 +9,7 @@ import itDept from "./Constants/InformationTech.js";
 import mbaDept from "./Constants/Mbadept.js";
 import feDept from "./Constants/first-year.js";
 import { Routes, Route, Link } from "react-router-dom";
+import Home from "./Components/Home/Home.jsx"
 
 function App() {
 
@@ -16,6 +17,10 @@ function App() {
     <>
       <Header />
       <Routes>
+        <Route
+        path="/"
+        element={<Home />}
+        />
         <Route
           path="/Department/first-year"
           element={<Department slides={feDept.carousel} vision={feDept.vision} mission={feDept.mission}  hodDesk={feDept.HODDesk} Hodimg={feDept.img} Hodname={feDept.hodname} hodQ={feDept.hodqualification} Department={feDept.Department} />}

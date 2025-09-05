@@ -9,7 +9,7 @@ export default function Footer()
 {
     return(
         <div className="w-screen p-10 flex flex-col md:flex-row md:justify-between gap-10 
-                bg-gradient-to-r from-red-900 via-red-1000 to-black">
+                bg-gradient-to-r from-red-900 via-red-950 to-black">
 
             <div className="flex flex-col  gap-4">
                 <span className="text-white ">Quick Link</span>
