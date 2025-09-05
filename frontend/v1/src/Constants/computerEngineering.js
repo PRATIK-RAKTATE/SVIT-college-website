@@ -1,4 +1,4 @@
-const computerDept = {
+const computerEngineering = {
   vision:
     "Develop Department of Computer Engineering into center of excellence through imparting technical education of international standards and research in the field of Computer Engineering.",
 
@@ -33,4 +33,4 @@ const computerDept = {
 ],
 };
 
-export default computerDept;
+export default computerEngineering;
