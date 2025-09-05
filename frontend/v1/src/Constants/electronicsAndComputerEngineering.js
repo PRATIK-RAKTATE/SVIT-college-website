@@ -1,4 +1,4 @@
-const etcDept = {
+const electronicsAndComputerEngineering = {
   vision:
     "To produce competent and innovative electronics and computer engineers who can meet the evolving needs of industry and society",
 
@@ -47,4 +47,4 @@ I hope you find this information useful and interesting. I congratulate the crea
   ],
 };
 
-export default etcDept;
+export default electronicsAndComputerEngineering;

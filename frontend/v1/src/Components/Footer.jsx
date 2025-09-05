@@ -1,7 +1,7 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import { FaYoutube, FaTwitter, FaInstagram } from "react-icons/fa";
-
+import ViewCounter from "./viewCounter/viewCounter"
 
 
 
@@ -89,6 +89,7 @@ export default function Footer()
           <FaInstagram />
         </a>
         </div>
+        <ViewCounter />
         
       </div>
         </div>

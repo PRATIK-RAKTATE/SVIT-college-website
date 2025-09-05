@@ -1,4 +1,4 @@
-const chemicalDept = {
+const chemicalEngineering = {
   vision:
     "To impart quality technical education in the field of Chemical Engineering focus on innovation and research to cater to the need of industry and society.",
 
@@ -31,4 +31,4 @@ const chemicalDept = {
   ],
 };
 
-export default chemicalDept;
+export default chemicalEngineering;
