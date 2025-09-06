@@ -24,7 +24,7 @@ import LibraryAdvisoryComitee from "./Components/Library/LibraryAdvisoryComitee.
 import Faculty from "./Components/Library/Faculty.jsx";
 import LibraryObjectives from "./Components/Library/LibraryObjectives.jsx";
 import LibraryFacilities from "./Components/Library/LibraryFacilities.jsx";
-import LibrarySection from "./Components/department/LibrarySection.jsx";
+import LibrarySection from "./Components/Library/LibrarySection.jsx";
 
 function App() {
   return (
@@ -48,6 +48,7 @@ function App() {
         <Route path="/Library/Objectives" element={<LibraryObjectives/>}/>
         <Route path="/Library/Facilities" element={<LibraryFacilities/>} />
         <Route path="/Library/Section" element={<LibrarySection/>} />
+        <Route path="/Library/OPAC" />
 
         {Object.entries(DEPARTMENTS).map(([key, data]) => (
           <Route
