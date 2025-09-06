@@ -1,10 +1,8 @@
-import React from 'react';
+import React from "react";
 
-const Hod = ({Hodimg,Hodname,hodQ}) => {
+const Hod = ({ Hodimg, Hodname, hodQ }) => {
   return (
     <section className="w-full p-4 max-w-5xl md:mt-12 items-center mx-auto">
-    
-
       <figure className="w-full max-w-md sm:max-w-lg md:max-w-xl mx-auto">
         <img
           src={Hodimg}

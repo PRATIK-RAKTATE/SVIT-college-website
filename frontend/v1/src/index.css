@@ -17,13 +17,13 @@
   }
 }
 
-
 /* In your global CSS file (e.g., index.css or App.css) */
 ::-webkit-scrollbar {
   display: none; /* For Chrome, Safari */
 }
 
-html, body {
-  scrollbar-width: none;   /* For Firefox */
+html,
+body {
+  scrollbar-width: none; /* For Firefox */
   -ms-overflow-style: none; /* For IE & Edge */
 }

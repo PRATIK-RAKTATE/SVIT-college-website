@@ -5,7 +5,9 @@ export default function HomeSideBar() {
     <div className="mt-28 md:mt-14 mr-10 mb-10 md:ml-25 ml-10 w-fit">
       <ul className="h-auto w-72 flex flex-col gap-2 pl-5">
         <li className="border-l-4 border-black hover:bg-black hover:text-white p-1 pl-2 shadow text-sm">
-          <Link to={"https://www.kimi.com/chat/d2s5sk2f7calm5dv4l70"}>Department Profile </Link>
+          <Link to={"https://www.kimi.com/chat/d2s5sk2f7calm5dv4l70"}>
+            Department Profile{" "}
+          </Link>
         </li>
         <li className="border-l-4 border-black hover:bg-black hover:text-white p-1 pl-2 shadow text-sm">
           <Link>Course Details</Link>

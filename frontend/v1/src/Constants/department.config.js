@@ -11,7 +11,7 @@ const DEPARTMENTS = {
   chemicalEngineering,
   electronicsAndComputerEngineering,
   informationTechnology,
-  mba
+  mba,
 };
 
 export default DEPARTMENTS;

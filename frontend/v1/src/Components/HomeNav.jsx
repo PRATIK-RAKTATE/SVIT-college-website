@@ -4,8 +4,8 @@ import { NavLink, Link } from "react-router-dom";
 
 export default function HomeNav() {
   const [isOpen, setIsOpen] = useState(false);
-  const [openMenu, setOpenMenu] = useState(null); 
-  const [mobileOpenMenu, setMobileOpenMenu] = useState(null); 
+  const [openMenu, setOpenMenu] = useState(null);
+  const [mobileOpenMenu, setMobileOpenMenu] = useState(null);
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
@@ -18,7 +18,7 @@ export default function HomeNav() {
       document.body.classList.add("no-scroll");
     } else {
       document.body.classList.remove("no-scroll");
-      setMobileOpenMenu(null); 
+      setMobileOpenMenu(null);
     }
   }, [isOpen]);
 
@@ -52,7 +52,12 @@ export default function HomeNav() {
     {
       label: "TPC Section",
       key: "tpc",
-      items: ["TPC Information", "Registration Form", "Placement Process", "List Of Companies"],
+      items: [
+        "TPC Information",
+        "Registration Form",
+        "Placement Process",
+        "List Of Companies",
+      ],
     },
     {
       label: "NAAC",
@@ -83,7 +88,14 @@ export default function HomeNav() {
     <nav className="bg-white px-4 py-3 shadow-md relative z-50">
       {/* Desktop Menu */}
       <ul className="hidden md:flex md:justify-center md:gap-6 font-medium">
-        <NavLink to="/" className={({isActive})=>`${isActive ? "text-red-500" :"text-blue-500"}`}>Home</NavLink>
+        <NavLink
+          to="/"
+          className={({ isActive }) =>
+            `${isActive ? "text-red-500" : "text-blue-500"}`
+          }
+        >
+          Home
+        </NavLink>
 
         {/* Departments */}
         <li className="relative cursor-pointer">
@@ -97,16 +109,21 @@ export default function HomeNav() {
             <ul className="absolute left-0 mt-2 bg-white shadow-md rounded-md opacity-100 transition-opacity duration-200 z-50">
               <Link to={"/Department/firstYear"}>
                 <li className="px-4 py-2 hover:bg-gray-100 w-60">
-                  Basic Science and Humanities(FE) 
+                  Basic Science and Humanities(FE)
                 </li>
               </Link>
               <li>
-                <Link className="px-4 py-2 hover:bg-gray-100 w-60" to={"/Department/computerEngineering"}>
+                <Link
+                  className="px-4 py-2 hover:bg-gray-100 w-60"
+                  to={"/Department/computerEngineering"}
+                >
                   Computer Engineering
                 </Link>
               </li>
               <Link to={"/Department/chemicalEngineering"}>
-                <li className="px-4 py-2 hover:bg-gray-100 w-60">Chemical Engineering</li>
+                <li className="px-4 py-2 hover:bg-gray-100 w-60">
+                  Chemical Engineering
+                </li>
               </Link>
               <Link to={"/Department/electronicsAndComputerEngineering"}>
                 <li className="px-4 py-2 hover:bg-gray-100 w-60">
@@ -135,10 +152,18 @@ export default function HomeNav() {
           </button>
           {openMenu === "alumni" && (
             <ul className="absolute left-0 mt-2 bg-white shadow-md rounded-md">
-              <li className="px-4 py-2 hover:bg-gray-100 w-60">Alumni Information</li>
-              <li className="px-4 py-2 hover:bg-gray-100 w-60">Alumni Registration</li>
-              <li className="px-4 py-2 hover:bg-gray-100 w-60">Alumni Search</li>
-              <li className="px-4 py-2 hover:bg-gray-100 w-60">View All Alumni</li>
+              <li className="px-4 py-2 hover:bg-gray-100 w-60">
+                Alumni Information
+              </li>
+              <li className="px-4 py-2 hover:bg-gray-100 w-60">
+                Alumni Registration
+              </li>
+              <li className="px-4 py-2 hover:bg-gray-100 w-60">
+                Alumni Search
+              </li>
+              <li className="px-4 py-2 hover:bg-gray-100 w-60">
+                View All Alumni
+              </li>
               <li className="px-4 py-2 hover:bg-gray-100 w-60">
                 Alumni Chapters and Alumni Meet Info.
               </li>
@@ -156,10 +181,18 @@ export default function HomeNav() {
           </button>
           {openMenu === "tpc" && (
             <ul className="absolute left-0 mt-2 bg-white shadow-md rounded-md opacity-100 transition-opacity duration-200 z-50">
-              <li className="px-4 py-2 hover:bg-gray-100 w-60">TPC Information</li>
-              <li className="px-4 py-2 hover:bg-gray-100 w-60">Registration Form</li>
-              <li className="px-4 py-2 hover:bg-gray-100 w-60">Placement Process</li>
-              <li className="px-4 py-2 hover:bg-gray-100 w-60">List Of Companies</li>
+              <li className="px-4 py-2 hover:bg-gray-100 w-60">
+                TPC Information
+              </li>
+              <li className="px-4 py-2 hover:bg-gray-100 w-60">
+                Registration Form
+              </li>
+              <li className="px-4 py-2 hover:bg-gray-100 w-60">
+                Placement Process
+              </li>
+              <li className="px-4 py-2 hover:bg-gray-100 w-60">
+                List Of Companies
+              </li>
             </ul>
           )}
         </li>
@@ -174,11 +207,17 @@ export default function HomeNav() {
           </button>
           {openMenu === "naac" && (
             <ul className="absolute left-0 mt-2 bg-white shadow-md rounded-md opacity-100 transition-opacity duration-200 z-50">
-              <li className="px-4 py-2 hover:bg-gray-100 w-60">NAAC UNDERTAKING</li>
-              <li className="px-4 py-2 hover:bg-gray-100 w-60">NAAC SELF DECLARATION</li>
+              <li className="px-4 py-2 hover:bg-gray-100 w-60">
+                NAAC UNDERTAKING
+              </li>
+              <li className="px-4 py-2 hover:bg-gray-100 w-60">
+                NAAC SELF DECLARATION
+              </li>
               <li className="px-4 py-2 hover:bg-gray-100 w-60">IIQA</li>
               <li className="px-4 py-2 hover:bg-gray-100 w-60">NAAC SSR</li>
-              <li className="px-4 py-2 hover:bg-gray-100 w-60">Extended Profile</li>
+              <li className="px-4 py-2 hover:bg-gray-100 w-60">
+                Extended Profile
+              </li>
               <li className="px-4 py-2 hover:bg-gray-100 w-60">Criteria 1</li>
               <li className="px-4 py-2 hover:bg-gray-100 w-60">Criteria 2</li>
               <li className="px-4 py-2 hover:bg-gray-100 w-60">Criteria 3</li>
@@ -204,18 +243,31 @@ export default function HomeNav() {
               <li className="px-4 py-2 hover:bg-gray-100 w-60">DTE</li>
               <li className="px-4 py-2 hover:bg-gray-100 w-60">NBA</li>
               <li className="px-4 py-2 hover:bg-gray-100 w-60">UGC</li>
-              <li className="px-4 py-2 hover:bg-gray-100 w-60">Shikshan Shulk Samiti</li>
+              <li className="px-4 py-2 hover:bg-gray-100 w-60">
+                Shikshan Shulk Samiti
+              </li>
               <li className="px-4 py-2 hover:bg-gray-100 w-60">Unipune</li>
             </ul>
           )}
         </li>
 
         {/* Static links */}
-        {["RTI", "ERP", "Library", "Gallery", "Contact us", "About us", "Site map"].map(
-          (item, idx) => (
-            <li className="relative cursor-pointer transition-border duration-300 hover:border-b-2 border-red-500" key={idx}>{item}</li>
-          )
-        )}
+        {[
+          "RTI",
+          "ERP",
+          "Library",
+          "Gallery",
+          "Contact us",
+          "About us",
+          "Site map",
+        ].map((item, idx) => (
+          <li
+            className="relative cursor-pointer transition-border duration-300 hover:border-b-2 border-red-500"
+            key={idx}
+          >
+            {item}
+          </li>
+        ))}
       </ul>
 
       {/* Mobile Menu Button */}
@@ -264,13 +316,20 @@ export default function HomeNav() {
           </div>
         ))}
 
-        {["RTI", "ERP", "Library", "Gallery", "Examination", "Contact us", "About us", "Site map"].map(
-          (item, idx) => (
-            <span key={idx} className="text-xs font-semibold cursor-pointer">
-              {item}
-            </span>
-          )
-        )}
+        {[
+          "RTI",
+          "ERP",
+          "Library",
+          "Gallery",
+          "Examination",
+          "Contact us",
+          "About us",
+          "Site map",
+        ].map((item, idx) => (
+          <span key={idx} className="text-xs font-semibold cursor-pointer">
+            {item}
+          </span>
+        ))}
       </div>
     </nav>
   );

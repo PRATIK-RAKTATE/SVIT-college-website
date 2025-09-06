@@ -1,4 +1,4 @@
-// VisionMissionHOD.jsx 
+// VisionMissionHOD.jsx
 import React from "react";
 
 const Section = ({ title, description, image, variant, imagePosition }) => {
@@ -34,9 +34,7 @@ const Section = ({ title, description, image, variant, imagePosition }) => {
             {title}
           </div>
           <h3 className="text-2xl font-bold text-gray-900 mb-4">{title}</h3>
-          <p className="text-gray-600 leading-relaxed text-lg">
-            {description}
-          </p>
+          <p className="text-gray-600 leading-relaxed text-lg">{description}</p>
         </div>
       </div>
     </div>
@@ -58,48 +56,50 @@ const HodSection = () => {
         </h3>
 
         <p className="text-gray-600 leading-relaxed text-lg mt-6 text-justify">
-          The department of Computer engineering is one of the oldest departments and
-          established in the year 1999. It offers UG programs in Computer Engineering
-          with the intake of 60 along with post graduate program in Master of
-          Engineering with the intake of 24 affiliated to Savitribai Phule Pune
-          University.
-          <br /><br />
-          The aim of the Department is to motivate young professionals in building
-          cognitive characteristics and improve the rising engineers with latest
-          trends in technology. The programme is designed to provide students
-          theoretical knowledge and practical skills in the field of latest emerging
-          technology. This curriculum is good enough for employment in academia,
-          government, research, industry, engineering and management positions. The
-          department is committed to continuously improve the quality of education by
-          enhancing the knowledge of students and staff members.
-          <br /><br />
-          The department has the blend of young and experience faculty and technical
-          staff. It has in all 10 state of-the-art computer laboratories with latest
-          computing equipments and softwares and classrooms and a Seminar Hall.
-          <br /><br />
-          I am confident that our staff members and students would satisfy the
-          responsibility and credibility of the department by showing a high level of
-          professional competence in their respective domains.
+          The department of Computer engineering is one of the oldest
+          departments and established in the year 1999. It offers UG programs in
+          Computer Engineering with the intake of 60 along with post graduate
+          program in Master of Engineering with the intake of 24 affiliated to
+          Savitribai Phule Pune University.
+          <br />
+          <br />
+          The aim of the Department is to motivate young professionals in
+          building cognitive characteristics and improve the rising engineers
+          with latest trends in technology. The programme is designed to provide
+          students theoretical knowledge and practical skills in the field of
+          latest emerging technology. This curriculum is good enough for
+          employment in academia, government, research, industry, engineering
+          and management positions. The department is committed to continuously
+          improve the quality of education by enhancing the knowledge of
+          students and staff members.
+          <br />
+          <br />
+          The department has the blend of young and experience faculty and
+          technical staff. It has in all 10 state of-the-art computer
+          laboratories with latest computing equipments and softwares and
+          classrooms and a Seminar Hall.
+          <br />
+          <br />I am confident that our staff members and students would satisfy
+          the responsibility and credibility of the department by showing a high
+          level of professional competence in their respective domains.
         </p>
       </div>
     </div>
   );
 };
 
-const VisionMissionHOD = ({vision,mission,hodDesk}) => {
+const VisionMissionHOD = ({ vision, mission }) => {
   const sections = [
     {
       title: "Our Vision",
-      description:
-        vision,
+      description: vision,
       image: "https://matsuniversity.ac.in/image/vision.jpg",
       variant: "vision",
       imagePosition: "left",
     },
     {
       title: "Our Mission",
-      description:
-        mission,
+      description: mission,
       image:
         "https://static.vecteezy.com/system/resources/previews/013/030/925/non_2x/finacial-success-chart-concept-on-virtual-screen-abstract-business-background-mission-business-concept-photo.jpg",
       variant: "mission",
