@@ -8,38 +8,28 @@ export default function HomeSideBar() {
           <Link to={"/about/AbouttheSociety"}>About the Society </Link>
         </li>
         <li className="border-l-4 border-black hover:bg-black hover:text-white p-1 pl-2 shadow text-sm">
-          <Link>Mission & Vision</Link>
+          <Link to={"/about/VissionMission"}>Mission & Vision</Link>
+        </li>
+
+        <li className="border-l-4 border-black hover:bg-black hover:text-white p-1 pl-2 shadow text-sm">
+          <Link to={"/about/principleDesk"}>Principal's Desk</Link>
         </li>
         <li className="border-l-4 border-black hover:bg-black hover:text-white p-1 pl-2 shadow text-sm">
-          <Link>Principal's Desk</Link>
+          <Link to={"/about/Admission"}>Admission</Link>
         </li>
         <li className="border-l-4 border-black hover:bg-black hover:text-white p-1 pl-2 shadow text-sm">
-          <Link>Admission</Link>
+          <Link to={"/about/Inception"}>Inception</Link>
         </li>
         <li className="border-l-4 border-black hover:bg-black hover:text-white p-1 pl-2 shadow text-sm">
-          <Link>Inception</Link>
+          <Link to={"/about/Curriculum&Syllabus"}>Curriculum & Syllabus</Link>
         </li>
         <li className="border-l-4 border-black hover:bg-black hover:text-white p-1 pl-2 shadow text-sm">
-          <Link>Curriculum & Syllabus</Link>
-        </li>
-        <li className="border-l-4 border-black hover:bg-black hover:text-white p-1 pl-2 shadow text-sm">
-          <Link>Infrastructure
-</Link>
+          <Link to={"/about/Infrastructure"}>Infrastructure</Link>
         </li>
         <li className="border-l-4 border-black hover:bg-black hover:text-white p-1 pl-2 shadow text-sm">
           <Link>Success Stories</Link>
         </li>
-        <li className="border-l-4 border-black hover:bg-black hover:text-white p-1 pl-2 shadow text-sm">
-          <Link>News & Events
-</Link>
-        </li>
-        <li className="border-l-4 border-black hover:bg-black hover:text-white p-1 pl-2 shadow text-sm">
-          <Link>MBA</Link>
-        </li>
-        <li className="border-l-4 border-black hover:bg-black hover:text-white p-1 pl-2 shadow text-sm">
-          <Link>Academic Calender
-</Link>
-        </li>
+        
         <li className="border-l-4 border-black hover:bg-black hover:text-white p-1 pl-2 shadow text-sm">
           <Link>Placement Brochure</Link>
         </li>
@@ -47,7 +37,30 @@ export default function HomeSideBar() {
           <Link>E-Brochure</Link>
         </li>
         <li className="border-l-4 border-black hover:bg-black hover:text-white p-1 pl-2 shadow text-sm">
-          <Link>Linkages</Link>
+          <Link to={"/about/Linkages"}>Linkages</Link>
+        </li>
+       <li className="border-l-4 border-black hover:bg-black hover:text-white p-1 pl-2 shadow text-sm">
+  <a
+    href="https://svitnashik.in/Documents/CodeOfConduct.pdf"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Code Of Conduct
+  </a>
+</li>
+
+
+        <li className="border-l-4 border-black hover:bg-black hover:text-white p-1 pl-2 shadow text-sm">
+          <Link to={"/about/IIQA"}>IIQA</Link>
+        </li>
+        <li className="border-l-4 border-black hover:bg-black hover:text-white p-1 pl-2 shadow text-sm">
+          <Link
+            to="https://www.youth4work.com/onlinetalenttest"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            AICTE Online Skill Test for FE to BE Students
+          </Link>
         </li>
       </ul>
     </div>
