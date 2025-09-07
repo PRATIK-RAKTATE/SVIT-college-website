@@ -1,7 +1,7 @@
 const firstYear = {
-  vision: "xyz",
+  vision: "To be recognized as a center of excellence in Computer Engineering by imparting quality education, fostering research and innovation, and producing globally competent professionals who contribute to the advancement of technology and society",
 
-  mission: "pqr",
+  mission: "The department is committed to providing students with a strong foundation in computer science and engineering principles while nurturing creativity, critical thinking, and problem-solving skills through research-oriented learning. It strives to equip graduates with the technical expertise and professional competencies required to excel in industry and entrepreneurship. Furthermore, the department emphasizes ethical values, teamwork, and lifelong learning to foster socially responsible professionals dedicated to the advancement of society and nation-building.",
 
   HODDesk: `Academic work of First year Engineering is to be planned and monitored by Dean Academic. As per the syllabus prescribed by Savitribai Phule Pune University, First year Engineering students have common curriculum irrespective of specific branches chosen by them.
 
@@ -10,9 +10,9 @@ Dean Academic is the Head of First Year Engineering. He monitors the attendance 
 We also believe that overall personality development of students can be achieved by giving them opportunities in all possible fields, hence we have started separate Students Association of First Year engineering students (SAFE). Under this association, we conduct expert lectures, seminars, workshops and various competitions.`,
 
   img: "https://svitnashik.in/Images/Profile%20Images/Department/FE/K_P_TAMBE.jpg",
-  hodname:"Mr.Kailas P. Tambe , FE Head & Assistant Professor",
-  hodqualification:"M.Sc (Chemistry)",
-  Department:"First Year Engineering Department",
+  hodname: "Mr.Kailas P. Tambe , FE Head & Assistant Professor",
+  hodqualification: "M.Sc (Chemistry)",
+  Department: "First Year Engineering Department",
 
   carousel: [
     {

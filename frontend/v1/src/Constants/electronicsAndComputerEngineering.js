@@ -23,9 +23,10 @@ Our alumni passed out in past two decades from the equivalent course as Electron
 I hope you find this information useful and interesting. I congratulate the creative and sincere efforts taken by my faculty members and students for the achievement of Electronics & Computer Department and I wish all of them a great success in their bright future.`,
 
   img: "https://svitnashik.in/Images/Profile%20Images/Department/ETC/Dr.Rana_Mahajan.jpg",
-  hodname:"Dr. Rana S. Mahajan (Asst. Professor), HOD",
-  hodqualification:"PhD (E&C), ME(Digital Communication),Diploma in Values and Spritual Education, Member of ISTE ,IETE.",
-  Department:"Electronics and Computer Engineering",
+  hodname: "Dr. Rana S. Mahajan (Asst. Professor), HOD",
+  hodqualification:
+    "PhD (E&C), ME(Digital Communication),Diploma in Values and Spritual Education, Member of ISTE ,IETE.",
+  Department: "Electronics and Computer Engineering",
 
   carousel: [
     {

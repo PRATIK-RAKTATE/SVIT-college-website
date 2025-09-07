@@ -1,5 +1,5 @@
 import React from "react";
-import AboutSidebar from './AboutSisebar.jsx';
+import AboutSidebar from "./AboutSisebar.jsx";
 import AboutSociety from "./AboutSociety.jsx";
 import StylishTable from "./AbouteSocietyTable.jsx";
 

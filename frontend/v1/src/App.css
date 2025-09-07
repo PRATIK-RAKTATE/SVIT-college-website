@@ -1,1 +1,29 @@
 @import "tailwindcss";
+.marquee {
+  display: inline-block;
+  animation: marquee 15s linear infinite;
+  animation-play-state: running;
+}
+
+.marquee:hover {
+  animation-play-state: paused;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(-100%);
+  }
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+html,
+body {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}

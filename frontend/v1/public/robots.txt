@@ -1,0 +1,21 @@
+# robots.txt for https://svitnashik.in/
+
+User-agent: *
+
+Disallow: /admin/
+Disallow: /login/
+Disallow: /dashboard/
+Disallow: /results/
+Disallow: /api/
+Disallow: /tmp/
+
+Disallow: /search
+Disallow: /*?sort=
+Disallow: /*?filter=
+Disallow: /*?page=
+Disallow: /*?session=
+Disallow: /*?utm_
+
+Allow: /
+
+Sitemap: https://svitnashik.in/sitemap.xml
