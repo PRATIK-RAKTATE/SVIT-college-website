@@ -29,6 +29,7 @@ import Result from "./Components/SideBar/Result.jsx";
 import Placement from "./Components/SideBar/Placement.jsx";
 import AcademicBooks from "./Components/SideBar/Academic.jsx";
 import EResources from "./Components/SideBar/E-resources.jsx";
+import MainContactUs from "./Components/ContactUs/MainContactUs.jsx"
 
 
 
