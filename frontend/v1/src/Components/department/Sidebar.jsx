@@ -3,7 +3,12 @@ import { Link } from "react-router-dom";
 
 export default function HomeSideBar({ deptId }) {
   const menuItems = [
-    { name: "Department Profile", path: "profile", external: true, url: "https://www.kimi.com/chat/d2s5sk2f7calm5dv4l70" },
+    {
+      name: "Department Profile",
+      path: "profile",
+      external: true,
+      url: "https://www.kimi.com/chat/d2s5sk2f7calm5dv4l70",
+    },
     { name: "Course Details", path: "courses" },
     { name: "PEOs,POs & PSOs", path: "Outcome" },
     { name: "Faculty", path: "faculty" },
@@ -15,7 +20,7 @@ export default function HomeSideBar({ deptId }) {
     { name: "Extra-curricular & Co-curricular Activities", path: "activities" },
     { name: "Placement Brochure", path: "placement-brochure" },
     { name: "Academic Book", path: "academic-book" },
-    { name: "E-resources", path: "e-resources" }
+    { name: "E-resources", path: "e-resources" },
   ];
 
   return (
@@ -27,7 +32,9 @@ export default function HomeSideBar({ deptId }) {
             className="border-l-4 border-black hover:bg-black hover:text-white p-1 pl-2 shadow text-sm"
           >
             {item.external ? (
-              <a href={item.url} target="_blank" rel="noopener noreferrer">{item.name}</a>
+              <a href={item.url} target="_blank" rel="noopener noreferrer">
+                {item.name}
+              </a>
             ) : (
               <Link to={`/Department/${deptId}/${item.path}`}>{item.name}</Link>
             )}

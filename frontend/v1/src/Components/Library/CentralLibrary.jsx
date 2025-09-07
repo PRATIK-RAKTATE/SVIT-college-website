@@ -41,10 +41,30 @@ const LibraryReport = () => {
   }, []);
 
   const cardData = [
-    { label: "Titles", value: stats.titles, icon: <Book className="w-10 h-10" />, color: "from-blue-500 to-indigo-600" },
-    { label: "Volumes", value: stats.volumes, icon: <BookOpen className="w-10 h-10" />, color: "from-green-500 to-emerald-600" },
-    { label: "E-Books", value: stats.eBooks, icon: <Laptop className="w-10 h-10" />, color: "from-purple-500 to-pink-600" },
-    { label: "Journals", value: stats.journals, icon: <Newspaper className="w-10 h-10" />, color: "from-orange-500 to-red-600" },
+    {
+      label: "Titles",
+      value: stats.titles,
+      icon: <Book className="w-10 h-10" />,
+      color: "from-blue-500 to-indigo-600",
+    },
+    {
+      label: "Volumes",
+      value: stats.volumes,
+      icon: <BookOpen className="w-10 h-10" />,
+      color: "from-green-500 to-emerald-600",
+    },
+    {
+      label: "E-Books",
+      value: stats.eBooks,
+      icon: <Laptop className="w-10 h-10" />,
+      color: "from-purple-500 to-pink-600",
+    },
+    {
+      label: "Journals",
+      value: stats.journals,
+      icon: <Newspaper className="w-10 h-10" />,
+      color: "from-orange-500 to-red-600",
+    },
   ];
 
   const eResources = [
@@ -71,7 +91,9 @@ const LibraryReport = () => {
           <h2 className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-purple-700">
             Central Library Report
           </h2>
-          <p className="mt-4 text-lg text-gray-500 font-medium">As of June 2025</p>
+          <p className="mt-4 text-lg text-gray-500 font-medium">
+            As of June 2025
+          </p>
         </header>
 
         {/* Stats Cards */}

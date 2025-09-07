@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 const AboutPrincipleImg = () => {
   return (
@@ -19,7 +19,7 @@ const AboutPrincipleImg = () => {
         </figcaption>
       </figure>
     </section>
-  )
-}
+  );
+};
 
-export default AboutPrincipleImg
+export default AboutPrincipleImg;

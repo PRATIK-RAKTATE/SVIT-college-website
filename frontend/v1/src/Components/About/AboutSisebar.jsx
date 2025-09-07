@@ -29,7 +29,7 @@ export default function HomeSideBar() {
         <li className="border-l-4 border-black hover:bg-black hover:text-white p-1 pl-2 shadow text-sm">
           <Link>Success Stories</Link>
         </li>
-        
+
         <li className="border-l-4 border-black hover:bg-black hover:text-white p-1 pl-2 shadow text-sm">
           <Link>Placement Brochure</Link>
         </li>
@@ -39,16 +39,15 @@ export default function HomeSideBar() {
         <li className="border-l-4 border-black hover:bg-black hover:text-white p-1 pl-2 shadow text-sm">
           <Link to={"/about/Linkages"}>Linkages</Link>
         </li>
-       <li className="border-l-4 border-black hover:bg-black hover:text-white p-1 pl-2 shadow text-sm">
-  <a
-    href="https://svitnashik.in/Documents/CodeOfConduct.pdf"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    Code Of Conduct
-  </a>
-</li>
-
+        <li className="border-l-4 border-black hover:bg-black hover:text-white p-1 pl-2 shadow text-sm">
+          <a
+            href="https://svitnashik.in/Documents/CodeOfConduct.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Code Of Conduct
+          </a>
+        </li>
 
         <li className="border-l-4 border-black hover:bg-black hover:text-white p-1 pl-2 shadow text-sm">
           <Link to={"/about/IIQA"}>IIQA</Link>

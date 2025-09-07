@@ -1,19 +1,21 @@
-import React from 'react'
-import Carousel from './HeroCarousel'
-import SidebarHod from './SidebarHod'
-import Departmentinfo from './Departmentinfo'
-import SEO from '../../seo/SEO';
-import SEO_CONFIG from '../../seo/seo.config';
-import DEPARTMENTS from '../../Constants/department.config';
+import React from "react";
+import Carousel from "./HeroCarousel";
+import SidebarHod from "./SidebarHod";
+import Departmentinfo from "./Departmentinfo";
+import SEO from "../../seo/SEO";
+import SEO_CONFIG from "../../seo/seo.config";
+import DEPARTMENTS from "../../Constants/department.config";
 import { useParams } from "react-router-dom";
 
 const DepartmentPage = () => {
-  const { deptId } = useParams();  
-  console.log(deptId)
+  const { deptId } = useParams();
+  console.log(deptId);
 
   const data = DEPARTMENTS[deptId];
   if (!data) {
-    return <div className="text-center p-8 text-red-600">Department not found</div>;
+    return (
+      <div className="text-center p-8 text-red-600">Department not found</div>
+    );
   }
 
   const seoData = SEO_CONFIG.departments[deptId] || {};
@@ -38,7 +40,7 @@ const DepartmentPage = () => {
           Hodimg={data.img}
           Hodname={data.hodname}
           hodQ={data.hodqualification}
-          Department={deptId}  
+          Department={deptId}
         />
         <main className="flex-1 p-4">
           <Departmentinfo
@@ -49,7 +51,7 @@ const DepartmentPage = () => {
         </main>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default DepartmentPage
+export default DepartmentPage;

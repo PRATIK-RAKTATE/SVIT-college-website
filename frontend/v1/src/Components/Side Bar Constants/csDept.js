@@ -1,5 +1,3 @@
-
-
 export const csFaculty = [
   {
     sr: 1,
@@ -38,27 +36,26 @@ export const csFaculty = [
   },
 ];
 
-
 export const csCourse = {
   introduction: [
     "Computer Engineers analyze, design, and evaluate computer systems, both hardware and software.",
     "They work on systems such as flexible manufacturing systems or smart devices.",
-    "They often focus on challenges that result in new state-of-the-art products integrating computer capabilities."
+    "They often focus on challenges that result in new state-of-the-art products integrating computer capabilities.",
   ],
   overview: [
     "The Department of Computer Engineering was established in 1998-99 and is affiliated to University of Pune.",
     "It follows modern industry trends and focuses on product formulation, communications, data compression, and wireless connectivity.",
-    "The department has well-qualified and motivated faculty to produce graduates capable of succeeding at the highest level."
+    "The department has well-qualified and motivated faculty to produce graduates capable of succeeding at the highest level.",
   ],
   facilities: [
     "Excellent computing facilities with latest PC configurations, multimedia labs, project labs, programming labs, computer graphics labs, and design labs.",
-    "Software available includes C, C++, Oracle10g, 3DMax, Microsoft Visual Studio, Linux, TASM, MASM, Net 2003, Director, JAVA1.5, Rational Rose, etc."
+    "Software available includes C, C++, Oracle10g, 3DMax, Microsoft Visual Studio, Linux, TASM, MASM, Net 2003, Director, JAVA1.5, Rational Rose, etc.",
   ],
   projects: [
     "Mobile for Blind People",
     "Finger Recognition for Security Systems",
     "Virtual Mouse - a compact peripheral",
-    "Library Management using RFID"
+    "Library Management using RFID",
   ],
   association: [
     `"Hadoop+Mongodb+Python" - 2 Days State Level Workshop`,
@@ -67,22 +64,21 @@ export const csCourse = {
     `"How to Write Research Paper and Improve Citations" - 1 Day Online Workshop`,
     `"Information Security Policies" - State Level Seminar`,
     `"TechTest" - Seminar & Project Exhibition at IIT Powai`,
-    `Industrial Visits: C-DAC Pune, BSNL Nashik, PARAM Computer`
+    `Industrial Visits: C-DAC Pune, BSNL Nashik, PARAM Computer`,
   ],
   majorFacilities: [
     "DLP Projector",
     "Departmental Library",
     "Internet Facility for Students",
-    "Wi-Fi Facility"
+    "Wi-Fi Facility",
   ],
   courseInfo: {
     branch: "BE",
     courseName: "Computer Engineering",
     intake: 60,
-    establishmentYear: "1999-2000"
-  }
+    establishmentYear: "1999-2000",
+  },
 };
-
 
 // csDept.js
 
@@ -93,7 +89,7 @@ export const csOutcomes = {
     "Provide students with academic environment that enables them to understand the significance of life-long learning in varied situations and teams in global perspective.",
     "Nurture strong understanding in logical, mathematical and analytical reasoning among students coupled with problem solving attitude that prepares them to productively engage in research and higher learning.",
     "Inculcate ethical practices, professionalism and environmental awareness for sustainable development among students enabling them for prospective employment in their chosen line of profession globally.",
-    "Instill communication and management skill that generates entrepreneurship and/or leadership qualities."
+    "Instill communication and management skill that generates entrepreneurship and/or leadership qualities.",
   ],
   pos: [
     "Apply the knowledge of mathematics, science, engineering fundamentals, and an engineering specialization to the solution of complex engineering problems.",
@@ -107,50 +103,49 @@ export const csOutcomes = {
     "Function effectively as an individual, and as a member or leader in diverse teams, and in multidisciplinary settings.",
     "Communicate effectively on complex engineering activities with the engineering community and with society at large, such as, being able to comprehend and write effective reports and design documentation, make effective presentations, and give and receive clear instructions.",
     "Demonstrate knowledge and understanding of the engineering and management principles and apply these to one’s own work, as a member and leader in a team, to manage projects and in multidisciplinary environments.",
-    "Recognize the need for, and have the preparation and ability to engage in independent and life-long learning in the broadest context of technological change."
+    "Recognize the need for, and have the preparation and ability to engage in independent and life-long learning in the broadest context of technological change.",
   ],
   psos: [
     "Graduate of programme having ability to represent the fundamentals and functioning of the hardware and software perspective related to automatic data processing system.",
     "Graduate of programme should be able to use proficient engineering praxis & strategies for the build out, maintenance and testing of software solutions.",
-    "Graduate of programme should be able to provide conclusive and cost effective real time solutions using savoir faire in IT domain."
-  ]
+    "Graduate of programme should be able to provide conclusive and cost effective real time solutions using savoir faire in IT domain.",
+  ],
 };
-
-
-
 
 export const csLabs = [
   {
     name: "Practice Lab",
     img: "/robots.jpg",
-    description: "State-of-the-art robotics research..."
+    description: "State-of-the-art robotics research...",
   },
-  {                                    // ← add this
+  {
+    // ← add this
     name: "Network Lab",
     img: "/security.jpg",
-    description: "Pen-testing, forensics, secure-coding..."
+    description: "Pen-testing, forensics, secure-coding...",
   },
-  {                                    // ← and/or this
+  {
+    // ← and/or this
     name: "Data-Science Lab",
     img: "/data.jpg",
-    description: "Big-data analytics, ML pipelines..."
+    description: "Big-data analytics, ML pipelines...",
   },
-  {                                    // ← and/or this
+  {
+    // ← and/or this
     name: "Data-Science Lab",
     img: "/data.jpg",
-    description: "Big-data analytics, ML pipelines..."
-  }
+    description: "Big-data analytics, ML pipelines...",
+  },
 ];
-
-
-
-
 
 export const csSyllabus = [
   {
     sem: "2019 Course",
     subjects: [
-      { name: "SE Syllabus(2019 Course)", link: "https://svitnashik.in/Departments/Computer/Syllabus/SE_2019.pdf" },
+      {
+        name: "SE Syllabus(2019 Course)",
+        link: "https://svitnashik.in/Departments/Computer/Syllabus/SE_2019.pdf",
+      },
       { name: "TE Syllabus(2019 Course)", link: "/syllabus/cs/physics.pdf" },
       { name: "BE Syllabus(2019 Course)", link: "/syllabus/cs/bee.pdf" },
     ],
@@ -164,9 +159,6 @@ export const csSyllabus = [
     ],
   },
 ];
-
-
-
 
 export const csEvents = [
   {
@@ -183,22 +175,12 @@ export const csEvents = [
     id: 2,
     title: "MATLAB",
     date: "2025-08-15",
-    images: [
-      "/events/hack-1.jpg",
-      "/events/hack-2.jpg",
-      "/events/hack-3.jpg",
-    ],
+    images: ["/events/hack-1.jpg", "/events/hack-2.jpg", "/events/hack-3.jpg"],
   },
   {
     id: 3,
     title: "Charity Event",
     date: "2025-08-15",
-    images: [
-      "/events/hack-1.jpg",
-      "/events/hack-2.jpg",
-      "/events/hack-3.jpg",
-    ],
+    images: ["/events/hack-1.jpg", "/events/hack-2.jpg", "/events/hack-3.jpg"],
   },
 ];
-
-
