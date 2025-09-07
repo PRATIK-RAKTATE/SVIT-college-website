@@ -10,6 +10,7 @@ import { itSyllabus } from "../Side Bar Constants/itDept.js";
 import { eceSyllabus } from "../Side Bar Constants/eceDept.js";
 import { mbaSyllabus } from "../Side Bar Constants/mbaDept.js";
 import { chemSyllabus } from "../Side Bar Constants/chemDept.js";
+import { feSyllabus } from "../Side Bar Constants/feDept.js";
 
 export default function Syllabus() {
   const { deptId } = useParams();
@@ -27,7 +28,7 @@ export default function Syllabus() {
       deptName = "Information Technology";
       break;
     case "chemicalEngineering":
-      syllabusData = chemicalSyllabus;
+      syllabusData = chemSyllabus;
       deptName = "Chemical Engineering";
       break;
     case "electronicsAndComputerEngineering":

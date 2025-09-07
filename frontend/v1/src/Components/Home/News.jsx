@@ -25,7 +25,7 @@ export default function News() {
     <div className="mt-5 ml-4 gap-3">
       <div className="bg-black p-1"><h1 className="font-sans  text-white border-l-2 border-white shadow p-2">News & Announcements</h1></div>
       <div className="w-full md:w-80 text- rounded-md shadow-sm justify-center p-4 mt-2  overflow-hidden h-40 relative">
-      <div className="marquee space-y-3 hover:[animation-play-state:paused]">
+      <div className="marquee [] space-y-3 hover:[animation-play-state:paused]">
         {newsItems.map((item, i) => (
           <p key={i}>
             <a

@@ -20,7 +20,7 @@ import Events from "./Components/SideBar/Events.jsx";
 import MissionVissionAO from "./Components/About/MissionVissionAO.jsx";
 import PrincipleDesk from "./Components/About/PrincipleDesk.jsx";
 import AboutAdmission from "./Components/About/AboutAdmission.jsx";
-import AboutInception from './Components/About/AboutInception.jsx'
+import AboutInception from "./Components/About/AboutInception.jsx";
 import AboutCurriculumSyllabus from "./Components/About/AboutCurriculumSyllabus.jsx";
 import AboutInfrastructure from "./Components/About/AboutInfrastructure.jsx";
 import AboutLinkages from "./Components/About/AboutLinkages.jsx";
@@ -30,28 +30,40 @@ import LibraryAdvisoryComitee from "./Components/Library/LibraryAdvisoryComitee.
 import LibraryObjectives from "./Components/Library/LibraryObjectives.jsx";
 import LibraryFacilities from "./Components/Library/LibraryFacilities.jsx";
 import LibrarySection from "./Components/Library/LibrarySection.jsx";
+import Home from "./Components/Home/Home.jsx";
+import Result from "./Components/SideBar/Result.jsx";
+import Placement from "./Components/SideBar/Placement.jsx";
+import AcademicBooks from "./Components/SideBar/Academic.jsx";
+import EResources from "./Components/SideBar/E-resources.jsx";
 
 function App() {
   return (
     <>
       <Header />
       <Routes>
+        <Route path="/" element={<Home />} />
         <Route path="/about" element={<WholeSociety />} />
         <Route path="/about/AbouttheSociety" element={<WholeSociety />} />
-        <Route path="/about/VissionMission" element={<MissionVissionAO/>}/>
-        <Route path="/about/principleDesk" element={<PrincipleDesk/>}/>
-        <Route path="/about/Admission" element={<AboutAdmission/>}/>
-        <Route path="/about/Inception" element={<AboutInception/>}/>
-        <Route path="/about/Curriculum&Syllabus" element={<AboutCurriculumSyllabus/>}/>
-        <Route path="/about/Infrastructure" element={<AboutInfrastructure/>}/>
-        <Route path="/about/Linkages" element={<AboutLinkages/>}/>
-        <Route path="/about/Examination" element={<Examination/>}/>
-        <Route path="/Library" element={<Library/>} />
-        <Route path="/Library/AdvisoryCommittee" element={<LibraryAdvisoryComitee/>}/>
-        <Route path="/Library/Faculty" element={<Faculty/>} />
-        <Route path="/Library/Objectives" element={<LibraryObjectives/>}/>
-        <Route path="/Library/Facilities" element={<LibraryFacilities/>} />
-        <Route path="/Library/Section" element={<LibrarySection/>} />
+        <Route path="/about/VissionMission" element={<MissionVissionAO />} />
+        <Route path="/about/principleDesk" element={<PrincipleDesk />} />
+        <Route path="/about/Admission" element={<AboutAdmission />} />
+        <Route path="/about/Inception" element={<AboutInception />} />
+        <Route
+          path="/about/Curriculum&Syllabus"
+          element={<AboutCurriculumSyllabus />}
+        />
+        <Route path="/about/Infrastructure" element={<AboutInfrastructure />} />
+        <Route path="/about/Linkages" element={<AboutLinkages />} />
+        <Route path="/about/Examination" element={<Examination />} />
+        <Route path="/Library" element={<Library />} />
+        <Route
+          path="/Library/AdvisoryCommittee"
+          element={<LibraryAdvisoryComitee />}
+        />
+        <Route path="/Library/Faculty" element={<Faculty />} />
+        <Route path="/Library/Objectives" element={<LibraryObjectives />} />
+        <Route path="/Library/Facilities" element={<LibraryFacilities />} />
+        <Route path="/Library/Section" element={<LibrarySection />} />
         <Route path="/Library/OPAC" />
 
         {Object.entries(DEPARTMENTS).map(([key, data]) => (
@@ -70,15 +82,18 @@ function App() {
                 Department={data.Department}
               />
             }
-         
-            />
-          ))}
-          <Route path="/Department/:deptId/Outcome" element={<Outcome/>}></Route>
-          <Route path="/Department/:deptId/faculty" element={<Faculty/>}></Route>
-          <Route path="/Department/:deptId/courses" element={<Course/>}></Route>
-          <Route path="/Department/:deptId/labs" element={<Labs/>}></Route>
-          <Route path="/Department/:deptId/syllabus" element={<Syllabus/>}></Route>
-          <Route path="/Department/:deptId/events" element={<Events/>}></Route>
+          />
+        ))}
+        <Route path="/Department/:deptId/Outcome" element={<Outcome />}></Route>
+        <Route path="/Department/:deptId/faculty" element={<Faculty />}></Route>
+        <Route path="/Department/:deptId/courses" element={<Course />}></Route>
+        <Route path="/Department/:deptId/labs" element={<Labs />}></Route>
+        <Route path="/Department/:deptId/syllabus" element={<Syllabus />}></Route>
+        <Route path="/Department/:deptId/events" element={<Events />}></Route>
+        <Route path="/Department/:deptId/results" element={<Result />}></Route>
+        <Route path="/Department/:deptId/placement"element={<Placement />}></Route>
+        <Route path="/Department/:deptId/academic-book"element={<AcademicBooks />}></Route>
+        <Route path="/Department/:deptId/e-resources"element={<EResources />}></Route>
       </Routes>
       <Footer />
     </>

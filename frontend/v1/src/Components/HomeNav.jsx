@@ -82,6 +82,16 @@ export default function HomeNav() {
         { text: "Unipune", url: "/links/unipune" },
       ],
     },
+    {
+      key: "add",
+      label: "Admission",
+      items: [
+        
+        { text: "Admission Details", url: "/links/aicte" },
+        { text: "Admission 2025-26 (Institute Level Non CAP Admission)", url: "/links/dte" },
+        { text: "Admission Enquiry Form", url: "/links/nba" },
+      ],
+    },
   ];
 
 
@@ -124,15 +134,19 @@ export default function HomeNav() {
      <NavLink to="/co" className={({isActive})=>`${isActive ? "text-red-500 ": "text-black"}`}>Contact us</NavLink>
      <NavLink to="/about" className={({isActive})=>`${isActive ? "text-red-500 ": "text-black"}`}>About us</NavLink>
      <NavLink to="/about/Examination" className={({isActive})=>`${isActive ? "text-red-500 ": "text-black"}`}>Examination</NavLink>
+
      <NavLink to="/sm" className={({isActive})=>`${isActive ? "text-red-500 ": "text-black"}`}>Site map</NavLink>
      
 
       </div>
   
       <div className="md:hidden flex justify-end">
-        <button onClick={toggleMenu} className="p-2">
+        <div className="flex justify-center ">
+          <h1 className="pt-2 mr-65">Menu</h1>
+          <button onClick={toggleMenu} className="p-2">
           {isOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
+        </div>
       </div>
 
   
