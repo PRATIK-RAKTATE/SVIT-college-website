@@ -30,6 +30,8 @@ import Faculty from "./Components/Library/Faculty.jsx";
 import LibraryObjectives from "./Components/Library/LibraryObjectives.jsx";
 import LibraryFacilities from "./Components/Library/LibraryFacilities.jsx";
 import LibrarySection from "./Components/Library/LibrarySection.jsx";
+import Home from './Components/Home/Home.jsx';
+
 
 
 function App() {
@@ -37,6 +39,7 @@ function App() {
     <>
       <Header />
       <Routes>
+        <Route path="/" element={<Home />} />
         <Route path="/about" element={<WholeSociety />} />
         <Route path="/about/AbouttheSociety" element={<WholeSociety />} />
         <Route path="/about/VissionMission" element={<MissionVissionAO/>}/>

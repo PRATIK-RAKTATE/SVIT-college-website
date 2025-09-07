@@ -124,6 +124,7 @@ export default function HomeNav() {
      <NavLink to="/co" className={({isActive})=>`${isActive ? "text-red-500 ": "text-black"}`}>Contact us</NavLink>
      <NavLink to="/about" className={({isActive})=>`${isActive ? "text-red-500 ": "text-black"}`}>About us</NavLink>
      <NavLink to="/about/Examination" className={({isActive})=>`${isActive ? "text-red-500 ": "text-black"}`}>Examination</NavLink>
+
      <NavLink to="/sm" className={({isActive})=>`${isActive ? "text-red-500 ": "text-black"}`}>Site map</NavLink>
      
 
