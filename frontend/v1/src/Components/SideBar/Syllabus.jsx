@@ -69,7 +69,11 @@ export default function Syllabus() {
                 layout
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: idx * 0.08, type: "spring", stiffness: 120 }}
+                transition={{
+                  delay: idx * 0.08,
+                  type: "spring",
+                  stiffness: 120,
+                }}
                 className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden"
               >
                 <AccordionItem item={item} deptId={deptId} />

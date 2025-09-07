@@ -17,26 +17,26 @@ export default function Lab() {
       labData = csLabs;
       deptName = "Computer Engineering";
       break;
-     case "informationTechnology":
-          labData = itLabs;
-          deptName = "Information Engineering";
-          break;
-        case "chemicalEngineering":
-          labData = chemicalLabs;
-          deptName = "Chemical Engineering";
-          break;
-        case "electronicsAndComputerEngineering":
-          labData = eceLabs;
-          deptName = "Electronics And Computer Engineering";
-          break;
-        case "firstYear":
-          labData = feLabs;
-          deptName = "First Year";
-          break;
-        case "mba":
-          labData = mbaOutcomes;
-          deptName = "M.B.A";
-          break;
+    case "informationTechnology":
+      labData = itLabs;
+      deptName = "Information Engineering";
+      break;
+    case "chemicalEngineering":
+      labData = chemicalLabs;
+      deptName = "Chemical Engineering";
+      break;
+    case "electronicsAndComputerEngineering":
+      labData = eceLabs;
+      deptName = "Electronics And Computer Engineering";
+      break;
+    case "firstYear":
+      labData = feLabs;
+      deptName = "First Year";
+      break;
+    case "mba":
+      labData = mbaOutcomes;
+      deptName = "M.B.A";
+      break;
     default:
       labData = [];
       break;
@@ -47,7 +47,7 @@ export default function Lab() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* ----------------  TOP ROW : sidebar + hero  ---------------- */}
-     
+
       <div className="flex flex-col md:flex-row">
         <HomeSideBar deptId={deptId} />
 
