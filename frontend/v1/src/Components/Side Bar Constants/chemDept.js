@@ -246,3 +246,93 @@ export const chemicalEvents = [
     ],
   },
 ];
+
+
+
+// chemDept.js
+export const chemicalResults = {
+  2019: ["Desai A 80.10", "Patel S 78.50", "Shah R 77.00", "Joshi M 75.60", "Sharma K 74.20", "Singh P 72.80", "Mehta H 71.40", "Agarwal N 70.90", "Shah J 69.50", "Patel M 68.10"],
+  2020: ["Shah Kirti 82.30", "Desai M 79.70", "Patel S 78.20", "Joshi A 76.80", "Sharma P 75.40", "Singh R 74.00", "Gupta K 73.50", "Mehta S 72.10", "Agarwal H 71.60", "Shah D 70.20"],
+  2021: ["Patel K 83.50", "Shah R 81.00", "Desai S 79.50", "Jain M 78.10", "Sharma N 76.70", "Singh A 75.30", "Mehta P 74.80", "Agarwal S 74.20", "Shah H 73.60", "Patel K 72.90"],
+  2022: ["Shah Hetal 84.70", "Patel S 82.20", "Desai K 80.70", "Joshi M 79.30", "Sharma A 77.90", "Singh S 76.50", "Gupta P 76.00", "Mehta R 75.40", "Agarwal K 74.80", "Shah N 73.20"],
+  2023: ["Desai Yash 85.40", "Shah P 83.00", "Patel M 81.50", "Jain S 80.10", "Sharma K 78.70", "Singh R 77.30", "Mehta A 76.80", "Agarwal H 76.20", "Shah S 75.60", "Patel D 74.90"],
+  2024: ["Shah Kavya 86.10", "Desai M 84.60", "Patel S 83.20", "Joshi H 81.80", "Sharma P 80.40", "Singh K 79.00", "Gupta S 78.50", "Mehta N 77.90", "Agarwal R 77.30", "Shah A 76.60"],
+};
+
+
+
+export const chemicalPlacement = {
+  2024: {
+    total: 60,
+    placed: 48,
+    highest: "₹ 18 LPA",
+    average: "₹ 6.2 LPA",
+    companies: ["Reliance", "UPL", "Tata Chemicals", "GACL", "Deepak Nitrite"],
+    toppers: ["Desai A  ₹ 18 LPA", "Shah K  ₹ 16 LPA", "Patel S  ₹ 15 LPA"],
+  },
+  2023: {
+    total: 58,
+    placed: 45,
+    highest: "₹ 17 LPA",
+    average: "₹ 5.9 LPA",
+    companies: ["Reliance", "UPL", "GACL", "Deepak Nitrite", "Atul"],
+    toppers: ["Shah Kirti  ₹ 17 LPA", "Desai M  ₹ 15 LPA", "Patel S  ₹ 14 LPA"],
+  },
+  2022: {
+    total: 55,
+    placed: 42,
+    highest: "₹ 16 LPA",
+    average: "₹ 5.6 LPA",
+    companies: ["Reliance", "UPL", "GACL", "Atul", "Tata Chemicals"],
+    toppers: ["Shah Hetal  ₹ 16 LPA", "Patel S  ₹ 14 LPA", "Desai K  ₹ 13 LPA"],
+  },
+  2021: {
+    total: 52,
+    placed: 40,
+    highest: "₹ 15 LPA",
+    average: "₹ 5.3 LPA",
+    companies: ["Reliance", "UPL", "Atul", "GACL", "Linde"],
+    toppers: ["Patel K  ₹ 15 LPA", "Shah H  ₹ 13 LPA", "Desai Y  ₹ 12 LPA"],
+  },
+  2020: {
+    total: 50,
+    placed: 38,
+    highest: "₹ 14 LPA",
+    average: "₹ 5.0 LPA",
+    companies: ["Reliance", "UPL", "Atul", "GACL", "Linde"],
+    toppers: ["Shah K  ₹ 14 LPA", "Patel M  ₹ 12 LPA", "Desai S  ₹ 11 LPA"],
+  },
+  2019: {
+    total: 48,
+    placed: 36,
+    highest: "₹ 13 LPA",
+    average: "₹ 4.8 LPA",
+    companies: ["Reliance", "UPL", "GACL", "Atul", "Tata Chemicals"],
+    toppers: ["Desai A  ₹ 13 LPA", "Shah K  ₹ 11 LPA", "Patel S  ₹ 10 LPA"],
+  },
+};
+
+
+export const chemicalBooks = {
+ 1: {
+    sem1: [{ name: "SE SEM-I_Academic Book", link: "/books/cs/maths1.pdf" }],
+    sem2: [{ name: "SE SEM-II_Academic Book", link: "/books/cs/maths2.pdf" }],
+  },
+  2: {
+    sem1: [{ name: "TE SEM-I_Academic Book", link: "/books/cs/dsa.pdf" }],
+    sem2: [{ name: "TE SEM-II_Academic Book", link: "/books/cs/oop.pdf" }],
+  },
+  3: {
+    sem1: [{ name: "BE SEM-I_Academic Book", link: "/books/cs/dbms.pdf" }],
+    sem2: [{ name: "BE SEM-II_Academic Book", link: "/books/cs/os.pdf" }],
+  },
+};
+
+
+export const chemicalEResources = [
+  { srNo: 1, facultyName: "Dr. K. R. Patel", blogLink: "https://krpatelchem.wordpress.com", youtubeLink: "https://youtube.com/c/krpatelchem" },
+  { srNo: 2, facultyName: "Prof. M. H. Desai", blogLink: "https://mhdesaich.blogspot.com", youtubeLink: "https://youtube.com/c/mhdesaich" },
+  { srNo: 3, facultyName: "Dr. A. S. Shah", blogLink: "https://asshahchem.medium.com", youtubeLink: "https://youtube.com/c/asshahchem" },
+  { srNo: 4, facultyName: "Prof. P. M. Joshi", blogLink: "https://pmjoshichem.wordpress.com", youtubeLink: "https://youtube.com/c/pmjoshichem" },
+  { srNo: 5, facultyName: "Dr. R. K. Shah", blogLink: "https://rkshahchem.blogspot.com", youtubeLink: "https://youtube.com/c/rkshahchem" },
+];

@@ -82,6 +82,16 @@ export default function HomeNav() {
         { text: "Unipune", url: "/links/unipune" },
       ],
     },
+    {
+      key: "add",
+      label: "Admission",
+      items: [
+        
+        { text: "Admission Details", url: "/links/aicte" },
+        { text: "Admission 2025-26 (Institute Level Non CAP Admission)", url: "/links/dte" },
+        { text: "Admission Enquiry Form", url: "/links/nba" },
+      ],
+    },
   ];
 
 

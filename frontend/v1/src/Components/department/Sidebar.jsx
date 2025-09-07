@@ -1,14 +1,9 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 export default function HomeSideBar({ deptId }) {
   const menuItems = [
-    {
-      name: "Department Profile",
-      path: "profile",
-      external: true,
-      url: "https://www.kimi.com/chat/d2s5sk2f7calm5dv4l70",
-    },
+    { name: "Department Profile", path: "",},
     { name: "Course Details", path: "courses" },
     { name: "PEOs,POs & PSOs", path: "Outcome" },
     { name: "Faculty", path: "faculty" },
@@ -17,8 +12,6 @@ export default function HomeSideBar({ deptId }) {
     { name: "Events", path: "events" },
     { name: "Results", path: "results" },
     { name: "Placement", path: "placement" },
-    { name: "Extra-curricular & Co-curricular Activities", path: "activities" },
-    { name: "Placement Brochure", path: "placement-brochure" },
     { name: "Academic Book", path: "academic-book" },
     { name: "E-resources", path: "e-resources" },
   ];
@@ -29,14 +22,14 @@ export default function HomeSideBar({ deptId }) {
         {menuItems.map((item, index) => (
           <li
             key={index}
-            className="border-l-4 border-black hover:bg-black hover:text-white p-1 pl-2 shadow text-sm"
+            className="border-l-4 border-[#4F39F6] hover:bg-black hover:text-white p-1 pl-2 shadow text-sm"
           >
             {item.external ? (
               <a href={item.url} target="_blank" rel="noopener noreferrer">
                 {item.name}
               </a>
             ) : (
-              <Link to={`/Department/${deptId}/${item.path}`}>{item.name}</Link>
+              <NavLink  to={`/Department/${deptId}/${item.path}`}>{item.name}</NavLink>
             )}
           </li>
         ))}
