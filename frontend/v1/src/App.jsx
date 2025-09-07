@@ -31,6 +31,7 @@ import LibraryObjectives from "./Components/Library/LibraryObjectives.jsx";
 import LibraryFacilities from "./Components/Library/LibraryFacilities.jsx";
 import LibrarySection from "./Components/Library/LibrarySection.jsx";
 import Home from './Components/Home/Home.jsx';
+import MainContactUs from "./Components/ContactUs/MainContactUs.jsx";
 
 
 
@@ -57,6 +58,7 @@ function App() {
         <Route path="/Library/Facilities" element={<LibraryFacilities/>} />
         <Route path="/Library/Section" element={<LibrarySection/>} />
         <Route path="/Library/OPAC" />
+        <Route path="/ContactUs" element={<MainContactUs/>} />
 
         {Object.entries(DEPARTMENTS).map(([key, data]) => (
           <Route
