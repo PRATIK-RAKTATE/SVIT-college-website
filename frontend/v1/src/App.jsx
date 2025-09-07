@@ -2,12 +2,6 @@ import "./App.css";
 import Department from "./Components/department/department.jsx";
 import Header from "./Components/Header.jsx";
 import Footer from "./Components/Footer.jsx";
-import computerEngineering from "./Constants/computerEngineering";
-import chemicalEngineering from "./Constants/chemicalEngineering.js";
-import electronicsAndComputerEngineering from "./Constants/electronicsAndComputerEngineering.js";
-import informationTechnology from "./Constants/informationTechnology.js";
-import mba from "./Constants/mba.js";
-import firstYear from "./Constants/firstYear.js";
 import WholeSociety from "./Components/About/wholeSociety.jsx";
 import { Routes, Route } from "react-router-dom";
 import DEPARTMENTS from "./Constants/department.config.js";
@@ -35,6 +29,9 @@ import Result from "./Components/SideBar/Result.jsx";
 import Placement from "./Components/SideBar/Placement.jsx";
 import AcademicBooks from "./Components/SideBar/Academic.jsx";
 import EResources from "./Components/SideBar/E-resources.jsx";
+
+
+
 
 function App() {
   return (
@@ -65,6 +62,7 @@ function App() {
         <Route path="/Library/Facilities" element={<LibraryFacilities />} />
         <Route path="/Library/Section" element={<LibrarySection />} />
         <Route path="/Library/OPAC" />
+        <Route path="/ContactUs" element={<MainContactUs/>} />
 
         {Object.entries(DEPARTMENTS).map(([key, data]) => (
           <Route
@@ -88,12 +86,14 @@ function App() {
         <Route path="/Department/:deptId/faculty" element={<Faculty />}></Route>
         <Route path="/Department/:deptId/courses" element={<Course />}></Route>
         <Route path="/Department/:deptId/labs" element={<Labs />}></Route>
+
         <Route path="/Department/:deptId/syllabus" element={<Syllabus />}></Route>
         <Route path="/Department/:deptId/events" element={<Events />}></Route>
         <Route path="/Department/:deptId/results" element={<Result />}></Route>
         <Route path="/Department/:deptId/placement"element={<Placement />}></Route>
         <Route path="/Department/:deptId/academic-book"element={<AcademicBooks />}></Route>
         <Route path="/Department/:deptId/e-resources"element={<EResources />}></Route>
+
       </Routes>
       <Footer />
     </>

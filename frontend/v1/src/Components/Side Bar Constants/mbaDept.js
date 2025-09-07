@@ -5,7 +5,8 @@ export const mbaFaculty = [
     sr: 1,
     name: "Dr. Vishakha A. Gaidhani",
     designation: "HOD & Assistant Professor",
-    qualification: "Ph.D. (Organizational Management), M.B.A. (IT), B.Sc (Electronics)",
+    qualification:
+      "Ph.D. (Organizational Management), M.B.A. (IT), B.Sc (Electronics)",
     experience: "7 Years Industry & 16 Years Academics",
   },
   {
@@ -19,21 +20,24 @@ export const mbaFaculty = [
     sr: 3,
     name: "Dr. Amol P. Kare",
     designation: "Assistant Professor",
-    qualification: "Ph.D. (Comm. & Mgmt.), M.B.A. (HR), D.L.L.& L.W., P.G.D.P.C.",
+    qualification:
+      "Ph.D. (Comm. & Mgmt.), M.B.A. (HR), D.L.L.& L.W., P.G.D.P.C.",
     experience: "1 Year Industry & 13 Years Academics",
   },
   {
     sr: 4,
     name: "Mr. Sanjay N. Vikhe",
     designation: "Assistant Professor",
-    qualification: "Ph.D. (Pursuing), M.B.A. (Marketing), B.Sc (Chemistry), D Pharmacy",
+    qualification:
+      "Ph.D. (Pursuing), M.B.A. (Marketing), B.Sc (Chemistry), D Pharmacy",
     experience: "7 Years Industry & 15 Years Academics",
   },
   {
     sr: 5,
     name: "Dr. Viresh B. Parkhe",
     designation: "Assistant Professor",
-    qualification: "Ph.D. (Organizational Management), M.B.A. (Marketing), BHMS",
+    qualification:
+      "Ph.D. (Organizational Management), M.B.A. (Marketing), BHMS",
     experience: "13 Years Academics",
   },
 ];
@@ -41,11 +45,11 @@ export const mbaFaculty = [
 export const mbaCourse = {
   introduction: [
     "SVIT's M.B.A. department is moving with poise and purpose, featuring vigor, competence, and confidence, despite the distinct individual traits of students.",
-    "The placement cell stands out as the most important element of the Department, providing sought-after opportunities. The placement committee comprises faculty and students, with the Head of the Department as Chairman and a faculty member as Placement Officer."
+    "The placement cell stands out as the most important element of the Department, providing sought-after opportunities. The placement committee comprises faculty and students, with the Head of the Department as Chairman and a faculty member as Placement Officer.",
   ],
   overview: [
     "The department offers specialization in multiple areas of management and emphasizes practical exposure, including internships, industry visits, and placement support.",
-    "Specializations include Marketing, Finance, HR, Operations, Business Analytics, Agri-Business, and Pharma & Healthcare Management."
+    "Specializations include Marketing, Finance, HR, Operations, Business Analytics, Agri-Business, and Pharma & Healthcare Management.",
   ],
   facilities: [
     "College Bus Facility from Nashik & Sinnar",
@@ -69,13 +73,13 @@ export const mbaCourse = {
     "Industry Mentored Projects",
     "Computer Laboratory & Wi-Fi Facility",
     "Entrepreneurship Development Cell",
-    "DTE approved A.R.C. Centre"
+    "DTE approved A.R.C. Centre",
   ],
   projects: [
     "Desk Research in specialization area",
     "Field Project in specialization area",
     "On-the-Job Training in specialization area",
-    "Research Project in specialization area"
+    "Research Project in specialization area",
   ],
   association: [
     "Creative Association of Management Students (CAMS), established in 2008-09",
@@ -83,7 +87,7 @@ export const mbaCourse = {
     "Teacher’s Day Celebration",
     "Management Day",
     "Farewell Function",
-    "Intercollegiate cultural and management event 'Bizz-Ana'"
+    "Intercollegiate cultural and management event 'Bizz-Ana'",
   ],
   majorFacilities: [
     "Computer Labs",
@@ -92,17 +96,15 @@ export const mbaCourse = {
     "College Bus Facility",
     "Hostels for Boys and Girls",
     "100% Placement Assistance",
-    "Industry Mentored Projects"
+    "Industry Mentored Projects",
   ],
   courseInfo: {
     branch: "M.B.A",
     courseName: "Master of Business Administration",
     intake: 120,
-    establishmentYear: "2008-09"
-  }
+    establishmentYear: "2008-09",
+  },
 };
-
-
 
 export const mbaOutcomes = {
   peos: [
@@ -111,7 +113,7 @@ export const mbaOutcomes = {
     "Foster leadership, communication, and interpersonal skills to manage teams, projects, and resources effectively in dynamic environments.",
     "Encourage ethical, sustainable, and socially responsible business practices to create value for stakeholders and society at large.",
     "Promote lifelong learning and continuous professional development to adapt to evolving markets, technologies, and global trends.",
-    "Enable students to cultivate entrepreneurial mindset and innovation-driven approaches for business growth and transformation."
+    "Enable students to cultivate entrepreneurial mindset and innovation-driven approaches for business growth and transformation.",
   ],
   pos: [
     "Apply analytical and critical thinking tools to interpret business data and make informed decisions aligned with organizational goals.",
@@ -125,13 +127,13 @@ export const mbaOutcomes = {
     "Engage in entrepreneurial activities by identifying opportunities, assessing risks, and leveraging innovation for sustainable growth.",
     "Apply project management principles to plan, execute, and monitor initiatives ensuring timely delivery and quality outcomes.",
     "Use research-based knowledge and data analytics to support evidence-driven decisions and continuous improvement initiatives.",
-    "Demonstrate the ability to manage change, uncertainty, and complexity while balancing stakeholder expectations and organizational objectives."
+    "Demonstrate the ability to manage change, uncertainty, and complexity while balancing stakeholder expectations and organizational objectives.",
   ],
   psos: [
     "Graduate of the program will be capable of applying management principles and tools to lead and innovate in complex business environments.",
     "Graduate of the program will possess analytical, decision-making, and communication skills necessary to solve business challenges effectively and ethically.",
-    "Graduate of the program will be prepared to pursue leadership roles, entrepreneurial ventures, and lifelong learning opportunities in global business scenarios."
-  ]
+    "Graduate of the program will be prepared to pursue leadership roles, entrepreneurial ventures, and lifelong learning opportunities in global business scenarios.",
+  ],
 };
 
 export const mbaLabs = [
@@ -177,9 +179,6 @@ export const mbaSyllabus = [
   },
   // ...continue for all semesters
 ];
-
-
-
 
 export const mbaEvents = [
   {

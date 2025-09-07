@@ -13,7 +13,7 @@ export default function HomeSideBar({ deptId }) {
     { name: "Results", path: "results" },
     { name: "Placement", path: "placement" },
     { name: "Academic Book", path: "academic-book" },
-    { name: "E-resources", path: "e-resources" }
+    { name: "E-resources", path: "e-resources" },
   ];
 
   return (
@@ -25,7 +25,9 @@ export default function HomeSideBar({ deptId }) {
             className="border-l-4 border-[#4F39F6] hover:bg-black hover:text-white p-1 pl-2 shadow text-sm"
           >
             {item.external ? (
-              <a href={item.url} target="_blank" rel="noopener noreferrer">{item.name}</a>
+              <a href={item.url} target="_blank" rel="noopener noreferrer">
+                {item.name}
+              </a>
             ) : (
               <NavLink  to={`/Department/${deptId}/${item.path}`}>{item.name}</NavLink>
             )}

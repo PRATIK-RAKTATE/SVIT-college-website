@@ -16,9 +16,10 @@ export default function HostelInfo() {
           Hostel
         </h3>
         <p className="text-base text-gray-700 leading-relaxed">
-          The institute has well-furnished hostels for boys & girls with intake of 250 & for girls
-          with an intake of 100 with well-equipped kitchen & dining hall mess, solar water system,
-          telephone facility, recreational hall, reading hall etc.
+          The institute has well-furnished hostels for boys & girls with intake
+          of 250 & for girls with an intake of 100 with well-equipped kitchen &
+          dining hall mess, solar water system, telephone facility, recreational
+          hall, reading hall etc.
         </p>
       </div>
 

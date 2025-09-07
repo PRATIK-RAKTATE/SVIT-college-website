@@ -3,7 +3,8 @@ export const eceFaculty = [
     sr: 1,
     name: "Dr. Rana S. Mahajan",
     designation: "Assistant Professor & HOD",
-    qualification: "PhD (E&CE), ME(Digital Communication), Diploma in Values and Spiritual Education, Member of ISTE, IETE.",
+    qualification:
+      "PhD (E&CE), ME(Digital Communication), Diploma in Values and Spiritual Education, Member of ISTE, IETE.",
     experience: "14 Years",
   },
   {
@@ -38,7 +39,8 @@ export const eceFaculty = [
     sr: 6,
     name: "Dr. Trupti K. Wable",
     designation: "Assistant Professor",
-    qualification: "Ph.D (E&CE), M.E (VLSI & Embedded), B.E (Electronics), Diploma (Electronics), Member of ISTE, IETE, IAEEE, IAENG.",
+    qualification:
+      "Ph.D (E&CE), M.E (VLSI & Embedded), B.E (Electronics), Diploma (Electronics), Member of ISTE, IETE, IAEEE, IAENG.",
     experience: "13 Years",
   },
   {
@@ -50,29 +52,28 @@ export const eceFaculty = [
   },
 ];
 
-
 export const eceCourse = {
   introduction: [
     "Electronics and Computer Engineering is the branch of Electronics Engineering that deals with the effects of electrons to build components, devices, systems, or equipment.",
-    "Computer Engineering deals with the design of computers and computer systems, including hardware and software. Computer engineers may also work on system software, often considered a separate discipline known as Software Engineering."
+    "Computer Engineering deals with the design of computers and computer systems, including hardware and software. Computer engineers may also work on system software, often considered a separate discipline known as Software Engineering.",
   ],
   overview: [
     "The courses here include computer applications and systems, focusing on designing and developing computer software and hardware processes.",
     "Students learn to use different programming languages, digital and analogue electronics, networking, and telecommunications.",
-    "Though recently established, the department has ultramodern experimental setups in all laboratories."
+    "Though recently established, the department has ultramodern experimental setups in all laboratories.",
   ],
   topRecruiters: [
     "Accenture Solutions Private Limited",
     "Cognizant Technology Solutions",
     "HCL Technologies",
-    "Hewlett Packard"
+    "Hewlett Packard",
   ],
   careerProspects: [
     "Software Engineer",
     "Software Developer",
     "Programmer Analyst",
     "Test Engineer",
-    "Content/Developer"
+    "Content/Developer",
   ],
   labs: [
     "Basic Electronics Lab",
@@ -80,16 +81,15 @@ export const eceCourse = {
     "Communications Lab",
     "Computer Lab",
     "Power Electronics Lab",
-    "Microprocessor Lab"
+    "Microprocessor Lab",
   ],
   courseInfo: {
     branch: "BE",
     courseName: "Electronics and Telecommunication Engineering",
     intake: 60,
-    establishmentYear: "2002-2003"
-  }
+    establishmentYear: "2002-2003",
+  },
 };
-
 
 export const eceOutcomes = {
   peos: [
@@ -98,7 +98,7 @@ export const eceOutcomes = {
     "Provide an academic environment that encourages research, experimentation, and lifelong learning to adapt to emerging technologies and engineering advancements.",
     "Enhance students’ understanding of mathematical, scientific, and engineering principles for solving complex problems and optimizing system performance.",
     "Promote ethical behavior, professionalism, and environmental awareness to address societal and industrial challenges responsibly and sustainably.",
-    "Develop communication, leadership, and teamwork skills to empower students to take on roles as innovators, entrepreneurs, and leaders in technology-driven environments."
+    "Develop communication, leadership, and teamwork skills to empower students to take on roles as innovators, entrepreneurs, and leaders in technology-driven environments.",
   ],
   pos: [
     "Apply the knowledge of mathematics, physics, electronics, and computer science to solve complex engineering problems involving hardware and software systems.",
@@ -112,39 +112,40 @@ export const eceOutcomes = {
     "Function effectively as an individual or as a member/leader in teams, contributing to collaborative efforts and multidisciplinary problem-solving.",
     "Communicate technical ideas effectively through reports, presentations, and documentation tailored to diverse audiences including industry and academia.",
     "Apply management principles and engineering economics in planning and executing projects while optimizing resources and ensuring quality outcomes.",
-    "Engage in lifelong learning, staying updated with emerging technologies, tools, and industry practices to enhance career growth and innovation."
+    "Engage in lifelong learning, staying updated with emerging technologies, tools, and industry practices to enhance career growth and innovation.",
   ],
   psos: [
     "Graduate of the program will be able to design, implement, and troubleshoot electronic circuits, embedded systems, and computing platforms for various applications.",
     "Graduate of the program will be proficient in using modern software tools, programming languages, and hardware interfaces to develop efficient and reliable systems.",
-    "Graduate of the program will demonstrate the ability to adapt engineering solutions to meet industry requirements while upholding ethical standards and promoting sustainable practices."
-  ]
+    "Graduate of the program will demonstrate the ability to adapt engineering solutions to meet industry requirements while upholding ethical standards and promoting sustainable practices.",
+  ],
 };
-
 
 export const eceLabs = [
   {
     name: "Digital Systems Lab",
     img: "/digital.jpg",
-    description: "Design and testing of digital circuits and embedded systems."
+    description: "Design and testing of digital circuits and embedded systems.",
   },
   {
     name: "Communication Lab",
     img: "/communication.jpg",
-    description: "Experiments with signal processing, modulation, and wireless communication techniques."
+    description:
+      "Experiments with signal processing, modulation, and wireless communication techniques.",
   },
   {
     name: "Microprocessor Lab",
     img: "/microprocessor.jpg",
-    description: "Programming and interfacing with microcontrollers and processors."
+    description:
+      "Programming and interfacing with microcontrollers and processors.",
   },
   {
     name: "VLSI Lab",
     img: "/vlsi.jpg",
-    description: "Study of integrated circuit design, simulation, and fabrication techniques."
-  }
+    description:
+      "Study of integrated circuit design, simulation, and fabrication techniques.",
+  },
 ];
-
 
 export const eceSyllabus = [
   {
@@ -165,8 +166,6 @@ export const eceSyllabus = [
   },
   // ...continue for all semesters
 ];
-
-
 
 export const eceEvents = [
   {

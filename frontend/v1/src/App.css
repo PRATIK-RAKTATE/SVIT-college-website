@@ -18,13 +18,12 @@
   }
 }
 
-
-
 ::-webkit-scrollbar {
-  display: none; 
+  display: none;
 }
 
-html, body {
-  scrollbar-width: none;   
-  -ms-overflow-style: none; 
+html,
+body {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }

@@ -43,17 +43,14 @@ export const firstYearFaculty = [
   },
 ];
 
-
-
-
 export const firstYearCourse = {
   introduction: [
     "The First Year Engineering program provides a strong foundation in basic sciences, mathematics, and engineering fundamentals.",
-    "It prepares students for all engineering disciplines by building analytical, problem-solving, and programming skills."
+    "It prepares students for all engineering disciplines by building analytical, problem-solving, and programming skills.",
   ],
   overview: [
     "The department was established to ensure students have a solid understanding of core engineering principles.",
-    "Courses include Physics, Chemistry, Mathematics, Basic Electrical Engineering, Engineering Mechanics, Workshop Practice, and Programming Fundamentals."
+    "Courses include Physics, Chemistry, Mathematics, Basic Electrical Engineering, Engineering Mechanics, Workshop Practice, and Programming Fundamentals.",
   ],
   facilities: [
     "Well-equipped physics and chemistry labs",
@@ -61,36 +58,34 @@ export const firstYearCourse = {
     "Computer labs with latest software and programming tools",
     "Mathematics and tutorial rooms",
     "Library and e-learning resources",
-    "Wi-Fi enabled campus"
+    "Wi-Fi enabled campus",
   ],
   projects: [
     "Mini-projects based on programming and electronics",
     "Science experiments in physics and chemistry labs",
-    "Collaborative problem-solving projects in groups"
+    "Collaborative problem-solving projects in groups",
   ],
   association: [
     "First Year Students Association",
     "Orientation and Induction Programs",
     "Cultural and Technical Events",
     "Workshops and Seminars",
-    "Sports & Extra-curricular activities"
+    "Sports & Extra-curricular activities",
   ],
   majorFacilities: [
     "Physics and Chemistry Labs",
     "Computer Labs with Wi-Fi",
     "Workshop and Engineering Tools",
     "Library & E-learning Resources",
-    "Sports Facilities"
+    "Sports Facilities",
   ],
   courseInfo: {
     branch: "First Year",
     courseName: "Bachelor of Engineering - Foundation Year",
     intake: 240,
-    establishmentYear: "1998-99"
-  }
+    establishmentYear: "1998-99",
+  },
 };
-
-
 
 export const feOutcomes = {
   peos: [
@@ -99,7 +94,7 @@ export const feOutcomes = {
     "Encourage students to explore technology-driven environments and develop the curiosity to engage in interdisciplinary learning and innovation.",
     "Promote ethical conduct, environmental awareness, and social responsibility as integral components of engineering education.",
     "Instill effective communication, teamwork, and leadership qualities to enhance academic and professional collaboration.",
-    "Cultivate lifelong learning habits and self-directed study strategies to adapt to evolving industry requirements and global challenges."
+    "Cultivate lifelong learning habits and self-directed study strategies to adapt to evolving industry requirements and global challenges.",
   ],
   pos: [
     "Apply mathematical and scientific principles to understand and solve fundamental engineering problems.",
@@ -113,39 +108,41 @@ export const feOutcomes = {
     "Develop computational thinking and programming skills to support problem-solving across various engineering applications.",
     "Communicate engineering ideas effectively through technical writing, presentations, and collaborative discussions in a structured manner.",
     "Apply principles of time management, project planning, and organizational skills to meet academic and professional goals.",
-    "Recognize the importance of ethics, discipline, and integrity in both academic pursuits and future professional practice."
+    "Recognize the importance of ethics, discipline, and integrity in both academic pursuits and future professional practice.",
   ],
   psos: [
     "Graduate of the program will be equipped with fundamental knowledge and skills across core science and engineering disciplines required for advanced studies.",
     "Graduate of the program will demonstrate problem-solving capabilities using basic engineering tools, laboratory experiments, and programming techniques.",
-    "Graduate of the program will possess effective communication, leadership, and collaborative skills to excel in team-based projects and multidisciplinary learning environments."
-  ]
+    "Graduate of the program will possess effective communication, leadership, and collaborative skills to excel in team-based projects and multidisciplinary learning environments.",
+  ],
 };
-
 
 export const feLabs = [
   {
     name: "Engineering Workshop",
     img: "https://svitnashik.in/Images/Labs/Computer/lp%20lab/LaboratoryPracticeLab.jpg",
-    description: "Hands-on training in tools, machines, and basic engineering practices."
+    description:
+      "Hands-on training in tools, machines, and basic engineering practices.",
   },
   {
     name: "Physics Lab",
     img: "https://svitnashik.in/Images/Labs/Computer/sw%20lab/SoftwareLab.jpg",
-    description: "Experiments focusing on mechanics, optics, and thermodynamics."
+    description:
+      "Experiments focusing on mechanics, optics, and thermodynamics.",
   },
   {
     name: "Chemistry Lab",
     img: "https://svitnashik.in/Images/Labs/Computer/sw%20lab/SoftwareLab.jpg",
-    description: "Chemical analysis, titrations, and reaction studies for foundational learning."
+    description:
+      "Chemical analysis, titrations, and reaction studies for foundational learning.",
   },
   {
     name: "Computer Basics Lab",
     img: "https://svitnashik.in/Images/Labs/Computer/unix%20lab/UnixLab.jpg",
-    description: "Introduction to computing fundamentals, programming environments, and basic algorithms."
-  }
+    description:
+      "Introduction to computing fundamentals, programming environments, and basic algorithms.",
+  },
 ];
-
 
 export const feSyllabus = [
   {
@@ -166,8 +163,6 @@ export const feSyllabus = [
   },
   // ...continue for all semesters
 ];
-
-
 
 export const feEvents = [
   {

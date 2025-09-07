@@ -53,6 +53,7 @@ export default function CourseDetails() {
     return <>{current}</>;
   };
 
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
       {/*  HERO SECTION : sidebar + paragraph (height = sidebar)  */}
@@ -169,6 +170,38 @@ export default function CourseDetails() {
       <style jsx>{`
         @import url("https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap");
       `}</style>
+        {/* Course Info Table */}
+        <div className="overflow-x-auto">
+          <table className="w-full text-left border-collapse border border-gray-300">
+            <thead className="bg-blue-600 text-white">
+              <tr>
+                <th className="p-3 border border-gray-300">Branch Name</th>
+                <th className="p-3 border border-gray-300">Course Name</th>
+                <th className="p-3 border border-gray-300">Intake</th>
+                <th className="p-3 border border-gray-300">
+                  Establishment Year
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr className="bg-gray-50 hover:bg-gray-100 transition">
+                <td className="p-3 border border-gray-300">
+                  {courseData.courseInfo.branch}
+                </td>
+                <td className="p-3 border border-gray-300">
+                  {courseData.courseInfo.courseName}
+                </td>
+                <td className="p-3 border border-gray-300">
+                  {courseData.courseInfo.intake}
+                </td>
+                <td className="p-3 border border-gray-300">
+                  {courseData.courseInfo.establishmentYear}
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </main>
     </div>
   );
 }

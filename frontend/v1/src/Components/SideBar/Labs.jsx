@@ -17,7 +17,7 @@ export default function Lab() {
     case "computerEngineering":
       labData = csLabs;
       deptName = "Computer Engineering";
-      break;
+      break;\
      case "informationTechnology":
           labData = itLabs;
           deptName = "Information Engineering";
@@ -48,7 +48,7 @@ export default function Lab() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* ----------------  TOP ROW : sidebar + hero  ---------------- */}
-     
+
       <div className="flex flex-col md:flex-row">
         <HomeSideBar deptId={deptId} />
 

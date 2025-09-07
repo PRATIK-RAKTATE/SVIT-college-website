@@ -1,19 +1,26 @@
 import React, { useEffect, useState } from "react";
-import { DollarSign, Building, Clock, Users, BookOpen, Newspaper } from "lucide-react";
+import {
+  DollarSign,
+  Building,
+  Clock,
+  Users,
+  BookOpen,
+  Newspaper,
+} from "lucide-react";
 
 const LibraryFinancialReport = () => {
   const [costs, setCosts] = useState({
     books: 0,
     eBooks: 0,
     eResources: 0,
-    journals: 0
+    journals: 0,
   });
 
   const finalCosts = {
     books: 10808672,
     eBooks: 195790,
     eResources: 524021,
-    journals: 240697
+    journals: 240697,
   };
 
   useEffect(() => {
@@ -31,7 +38,7 @@ const LibraryFinancialReport = () => {
         books: Math.floor(eased * finalCosts.books),
         eBooks: Math.floor(eased * finalCosts.eBooks),
         eResources: Math.floor(eased * finalCosts.eResources),
-        journals: Math.floor(eased * finalCosts.journals)
+        journals: Math.floor(eased * finalCosts.journals),
       });
 
       if (current === steps) clearInterval(timer);
@@ -41,27 +48,66 @@ const LibraryFinancialReport = () => {
   }, []);
 
   const costData = [
-    { label: "Books", value: costs.books, icon: <BookOpen className="w-8 h-8" />, color: "from-blue-500 to-indigo-600" },
-    { label: "E-Books", value: costs.eBooks, icon: <DollarSign className="w-8 h-8" />, color: "from-green-500 to-emerald-600" },
-    { label: "E-Resources", value: costs.eResources, icon: <Building className="w-8 h-8" />, color: "from-purple-500 to-pink-600" },
-    { label: "Journals", value: costs.journals, icon: <Newspaper className="w-8 h-8" />, color: "from-orange-500 to-red-600" }
+    {
+      label: "Books",
+      value: costs.books,
+      icon: <BookOpen className="w-8 h-8" />,
+      color: "from-blue-500 to-indigo-600",
+    },
+    {
+      label: "E-Books",
+      value: costs.eBooks,
+      icon: <DollarSign className="w-8 h-8" />,
+      color: "from-green-500 to-emerald-600",
+    },
+    {
+      label: "E-Resources",
+      value: costs.eResources,
+      icon: <Building className="w-8 h-8" />,
+      color: "from-purple-500 to-pink-600",
+    },
+    {
+      label: "Journals",
+      value: costs.journals,
+      icon: <Newspaper className="w-8 h-8" />,
+      color: "from-orange-500 to-red-600",
+    },
   ];
 
   const infrastructure = [
-    { label: "Total Area", value: "982 sq.mtr.", icon: <Building className="w-6 h-6" /> },
-    { label: "Seating Capacity", value: "250", icon: <Users className="w-6 h-6" /> },
-    { label: "Library Timing", value: "9.00am to 5.00pm", icon: <Clock className="w-6 h-6" /> },
-    { label: "Newspapers", value: "08", icon: <Newspaper className="w-6 h-6" /> }
+    {
+      label: "Total Area",
+      value: "982 sq.mtr.",
+      icon: <Building className="w-6 h-6" />,
+    },
+    {
+      label: "Seating Capacity",
+      value: "250",
+      icon: <Users className="w-6 h-6" />,
+    },
+    {
+      label: "Library Timing",
+      value: "9.00am to 5.00pm",
+      icon: <Clock className="w-6 h-6" />,
+    },
+    {
+      label: "Newspapers",
+      value: "08",
+      icon: <Newspaper className="w-6 h-6" />,
+    },
   ];
 
   return (
     <section className="relative w-full bg-gradient-to-br from-white via-gray-50 to-white py-16">
       {/* Subtle background pattern */}
       <div className="absolute inset-0 opacity-5">
-        <div className="absolute inset-0" style={{
-          backgroundImage: `radial-gradient(circle at 1px 1px, rgba(0,0,0,0.3) 1px, transparent 0)`,
-          backgroundSize: '20px 20px'
-        }}></div>
+        <div
+          className="absolute inset-0"
+          style={{
+            backgroundImage: `radial-gradient(circle at 1px 1px, rgba(0,0,0,0.3) 1px, transparent 0)`,
+            backgroundSize: "20px 20px",
+          }}
+        ></div>
       </div>
 
       <div className="relative max-w-7xl mx-auto px-6">
@@ -75,7 +121,9 @@ const LibraryFinancialReport = () => {
 
         {/* Financial Costs */}
         <div className="mb-16">
-          <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">Financial Investment</h3>
+          <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">
+            Financial Investment
+          </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
             {costData.map((cost, i) => (
               <div
@@ -83,7 +131,9 @@ const LibraryFinancialReport = () => {
                 className="group relative bg-white rounded-xl p-6 shadow-lg border border-gray-100 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2"
               >
                 <div className="flex items-center justify-between mb-4">
-                  <div className={`p-3 rounded-lg bg-gradient-to-br ${cost.color} text-white`}>
+                  <div
+                    className={`p-3 rounded-lg bg-gradient-to-br ${cost.color} text-white`}
+                  >
                     {cost.icon}
                   </div>
                   <div className="text-right">
@@ -93,7 +143,9 @@ const LibraryFinancialReport = () => {
                     </p>
                   </div>
                 </div>
-                <h4 className="text-lg font-semibold text-gray-900 mb-2">{cost.label}</h4>
+                <h4 className="text-lg font-semibold text-gray-900 mb-2">
+                  {cost.label}
+                </h4>
                 <p className="text-2xl font-bold font-mono text-gray-900">
                   ₹{cost.value.toLocaleString()}/
                 </p>
@@ -105,14 +157,23 @@ const LibraryFinancialReport = () => {
           <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-xl p-8 shadow-xl text-center">
             <h4 className="text-xl font-bold mb-2">Total Investment</h4>
             <p className="text-4xl font-bold font-mono">
-              ₹{(costs.books + costs.eBooks + costs.eResources + costs.journals).toLocaleString()}/
+              ₹
+              {(
+                costs.books +
+                costs.eBooks +
+                costs.eResources +
+                costs.journals
+              ).toLocaleString()}
+              /
             </p>
           </div>
         </div>
 
         {/* Infrastructure Details */}
         <div className="mb-12">
-          <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">Infrastructure Details</h3>
+          <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">
+            Infrastructure Details
+          </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {infrastructure.map((item, i) => (
               <div

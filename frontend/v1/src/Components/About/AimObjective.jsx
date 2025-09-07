@@ -1,18 +1,18 @@
 // AimsObjectives.jsx
-import React from 'react';
+import React from "react";
 
 const AimsObjectives = () => {
   const aims = [
-    'Provides inclusive technical education so that a deserving student is not denied an opportunity for technical education solely on socio economic constraint.',
-    'Provides holistic education to develop skills, knowledge and value through well structured curriculum and instructions.',
-    'To make students readily acceptable to the cooperate world and promote entrepreneurship.',
-    'Institute has Vision and Mission which are innovative in nature. It fulfils the needful requirement of society by providing quality education through contemporary technology.',
-    'Institute is renowned for producing university toppers amongst those admitted from rural areas.',
-    'Institute promotes the senior faculties for quality improvement and higher education like Ph. D. And also for research activity.',
-    'Institute has own solar power plant which is an ecofriendly project where students can perform research activities.',
-    'Students undertake the projects sponsored by industries in Sinnar, Satpur and Ambad MIDC Nashik.',
-    'The institute has GATE qualified Students.',
-    'The institute has eminent global alumni interaction that supports for training and placement.',
+    "Provides inclusive technical education so that a deserving student is not denied an opportunity for technical education solely on socio economic constraint.",
+    "Provides holistic education to develop skills, knowledge and value through well structured curriculum and instructions.",
+    "To make students readily acceptable to the cooperate world and promote entrepreneurship.",
+    "Institute has Vision and Mission which are innovative in nature. It fulfils the needful requirement of society by providing quality education through contemporary technology.",
+    "Institute is renowned for producing university toppers amongst those admitted from rural areas.",
+    "Institute promotes the senior faculties for quality improvement and higher education like Ph. D. And also for research activity.",
+    "Institute has own solar power plant which is an ecofriendly project where students can perform research activities.",
+    "Students undertake the projects sponsored by industries in Sinnar, Satpur and Ambad MIDC Nashik.",
+    "The institute has GATE qualified Students.",
+    "The institute has eminent global alumni interaction that supports for training and placement.",
   ];
 
   return (

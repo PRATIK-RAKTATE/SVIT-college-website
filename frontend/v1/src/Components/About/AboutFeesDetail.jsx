@@ -15,7 +15,10 @@ const feeData = {
     totals: [
       { label: "Total Fees (OPEN Category)", value: "92,421" },
       { label: "Total Fees (OBC\\EBC Category) BOYS", value: "52,912.5" },
-      { label: "Total Fees (VJNT/SBC/TFWS) OBC/EWS GIRLS INCOME < ₹1 Lakh", value: "13,404" },
+      {
+        label: "Total Fees (VJNT/SBC/TFWS) OBC/EWS GIRLS INCOME < ₹1 Lakh",
+        value: "13,404",
+      },
       { label: "Total Fees (SC/ST Category)", value: "3,921" },
     ],
   },
@@ -33,7 +36,10 @@ const feeData = {
     totals: [
       { label: "Total Fees (OPEN Category)", value: "92,190" },
       { label: "Total Fees (OBC\\EBC Category)", value: "52,681.5" },
-      { label: "Total Fees (VJNT/SBC/TFWS) OBC/EWS GIRLS INCOME < ₹1 Lakh", value: "13,173" },
+      {
+        label: "Total Fees (VJNT/SBC/TFWS) OBC/EWS GIRLS INCOME < ₹1 Lakh",
+        value: "13,173",
+      },
       { label: "Total Fees (SC/ST Category)", value: "3,690" },
     ],
   },
@@ -51,7 +57,10 @@ const feeData = {
     totals: [
       { label: "Total Fees (OPEN Category)", value: "99,839" },
       { label: "Total Fees (OBC\\EBC Category)", value: "57,014.5" },
-      { label: "Total Fees (VJNT/SBC/TFWS) OBC/EWS GIRLS INCOME < ₹1 Lakh", value: "14,190" },
+      {
+        label: "Total Fees (VJNT/SBC/TFWS) OBC/EWS GIRLS INCOME < ₹1 Lakh",
+        value: "14,190",
+      },
       { label: "Total Fees (SC/ST Category)", value: "3,484" },
     ],
   },
@@ -75,7 +84,10 @@ const TableBlock = ({ title, headers, rows, totals }) => (
       <thead>
         <tr className="bg-gradient-to-r from-indigo-500 to-purple-500 text-white">
           {headers.map((h) => (
-            <th key={h} className="px-4 py-2 text-left text-sm font-semibold uppercase tracking-wider">
+            <th
+              key={h}
+              className="px-4 py-2 text-left text-sm font-semibold uppercase tracking-wider"
+            >
               {h}
             </th>
           ))}
