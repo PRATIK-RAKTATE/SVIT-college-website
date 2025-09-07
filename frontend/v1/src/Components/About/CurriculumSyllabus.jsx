@@ -9,18 +9,32 @@ export default function CurriculumInfo() {
 
       <div className="p-6 text-gray-800 space-y-4">
         <ul className="list-disc list-inside space-y-2 text-sm">
-          <li>Undergraduate Engineering, Post-graduate Engineering and MBA Curriculum of University of Pune.</li>
+          <li>
+            Undergraduate Engineering, Post-graduate Engineering and MBA
+            Curriculum of University of Pune.
+          </li>
           <li>Semester Pattern, Total 8 Semesters.</li>
           <li>Semester-wise Examination Scheme.</li>
           <li>Continuous Assessment System for Term Work and Practical.</li>
           <li>Seminar at Pre-Final Semester and Project at Final Semester.</li>
-          <li>Minimum 75 % Attendance in each head of passing for Grant of Term.</li>
-          <li>Online Examination at F.E. and S.E. for 50 marks in each subject during the semesters and 50 marks offline examination at end of both semesters.</li>
-          <li>Offline Examination of 30 marks during the semester for T.E. and 70 marks examination at the end of both semesters.</li>
+          <li>
+            Minimum 75 % Attendance in each head of passing for Grant of Term.
+          </li>
+          <li>
+            Online Examination at F.E. and S.E. for 50 marks in each subject
+            during the semesters and 50 marks offline examination at end of both
+            semesters.
+          </li>
+          <li>
+            Offline Examination of 30 marks during the semester for T.E. and 70
+            marks examination at the end of both semesters.
+          </li>
         </ul>
 
         <div className="pt-4 border-t border-gray-200 text-sm">
-          <p className="font-semibold text-indigo-700 mb-2">For further details visit:</p>
+          <p className="font-semibold text-indigo-700 mb-2">
+            For further details visit:
+          </p>
           <a
             href="https://www.unipune.ac.in" // replace with actual syllabus link
             target="_blank"

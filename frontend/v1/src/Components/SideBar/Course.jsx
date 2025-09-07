@@ -41,7 +41,9 @@ export default function Course() {
   }
 
   if (!courseData)
-    return <p className="text-center mt-10">Course information not available.</p>;
+    return (
+      <p className="text-center mt-10">Course information not available.</p>
+    );
 
   return (
     <div className="md:flex w-auto mt-5  gap-9  ">
@@ -118,7 +120,9 @@ export default function Course() {
                 <th className="p-3 border border-gray-300">Branch Name</th>
                 <th className="p-3 border border-gray-300">Course Name</th>
                 <th className="p-3 border border-gray-300">Intake</th>
-                <th className="p-3 border border-gray-300">Establishment Year</th>
+                <th className="p-3 border border-gray-300">
+                  Establishment Year
+                </th>
               </tr>
             </thead>
             <tbody>

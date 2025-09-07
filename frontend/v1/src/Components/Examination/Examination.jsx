@@ -6,9 +6,9 @@ import ExamLinks from "./ExaminationLink";
 const Examination = () => {
   return (
     <>
-      <ExaminationDepartment/>
-      <ExaminationCommitteeTable/>
-      <ExamLinks/>
+      <ExaminationDepartment />
+      <ExaminationCommitteeTable />
+      <ExamLinks />
     </>
   );
 };
