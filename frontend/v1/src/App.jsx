@@ -27,7 +27,6 @@ import AboutLinkages from "./Components/About/AboutLinkages.jsx";
 import Examination from "./Components/Examination/Examination.jsx";
 import Library from "./Components/Library/Library.jsx";
 import LibraryAdvisoryComitee from "./Components/Library/LibraryAdvisoryComitee.jsx";
-import Faculty from "./Components/Library/Faculty.jsx";
 import LibraryObjectives from "./Components/Library/LibraryObjectives.jsx";
 import LibraryFacilities from "./Components/Library/LibraryFacilities.jsx";
 import LibrarySection from "./Components/Library/LibrarySection.jsx";
