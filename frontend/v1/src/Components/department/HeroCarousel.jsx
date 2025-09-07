@@ -25,7 +25,7 @@ export default function Carousel({ slides, interval = 4500 }) {
   }, [slides.length, interval]);
 
   return (
-    <div className="relative inset-0 w-screen h-screen overflow-hidden bg-black">
+    <div className="relative inset-0 w-[1500px] m-5 h-[530px] overflow-hidden bg-black">
       {/* Images */}
       {slides.map((slide, i) => (
         <img
