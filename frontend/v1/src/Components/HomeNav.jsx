@@ -23,12 +23,12 @@ export default function HomeNav() {
       key: "dept",
       label: "Departments",
       items: [
-        { text: "Basic Science and Humanities(FE)", url: "/Department/first-year" },
-        { text: "Computer Engineering", url: "/Department/computerDept" },
-        { text: "Chemical Engineering", url: "/Department/ChemicalDept" },
-        { text: "Electronics & Computer Engineering", url: "/Department/ece" },
-        { text: "Information Technology Engineering", url: "/Department/InformationTechDept" },
-        { text: "M.B.A.", url: "/Department/MBA" },
+        { text: "Basic Science and Humanities(FE)", url: "/Department/firstYear" },
+        { text: "Computer Engineering", url: "/Department/computerEngineering" },
+        { text: "Chemical Engineering", url: "/Department/chemicalEngineering" },
+        { text: "Electronics & Computer Engineering", url: "/Department/electronicsAndComputerEngineering" },
+        { text: "Information Technology Engineering", url: "/Department/informationTechnology" },
+        { text: "M.B.A.", url: "/Department/mba" },
       ],
     },
     {
@@ -119,10 +119,12 @@ export default function HomeNav() {
      
      <NavLink to="/rti" className={({isActive})=>`${isActive ? "text-red-500 ": "text-black"}`}>RTI</NavLink>
      <NavLink to="/erp" className={({isActive})=>`${isActive ? "text-red-500 ": "text-black"}`}>ERP</NavLink>
-     <NavLink to="/li" className={({isActive})=>`${isActive ? "text-red-500 ": "text-black"}`}>Library</NavLink>
+     <NavLink to="/library" className={({isActive})=>`${isActive ? "text-red-500 ": "text-black"}`}>Library</NavLink>
      <NavLink to="/ga" className={({isActive})=>`${isActive ? "text-red-500 ": "text-black"}`}>Gallery</NavLink>
      <NavLink to="/co" className={({isActive})=>`${isActive ? "text-red-500 ": "text-black"}`}>Contact us</NavLink>
-     <NavLink to="/au" className={({isActive})=>`${isActive ? "text-red-500 ": "text-black"}`}>About us</NavLink>
+     <NavLink to="/about" className={({isActive})=>`${isActive ? "text-red-500 ": "text-black"}`}>About us</NavLink>
+     <NavLink to="/about/Examination" className={({isActive})=>`${isActive ? "text-red-500 ": "text-black"}`}>Examination</NavLink>
+
      <NavLink to="/sm" className={({isActive})=>`${isActive ? "text-red-500 ": "text-black"}`}>Site map</NavLink>
      
 

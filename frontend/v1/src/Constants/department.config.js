@@ -1,6 +1,6 @@
 import firstYear from "./firstYear";
 import computerEngineering from "./computerEngineering";
-import chemicalEngineering from "./chemical-engineering";
+import chemicalEngineering from "./chemicalEngineering";
 import electronicsAndComputerEngineering from "./electronicsAndComputerEngineering";
 import informationTechnology from "./informationTechnology";
 import mba from "./mba";
