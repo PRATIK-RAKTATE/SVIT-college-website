@@ -17,31 +17,17 @@ export default function HomeNav() {
     }
   }, [isOpen]);
 
+
   const menuItems = [
     {
       key: "dept",
       label: "Departments",
       items: [
-        {
-          text: "Basic Science and Humanities(FE)",
-          url: "/Department/firstYear",
-        },
-        {
-          text: "Computer Engineering",
-          url: "/Department/computerEngineering",
-        },
-        {
-          text: "Chemical Engineering",
-          url: "/Department/chemicalEngineering",
-        },
-        {
-          text: "Electronics & Computer Engineering",
-          url: "/Department/electronicsAndComputerEngineering",
-        },
-        {
-          text: "Information Technology Engineering",
-          url: "/Department/informationTechnology",
-        },
+        { text: "Basic Science and Humanities(FE)", url: "/Department/firstYear" },
+        { text: "Computer Engineering", url: "/Department/computerEngineering" },
+        { text: "Chemical Engineering", url: "/Department/chemicalEngineering" },
+        { text: "Electronics & Computer Engineering", url: "/Department/electronicsAndComputerEngineering" },
+        { text: "Information Technology Engineering", url: "/Department/informationTechnology" },
         { text: "M.B.A.", url: "/Department/mba" },
       ],
     },
@@ -98,39 +84,36 @@ export default function HomeNav() {
     },
   ];
 
+
+
   return (
     <nav className="bg-white px-4 py-3 shadow-md relative z-50">
+   
       <div className="hidden md:flex md:justify-center md:gap-6 font-medium">
-        <NavLink
-          to="/"
-          className={({ isActive }) =>
+        
+        <NavLink to="/" className={({ isActive }) =>
             `${isActive ? "text-red-500" : "text-black"}`
-          }
-        >
-          Home
-        </NavLink>
-
-        {menuItems.map((menu) => (
-          <ul className="relative group cursor-pointer">
+          }>Home
+          </NavLink>
+      
+    
+      {menuItems.map((menu)=>(
+        <ul className="relative group cursor-pointer">
             <div className="  flex items-center hover:text-blue-400">
               {menu.label} <ChevronDown size={16} className="ml-1" />
             </div>
 
             <ul className="absolute left-0 pt-2 bg-white shadow-md rounded-md opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto transition-opacity duration-200 z-50 ">
-              {menu.items.map((item, id) => (
-                <NavLink
-                  to={item.url}
-                  className={({ isActive }) =>
-                    `${isActive ? "text-red-500" : "text-black"} `
-                  }
-                >
+              {menu.items.map((item,id)=>(
+                <NavLink to={item.url} className={({ isActive }) =>
+            `${isActive ? "text-red-500" : "text-black"} `
+          }>
                   <li className="px-4 py-2 hover:bg-gray-100 w-70">
                     {item.text}
                   </li>
-                </NavLink>
+                  </NavLink>
               ))}
             </ul>
-
         </ul>
       ))}
      
@@ -138,84 +121,25 @@ export default function HomeNav() {
      <NavLink to="/erp" className={({isActive})=>`${isActive ? "text-red-500 ": "text-black"}`}>ERP</NavLink>
      <NavLink to="/library" className={({isActive})=>`${isActive ? "text-red-500 ": "text-black"}`}>Library</NavLink>
      <NavLink to="/ga" className={({isActive})=>`${isActive ? "text-red-500 ": "text-black"}`}>Gallery</NavLink>
-     <NavLink to="/ContactUs" className={({isActive})=>`${isActive ? "text-red-500 ": "text-black"}`}>Contact us</NavLink>
+     <NavLink to="/co" className={({isActive})=>`${isActive ? "text-red-500 ": "text-black"}`}>Contact us</NavLink>
      <NavLink to="/about" className={({isActive})=>`${isActive ? "text-red-500 ": "text-black"}`}>About us</NavLink>
      <NavLink to="/about/Examination" className={({isActive})=>`${isActive ? "text-red-500 ": "text-black"}`}>Examination</NavLink>
 
-        <NavLink
-          to="/rti"
-          className={({ isActive }) =>
-            `${isActive ? "text-red-500 " : "text-black"}`
-          }
-        >
-          RTI
-        </NavLink>
-        <NavLink
-          to="/erp"
-          className={({ isActive }) =>
-            `${isActive ? "text-red-500 " : "text-black"}`
-          }
-        >
-          ERP
-        </NavLink>
-        <NavLink
-          to="/library"
-          className={({ isActive }) =>
-            `${isActive ? "text-red-500 " : "text-black"}`
-          }
-        >
-          Library
-        </NavLink>
-        <NavLink
-          to="/ga"
-          className={({ isActive }) =>
-            `${isActive ? "text-red-500 " : "text-black"}`
-          }
-        >
-          Gallery
-        </NavLink>
-        <NavLink
-          to="/co"
-          className={({ isActive }) =>
-            `${isActive ? "text-red-500 " : "text-black"}`
-          }
-        >
-          Contact us
-        </NavLink>
-        <NavLink
-          to="/about"
-          className={({ isActive }) =>
-            `${isActive ? "text-red-500 " : "text-black"}`
-          }
-        >
-          About us
-        </NavLink>
-        <NavLink
-          to="/about/Examination"
-          className={({ isActive }) =>
-            `${isActive ? "text-red-500 " : "text-black"}`
-          }
-        >
-          Examination
-        </NavLink>
+     <NavLink to="/sm" className={({isActive})=>`${isActive ? "text-red-500 ": "text-black"}`}>Site map</NavLink>
+     
 
-        <NavLink
-          to="/sm"
-          className={({ isActive }) =>
-            `${isActive ? "text-red-500 " : "text-black"}`
-          }
-        >
-          Site map
-        </NavLink>
       </div>
-
+  
       <div className="md:hidden flex justify-end">
-        <button onClick={toggleMenu} className="p-2 flex gap-65 font-semibold">
-          <span>Menu</span>
+        <div className="flex justify-center ">
+          <h1 className="pt-2 mr-65">Menu</h1>
+          <button onClick={toggleMenu} className="p-2">
           {isOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
+        </div>
       </div>
 
+  
       <div
         className={`fixed top-0 left-0 w-3/4 h-screen bg-white text-black transform ${
           isOpen ? "translate-x-0" : "-translate-x-full"
@@ -256,62 +180,13 @@ export default function HomeNav() {
           </div>
         ))}
 
-        <NavLink
-          to="/rti"
-          className={({ isActive }) =>
-            `${isActive ? "text-red-500 " : "text-black"}"`
-          }
-        >
-          RTI
-        </NavLink>
-        <NavLink
-          to="/erp"
-          className={({ isActive }) =>
-            `${isActive ? "text-red-500 " : "text-black"}`
-          }
-        >
-          ERP
-        </NavLink>
-        <NavLink
-          to="/li"
-          className={({ isActive }) =>
-            `${isActive ? "text-red-500 " : "text-black"}`
-          }
-        >
-          Library
-        </NavLink>
-        <NavLink
-          to="/ga"
-          className={({ isActive }) =>
-            `${isActive ? "text-red-500 " : "text-black"}`
-          }
-        >
-          Gallery
-        </NavLink>
-        <NavLink
-          to="/co"
-          className={({ isActive }) =>
-            `${isActive ? "text-red-500 " : "text-black"}`
-          }
-        >
-          Contact us
-        </NavLink>
-        <NavLink
-          to="/au"
-          className={({ isActive }) =>
-            `${isActive ? "text-red-500 " : "text-black"}`
-          }
-        >
-          About us
-        </NavLink>
-        <NavLink
-          to="/sm"
-          className={({ isActive }) =>
-            `${isActive ? "text-red-500 " : "text-black"}`
-          }
-        >
-          Site map
-        </NavLink>
+     <NavLink to="/rti" className={({isActive})=>`${isActive ? "text-red-500 ": "text-black"}"`}>RTI</NavLink>
+     <NavLink to="/erp" className={({isActive})=>`${isActive ? "text-red-500 ": "text-black"}`}>ERP</NavLink>
+     <NavLink to="/li" className={({isActive})=>`${isActive ? "text-red-500 ": "text-black"}`}>Library</NavLink>
+     <NavLink to="/ga" className={({isActive})=>`${isActive ? "text-red-500 ": "text-black"}`}>Gallery</NavLink>
+     <NavLink to="/co" className={({isActive})=>`${isActive ? "text-red-500 ": "text-black"}`}>Contact us</NavLink>
+     <NavLink to="/au" className={({isActive})=>`${isActive ? "text-red-500 ": "text-black"}`}>About us</NavLink>
+     <NavLink to="/sm" className={({isActive})=>`${isActive ? "text-red-500 ": "text-black"}`}>Site map</NavLink>
       </div>
     </nav>
   );
