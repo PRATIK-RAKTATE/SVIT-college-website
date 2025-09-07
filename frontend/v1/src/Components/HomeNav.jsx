@@ -130,8 +130,17 @@ export default function HomeNav() {
                 </NavLink>
               ))}
             </ul>
-          </ul>
-        ))}
+
+        </ul>
+      ))}
+     
+     <NavLink to="/rti" className={({isActive})=>`${isActive ? "text-red-500 ": "text-black"}`}>RTI</NavLink>
+     <NavLink to="/erp" className={({isActive})=>`${isActive ? "text-red-500 ": "text-black"}`}>ERP</NavLink>
+     <NavLink to="/library" className={({isActive})=>`${isActive ? "text-red-500 ": "text-black"}`}>Library</NavLink>
+     <NavLink to="/ga" className={({isActive})=>`${isActive ? "text-red-500 ": "text-black"}`}>Gallery</NavLink>
+     <NavLink to="/ContactUs" className={({isActive})=>`${isActive ? "text-red-500 ": "text-black"}`}>Contact us</NavLink>
+     <NavLink to="/about" className={({isActive})=>`${isActive ? "text-red-500 ": "text-black"}`}>About us</NavLink>
+     <NavLink to="/about/Examination" className={({isActive})=>`${isActive ? "text-red-500 ": "text-black"}`}>Examination</NavLink>
 
         <NavLink
           to="/rti"
@@ -201,7 +210,8 @@ export default function HomeNav() {
       </div>
 
       <div className="md:hidden flex justify-end">
-        <button onClick={toggleMenu} className="p-2">
+        <button onClick={toggleMenu} className="p-2 flex gap-65 font-semibold">
+          <span>Menu</span>
           {isOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
       </div>
