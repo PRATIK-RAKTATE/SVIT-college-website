@@ -8,15 +8,16 @@ import HomeSideBar from "../department/Sidebar.jsx";
 import { csCourse } from "../Side Bar Constants/csDept.js";
 import { itCourse } from "../Side Bar Constants/itDept.js";
 import { mbaCourse } from "../Side Bar Constants/mbaDept.js";
-import { feCourse } from "../Side Bar Constants/feDept.js";
+import { firstYearCourse } from "../Side Bar Constants/feDept.js";
 import { chemCourse } from "../Side Bar Constants/chemDept.js";
 import { eceCourse } from "../Side Bar Constants/eceDept.js";
+import { FireExtinguisher } from "lucide-react";
 
 const deptMap = {
   computerEngineering: { data: csCourse, name: "Computer Engineering" },
   informationTechnology: { data: itCourse, name: "Information Technology" },
   mba: { data: mbaCourse, name: "M.B.A" },
-  firstYear: { data: feCourse, name: "First Year" },
+  firstYear: { data: firstYearCourse, name: "First Year" },
   chemicalEngineering: { data: chemCourse, name: "Chemical Engineering" },
   electronicsAndComputerEngineering: { data: eceCourse, name: "Electronics & Computer Engineering" }
 };
@@ -201,7 +202,6 @@ export default function CourseDetails() {
             </tbody>
           </table>
         </div>
-      </main>
     </div>
   );
 }
