@@ -29,13 +29,8 @@ export default function HomeSideBar() {
         <li className="border-l-4 border-[#4F39F6] hover:bg-black hover:text-white p-1 pl-2 shadow text-sm">
           <Link>Success Stories</Link>
         </li>
-<<<<<<< HEAD
         
         <li className="border-l-4 border-[#4F39F6] hover:bg-black hover:text-white p-1 pl-2 shadow text-sm">
-=======
-
-        <li className="border-l-4 border-black hover:bg-black hover:text-white p-1 pl-2 shadow text-sm">
->>>>>>> 463ea8d29b1846ee6d61d4f414e7560ee01a686a
           <Link>Placement Brochure</Link>
         </li>
         <li className="border-l-4 border-[#4F39F6] hover:bg-black hover:text-white p-1 pl-2 shadow text-sm">
@@ -44,7 +39,6 @@ export default function HomeSideBar() {
         <li className="border-l-4 border-[#4F39F6] hover:bg-black hover:text-white p-1 pl-2 shadow text-sm">
           <Link to={"/about/Linkages"}>Linkages</Link>
         </li>
-<<<<<<< HEAD
        <li className="border-l-4 border-[#4F39F6] hover:bg-black hover:text-white p-1 pl-2 shadow text-sm">
   <a
     href="https://svitnashik.in/Documents/CodeOfConduct.pdf"
@@ -55,17 +49,6 @@ export default function HomeSideBar() {
   </a>
 </li>
 
-=======
-        <li className="border-l-4 border-black hover:bg-black hover:text-white p-1 pl-2 shadow text-sm">
-          <a
-            href="https://svitnashik.in/Documents/CodeOfConduct.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Code Of Conduct
-          </a>
-        </li>
->>>>>>> 463ea8d29b1846ee6d61d4f414e7560ee01a686a
 
         <li className="border-l-4 border-[#4F39F6] hover:bg-black hover:text-white p-1 pl-2 shadow text-sm">
           <Link to={"/about/IIQA"}>IIQA</Link>

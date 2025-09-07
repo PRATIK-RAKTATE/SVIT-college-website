@@ -10,7 +10,6 @@ import { motion } from "framer-motion";
 
 const TimelineItem = ({ icon, title, description, gradient }) => {
   return (
-<<<<<<< HEAD
     <motion.div
       initial={{ opacity: 0, x: -40 }}
       whileInView={{ opacity: 1, x: 0 }}
@@ -23,32 +22,6 @@ const TimelineItem = ({ icon, title, description, gradient }) => {
         className={`flex-shrink-0 w-14 h-14 rounded-full flex items-center justify-center text-white shadow-lg ${gradient}`}
       >
         {icon}
-=======
-    <div className="overflow-hidden rounded-xl bg-white shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-      <div className={`flex flex-col ${flexDirection} h-full`}>
-        {/* IMAGE */}
-        <div className="md:w-1/2 relative overflow-hidden">
-          <img
-            src={image}
-            alt={title}
-            className="w-full h-64 md:h-full object-cover transition-transform duration-300 hover:scale-105"
-          />
-          <div
-            className={`absolute inset-0 ${gradientClasses[variant]} opacity-20`}
-          ></div>
-        </div>
-
-        {/* TEXT */}
-        <div className="md:w-1/2 p-8 flex flex-col justify-center">
-          <div
-            className={`inline-flex items-center px-3 py-1 rounded-full text-sm font-medium mb-4 w-fit ${gradientClasses[variant]} text-white`}
-          >
-            {title}
-          </div>
-          <h3 className="text-2xl font-bold text-gray-900 mb-4">{title}</h3>
-          <p className="text-gray-600 leading-relaxed text-lg">{description}</p>
-        </div>
->>>>>>> 463ea8d29b1846ee6d61d4f414e7560ee01a686a
       </div>
 
       {/* Content */}
@@ -82,7 +55,6 @@ const HodSection = () => {
         Message from the Head of Department
       </h3>
 
-<<<<<<< HEAD
       <div className="relative">
         <FaQuoteLeft className="absolute -top-4 -left-4 text-5xl text-purple-200" />
         <p className="text-gray-700 leading-relaxed text-lg italic pl-8">
@@ -104,64 +76,13 @@ const HodSection = () => {
           With modern laboratories, experienced faculty, and motivated students,
           the department continues to excel in research, innovation, and
           academic excellence.
-=======
-        <p className="text-gray-600 leading-relaxed text-lg mt-6 text-justify">
-          The department of Computer engineering is one of the oldest
-          departments and established in the year 1999. It offers UG programs in
-          Computer Engineering with the intake of 60 along with post graduate
-          program in Master of Engineering with the intake of 24 affiliated to
-          Savitribai Phule Pune University.
-          <br />
-          <br />
-          The aim of the Department is to motivate young professionals in
-          building cognitive characteristics and improve the rising engineers
-          with latest trends in technology. The programme is designed to provide
-          students theoretical knowledge and practical skills in the field of
-          latest emerging technology. This curriculum is good enough for
-          employment in academia, government, research, industry, engineering
-          and management positions. The department is committed to continuously
-          improve the quality of education by enhancing the knowledge of
-          students and staff members.
-          <br />
-          <br />
-          The department has the blend of young and experience faculty and
-          technical staff. It has in all 10 state of-the-art computer
-          laboratories with latest computing equipments and softwares and
-          classrooms and a Seminar Hall.
-          <br />
-          <br />I am confident that our staff members and students would satisfy
-          the responsibility and credibility of the department by showing a high
-          level of professional competence in their respective domains.
->>>>>>> 463ea8d29b1846ee6d61d4f414e7560ee01a686a
         </p>
       </div>
     </motion.div>
   );
 };
 
-<<<<<<< HEAD
 const VisionMissionHOD = ({ vision, mission }) => {
-=======
-const VisionMissionHOD = ({ vision, mission, hodDesk }) => {
-  const sections = [
-    {
-      title: "Our Vision",
-      description: vision,
-      image: "https://matsuniversity.ac.in/image/vision.jpg",
-      variant: "vision",
-      imagePosition: "left",
-    },
-    {
-      title: "Our Mission",
-      description: mission,
-      image:
-        "https://static.vecteezy.com/system/resources/previews/013/030/925/non_2x/finacial-success-chart-concept-on-virtual-screen-abstract-business-background-mission-business-concept-photo.jpg",
-      variant: "mission",
-      imagePosition: "right",
-    },
-  ];
-
->>>>>>> 463ea8d29b1846ee6d61d4f414e7560ee01a686a
   return (
     <section className="py-20 px-6 max-w-6xl mx-auto space-y-20">
       {/* Intro */}
