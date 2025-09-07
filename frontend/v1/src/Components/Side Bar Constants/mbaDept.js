@@ -101,3 +101,93 @@ export const mbaCourse = {
     establishmentYear: "2008-09"
   }
 };
+
+
+
+export const mbaOutcomes = {
+  peos: [
+    "Equip students with advanced knowledge in management theories and practices to address complex business challenges.",
+    "Prepare students to develop strategic thinking, problem-solving, and decision-making skills applicable in diverse organizational settings.",
+    "Foster leadership, communication, and interpersonal skills to manage teams, projects, and resources effectively in dynamic environments.",
+    "Encourage ethical, sustainable, and socially responsible business practices to create value for stakeholders and society at large.",
+    "Promote lifelong learning and continuous professional development to adapt to evolving markets, technologies, and global trends.",
+    "Enable students to cultivate entrepreneurial mindset and innovation-driven approaches for business growth and transformation."
+  ],
+  pos: [
+    "Apply analytical and critical thinking tools to interpret business data and make informed decisions aligned with organizational goals.",
+    "Integrate knowledge from finance, marketing, operations, human resources, and strategy to solve real-world business problems.",
+    "Demonstrate leadership and team-building abilities to motivate individuals, manage conflicts, and foster a productive work culture.",
+    "Design and implement effective communication strategies to convey ideas, influence stakeholders, and lead change within organizations.",
+    "Evaluate ethical, legal, and environmental implications of business decisions to ensure responsible corporate governance.",
+    "Employ modern management tools, software, and frameworks to enhance productivity, efficiency, and organizational performance.",
+    "Adapt to global business environments by understanding cultural diversity, market dynamics, and regulatory frameworks.",
+    "Formulate business strategies that align with organizational vision while optimizing resource allocation and financial planning.",
+    "Engage in entrepreneurial activities by identifying opportunities, assessing risks, and leveraging innovation for sustainable growth.",
+    "Apply project management principles to plan, execute, and monitor initiatives ensuring timely delivery and quality outcomes.",
+    "Use research-based knowledge and data analytics to support evidence-driven decisions and continuous improvement initiatives.",
+    "Demonstrate the ability to manage change, uncertainty, and complexity while balancing stakeholder expectations and organizational objectives."
+  ],
+  psos: [
+    "Graduate of the program will be capable of applying management principles and tools to lead and innovate in complex business environments.",
+    "Graduate of the program will possess analytical, decision-making, and communication skills necessary to solve business challenges effectively and ethically.",
+    "Graduate of the program will be prepared to pursue leadership roles, entrepreneurial ventures, and lifelong learning opportunities in global business scenarios."
+  ]
+};
+
+
+
+export const mbaSyllabus = [
+  {
+    sem: "2019 Course",
+    subjects: [
+      { name: "SE Syllabus(2019 Course)", link: "/syllabus/cs/maths1.pdf" },
+      { name: "TE Syllabus(2019 Course)", link: "/syllabus/cs/physics.pdf" },
+      { name: "BE Syllabus(2019 Course)", link: "/syllabus/cs/bee.pdf" },
+    ],
+  },
+  {
+    sem: "2024 Course",
+    subjects: [
+      { name: "SE Syllabus(2024 Course)", link: "/syllabus/cs/maths1.pdf" },
+      { name: "TE Syllabus(2024 Course)", link: "/syllabus/cs/physics.pdf" },
+      { name: "BE Syllabus(2024 Course)", link: "/syllabus/cs/bee.pdf" },
+    ],
+  },
+  // ...continue for all semesters
+];
+
+
+
+
+export const mbaEvents = [
+  {
+    id: 1,
+    title: "Leadership Workshop",
+    date: "2025-07-28",
+    images: [
+      "https://svitnashik.in/Images/Events/Department/MBA/Leadership%20Workshop/1.jpg",
+      "https://svitnashik.in/Images/Events/Department/MBA/Leadership%20Workshop/2.jpg",
+      "https://svitnashik.in/Images/Events/Department/MBA/Leadership%20Workshop/3.jpg",
+    ],
+  },
+  {
+    id: 2,
+    title: "Marketing Strategies Seminar",
+    date: "2025-08-12",
+    images: [
+      "/events/mba-marketing-1.jpg",
+      "/events/mba-marketing-2.jpg",
+      "/events/mba-marketing-3.jpg",
+    ],
+  },
+  {
+    id: 3,
+    title: "Entrepreneurship Forum",
+    date: "2025-09-08",
+    images: [
+      "/events/mba-entrepreneurship-1.jpg",
+      "/events/mba-entrepreneurship-2.jpg",
+      "/events/mba-entrepreneurship-3.jpg",
+    ],
+  },
+];

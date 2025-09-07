@@ -5,7 +5,7 @@ export default function HomeSideBar({ deptId }) {
   const menuItems = [
     { name: "Department Profile", path: "profile", external: true, url: "https://www.kimi.com/chat/d2s5sk2f7calm5dv4l70" },
     { name: "Course Details", path: "courses" },
-    { name: "PEOs,POs & PSOs", path: "peo-ppo" },
+    { name: "PEOs,POs & PSOs", path: "Outcome" },
     { name: "Faculty", path: "faculty" },
     { name: "Labs", path: "labs" },
     { name: "Syllabus", path: "syllabus" },
@@ -19,7 +19,7 @@ export default function HomeSideBar({ deptId }) {
   ];
 
   return (
-    <div className="mt-28 md:mt-14 mr-10 mb-10 md:ml-25 ml-10 w-fit">
+    <div className="mt-28 md:mt-14 mr-10 mb-10 md:ml-15 ml-10 w-fit">
       <ul className="h-auto w-72 flex flex-col gap-2 pl-5">
         {menuItems.map((item, index) => (
           <li

@@ -13,6 +13,10 @@ import { Routes, Route } from "react-router-dom";
 import DEPARTMENTS from "./Constants/department.config.js";
 import Faculty from "./Components/SideBar/faculty.jsx";
 import Course from "./Components/SideBar/Course.jsx";
+import Outcome from "./Components/SideBar/Outcome.jsx";
+import Labs from "./Components/SideBar/Labs.jsx";
+import Syllabus from "./Components/SideBar/Syllabus.jsx";
+import Events from "./Components/SideBar/Events.jsx";
 
 function App() {
   return (
@@ -41,8 +45,12 @@ function App() {
          
             />
           ))}
+          <Route path="/Department/:deptId/Outcome" element={<Outcome/>}></Route>
           <Route path="/Department/:deptId/faculty" element={<Faculty/>}></Route>
           <Route path="/Department/:deptId/courses" element={<Course/>}></Route>
+          <Route path="/Department/:deptId/labs" element={<Labs/>}></Route>
+          <Route path="/Department/:deptId/syllabus" element={<Syllabus/>}></Route>
+          <Route path="/Department/:deptId/events" element={<Events/>}></Route>
       </Routes>
       <Footer />
     </>

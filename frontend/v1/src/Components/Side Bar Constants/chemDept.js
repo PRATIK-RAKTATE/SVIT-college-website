@@ -137,3 +137,113 @@ export const chemCourse = {
     establishmentYear: "2000-2001"
   }
 };
+
+
+export const chemicalOutcomes = {
+  peos: [
+    "Build a strong foundation in Chemical Engineering principles to enable students to be innovative and resourceful in solving engineering problems.",
+    "Prepare students capable of designing, analyzing, and operating chemical processes and equipment for industrial and societal needs with safety and sustainability in mind.",
+    "Provide an academic environment that encourages lifelong learning, research, and professional growth in the field of chemical sciences and engineering.",
+    "Develop problem-solving, analytical, and critical thinking skills that empower students to engage in advanced learning and contribute to technological advancements.",
+    "Promote ethical practices, environmental stewardship, and professionalism to address challenges related to energy, health, and sustainable development in the chemical industry.",
+    "Equip students with communication, leadership, and management skills necessary for entrepreneurial ventures and collaborative projects in multidisciplinary settings."
+  ],
+  pos: [
+    "Apply the knowledge of mathematics, physics, chemistry, and engineering fundamentals to solve complex problems in chemical processes and operations.",
+    "Identify, formulate, and analyze chemical engineering problems by reviewing literature and applying scientific principles to reach feasible and safe solutions.",
+    "Design chemical processes, equipment, and systems that meet desired specifications with consideration for environmental, safety, and economic factors.",
+    "Use research methodologies and data analysis to evaluate process performance and optimize chemical systems based on experimental results and computational tools.",
+    "Select and apply appropriate tools, software, and techniques including simulation, modeling, and process control to solve chemical engineering challenges.",
+    "Assess societal, environmental, health, and safety concerns in chemical engineering projects, and make informed decisions grounded in ethical and professional responsibilities.",
+    "Understand the global and environmental impact of chemical engineering solutions and promote sustainable practices in process design and operation.",
+    "Demonstrate professional ethics and commitment to continuous improvement while adhering to engineering codes of conduct and industry standards.",
+    "Collaborate effectively in diverse teams, lead projects, and contribute to multidisciplinary problem-solving in chemical process industries.",
+    "Communicate complex engineering concepts clearly and effectively through reports, presentations, and documentation to technical and non-technical audiences.",
+    "Apply principles of management and engineering economics to optimize operations, manage resources, and lead projects within the chemical sector.",
+    "Engage in lifelong learning and professional development to adapt to changing technologies, regulations, and industry practices in chemical engineering."
+  ],
+  psos: [
+    "Graduate of the program will be capable of designing and operating chemical processes, ensuring efficiency, safety, and environmental compliance.",
+    "Graduate of the program will be proficient in applying engineering principles, computational tools, and laboratory techniques to solve real-world chemical problems.",
+    "Graduate of the program will be prepared for employment or higher studies by integrating technical expertise, ethical conduct, and innovative thinking in the chemical industry."
+  ]
+};
+
+
+export const chemicalLabs = [
+  {
+    name: "Process Control Lab",
+    img: "/process.jpg",
+    description: "Simulations and experiments to understand control systems in chemical processes."
+  },
+  {
+    name: "Fluid Mechanics Lab",
+    img: "/fluid.jpg",
+    description: "Studies on flow patterns, pressure, and viscosity in fluids."
+  },
+  {
+    name: "Heat Transfer Lab",
+    img: "/heat.jpg",
+    description: "Analysis of conduction, convection, and radiation heat transfer methods."
+  },
+  {
+    name: "Chemical Reaction Engineering Lab",
+    img: "/reaction.jpg",
+    description: "Exploration of reaction kinetics, rate laws, and reactor designs."
+  }
+];
+
+
+export const chemSyllabus = [
+  {
+    sem: "2019 Course",
+    subjects: [
+      { name: "SE Syllabus(2019 Course)", link: "/syllabus/cs/maths1.pdf" },
+      { name: "TE Syllabus(2019 Course)", link: "/syllabus/cs/physics.pdf" },
+      { name: "BE Syllabus(2019 Course)", link: "/syllabus/cs/bee.pdf" },
+    ],
+  },
+  {
+    sem: "2024 Course",
+    subjects: [
+      { name: "SE Syllabus(2024 Course)", link: "/syllabus/cs/maths1.pdf" },
+      { name: "TE Syllabus(2024 Course)", link: "/syllabus/cs/physics.pdf" },
+      { name: "BE Syllabus(2024 Course)", link: "/syllabus/cs/bee.pdf" },
+    ],
+  },
+  // ...continue for all semesters
+];
+
+
+export const chemicalEvents = [
+  {
+    id: 1,
+    title: "Chemical Safety Seminar",
+    date: "2025-07-25",
+    images: [
+      "https://svitnashik.in/Images/Events/Department/Chemical/Chemical%20Safety%20Seminar/1.jpg",
+      "https://svitnashik.in/Images/Events/Department/Chemical/Chemical%20Safety%20Seminar/2.jpg",
+      "https://svitnashik.in/Images/Events/Department/Chemical/Chemical%20Safety%20Seminar/3.jpg",
+    ],
+  },
+  {
+    id: 2,
+    title: "Process Engineering Meet",
+    date: "2025-08-18",
+    images: [
+      "/events/chemical-process-1.jpg",
+      "/events/chemical-process-2.jpg",
+      "/events/chemical-process-3.jpg",
+    ],
+  },
+  {
+    id: 3,
+    title: "Sustainable Materials Workshop",
+    date: "2025-09-12",
+    images: [
+      "/events/chemical-sustainable-1.jpg",
+      "/events/chemical-sustainable-2.jpg",
+      "/events/chemical-sustainable-3.jpg",
+    ],
+  },
+];

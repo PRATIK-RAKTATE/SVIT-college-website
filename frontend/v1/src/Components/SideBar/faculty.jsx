@@ -16,24 +16,33 @@ export default function Faculty() {
 
   // Select data based on department
   let facultyData;
+  let deptName;
+
+
   switch (deptId) {
     case "computerEngineering":
       facultyData = csFaculty;
+      deptName = "Computer Engineering";
       break;
     case "informationTechnology":
       facultyData = itFaculty;
+      deptName = "Information Engineering";
       break;
     case "chemicalEngineering":
       facultyData = chemFaculty;
+      deptName = "Chemical Engineering";
       break;
     case "electronicsAndComputerEngineering":
       facultyData = eceFaculty;
+      deptName = "Electronics And Computer Engineering";
       break;
     case "firstYear":
       facultyData = firstYearFaculty;
+      deptName = "First Year";
       break;
     case "mba":
       facultyData = mbaFaculty;
+      deptName = "M.B.A";
       break;
     default:
       facultyData = [];
@@ -45,7 +54,7 @@ export default function Faculty() {
 
       <section className="w-auto mx-auto md:p-5 p-1">
         <h2 className="text-3xl font-bold text-center text-gray-800 mb-8">
-          {deptId} Department Faculty
+          {deptName} Department Faculty
         </h2>
 
         <div className="overflow-x-auto bg-white shadow-lg rounded-2xl">

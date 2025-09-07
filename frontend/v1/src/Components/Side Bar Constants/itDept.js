@@ -130,3 +130,113 @@ export const itCourse = {
     establishmentYear: 2009
   }
 };
+
+
+export const itOutcomes = {
+  peos: [
+    "Build a strong foundation in the field of Information Technology among students to foster creativity and innovation.",
+    "Prepare students capable of designing and developing real-world IT applications with significant societal and industrial impact.",
+    "Provide an academic environment that enables students to appreciate the importance of lifelong learning, teamwork, and leadership in a global context.",
+    "Develop students’ analytical, logical, and problem-solving skills through rigorous training, enabling them to engage in research and advanced learning.",
+    "Promote ethical practices, professionalism, and environmental responsibility to support sustainable development and employability in the IT sector.",
+    "Instill effective communication, management, and entrepreneurial skills to help students assume leadership roles and foster innovation in technology-driven industries."
+  ],
+  pos: [
+    "Apply knowledge of mathematics, science, computing fundamentals, and IT principles to solve complex technological problems.",
+    "Identify, formulate, and analyze engineering problems using research literature, experimentation, and first principles of mathematics and computer science.",
+    "Design and implement IT systems, components, or processes to meet functional requirements with considerations for safety, ethics, and environmental impact.",
+    "Employ research methods, data analysis, and synthesis of information to draw valid conclusions and develop innovative IT solutions.",
+    "Select and apply appropriate tools, techniques, and technologies including modeling and simulation to address complex computing problems within realistic constraints.",
+    "Assess and address societal, health, safety, legal, and cultural concerns in professional IT practice, applying contextual reasoning and judgment.",
+    "Understand and evaluate the impact of IT solutions on society and the environment, and advocate for sustainable practices in technology development.",
+    "Adhere to professional ethics, standards, and responsibilities while engaging in IT projects, ensuring integrity and accountability.",
+    "Work effectively as an individual, as well as part of multidisciplinary teams, contributing leadership and cooperation in diverse environments.",
+    "Communicate effectively with stakeholders through technical reports, documentation, presentations, and instructions in complex engineering and IT activities.",
+    "Apply engineering and management principles to one’s work, managing projects and resources efficiently while integrating diverse technical perspectives.",
+    "Recognize the importance of lifelong learning and continuously update knowledge to adapt to technological advancements and emerging industry trends."
+  ],
+  psos: [
+    "Graduates will be proficient in developing, maintaining, and deploying IT solutions that meet industry requirements using best practices and frameworks.",
+    "Graduates will be able to analyze problems, design algorithms, and implement scalable software solutions using programming languages and tools.",
+    "Graduates will demonstrate the ability to integrate hardware and software technologies to provide effective, secure, and cost-efficient IT solutions in dynamic environments."
+  ]
+};
+
+export const itLabs = [
+  {
+    name: "Web Development Lab",
+    img: "/web.jpg",
+    description: "Practical exercises on building websites using modern technologies and frameworks."
+  },
+  {
+    name: "Cyber Security Lab",
+    img: "/cyber.jpg",
+    description: "Hands-on labs focused on penetration testing, encryption, and network security."
+  },
+  {
+    name: "Cloud Computing Lab",
+    img: "/cloud.jpg",
+    description: "Experiments and case studies on deploying and managing applications on cloud platforms."
+  },
+  {
+    name: "AI & ML Lab",
+    img: "/ai.jpg",
+    description: "Training in algorithms, data modeling, and building intelligent systems."
+  }
+];
+
+
+export const itSyllabus = [
+  {
+    sem: "2019 Course",
+    subjects: [
+      { name: "SE Syllabus(2019 Course)", link: "/syllabus/cs/maths1.pdf" },
+      { name: "TE Syllabus(2019 Course)", link: "/syllabus/cs/physics.pdf" },
+      { name: "BE Syllabus(2019 Course)", link: "/syllabus/cs/bee.pdf" },
+    ],
+  },
+  {
+    sem: "2024 Course",
+    subjects: [
+      { name: "SE Syllabus(2024 Course)", link: "/syllabus/cs/maths1.pdf" },
+      { name: "TE Syllabus(2024 Course)", link: "/syllabus/cs/physics.pdf" },
+      { name: "BE Syllabus(2024 Course)", link: "/syllabus/cs/bee.pdf" },
+    ],
+  },
+  // ...continue for all semesters
+];
+
+
+
+export const itEvents = [
+  {
+    id: 1,
+    title: "Cloud Computing Workshop",
+    date: "2025-07-22",
+    images: [
+      "https://svitnashik.in/Images/Events/Department/IT/Cloud%20Computing%20Workshop/1.jpg",
+      "https://svitnashik.in/Images/Events/Department/IT/Cloud%20Computing%20Workshop/2.jpg",
+      "https://svitnashik.in/Images/Events/Department/IT/Cloud%20Computing%20Workshop/3.jpg",
+    ],
+  },
+  {
+    id: 2,
+    title: "Python Programming Contest",
+    date: "2025-08-10",
+    images: [
+      "/events/it-contest-1.jpg",
+      "/events/it-contest-2.jpg",
+      "/events/it-contest-3.jpg",
+    ],
+  },
+  {
+    id: 3,
+    title: "IoT Innovation Challenge",
+    date: "2025-09-05",
+    images: [
+      "/events/it-iot-1.jpg",
+      "/events/it-iot-2.jpg",
+      "/events/it-iot-3.jpg",
+    ],
+  },
+];
