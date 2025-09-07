@@ -1,7 +1,7 @@
 const firstYear = {
-  vision: "xyz",
+  vision: "To be recognized as a center of excellence in Computer Engineering by imparting quality education, fostering research and innovation, and producing globally competent professionals who contribute to the advancement of technology and society",
 
-  mission: "pqr",
+  mission: "The department is committed to providing students with a strong foundation in computer science and engineering principles while nurturing creativity, critical thinking, and problem-solving skills through research-oriented learning. It strives to equip graduates with the technical expertise and professional competencies required to excel in industry and entrepreneurship. Furthermore, the department emphasizes ethical values, teamwork, and lifelong learning to foster socially responsible professionals dedicated to the advancement of society and nation-building.",
 
   HODDesk: `Academic work of First year Engineering is to be planned and monitored by Dean Academic. As per the syllabus prescribed by Savitribai Phule Pune University, First year Engineering students have common curriculum irrespective of specific branches chosen by them.
 
