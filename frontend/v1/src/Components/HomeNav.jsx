@@ -82,6 +82,16 @@ export default function HomeNav() {
         { text: "Unipune", url: "/links/unipune" },
       ],
     },
+    {
+      key: "add",
+      label: "Admission",
+      items: [
+        
+        { text: "Admission Details", url: "/links/aicte" },
+        { text: "Admission 2025-26 (Institute Level Non CAP Admission)", url: "/links/dte" },
+        { text: "Admission Enquiry Form", url: "/links/nba" },
+      ],
+    },
   ];
 
 
@@ -122,6 +132,7 @@ export default function HomeNav() {
      <NavLink to="/library" className={({isActive})=>`${isActive ? "text-red-500 ": "text-black"}`}>Library</NavLink>
      <NavLink to="/gallery" className={({isActive})=>`${isActive ? "text-red-500 ": "text-black"}`}>Gallery</NavLink>
      <NavLink to="/contactus" className={({isActive})=>`${isActive ? "text-red-500 ": "text-black"}`}>Contact us</NavLink>
+
      <NavLink to="/about" className={({isActive})=>`${isActive ? "text-red-500 ": "text-black"}`}>About us</NavLink>
      <NavLink to="/about/Examination" className={({isActive})=>`${isActive ? "text-red-500 ": "text-black"}`}>Examination</NavLink>
 

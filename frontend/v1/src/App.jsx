@@ -5,6 +5,7 @@ import Footer from "./Components/Footer.jsx";
 import WholeSociety from "./Components/About/wholeSociety.jsx";
 import { Routes, Route } from "react-router-dom";
 import DEPARTMENTS from "./Constants/department.config.js";
+import Faculty from "./Components/SideBar/faculty.jsx";
 import Course from "./Components/SideBar/Course.jsx";
 import Outcome from "./Components/SideBar/Outcome.jsx";
 import Labs from "./Components/SideBar/Labs.jsx";
@@ -20,13 +21,15 @@ import AboutLinkages from "./Components/About/AboutLinkages.jsx";
 import Examination from "./Components/Examination/Examination.jsx";
 import Library from "./Components/Library/Library.jsx";
 import LibraryAdvisoryComitee from "./Components/Library/LibraryAdvisoryComitee.jsx";
-import Faculty from "./Components/Library/Faculty.jsx";
 import LibraryObjectives from "./Components/Library/LibraryObjectives.jsx";
 import LibraryFacilities from "./Components/Library/LibraryFacilities.jsx";
 import LibrarySection from "./Components/Library/LibrarySection.jsx";
+import Home from "./Components/Home/Home.jsx";
+import Result from "./Components/SideBar/Result.jsx";
+import Placement from "./Components/SideBar/Placement.jsx";
+import AcademicBooks from "./Components/SideBar/Academic.jsx";
+import EResources from "./Components/SideBar/E-resources.jsx";
 
-import Home from './Components/Home/Home.jsx';
-import MainContactUs from "./Components/ContactUs/MainContactUs.jsx";
 
 
 
@@ -83,11 +86,14 @@ function App() {
         <Route path="/Department/:deptId/faculty" element={<Faculty />}></Route>
         <Route path="/Department/:deptId/courses" element={<Course />}></Route>
         <Route path="/Department/:deptId/labs" element={<Labs />}></Route>
-        <Route
-          path="/Department/:deptId/syllabus"
-          element={<Syllabus />}
-        ></Route>
+
+        <Route path="/Department/:deptId/syllabus" element={<Syllabus />}></Route>
         <Route path="/Department/:deptId/events" element={<Events />}></Route>
+        <Route path="/Department/:deptId/results" element={<Result />}></Route>
+        <Route path="/Department/:deptId/placement"element={<Placement />}></Route>
+        <Route path="/Department/:deptId/academic-book"element={<AcademicBooks />}></Route>
+        <Route path="/Department/:deptId/e-resources"element={<EResources />}></Route>
+
       </Routes>
       <Footer />
     </>

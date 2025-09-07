@@ -199,3 +199,94 @@ export const eceEvents = [
     ],
   },
 ];
+
+
+
+
+// eceDept.js
+export const eceResults = {
+  2019: ["Patel N 81.40", "Shah K 79.00", "Desai M 77.50", "Joshi S 76.10", "Sharma P 74.70", "Singh R 73.30", "Mehta A 72.80", "Agarwal H 71.40", "Shah D 70.90", "Patel S 69.50"],
+  2020: ["Shah Ankit 83.60", "Patel K 81.00", "Desai S 79.50", "Jain M 78.10", "Sharma N 76.70", "Singh A 75.30", "Gupta P 74.80", "Mehta R 74.20", "Agarwal K 73.60", "Shah H 72.90"],
+  2021: ["Patel Priya 84.80", "Shah A 82.30", "Joshi K 80.80", "Desai H 79.40", "Sharma M 78.00", "Singh S 76.60", "Mehta P 76.10", "Agarwal S 75.50", "Shah N 74.80", "Patel R 74.20"],
+  2022: ["Shah K 86.00", "Patel M 83.50", "Jain S 82.00", "Desai A 80.60", "Sharma K 79.20", "Singh R 77.80", "Gupta A 77.30", "Mehta H 76.70", "Agarwal P 76.10", "Shah S 75.40"],
+  2023: ["Patel Y 87.20", "Shah K 84.80", "Joshi M 83.30", "Desai P 81.90", "Sharma S 80.50", "Singh A 79.10", "Mehta K 78.60", "Agarwal R 78.00", "Shah N 77.30", "Patel D 76.70"],
+  2024: ["Shah Dev 88.30", "Patel S 85.90", "Jain K 84.40", "Desai M 83.00", "Sharma A 81.60", "Singh R 80.20", "Gupta S 79.70", "Mehta P 79.10", "Agarwal H 78.50", "Shah K 77.80"],
+};
+
+
+
+export const ecePlacement = {
+  2024: {
+    total: 140,
+    placed: 128,
+    highest: "₹ 40 LPA",
+    average: "₹ 7.5 LPA",
+    companies: ["Qualcomm", "NXP", "Amazon", "Sprinklr", "Oracle"],
+    toppers: ["Shah K  ₹ 40 LPA", "Patel M  ₹ 36 LPA", "Jain S  ₹ 33 LPA"],
+  },
+  2023: {
+    total: 135,
+    placed: 122,
+    highest: "₹ 38 LPA",
+    average: "₹ 7.1 LPA",
+    companies: ["Qualcomm", "NXP", "Amazon", "Oracle", "Texas Instruments"],
+    toppers: ["Patel Priya  ₹ 38 LPA", "Shah A  ₹ 35 LPA", "Jain S  ₹ 32 LPA"],
+  },
+  2022: {
+    total: 130,
+    placed: 118,
+    highest: "₹ 36 LPA",
+    average: "₹ 6.8 LPA",
+    companies: ["Qualcomm", "NXP", "Texas Instruments", "Amazon", "Sprinklr"],
+    toppers: ["Shah K  ₹ 36 LPA", "Patel M  ₹ 33 LPA", "Jain S  ₹ 30 LPA"],
+  },
+  2021: {
+    total: 125,
+    placed: 112,
+    highest: "₹ 34 LPA",
+    average: "₹ 6.5 LPA",
+    companies: ["Qualcomm", "NXP", "Texas Instruments", "Amazon", "Oracle"],
+    toppers: ["Patel K  ₹ 34 LPA", "Shah A  ₹ 31 LPA", "Jain M  ₹ 28 LPA"],
+  },
+  2020: {
+    total: 120,
+    placed: 105,
+    highest: "₹ 32 LPA",
+    average: "₹ 6.2 LPA",
+    companies: ["Qualcomm", "NXP", "Texas Instruments", "Oracle", "Cisco"],
+    toppers: ["Shah Ankit  ₹ 32 LPA", "Patel K  ₹ 29 LPA", "Jain S  ₹ 27 LPA"],
+  },
+  2019: {
+    total: 115,
+    placed: 98,
+    highest: "₹ 30 LPA",
+    average: "₹ 5.9 LPA",
+    companies: ["Qualcomm", "NXP", "Texas Instruments", "Cisco", "Oracle"],
+    toppers: ["Patel N  ₹ 30 LPA", "Shah K  ₹ 27 LPA", "Desai M  ₹ 25 LPA"],
+  },
+};
+
+
+export const eceBooks = {
+ 1: {
+    sem1: [{ name: "SE SEM-I_Academic Book", link: "/books/cs/maths1.pdf" }],
+    sem2: [{ name: "SE SEM-II_Academic Book", link: "/books/cs/maths2.pdf" }],
+  },
+  2: {
+    sem1: [{ name: "TE SEM-I_Academic Book", link: "/books/cs/dsa.pdf" }],
+    sem2: [{ name: "TE SEM-II_Academic Book", link: "/books/cs/oop.pdf" }],
+  },
+  3: {
+    sem1: [{ name: "BE SEM-I_Academic Book", link: "/books/cs/dbms.pdf" }],
+    sem2: [{ name: "BE SEM-II_Academic Book", link: "/books/cs/os.pdf" }],
+  },
+};
+
+
+export const eceEResources = [
+  { srNo: 1, facultyName: "Dr. N. P. Patel", blogLink: "https://nppatelece.wordpress.com", youtubeLink: "https://youtube.com/c/nppatelece" },
+  { srNo: 2, facultyName: "Prof. M. K. Shah", blogLink: "https://mkshahece.blogspot.com", youtubeLink: "https://youtube.com/c/mkshahece" },
+  { srNo: 3, facultyName: "Dr. A. B. Joshi", blogLink: "https://abjoshece.medium.com", youtubeLink: "https://youtube.com/c/abjoshece" },
+  { srNo: 4, facultyName: "Prof. S. T. Patel", blogLink: "https://stpatelce.wordpress.com", youtubeLink: "https://youtube.com/c/stpatelce" },
+  { srNo: 5, facultyName: "Dr. H. R. Desai", blogLink: "https://hrdesaiece.blogspot.com", youtubeLink: "https://youtube.com/c/hrdesaiece" },
+];
