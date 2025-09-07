@@ -18,7 +18,8 @@ const WelcomeLibrary = () => {
       {/* Centered Welcome Text */}
       <div className="relative z-10 flex flex-col items-center justify-center h-full text-center px-4">
         <h1 className="text-2xl sm:text-4xl md:text-5xl font-extrabold text-white drop-shadow-lg animate-fadeIn">
-          📚 Welcome to <span className="text-indigo-300">SVIT Central Library</span>
+          📚 Welcome to{" "}
+          <span className="text-indigo-300">SVIT Central Library</span>
         </h1>
         <p className="mt-3 text-sm sm:text-lg md:text-xl text-gray-200 max-w-2xl animate-fadeInSlow">
           Knowledge Hub for Excellence
@@ -64,7 +65,8 @@ const WelcomeLibrary = () => {
           }
         }
         @keyframes fadeBounce {
-          0%, 100% {
+          0%,
+          100% {
             opacity: 0.8;
             transform: translateY(0);
           }

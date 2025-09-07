@@ -7,7 +7,11 @@ export default function CompanyLogoTable() {
     [3, "V Analytics, Nashik", "https://vanalytics.in"],
     [4, "Healthy Foods, Dapur, Sinnar, Nashik", "https://healthyfoods.co.in"],
     [5, "REVE Pharma, Musalgaon MIDC, Sinnar", "https://revepharma.com"],
-    [6, "EagleByte Solutions, Pandit Colony, Nashik", "https://www.eaglebyte.in"],
+    [
+      6,
+      "EagleByte Solutions, Pandit Colony, Nashik",
+      "https://www.eaglebyte.in",
+    ],
     [7, "Epitome Components, Ahmednagar", "https://epitomecomponents.com"],
     [8, "ExcelR – Raising Excellence, Pune", "https://www.excelr.com"],
     [9, "McKinley Rice / Red Rob, Mumbai", "https://www.mckinleyrice.com"],
@@ -26,20 +30,36 @@ export default function CompanyLogoTable() {
     [22, "Raspi Invent, Nashik", "https://raspiinvent.com"],
     [23, "Technokraft Training Solution", "https://technokraftindia.com"],
     [24, "Prolific Training Center", "https://prolifictraining.in"],
-    [25, "Shatabdi Institute of Engg & Research Centre", "https://shatabdi.org.in"],
+    [
+      25,
+      "Shatabdi Institute of Engg & Research Centre",
+      "https://shatabdi.org.in",
+    ],
     [26, "Sim Power Technology, Nashik", "https://simpower.tech"],
     [27, "G. N. Sapkal COE, Anjaneri, Nashik", "https://gnsapkal.org"],
     [28, "Heuristic Techno Park, Nashik", "https://heuristictechnopark.com"],
     [29, "Adi Chem Technology Pvt, Nashik", "https://adichemtech.com"],
-    [30, "SAISHRADDHA Graphite Equipments, MIDC Malegaon", "https://saishraddhaequipments.com"],
+    [
+      30,
+      "SAISHRADDHA Graphite Equipments, MIDC Malegaon",
+      "https://saishraddhaequipments.com",
+    ],
     [31, "Graphite India Ltd., Nashik", "https://www.graphiteindia.com"],
     [32, "Delta Finochem Pvt. Ltd., Nashik", "https://deltafinochem.com"],
     [33, "Ramdeo Refinery Pvt. Ltd.", "https://ramdeorefining.com"],
     [34, "Konark Global, Satpur MIDC, Nashik", "https://konarkglobal.com"],
     [35, "NY Enterprises, Sinnar", "https://nyenterprises.in"],
     [36, "Shiwa Manufacturer", "https://shiwamanufacturer.com"],
-    [37, "Globe Chemical, Musalgaon MIDC, Sinnar", "https://globechemicals.com"],
-    [38, "Chandreshwar Aqua, Chandegaon, Rahuri", "https://facebook.com/ChandreshwarAqua"],
+    [
+      37,
+      "Globe Chemical, Musalgaon MIDC, Sinnar",
+      "https://globechemicals.com",
+    ],
+    [
+      38,
+      "Chandreshwar Aqua, Chandegaon, Rahuri",
+      "https://facebook.com/ChandreshwarAqua",
+    ],
     [39, "Amruta Industries, Sinnar", "https://amrutaindustries.com"],
   ];
 
@@ -53,9 +73,15 @@ export default function CompanyLogoTable() {
         <table className="w-full border-collapse">
           <thead>
             <tr className="bg-gradient-to-r from-indigo-500 to-purple-500 text-white">
-              <th className="px-6 py-4 text-left text-sm font-semibold uppercase tracking-wider">Sr. No</th>
-              <th className="px-6 py-4 text-left text-sm font-semibold uppercase tracking-wider">Company / Organization</th>
-              <th className="px-6 py-4 text-left text-sm font-semibold uppercase tracking-wider">Source</th>
+              <th className="px-6 py-4 text-left text-sm font-semibold uppercase tracking-wider">
+                Sr. No
+              </th>
+              <th className="px-6 py-4 text-left text-sm font-semibold uppercase tracking-wider">
+                Company / Organization
+              </th>
+              <th className="px-6 py-4 text-left text-sm font-semibold uppercase tracking-wider">
+                Source
+              </th>
             </tr>
           </thead>
           <tbody>

@@ -16,8 +16,9 @@ export default function CampusInfo() {
           Campus
         </h3>
         <p className="text-base text-gray-700 leading-relaxed">
-          Spread across 93 acres surrounded by hills on the Nashik-Pune / Mumbai-Shirdi highway,
-          12 km from Nashik Road station—pollution-free, hill-station-like serenity.
+          Spread across 93 acres surrounded by hills on the Nashik-Pune /
+          Mumbai-Shirdi highway, 12 km from Nashik Road station—pollution-free,
+          hill-station-like serenity.
         </p>
       </div>
     </div>

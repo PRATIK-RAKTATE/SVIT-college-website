@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 
 const Campus = () => {
   return (
@@ -27,7 +27,7 @@ const Campus = () => {
         className="w-1/3 h-full object-cover"
       />
     </div>
-  )
-}
+  );
+};
 
-export default Campus
+export default Campus;

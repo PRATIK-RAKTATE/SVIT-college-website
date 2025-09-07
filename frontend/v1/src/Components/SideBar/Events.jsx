@@ -22,26 +22,26 @@ export default function Events() {
       eventData = csEvents;
       deptName = "Computer Engineering";
       break;
-      case "informationTechnology":
-            eventData = itEvents;
-            deptName = "Information Engineering";
-            break;
-          case "chemicalEngineering":
-            eventData = chemicalEvents;
-            deptName = "Chemical Engineering";
-            break;
-          case "electronicsAndComputerEngineering":
-            eventData = eceEvents;
-            deptName = "Electronics And Computer Engineering";
-            break;
-          case "firstYear":
-            eventData = feEvents;
-            deptName = "First Year";
-            break;
-          case "mba":
-            eventData = mbaEvents;
-            deptName = "M.B.A";
-            break;
+    case "informationTechnology":
+      eventData = itEvents;
+      deptName = "Information Engineering";
+      break;
+    case "chemicalEngineering":
+      eventData = chemicalEvents;
+      deptName = "Chemical Engineering";
+      break;
+    case "electronicsAndComputerEngineering":
+      eventData = eceEvents;
+      deptName = "Electronics And Computer Engineering";
+      break;
+    case "firstYear":
+      eventData = feEvents;
+      deptName = "First Year";
+      break;
+    case "mba":
+      eventData = mbaEvents;
+      deptName = "M.B.A";
+      break;
     default:
       eventData = [];
   }
@@ -55,7 +55,7 @@ export default function Events() {
 
   /* ----------  slider state per event  ---------- */
   const [current, setCurrent] = useState(
-    eventData.reduce((acc, ev) => ({ ...acc, [ev.id]: 0 }), {})
+    eventData.reduce((acc, ev) => ({ ...acc, [ev.id]: 0 }), {}),
   );
   const next = (id, len) =>
     setCurrent((c) => ({ ...c, [id]: (c[id] + 1) % len }));
@@ -66,7 +66,7 @@ export default function Events() {
   useEffect(() => {
     if (!eventData.length) return;
     const intervals = eventData.map((ev) =>
-      setInterval(() => next(ev.id, ev.images.length), 4000)
+      setInterval(() => next(ev.id, ev.images.length), 4000),
     );
     return () => intervals.forEach(clearInterval);
   }, [eventData]);
@@ -86,14 +86,12 @@ export default function Events() {
             animate={{ opacity: 1, y: 0 }}
             className="flex items-center gap-3"
           >
-           
             <h1
               className="text-4xl md:text-6xl font-extrabold text-gray-800"
               style={{ fontFamily: "'Inter', sans-serif" }}
             >
               {deptName} Events
             </h1>
-            
           </motion.div>
         </section>
       </div>
@@ -163,7 +161,9 @@ export default function Events() {
                     {ev.images.map((_, dot) => (
                       <button
                         key={dot}
-                        onClick={() => setCurrent((c) => ({ ...c, [ev.id]: dot }))}
+                        onClick={() =>
+                          setCurrent((c) => ({ ...c, [ev.id]: dot }))
+                        }
                         className={`h-2 rounded-full transition-all ${
                           dot === idx ? "w-6 bg-indigo-600" : "w-2 bg-gray-400"
                         }`}

@@ -9,20 +9,28 @@ export default function EligibilityCriteria() {
       <div className="p-6 text-gray-800 space-y-4">
         <ul className="list-disc list-inside space-y-2">
           <li>
-            Student should pass HSC (12<sup>th</sup> Science) examination with English as one of the subjects and Physics, Mathematics <strong>compulsory</strong>, and one subject from Chemistry / Biology / Biotechnology / Technical Vocational, together scoring above <strong>45 %</strong> marks.
+            Student should pass HSC (12<sup>th</sup> Science) examination with
+            English as one of the subjects and Physics, Mathematics{" "}
+            <strong>compulsory</strong>, and one subject from Chemistry /
+            Biology / Biotechnology / Technical Vocational, together scoring
+            above <strong>45 %</strong> marks.
           </li>
           <li>
             <strong>40 %</strong> marks for students under reserved category.
           </li>
           <li>
-            Candidates are required to qualify in <strong>JEE (Main)</strong> examination.
+            Candidates are required to qualify in <strong>JEE (Main)</strong>{" "}
+            examination.
           </li>
           <li>
-            For further details, please refer to the eligibility criteria in the admission brochure published by <strong>D.T.E., Mumbai</strong> on their website.
+            For further details, please refer to the eligibility criteria in the
+            admission brochure published by <strong>D.T.E., Mumbai</strong> on
+            their website.
           </li>
         </ul>
         <p className="font-semibold text-indigo-700">
-          Eligibility Criteria for First Year Engineering Admission – For Further Details
+          Eligibility Criteria for First Year Engineering Admission – For
+          Further Details
         </p>
       </div>
     </div>

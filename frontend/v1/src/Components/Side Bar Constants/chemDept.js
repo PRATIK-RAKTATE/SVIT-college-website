@@ -11,7 +11,8 @@ export const chemFaculty = [
     sr: 2,
     name: "Dr. Dipak K. Chandre",
     designation: "HOD & Associate Professor",
-    qualification: "M.E. (Chemical), Ph.D (Chemical Tech.), PGD-Piping Design & Tech.",
+    qualification:
+      "M.E. (Chemical), Ph.D (Chemical Tech.), PGD-Piping Design & Tech.",
     experience: "23 Years",
     email: "dipak.chandre@pravara.in",
   },
@@ -89,55 +90,53 @@ export const chemFaculty = [
   },
 ];
 
-
 // src/constants/chemicalEngineeringDept.js
 
 // Make sure chemFaculty is exported properly
 
- // Re-exporting for use in Faculty.jsx
+// Re-exporting for use in Faculty.jsx
 
 export const chemCourse = {
   introduction: [
     "Chemical Engineering focuses on the design, optimization, and operation of chemical processes, including the transformation of raw materials into valuable products.",
-    "It combines principles of chemistry, physics, mathematics, and biology to solve problems related to chemicals, materials, and energy."
+    "It combines principles of chemistry, physics, mathematics, and biology to solve problems related to chemicals, materials, and energy.",
   ],
   overview: [
     "The Department of Chemical Engineering was established to prepare students for careers in chemical, pharmaceutical, energy, and process industries.",
-    "The curriculum emphasizes process design, chemical reaction engineering, thermodynamics, process control, and environmental engineering."
+    "The curriculum emphasizes process design, chemical reaction engineering, thermodynamics, process control, and environmental engineering.",
   ],
   facilities: [
     "State-of-the-art chemical laboratories including Reaction Engineering Lab, Process Control Lab, and Material Science Lab.",
     "Pilot plants and experimental setups for practical exposure.",
     "Access to simulation software for chemical processes.",
-    "Departmental library with reference books, journals, and e-resources."
+    "Departmental library with reference books, journals, and e-resources.",
   ],
   projects: [
     "Design and optimization of chemical reactors",
     "Wastewater treatment and environmental projects",
     "Polymer synthesis and characterization",
-    "Process automation using chemical simulators"
+    "Process automation using chemical simulators",
   ],
   association: [
     "Chemical Engineering Students Association (CESA)",
     "Industrial visits to chemical and pharmaceutical companies",
     "Workshops and seminars on process safety and chemical innovations",
-    "National level technical competitions and paper presentations"
+    "National level technical competitions and paper presentations",
   ],
   majorFacilities: [
     "Pilot Plants & Experimental Labs",
     "Process Simulation Software",
     "Department Library",
     "Internet & Wi-Fi Facility",
-    "Laboratory Safety Equipment"
+    "Laboratory Safety Equipment",
   ],
   courseInfo: {
     branch: "BE",
     courseName: "Chemical Engineering",
     intake: 60,
-    establishmentYear: "2000-2001"
-  }
+    establishmentYear: "2000-2001",
+  },
 };
-
 
 export const chemicalOutcomes = {
   peos: [
@@ -146,7 +145,7 @@ export const chemicalOutcomes = {
     "Provide an academic environment that encourages lifelong learning, research, and professional growth in the field of chemical sciences and engineering.",
     "Develop problem-solving, analytical, and critical thinking skills that empower students to engage in advanced learning and contribute to technological advancements.",
     "Promote ethical practices, environmental stewardship, and professionalism to address challenges related to energy, health, and sustainable development in the chemical industry.",
-    "Equip students with communication, leadership, and management skills necessary for entrepreneurial ventures and collaborative projects in multidisciplinary settings."
+    "Equip students with communication, leadership, and management skills necessary for entrepreneurial ventures and collaborative projects in multidisciplinary settings.",
   ],
   pos: [
     "Apply the knowledge of mathematics, physics, chemistry, and engineering fundamentals to solve complex problems in chemical processes and operations.",
@@ -160,39 +159,40 @@ export const chemicalOutcomes = {
     "Collaborate effectively in diverse teams, lead projects, and contribute to multidisciplinary problem-solving in chemical process industries.",
     "Communicate complex engineering concepts clearly and effectively through reports, presentations, and documentation to technical and non-technical audiences.",
     "Apply principles of management and engineering economics to optimize operations, manage resources, and lead projects within the chemical sector.",
-    "Engage in lifelong learning and professional development to adapt to changing technologies, regulations, and industry practices in chemical engineering."
+    "Engage in lifelong learning and professional development to adapt to changing technologies, regulations, and industry practices in chemical engineering.",
   ],
   psos: [
     "Graduate of the program will be capable of designing and operating chemical processes, ensuring efficiency, safety, and environmental compliance.",
     "Graduate of the program will be proficient in applying engineering principles, computational tools, and laboratory techniques to solve real-world chemical problems.",
-    "Graduate of the program will be prepared for employment or higher studies by integrating technical expertise, ethical conduct, and innovative thinking in the chemical industry."
-  ]
+    "Graduate of the program will be prepared for employment or higher studies by integrating technical expertise, ethical conduct, and innovative thinking in the chemical industry.",
+  ],
 };
-
 
 export const chemicalLabs = [
   {
     name: "Process Control Lab",
     img: "/process.jpg",
-    description: "Simulations and experiments to understand control systems in chemical processes."
+    description:
+      "Simulations and experiments to understand control systems in chemical processes.",
   },
   {
     name: "Fluid Mechanics Lab",
     img: "/fluid.jpg",
-    description: "Studies on flow patterns, pressure, and viscosity in fluids."
+    description: "Studies on flow patterns, pressure, and viscosity in fluids.",
   },
   {
     name: "Heat Transfer Lab",
     img: "/heat.jpg",
-    description: "Analysis of conduction, convection, and radiation heat transfer methods."
+    description:
+      "Analysis of conduction, convection, and radiation heat transfer methods.",
   },
   {
     name: "Chemical Reaction Engineering Lab",
     img: "/reaction.jpg",
-    description: "Exploration of reaction kinetics, rate laws, and reactor designs."
-  }
+    description:
+      "Exploration of reaction kinetics, rate laws, and reactor designs.",
+  },
 ];
-
 
 export const chemSyllabus = [
   {
@@ -213,7 +213,6 @@ export const chemSyllabus = [
   },
   // ...continue for all semesters
 ];
-
 
 export const chemicalEvents = [
   {
