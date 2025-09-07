@@ -101,7 +101,13 @@ export default function PlacementCounter() {
 
           {/* water inside tank */}
           <g clipPath="url(#tankMask)">
-            <rect x="0" y={waveY} width="200" height="200" fill="url(#liquidGrad)" />
+            <rect
+              x="0"
+              y={waveY}
+              width="200"
+              height="200"
+              fill="url(#liquidGrad)"
+            />
             <path
               d={`M0 ${waveY} Q 50 ${waveY - 8} 100 ${waveY} T 200 ${waveY} V 200 H 0 Z`}
               fill="url(#liquidGrad)"
@@ -173,8 +179,8 @@ export default function PlacementCounter() {
       <p className="mt-8 text-gray-700 text-lg text-center max-w-3xl leading-relaxed">
         With strong industry linkages and consistent performance, our institute
         has achieved an outstanding{" "}
-        <span className="font-bold text-sky-600">{target}% placement rate</span>.
-        This reflects our commitment to preparing students for successful
+        <span className="font-bold text-sky-600">{target}% placement rate</span>
+        . This reflects our commitment to preparing students for successful
         careers in top companies.
       </p>
 

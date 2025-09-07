@@ -1,15 +1,15 @@
 // LibraryInfo.jsx
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 const LibraryInfo = () => {
-  const [activeTab, setActiveTab] = useState('objectives');
+  const [activeTab, setActiveTab] = useState("objectives");
 
   const objectives = [
     "Support the Learning Process of the Students through Provision of Knowledge.",
     "Meet information needs of the faculty and support their Teaching & Research activities.",
     "Enrich the Knowledge Services.",
     "Provide Orientation, user Education and References Service to maximize the use of Library resources.",
-    "Support the extra-curricular activities conducted by the Institute."
+    "Support the extra-curricular activities conducted by the Institute.",
   ];
 
   const rules = [
@@ -23,7 +23,7 @@ const LibraryInfo = () => {
     "Students must carry their I-Card with them, whenever they visit the Library.",
     "Students are requested to observe strict silence in the library.",
     "Students are advised to use the reading room only for studying.",
-    "Mobile phone is not allowed in the Library premises."
+    "Mobile phone is not allowed in the Library premises.",
   ];
 
   return (
@@ -36,14 +36,14 @@ const LibraryInfo = () => {
 
         {/* Tab Navigation */}
         <div className="flex gap-2 mb-6">
-          {['objectives', 'rules'].map(tab => (
+          {["objectives", "rules"].map((tab) => (
             <button
               key={tab}
               onClick={() => setActiveTab(tab)}
               className={`flex-1 py-3 px-4 rounded-lg font-semibold capitalize transition-all duration-300 ${
                 activeTab === tab
-                  ? 'bg-blue-600 text-white shadow-md'
-                  : 'bg-slate-100 text-slate-700 hover:bg-slate-200'
+                  ? "bg-blue-600 text-white shadow-md"
+                  : "bg-slate-100 text-slate-700 hover:bg-slate-200"
               }`}
             >
               {tab}
@@ -53,18 +53,20 @@ const LibraryInfo = () => {
 
         {/* Content */}
         <div className="space-y-3">
-          {(activeTab === 'objectives' ? objectives : rules).map((text, idx) => (
-            <div
-              key={idx}
-              className="flex items-start gap-3 p-4 rounded-xl bg-slate-50 hover:bg-blue-50 transition-all duration-300 animate-fadeIn"
-              style={{ animationDelay: `${idx * 80}ms` }}
-            >
-              <span className="text-xl mt-1">
-                {activeTab === 'objectives' ? '🎯' : '📌'}
-              </span>
-              <p className="text-slate-700 leading-relaxed">{text}</p>
-            </div>
-          ))}
+          {(activeTab === "objectives" ? objectives : rules).map(
+            (text, idx) => (
+              <div
+                key={idx}
+                className="flex items-start gap-3 p-4 rounded-xl bg-slate-50 hover:bg-blue-50 transition-all duration-300 animate-fadeIn"
+                style={{ animationDelay: `${idx * 80}ms` }}
+              >
+                <span className="text-xl mt-1">
+                  {activeTab === "objectives" ? "🎯" : "📌"}
+                </span>
+                <p className="text-slate-700 leading-relaxed">{text}</p>
+              </div>
+            ),
+          )}
         </div>
       </div>
     </div>

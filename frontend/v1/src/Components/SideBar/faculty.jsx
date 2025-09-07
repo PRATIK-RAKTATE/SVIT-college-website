@@ -18,7 +18,6 @@ export default function Faculty() {
   let facultyData;
   let deptName;
 
-
   switch (deptId) {
     case "computerEngineering":
       facultyData = csFaculty;
@@ -76,11 +75,15 @@ export default function Faculty() {
                     index % 2 === 0 ? "bg-gray-50" : "bg-white"
                   } hover:bg-blue-50 transition`}
                 >
-                  <td className="p-4 text-gray-700 font-medium">{faculty.sr}</td>
+                  <td className="p-4 text-gray-700 font-medium">
+                    {faculty.sr}
+                  </td>
                   <td className="p-4 text-gray-800">{faculty.name}</td>
                   <td className="p-4 text-gray-700">{faculty.designation}</td>
                   <td className="p-4 text-gray-600">{faculty.qualification}</td>
-                  <td className="p-4 text-gray-700 font-semibold">{faculty.experience}</td>
+                  <td className="p-4 text-gray-700 font-semibold">
+                    {faculty.experience}
+                  </td>
                 </tr>
               ))}
             </tbody>

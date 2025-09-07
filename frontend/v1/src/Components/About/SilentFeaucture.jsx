@@ -1,14 +1,14 @@
 // SalientFeatures.jsx
-import React from 'react';
+import React from "react";
 
 const SalientFeatures = () => {
   const features = [
-    'The academic vigilance Committee headed by the Head of Departments.',
-    'Disciplinary Committee to look into the in disciplinary Acts & Ragging.',
-    'Power backup given on the campus.',
-    'The student NSS wing is active in order to imbibe strong Social values in our students.',
-    'Round the clock internet connectivity through dedicated 10 mbps Lease Line.',
-    'Various Social events carried out for enrichment of students.',
+    "The academic vigilance Committee headed by the Head of Departments.",
+    "Disciplinary Committee to look into the in disciplinary Acts & Ragging.",
+    "Power backup given on the campus.",
+    "The student NSS wing is active in order to imbibe strong Social values in our students.",
+    "Round the clock internet connectivity through dedicated 10 mbps Lease Line.",
+    "Various Social events carried out for enrichment of students.",
   ];
 
   return (

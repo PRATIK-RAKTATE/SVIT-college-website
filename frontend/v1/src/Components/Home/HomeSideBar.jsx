@@ -17,7 +17,10 @@ export default function HomeSideBar() {
     { text: "Linkages", url: "/linkages" },
     { text: "Code Of Conduct", url: "/code-of-conduct" },
     { text: "IIQA", url: "/iiqa" },
-    { text: "AICTE Online Skill Test for FE to BE Students", url: "/aicte-skill-test" }
+    {
+      text: "AICTE Online Skill Test for FE to BE Students",
+      url: "/aicte-skill-test",
+    },
   ];
 
   return (

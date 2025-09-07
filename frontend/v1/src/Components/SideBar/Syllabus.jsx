@@ -10,6 +10,7 @@ import { itSyllabus } from "../Side Bar Constants/itDept.js";
 import { eceSyllabus } from "../Side Bar Constants/eceDept.js";
 import { mbaSyllabus } from "../Side Bar Constants/mbaDept.js";
 import { chemSyllabus } from "../Side Bar Constants/chemDept.js";
+import { feSyllabus } from "../Side Bar Constants/feDept.js";
 
 export default function Syllabus() {
   const { deptId } = useParams();
@@ -27,7 +28,7 @@ export default function Syllabus() {
       deptName = "Information Technology";
       break;
     case "chemicalEngineering":
-      syllabusData = chemicalSyllabus;
+      syllabusData = chemSyllabus;
       deptName = "Chemical Engineering";
       break;
     case "electronicsAndComputerEngineering":
@@ -69,7 +70,11 @@ export default function Syllabus() {
                 layout
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: idx * 0.08, type: "spring", stiffness: 120 }}
+                transition={{
+                  delay: idx * 0.08,
+                  type: "spring",
+                  stiffness: 120,
+                }}
                 className="bg-white rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300 overflow-hidden"
               >
                 <AccordionItem item={item} deptId={deptId} />

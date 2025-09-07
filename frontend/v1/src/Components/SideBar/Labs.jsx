@@ -6,6 +6,7 @@ import { itLabs } from "../Side Bar Constants/itDept";
 import { chemicalLabs } from "../Side Bar Constants/chemDept";
 import { eceLabs } from "../Side Bar Constants/eceDept";
 import { feLabs } from "../Side Bar Constants/feDept";
+import { mbaLabs } from "../Side Bar Constants/mbaDept";
 
 export default function Lab() {
   const { deptId } = useParams();
@@ -16,7 +17,7 @@ export default function Lab() {
     case "computerEngineering":
       labData = csLabs;
       deptName = "Computer Engineering";
-      break;
+      break;\
      case "informationTechnology":
           labData = itLabs;
           deptName = "Information Engineering";
@@ -34,7 +35,7 @@ export default function Lab() {
           deptName = "First Year";
           break;
         case "mba":
-          labData = mbaOutcomes;
+          labData = mbaLabs;
           deptName = "M.B.A";
           break;
     default:
@@ -47,7 +48,7 @@ export default function Lab() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* ----------------  TOP ROW : sidebar + hero  ---------------- */}
-     
+
       <div className="flex flex-col md:flex-row">
         <HomeSideBar deptId={deptId} />
 
