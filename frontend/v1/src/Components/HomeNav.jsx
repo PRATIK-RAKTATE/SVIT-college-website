@@ -131,7 +131,8 @@ export default function HomeNav() {
       </div>
   
       <div className="md:hidden flex justify-end">
-        <button onClick={toggleMenu} className="p-2">
+        <button onClick={toggleMenu} className="p-2 flex gap-65 font-semibold">
+          <span>Menu</span>
           {isOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
       </div>
