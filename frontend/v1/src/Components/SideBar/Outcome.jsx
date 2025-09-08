@@ -6,31 +6,44 @@ import HomeSideBar from "../department/Sidebar.jsx";
 import AnimatedList from "./AnimatedList"; // reusable animated <li>
 
 /*  department-wise data  */
-import { csOutcomes } from "../Side Bar Constants/csDept.js";
-import { itOutcomes } from "../Side Bar Constants/itDept.js";
-import { chemicalOutcomes } from "../Side Bar Constants/chemDept.js";
-import { eceOutcomes } from "../Side Bar Constants/eceDept.js";
-import { feOutcomes } from "../Side Bar Constants/feDept.js";
-import { mbaOutcomes } from "../Side Bar Constants/mbaDept.js";
+import { csOutcomes } from "../Sidebar-Constants/csDept.js";
+import { itOutcomes } from "../Sidebar-Constants/itDept.js";
+import { chemicalOutcomes } from "../Sidebar-Constants/chemDept.js";
+import { eceOutcomes } from "../Sidebar-Constants/eceDept.js";
+import { feOutcomes } from "../Sidebar-Constants/feDept.js";
+import { mbaOutcomes } from "../Sidebar-Constants/mbaDept.js";
 
 const deptMap = {
   computerEngineering: { data: csOutcomes, name: "Computer Engineering" },
   informationTechnology: { data: itOutcomes, name: "Information Technology" },
   chemicalEngineering: { data: chemicalOutcomes, name: "Chemical Engineering" },
-  electronicsAndComputerEngineering: { data: eceOutcomes, name: "Electronics & Computer Engineering" },
+  electronicsAndComputerEngineering: {
+    data: eceOutcomes,
+    name: "Electronics & Computer Engineering",
+  },
   firstYear: { data: feOutcomes, name: "First Year" },
-  mba: { data: mbaOutcomes, name: "M.B.A" }
+  mba: { data: mbaOutcomes, name: "M.B.A" },
 };
 
 export default function OutcomeComponent() {
   const { deptId } = useParams();
-  const { data: outcomeData, name: deptName } = deptMap[deptId] || { data: null, name: "Department" };
+  const { data: outcomeData, name: deptName } = deptMap[deptId] || {
+    data: null,
+    name: "Department",
+  };
 
   if (!outcomeData)
-    return <div className="min-h-screen flex items-center justify-center text-gray-600">Outcomes not available.</div>;
+    return (
+      <div className="min-h-screen flex items-center justify-center text-gray-600">
+        Outcomes not available.
+      </div>
+    );
 
   /*  card spring animation  */
-  const card = { hidden: { opacity: 0, y: 40 }, show: { opacity: 1, y: 0, transition: { type: "spring", stiffness: 120 } } };
+  const card = {
+    hidden: { opacity: 0, y: 40 },
+    show: { opacity: 1, y: 0, transition: { type: "spring", stiffness: 120 } },
+  };
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
@@ -61,7 +74,9 @@ export default function OutcomeComponent() {
             viewport={{ once: true }}
             className="bg-white rounded-2xl shadow-lg border border-gray-200 p-6 hover:shadow-2xl transition-all duration-300 hover:-translate-y-1"
           >
-            <h3 className="text-2xl font-bold text-gray-800 mb-4">Programme Educational Objectives (PEOs)</h3>
+            <h3 className="text-2xl font-bold text-gray-800 mb-4">
+              Programme Educational Objectives (PEOs)
+            </h3>
             <AnimatedList items={outcomeData.peos} />
           </motion.div>
 
@@ -73,7 +88,9 @@ export default function OutcomeComponent() {
             viewport={{ once: true }}
             className="bg-white rounded-2xl shadow-lg border border-gray-200 p-6 hover:shadow-2xl transition-all duration-300 hover:-translate-y-1"
           >
-            <h3 className="text-2xl font-bold text-gray-800 mb-4">Program Outcomes (POs)</h3>
+            <h3 className="text-2xl font-bold text-gray-800 mb-4">
+              Program Outcomes (POs)
+            </h3>
             <AnimatedList items={outcomeData.pos} />
           </motion.div>
 
@@ -85,7 +102,9 @@ export default function OutcomeComponent() {
             viewport={{ once: true }}
             className="bg-white rounded-2xl shadow-lg border border-gray-200 p-6 hover:shadow-2xl transition-all duration-300 hover:-translate-y-1"
           >
-            <h3 className="text-2xl font-bold text-gray-800 mb-4">Programme Specific Outcomes (PSOs)</h3>
+            <h3 className="text-2xl font-bold text-gray-800 mb-4">
+              Programme Specific Outcomes (PSOs)
+            </h3>
             <AnimatedList items={outcomeData.psos} />
           </motion.div>
         </main>

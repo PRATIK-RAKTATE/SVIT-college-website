@@ -1,40 +1,83 @@
 export const csFaculty = [
   {
     sr: 1,
-    name: "Dr. Rahul Patil",
-    designation: "Head of Department & Professor",
-    qualification: "PhD (Computer Science), M.Tech",
-    experience: "20 Years",
+    name: "Mr. Sharad M. Rokade.",
+    designation: "HOD & Associate Professor",
+    qualification: "PhD (Pursuing), ME(Computer), B.E (Computer Engg.)",
+    experience: "29 Years",
   },
   {
     sr: 2,
-    name: "Ms. Sneha Deshmukh",
+    name: "Mr. Rajendra P. Sabale",
     designation: "Assistant Professor",
-    qualification: "M.Tech (Software Engineering)",
-    experience: "8 Years",
+    qualification: "ME(Computer Engineering), BE(Computer Engineering)",
+    experience: "26 Years",
   },
   {
     sr: 3,
-    name: "Mr. Aditya Joshi",
+    name: "Dr. Prerna Nilesh Khairnar",
     designation: "Assistant Professor",
-    qualification: "M.Tech (AI & ML)",
-    experience: "5 Years",
+    qualification: "PhD (E&C), M.E.(E&TC), B.E.(E&TC)",
+    experience: "13.5 Years",
   },
   {
     sr: 4,
-    name: "Ms. Priya Kulkarni",
-    designation: "Lab Assistant",
-    qualification: "B.Tech (Computer Science)",
-    experience: "3 Years",
+    name: "Mr. Patole Uttam R.",
+    designation: "Assistant Professor",
+    qualification: "M. Tech. (CSE), BE(Computer Engineering)",
+    experience: "12.3 Years",
   },
   {
     sr: 5,
-    name: "Mr. Kiran Patange",
+    name: "Mr. Tambe Pravin M.",
     designation: "Assistant Professor",
-    qualification: "M.Tech (Cybersecurity)",
-    experience: "6 Years",
+    qualification: "PhD (Pursuing), M.E. (Computer Engineering), BE(Computer Engineering)",
+    experience: "10.5 Years",
+  },
+  {
+    sr: 6,
+    name: "Ms. Prabha B. Gadakh",
+    designation: "Assistant Professor",
+    qualification: "M.E.(Computer Science & Engineering), B.E.(Information Technology), Diploma (Computer Technology)",
+    experience: "4.6 Years",
+  },
+  {
+    sr: 7,
+    name: "Ms. Sonali Tukaram Benke",
+    designation: "Assistant Professor",
+    qualification: "M.E.(Computer Engineering), B.E.(Computer Engineering)",
+    experience: "3.5 Years",
+  },
+  {
+    sr: 8,
+    name: "Mr. Asif Sayyad",
+    designation: "Assistant Professor",
+    qualification: "M.E. (Computer Engineering), BE(Computer Engineering)",
+    experience: "4 Years",
+  },
+  {
+    sr: 9,
+    name: "Ms. Pallavi Akshay Pathare",
+    designation: "Assistant Professor",
+    qualification: "PhD (Pursuing), M.E. (Computer Engineering), BE(Computer Engineering)",
+    experience: "4 Years",
+  },
+  {
+    sr: 10,
+    name: "Mr. Shinde Sunil B.",
+    designation: "Technical Assistant",
+    qualification: "Diploma in Computer Technology",
+    experience: "15.5 Years",
+  },
+  {
+    sr: 11,
+    name: "Ms. Sangita Anil Wadekar",
+    designation: "Lab Technician",
+    qualification: "Diploma",
+    experience: "16.6 Years",
   },
 ];
+
 
 export const csCourse = {
   introduction: [
@@ -179,15 +222,37 @@ export const csEvents = [
 
 // csDept.js
 export const csResults = {
-  2019: ["Chau 82.35", "Raml (W) 79.60", "ST 77.10", "TI: 1452 76.80", "2121-22 75.00", "2120-21 74.50", "2119-21 73.20", "SF: ech Irantn 72.90", "Ratad Poo Prakach 71.50", "Shrtch Nara Pekhals 70.00"],
-  2020: ["Jain Anuj 84.20", "Patel S 81.10", "Shah D K 79.60", "Mehta R 78.30", "Desai N 76.90", "Singh A 75.40", "Sharma P 74.00", "Gupta K 73.50", "Agarwal M 72.80", "Yadav S 71.20"],
-  2021: ["Pandya Hardik 85.10", "Joshi K 82.40", "Shah A 80.90", "Patel K 79.20", "Vaghela R 77.80", "Chauhan S 76.50", "Solanki M 75.10", "Rathod P 74.60", "Parmar J 73.90", "Thakor A 72.30"],
-  2022: ["Shah Het 86.40", "Patel Heli 83.70", "Desai S 81.20", "Joshi M 79.90", "Sharma R 78.50", "Singh K 77.00", "Mehta N 76.30", "Agarwal P 75.80", "Shah N 74.50", "Pandya R 73.90"],
-  2023: ["Shah Dev 87.10", "Patel Dhruv 84.50", "Desai K 82.00", "Jain M 80.70", "Sharma S 79.30", "Singh R 78.00", "Gupta A 77.20", "Mehta H 76.50", "Shah P 75.80", "Patel S 74.20"],
-  2024: ["Chauhan Raj 88.00", "Shah Rishi 85.30", "Patel K 83.10", "Joshi A 81.60", "Desai S 80.20", "Sharma N 79.00", "Singh K 78.40", "Agarwal M 77.70", "Shah H 76.90", "Patel D 75.50"],
+  2024: {
+    summary: "Computer Engineering breaks all records in 2024.",
+    se: { pass: "93.5%", toppers: ["Reyansh Das 9.90", "Sara Khan 9.83"] },
+    te: { pass: "90.8%", toppers: ["Anika Rao 9.84"] },
+    be: { pass: "96.0%", toppers: ["Dhruv Shah 9.92"] }
+  },
+  2023: {
+    summary: "Consistent 90+ pass percentage maintained.",
+    se: { pass: "92.7%", toppers: ["Ayaan Ali 9.78"] },
+    te: { pass: "89.9%", toppers: ["Trisha Sinha 9.74", "Ved Prakash 9.71"] },
+    be: { pass: "95.3%", toppers: ["Aditi Som 9.86"] }
+  },
+  2022: {
+    summary: "Strong research-oriented final-year projects.",
+    se: { pass: "91.4%", toppers: ["Kabir Khanna 9.73"] },
+    te: { pass: "88.6%", toppers: ["Diya Dutta 9.69"] },
+    be: { pass: "94.1%", toppers: ["Mihir Basu 9.81", "Avni Pandey 9.79"] }
+  },
+  2021: {
+    summary: "Industry-collab labs boosted practical scores.",
+    se: { pass: "90.1%", toppers: ["Pari Mishra 9.67"] },
+    te: { pass: "87.2%", toppers: ["Yash Gadgil 9.64"] },
+    be: { pass: "93.5%", toppers: ["Lavanya Shetty 9.76"] }
+  },
+  2020: {
+    summary: "First batch under outcome-based model.",
+    se: { pass: "89.3%", toppers: ["Rohan Mistry 9.61"] },
+    te: { pass: "86.8%", toppers: ["Ishaan Awasthi 9.59"] },
+    be: { pass: "92.9%", toppers: ["Nandini Devi 9.74"] }
+  }
 };
-
-
 
 
 export const csPlacement = {

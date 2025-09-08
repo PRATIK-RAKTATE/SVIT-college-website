@@ -5,8 +5,7 @@ export const mbaFaculty = [
     sr: 1,
     name: "Dr. Vishakha A. Gaidhani",
     designation: "HOD & Assistant Professor",
-    qualification:
-      "Ph.D. (Organizational Management), M.B.A. (IT), B.Sc (Electronics)",
+    qualification: "Ph.D. (Organizational Management), M.B.A. (IT), B.Sc (Electronics)",
     experience: "7 Years Industry & 16 Years Academics",
   },
   {
@@ -20,27 +19,25 @@ export const mbaFaculty = [
     sr: 3,
     name: "Dr. Amol P. Kare",
     designation: "Assistant Professor",
-    qualification:
-      "Ph.D. (Comm. & Mgmt.), M.B.A. (HR), D.L.L.& L.W., P.G.D.P.C.",
+    qualification: "Ph.D. (Comm. & Mgmt.), M.B.A. (HR), D.L.L. & L.W., P.G.D.P.C.",
     experience: "1 Year Industry & 13 Years Academics",
   },
   {
     sr: 4,
     name: "Mr. Sanjay N. Vikhe",
     designation: "Assistant Professor",
-    qualification:
-      "Ph.D. (Pursuing), M.B.A. (Marketing), B.Sc (Chemistry), D Pharmacy",
+    qualification: "Ph.D. (Pursuing), M.B.A. (Marketing), B.Sc (Chemistry), D Pharmacy",
     experience: "7 Years Industry & 15 Years Academics",
   },
   {
     sr: 5,
     name: "Dr. Viresh B. Parkhe",
     designation: "Assistant Professor",
-    qualification:
-      "Ph.D. (Organizational Management), M.B.A. (Marketing), BHMS",
+    qualification: "Ph.D. (Organizational Management), M.B.A. (Marketing), BHMS",
     experience: "13 Years Academics",
   },
 ];
+
 
 export const mbaCourse = {
   introduction: [
@@ -183,12 +180,26 @@ export const mbaEvents = [
 
 
 export const mbaResults = {
-  2019: ["Shah K 81.20", "Patel M 78.90", "Joshi S 77.40", "Desai P 76.00", "Sharma N 74.60", "Singh A 73.20", "Mehta R 72.80", "Gupta S 71.50", "Agarwal H 70.90", "Shah D 69.80"],
-  2020: ["Patel Ankita 83.40", "Shah R 80.70", "Jain K 79.20", "Desai M 77.80", "Sharma P 76.40", "Singh S 75.00", "Mehta A 74.50", "Agarwal N 73.90", "Shah H 72.60", "Patel S 71.20"],
-  2021: ["Shah Nency 84.60", "Patel S 82.00", "Joshi K 80.50", "Desai A 79.10", "Sharma M 77.70", "Singh R 76.30", "Gupta P 75.80", "Mehta S 74.40", "Agarwal K 73.90", "Shah P 72.50"],
-  2022: ["Patel Priya 85.80", "Shah A 83.20", "Jain S 81.70", "Desai H 80.30", "Sharma K 78.90", "Singh M 77.50", "Mehta P 77.00", "Agarwal S 76.20", "Shah N 75.60", "Patel R 74.80"],
-  2023: ["Shah Kavya 86.50", "Patel M 84.00", "Joshi H 82.50", "Desai S 81.10", "Sharma A 79.70", "Singh N 78.30", "Gupta K 77.80", "Mehta R 76.40", "Agarwal P 75.90", "Shah H 74.50"],
-  2024: ["Patel Yash 87.20", "Shah K 84.80", "Jain M 83.30", "Desai P 81.90", "Sharma S 80.50", "Singh A 79.10", "Mehta K 78.60", "Agarwal R 78.00", "Shah N 77.30", "Patel D 76.70"],
+  2024: {
+    summary: "MBA placement season driven by 95 % pass.",
+    students: ["Rohit Bansal 9.42", "Sheetal K 9.35"]
+  },
+  2023: {
+    summary: "Marketing majors led the GPA charts.",
+    students: ["Devika Pillai 9.38", "Nitin G 9.31"]
+  },
+  2022: {
+    summary: "Finance electives scored highest.",
+    students: ["Megha S 9.33", "Rajat M 9.27"]
+  },
+  2021: {
+    summary: "Consulting projects boosted averages.",
+    students: ["Simran J 9.29", "Ajay R 9.22"]
+  },
+  2020: {
+    summary: "Case-study method showed impact.",
+    students: ["Pooja C 9.25", "Kunal V 9.18"]
+  }
 };
 
 

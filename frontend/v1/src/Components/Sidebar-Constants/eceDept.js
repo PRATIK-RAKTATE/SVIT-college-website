@@ -3,8 +3,7 @@ export const eceFaculty = [
     sr: 1,
     name: "Dr. Rana S. Mahajan",
     designation: "Assistant Professor & HOD",
-    qualification:
-      "PhD (E&CE), ME(Digital Communication), Diploma in Values and Spiritual Education, Member of ISTE, IETE.",
+    qualification: "PhD (E&CE), ME(Digital Communication), Diploma in Values and Spiritual Education, Member of ISTE, IETE.",
     experience: "14 Years",
   },
   {
@@ -25,22 +24,21 @@ export const eceFaculty = [
     sr: 4,
     name: "Mr. Prashant S. Bibave",
     designation: "Assistant Professor",
-    qualification: "M.E. (Electronics Communication), Member of ISTE, IETE.",
+    qualification: "M. E. (Electronics Communication), Member of ISTE, IETE.",
     experience: "16 Years",
   },
   {
     sr: 5,
     name: "Mr. Liladhar P. Bhamare",
     designation: "Assistant Professor",
-    qualification: "Ph.D (Pursuing), M.E (Microwave), Member of ISTE, IETE.",
+    qualification: "Ph. D (Pursuing), ME(Microwave), Member of ISTE, IETE.",
     experience: "15 Years",
   },
   {
     sr: 6,
     name: "Dr. Trupti K. Wable",
     designation: "Assistant Professor",
-    qualification:
-      "Ph.D (E&CE), M.E (VLSI & Embedded), B.E (Electronics), Diploma (Electronics), Member of ISTE, IETE, IAEEE, IAENG.",
+    qualification: "Ph. D (E&CE), ME(VLSI & Embedded), BE (Electronics), Diploma (Electronics), Member of ISTE, IETE, IAEEE, IAENG.",
     experience: "13 Years",
   },
   {
@@ -51,6 +49,7 @@ export const eceFaculty = [
     experience: "11 Years",
   },
 ];
+
 
 export const eceCourse = {
   introduction: [
@@ -198,14 +197,37 @@ export const eceEvents = [
 
 // eceDept.js
 export const eceResults = {
-  2019: ["Patel N 81.40", "Shah K 79.00", "Desai M 77.50", "Joshi S 76.10", "Sharma P 74.70", "Singh R 73.30", "Mehta A 72.80", "Agarwal H 71.40", "Shah D 70.90", "Patel S 69.50"],
-  2020: ["Shah Ankit 83.60", "Patel K 81.00", "Desai S 79.50", "Jain M 78.10", "Sharma N 76.70", "Singh A 75.30", "Gupta P 74.80", "Mehta R 74.20", "Agarwal K 73.60", "Shah H 72.90"],
-  2021: ["Patel Priya 84.80", "Shah A 82.30", "Joshi K 80.80", "Desai H 79.40", "Sharma M 78.00", "Singh S 76.60", "Mehta P 76.10", "Agarwal S 75.50", "Shah N 74.80", "Patel R 74.20"],
-  2022: ["Shah K 86.00", "Patel M 83.50", "Jain S 82.00", "Desai A 80.60", "Sharma K 79.20", "Singh R 77.80", "Gupta A 77.30", "Mehta H 76.70", "Agarwal P 76.10", "Shah S 75.40"],
-  2023: ["Patel Y 87.20", "Shah K 84.80", "Joshi M 83.30", "Desai P 81.90", "Sharma S 80.50", "Singh A 79.10", "Mehta K 78.60", "Agarwal R 78.00", "Shah N 77.30", "Patel D 76.70"],
-  2024: ["Shah Dev 88.30", "Patel S 85.90", "Jain K 84.40", "Desai M 83.00", "Sharma A 81.60", "Singh R 80.20", "Gupta S 79.70", "Mehta P 79.10", "Agarwal H 78.50", "Shah K 77.80"],
+  2024: {
+    summary: "Computer Engineering breaks all records in 2024.",
+    se: { pass: "93.5%", toppers: ["Reyansh Das 9.90", "Sara Khan 9.83"] },
+    te: { pass: "90.8%", toppers: ["Anika Rao 9.84"] },
+    be: { pass: "96.0%", toppers: ["Dhruv Shah 9.92"] }
+  },
+  2023: {
+    summary: "Consistent 90+ pass percentage maintained.",
+    se: { pass: "92.7%", toppers: ["Ayaan Ali 9.78"] },
+    te: { pass: "89.9%", toppers: ["Trisha Sinha 9.74", "Ved Prakash 9.71"] },
+    be: { pass: "95.3%", toppers: ["Aditi Som 9.86"] }
+  },
+  2022: {
+    summary: "Strong research-oriented final-year projects.",
+    se: { pass: "91.4%", toppers: ["Kabir Khanna 9.73"] },
+    te: { pass: "88.6%", toppers: ["Diya Dutta 9.69"] },
+    be: { pass: "94.1%", toppers: ["Mihir Basu 9.81", "Avni Pandey 9.79"] }
+  },
+  2021: {
+    summary: "Industry-collab labs boosted practical scores.",
+    se: { pass: "90.1%", toppers: ["Pari Mishra 9.67"] },
+    te: { pass: "87.2%", toppers: ["Yash Gadgil 9.64"] },
+    be: { pass: "93.5%", toppers: ["Lavanya Shetty 9.76"] }
+  },
+  2020: {
+    summary: "First batch under outcome-based model.",
+    se: { pass: "89.3%", toppers: ["Rohan Mistry 9.61"] },
+    te: { pass: "86.8%", toppers: ["Ishaan Awasthi 9.59"] },
+    be: { pass: "92.9%", toppers: ["Nandini Devi 9.74"] }
+  }
 };
-
 
 
 export const ecePlacement = {

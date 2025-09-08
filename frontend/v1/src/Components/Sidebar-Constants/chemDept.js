@@ -241,14 +241,37 @@ export const chemicalEvents = [
 
 // chemDept.js
 export const chemicalResults = {
-  2019: ["Desai A 80.10", "Patel S 78.50", "Shah R 77.00", "Joshi M 75.60", "Sharma K 74.20", "Singh P 72.80", "Mehta H 71.40", "Agarwal N 70.90", "Shah J 69.50", "Patel M 68.10"],
-  2020: ["Shah Kirti 82.30", "Desai M 79.70", "Patel S 78.20", "Joshi A 76.80", "Sharma P 75.40", "Singh R 74.00", "Gupta K 73.50", "Mehta S 72.10", "Agarwal H 71.60", "Shah D 70.20"],
-  2021: ["Patel K 83.50", "Shah R 81.00", "Desai S 79.50", "Jain M 78.10", "Sharma N 76.70", "Singh A 75.30", "Mehta P 74.80", "Agarwal S 74.20", "Shah H 73.60", "Patel K 72.90"],
-  2022: ["Shah Hetal 84.70", "Patel S 82.20", "Desai K 80.70", "Joshi M 79.30", "Sharma A 77.90", "Singh S 76.50", "Gupta P 76.00", "Mehta R 75.40", "Agarwal K 74.80", "Shah N 73.20"],
-  2023: ["Desai Yash 85.40", "Shah P 83.00", "Patel M 81.50", "Jain S 80.10", "Sharma K 78.70", "Singh R 77.30", "Mehta A 76.80", "Agarwal H 76.20", "Shah S 75.60", "Patel D 74.90"],
-  2024: ["Shah Kavya 86.10", "Desai M 84.60", "Patel S 83.20", "Joshi H 81.80", "Sharma P 80.40", "Singh K 79.00", "Gupta S 78.50", "Mehta N 77.90", "Agarwal R 77.30", "Shah A 76.60"],
+  2024: {
+    summary: "Chemical Engg posts best university results.",
+    se: { pass: "91.2%", toppers: ["Aarush Singh 9.80"] },
+    te: { pass: "88.5%", toppers: ["Meher Kaur 9.73"] },
+    be: { pass: "94.7%", toppers: ["Vikram Seth 9.87"] }
+  },
+  2023: {
+    summary: "Pilot-plant projects scored high.",
+    se: { pass: "90.6%", toppers: ["Zara Ahmed 9.75"] },
+    te: { pass: "87.4%", toppers: ["Rohan Sen 9.70"] },
+    be: { pass: "93.9%", toppers: ["Anjali Bhatt 9.83"] }
+  },
+  2022: {
+    summary: "Strong industry internship feedback.",
+    se: { pass: "89.8%", toppers: ["Kiara Mehta 9.68"] },
+    te: { pass: "86.9%", toppers: ["Sahil Bagga 9.65"] },
+    be: { pass: "92.5%", toppers: ["Tara Lal 9.79"] }
+  },
+  2021: {
+    summary: "Online labs handled smoothly.",
+    se: { pass: "88.4%", toppers: ["Advait Roy 9.62"] },
+    te: { pass: "85.7%", toppers: ["Darshana Nayak 9.58"] },
+    be: { pass: "91.8%", toppers: ["Pranav Guha 9.72"] }
+  },
+  2020: {
+    summary: "Green-tech projects won hackathons.",
+    se: { pass: "87.5%", toppers: ["Sanya Thakur 9.55"] },
+    te: { pass: "84.9%", toppers: ["Faizan Qureshi 9.51"] },
+    be: { pass: "90.6%", toppers: ["Vaishali Kohli 9.68"] }
+  }
 };
-
 
 
 export const chemicalPlacement = {

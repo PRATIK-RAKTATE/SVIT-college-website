@@ -2,22 +2,31 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { motion } from "framer-motion";
 import HomeSideBar from "../department/Sidebar.jsx";
-import { csPlacement } from "../Side Bar Constants/csDept.js";
-import { itPlacement } from "../Side Bar Constants/itDept.js";
-import { chemicalPlacement } from "../Side Bar Constants/chemDept.js";
-import { ecePlacement } from "../Side Bar Constants/eceDept.js";
-import { fePlacement } from "../Side Bar Constants/feDept.js";
-import { mbaPlacement } from "../Side Bar Constants/mbaDept.js";
+import { csPlacement } from "../Sidebar-Constants/csDept.js";
+import { itPlacement } from "../Sidebar-Constants/itDept.js";
+import { chemicalPlacement } from "../Sidebar-Constants/chemDept.js";
+import { ecePlacement } from "../Sidebar-Constants/eceDept.js";
+import { fePlacement } from "../Sidebar-Constants/feDept.js";
+import { mbaPlacement } from "../Sidebar-Constants/mbaDept.js";
 
 export default function Placement() {
   const { deptId } = useParams();
-  
+
   // Map department IDs to their placement data
   const deptMap = {
     computerEngineering: { data: csPlacement, name: "Computer Engineering" },
-    informationTechnology: { data: itPlacement, name: "Information Technology" },
-    chemicalEngineering: { data: chemicalPlacement, name: "Chemical Engineering" },
-    electronicsAndComputerEngineering: { data: ecePlacement, name: "Electronics & Computer Engineering" },
+    informationTechnology: {
+      data: itPlacement,
+      name: "Information Technology",
+    },
+    chemicalEngineering: {
+      data: chemicalPlacement,
+      name: "Chemical Engineering",
+    },
+    electronicsAndComputerEngineering: {
+      data: ecePlacement,
+      name: "Electronics & Computer Engineering",
+    },
     firstYear: { data: fePlacement, name: "First Year" },
     mba: { data: mbaPlacement, name: "M.B.A" },
   };
@@ -106,7 +115,9 @@ export default function Placement() {
                 transition={{ delay: i * 0.1, type: "spring", stiffness: 120 }}
                 className="bg-white rounded-2xl p-4 shadow-md hover:shadow-xl"
               >
-                <p className="text-xs uppercase tracking-wide text-gray-500">{c.label}</p>
+                <p className="text-xs uppercase tracking-wide text-gray-500">
+                  {c.label}
+                </p>
                 <p className="text-2xl font-bold text-gray-800 mt-1">{c.val}</p>
               </motion.div>
             ))}
@@ -149,7 +160,9 @@ export default function Placement() {
                   className="flex items-center justify-between bg-white rounded-xl p-4 shadow"
                 >
                   <span className="text-gray-700">{t.split("  ")[0]}</span>
-                  <span className="font-bold text-indigo-600">{t.split("  ")[1]}</span>
+                  <span className="font-bold text-indigo-600">
+                    {t.split("  ")[1]}
+                  </span>
                 </motion.div>
               ))}
             </div>
