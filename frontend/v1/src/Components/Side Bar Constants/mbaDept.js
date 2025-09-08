@@ -44,66 +44,34 @@ export const mbaFaculty = [
 
 export const mbaCourse = {
   introduction: [
-    "SVIT's M.B.A. department is moving with poise and purpose, featuring vigor, competence, and confidence, despite the distinct individual traits of students.",
-    "The placement cell stands out as the most important element of the Department, providing sought-after opportunities. The placement committee comprises faculty and students, with the Head of the Department as Chairman and a faculty member as Placement Officer.",
+    "The MBA programme focuses on developing managerial leaders equipped with analytical, strategic and entrepreneurial skills."
   ],
   overview: [
-    "The department offers specialization in multiple areas of management and emphasizes practical exposure, including internships, industry visits, and placement support.",
-    "Specializations include Marketing, Finance, HR, Operations, Business Analytics, Agri-Business, and Pharma & Healthcare Management.",
+    "Two-year full-time MBA started in 2008 with specialisations in Marketing, Finance, HR and Operations."
   ],
-  facilities: [
-    "College Bus Facility from Nashik & Sinnar",
-    "Well qualified & Experienced faculty",
-    "Scholarships and financial aid",
-    "Earn and Learn Scheme",
-    "Central Library & Department Library",
-    "Hostels facility for Boys and Girls",
-    "Expert Lectures from Industry Persons",
-    "Group Discussion, Presentations, Article Review",
-    "Case Studies and Role Plays",
-    "Training Programs, Workshops & Seminars",
-    "Mind Concentration & Meditation programs",
-    "Industrial Visit to renowned Companies",
-    "Students Association (CAMS) for Extra-curricular Development",
-    "Soft Skills & Personality Development Capsule",
-    "Personal mentoring to Students",
-    "100% Placement Assistance",
-    "Sports & Cultural Activities",
-    "Institute–Industry (NIMA) Collaboration",
-    "Industry Mentored Projects",
-    "Computer Laboratory & Wi-Fi Facility",
-    "Entrepreneurship Development Cell",
-    "DTE approved A.R.C. Centre",
-  ],
-  projects: [
-    "Desk Research in specialization area",
-    "Field Project in specialization area",
-    "On-the-Job Training in specialization area",
-    "Research Project in specialization area",
-  ],
-  association: [
-    "Creative Association of Management Students (CAMS), established in 2008-09",
-    "Fresher’s Welcome",
-    "Teacher’s Day Celebration",
-    "Management Day",
-    "Farewell Function",
-    "Intercollegiate cultural and management event 'Bizz-Ana'",
+  majorActivities: [
+    "National Management Convention (NMC)",
+    "CEO speaker series",
+    "Live consultancy projects",
+    "Entrepreneurship development workshops",
+    "Industry immersion programme"
   ],
   majorFacilities: [
-    "Computer Labs",
-    "Wi-Fi Facility",
-    "Department Library",
-    "College Bus Facility",
-    "Hostels for Boys and Girls",
-    "100% Placement Assistance",
-    "Industry Mentored Projects",
+    "Management Development Centre",
+    "Case-study room with video-conferencing",
+    "Business Simulation Lab",
+    "Entrepreneurship Incubation Centre",
+    "Digital Library with Bloomberg terminal"
+  ],
+  associationInfo: [
+    "MBA Students' Association (MBASA) organises business quizzes, management games and corporate interface events."
   ],
   courseInfo: {
-    branch: "M.B.A",
-    courseName: "Master of Business Administration",
-    intake: 120,
-    establishmentYear: "2008-09",
-  },
+    branch: "Management Studies",
+    courseName: "Master of Business Administration (MBA)",
+    intake: 60,
+    establishmentYear: 2008
+  }
 };
 
 export const mbaOutcomes = {

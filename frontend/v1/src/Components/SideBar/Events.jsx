@@ -78,7 +78,7 @@ export default function Events() {
         <HomeSideBar deptId={deptId} />
 
         <section
-          className="flex-1 border-2  m-18 rounded-3xl md:p-8 flex items-center justify-center"
+          className="flex-1 m-18 rounded-3xl md:p-8 flex items-center justify-center"
           style={{ maxHeight: sbHeight || "auto" }}
         >
           <motion.div

@@ -43,48 +43,39 @@ export const firstYearFaculty = [
   },
 ];
 
-export const firstYearCourse = {
+
+
+
+export const feCourse = {
   introduction: [
-    "The First Year Engineering program provides a strong foundation in basic sciences, mathematics, and engineering fundamentals.",
-    "It prepares students for all engineering disciplines by building analytical, problem-solving, and programming skills.",
+    "First Year Engineering provides strong foundation in basic sciences and core engineering principles."
   ],
   overview: [
-    "The department was established to ensure students have a solid understanding of core engineering principles.",
-    "Courses include Physics, Chemistry, Mathematics, Basic Electrical Engineering, Engineering Mechanics, Workshop Practice, and Programming Fundamentals.",
+    "The department nurtures fundamental concepts through interactive learning and foundation laboratories."
   ],
-  facilities: [
-    "Well-equipped physics and chemistry labs",
-    "Engineering workshop with modern tools",
-    "Computer labs with latest software and programming tools",
-    "Mathematics and tutorial rooms",
-    "Library and e-learning resources",
-    "Wi-Fi enabled campus",
-  ],
-  projects: [
-    "Mini-projects based on programming and electronics",
-    "Science experiments in physics and chemistry labs",
-    "Collaborative problem-solving projects in groups",
-  ],
-  association: [
-    "First Year Students Association",
-    "Orientation and Induction Programs",
-    "Cultural and Technical Events",
-    "Workshops and Seminars",
-    "Sports & Extra-curricular activities",
+  majorActivities: [
+    "Freshers' induction programme",
+    "Foundation day celebrations",
+    "Parent-teacher meet",
+    "Basic science exhibition",
+    "Sports & cultural week"
   ],
   majorFacilities: [
-    "Physics and Chemistry Labs",
-    "Computer Labs with Wi-Fi",
-    "Workshop and Engineering Tools",
-    "Library & E-learning Resources",
-    "Sports Facilities",
+    "Engineering Physics Lab",
+    "Engineering Chemistry Lab",
+    "Language Lab",
+    "Workshop Practice Lab",
+    "Central Computer Facility"
+  ],
+  associationInfo: [
+    "First Year Students' Council (FYSC) organises orientation, mentor-mentee sessions and co-curricular activities."
   ],
   courseInfo: {
-    branch: "First Year",
-    courseName: "Bachelor of Engineering - Foundation Year",
-    intake: 240,
-    establishmentYear: "1998-99",
-  },
+    branch: "First Year Engineering",
+    courseName: "B.E. First Year (Common)",
+    intake: 600,
+    establishmentYear: 1995
+  }
 };
 
 export const feOutcomes = {

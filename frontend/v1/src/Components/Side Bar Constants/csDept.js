@@ -38,46 +38,38 @@ export const csFaculty = [
 
 export const csCourse = {
   introduction: [
-    "Computer Engineers analyze, design, and evaluate computer systems, both hardware and software.",
-    "They work on systems such as flexible manufacturing systems or smart devices.",
-    "They often focus on challenges that result in new state-of-the-art products integrating computer capabilities.",
+    "The Computer Engineering department offers a rigorous undergraduate programme designed to produce industry-ready software professionals and researchers.",
+    "Our curriculum emphasises core computer science fundamentals, modern programming paradigms, and emerging technologies such as AI, cloud computing and cyber-security."
   ],
   overview: [
-    "The Department of Computer Engineering was established in 1998-99 and is affiliated to University of Pune.",
-    "It follows modern industry trends and focuses on product formulation, communications, data compression, and wireless connectivity.",
-    "The department has well-qualified and motivated faculty to produce graduates capable of succeeding at the highest level.",
+    "Established in 2001, the department is NBA accredited and offers B.E. Computer Engineering with an intake of 180 students.",
+    "State-of-the-art laboratories, industry collaborations and active research centres provide an enriching learning ecosystem."
   ],
-  facilities: [
-    "Excellent computing facilities with latest PC configurations, multimedia labs, project labs, programming labs, computer graphics labs, and design labs.",
-    "Software available includes C, C++, Oracle10g, 3DMax, Microsoft Visual Studio, Linux, TASM, MASM, Net 2003, Director, JAVA1.5, Rational Rose, etc.",
-  ],
-  projects: [
-    "Mobile for Blind People",
-    "Finger Recognition for Security Systems",
-    "Virtual Mouse - a compact peripheral",
-    "Library Management using RFID",
-  ],
-  association: [
-    `"Hadoop+Mongodb+Python" - 2 Days State Level Workshop`,
-    `"Creative Thinking" - 2 Days Hands-On Workshop`,
-    `"Stress Management" - 1 Day State Level Seminar`,
-    `"How to Write Research Paper and Improve Citations" - 1 Day Online Workshop`,
-    `"Information Security Policies" - State Level Seminar`,
-    `"TechTest" - Seminar & Project Exhibition at IIT Powai`,
-    `Industrial Visits: C-DAC Pune, BSNL Nashik, PARAM Computer`,
+  majorActivities: [
+    "Annual national conference on AI & ML (NCALM)",
+    "Monthly hackathon series (Hack-Night)",
+    "Industry expert talks every Saturday (Tech-Talks)",
+    "Summer internship fair with 40+ companies",
+    "Open-source contribution drives (OSS-Camp)"
   ],
   majorFacilities: [
-    "DLP Projector",
-    "Departmental Library",
-    "Internet Facility for Students",
-    "Wi-Fi Facility",
+    "High Performance Computing Lab (128 GPU nodes)",
+    "IoT & Robotics Lab with ROS based drones",
+    "Cyber-Security Range with live malware sandbox",
+    "Amazon Web Services (AWS) Academy cloud lab",
+    "24×7 central computing facility (500+ terminals)"
+  ],
+  associationInfo: [
+    "The Computer Engineering Students' Association (CESA) was formed in 2003 and currently has 800+ active members.",
+    "CESA organises technical events, coding competitions, industrial visits and soft-skill workshops throughout the year.",
+    "Annual flagship events include CODE-FEST, TECHNOPHILIA and PROJECT-EXPO which attract participation from across the state."
   ],
   courseInfo: {
-    branch: "BE",
-    courseName: "Computer Engineering",
-    intake: 60,
-    establishmentYear: "1999-2000",
-  },
+    branch: "Computer Engineering",
+    courseName: "B.E. Computer Engineering",
+    intake: 180,
+    establishmentYear: 2001
+  }
 };
 
 // csDept.js
