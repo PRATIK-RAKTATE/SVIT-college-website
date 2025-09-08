@@ -20,13 +20,13 @@ export default function Carousel({ slides, interval = 4500 }) {
   useEffect(() => {
     const slideTimer = setInterval(
       () => setIndex((i) => (i + 1) % slides.length),
-      interval,
+      interval
     );
     return () => clearInterval(slideTimer);
   }, [slides.length, interval]);
 
   return (
-    <div className="relative w-screen h-screen overflow-hidden bg-black">
+    <div className="relative w-screen mt-4 h-[540px] overflow-hidden bg-black">
       {/* Gradient overlay */}
       <motion.div
         initial={{ opacity: 0 }}

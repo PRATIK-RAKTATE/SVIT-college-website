@@ -54,41 +54,34 @@ export const eceFaculty = [
 
 export const eceCourse = {
   introduction: [
-    "Electronics and Computer Engineering is the branch of Electronics Engineering that deals with the effects of electrons to build components, devices, systems, or equipment.",
-    "Computer Engineering deals with the design of computers and computer systems, including hardware and software. Computer engineers may also work on system software, often considered a separate discipline known as Software Engineering.",
+    "Electronics & Computer Engineering department delivers cutting-edge education in VLSI, embedded systems and wireless communication."
   ],
   overview: [
-    "The courses here include computer applications and systems, focusing on designing and developing computer software and hardware processes.",
-    "Students learn to use different programming languages, digital and analogue electronics, networking, and telecommunications.",
-    "Though recently established, the department has ultramodern experimental setups in all laboratories.",
+    "Established in 2004, the programme is uniquely positioned to bridge electronics hardware and computer software domains."
   ],
-  topRecruiters: [
-    "Accenture Solutions Private Limited",
-    "Cognizant Technology Solutions",
-    "HCL Technologies",
-    "Hewlett Packard",
+  majorActivities: [
+    "Annual VLSI design contest (VLSI-Con)",
+    "IoT & Embedded Systems workshop",
+    "National conference on Communication Systems (NCCS)",
+    "Industry sponsored projects fair",
+    "IEEE student branch events"
   ],
-  careerProspects: [
-    "Software Engineer",
-    "Software Developer",
-    "Programmer Analyst",
-    "Test Engineer",
-    "Content/Developer",
+  majorFacilities: [
+    "VLSI Design Lab with Cadence tools",
+    "Embedded Systems Lab (ARM, RISC-V)",
+    "Communication Systems Lab",
+    "IoT Innovation Centre",
+    "Antenna & Microwave lab"
   ],
-  labs: [
-    "Basic Electronics Lab",
-    "Digital Electronics Lab",
-    "Communications Lab",
-    "Computer Lab",
-    "Power Electronics Lab",
-    "Microprocessor Lab",
+  associationInfo: [
+    "Electronics & Computer Engineering Students' Association (ECESA) conducts hackathons, industrial tours and expert lectures regularly."
   ],
   courseInfo: {
-    branch: "BE",
-    courseName: "Electronics and Telecommunication Engineering",
-    intake: 60,
-    establishmentYear: "2002-2003",
-  },
+    branch: "Electronics & Computer Engineering",
+    courseName: "B.E. Electronics & Computer Engineering",
+    intake: 120,
+    establishmentYear: 2004
+  }
 };
 
 export const eceOutcomes = {

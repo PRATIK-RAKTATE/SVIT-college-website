@@ -98,44 +98,34 @@ export const chemFaculty = [
 
 export const chemCourse = {
   introduction: [
-    "Chemical Engineering focuses on the design, optimization, and operation of chemical processes, including the transformation of raw materials into valuable products.",
-    "It combines principles of chemistry, physics, mathematics, and biology to solve problems related to chemicals, materials, and energy.",
+    "Chemical Engineering department nurtures process engineers equipped with latest simulation and safety techniques."
   ],
   overview: [
-    "The Department of Chemical Engineering was established to prepare students for careers in chemical, pharmaceutical, energy, and process industries.",
-    "The curriculum emphasizes process design, chemical reaction engineering, thermodynamics, process control, and environmental engineering.",
+    "Founded in 1999, the department offers B.E. Chemical Engineering with 60 seats and is accredited by NBA."
   ],
-  facilities: [
-    "State-of-the-art chemical laboratories including Reaction Engineering Lab, Process Control Lab, and Material Science Lab.",
-    "Pilot plants and experimental setups for practical exposure.",
-    "Access to simulation software for chemical processes.",
-    "Departmental library with reference books, journals, and e-resources.",
-  ],
-  projects: [
-    "Design and optimization of chemical reactors",
-    "Wastewater treatment and environmental projects",
-    "Polymer synthesis and characterization",
-    "Process automation using chemical simulators",
-  ],
-  association: [
-    "Chemical Engineering Students Association (CESA)",
-    "Industrial visits to chemical and pharmaceutical companies",
-    "Workshops and seminars on process safety and chemical innovations",
-    "National level technical competitions and paper presentations",
+  majorActivities: [
+    "National conference on Chemical Engineering (NCCE)",
+    "Annual industrial training programme",
+    "Process simulation workshop (Aspen Plus)",
+    "Safety & hazard analysis seminar",
+    "Alumni-industry interaction day"
   ],
   majorFacilities: [
-    "Pilot Plants & Experimental Labs",
-    "Process Simulation Software",
-    "Department Library",
-    "Internet & Wi-Fi Facility",
-    "Laboratory Safety Equipment",
+    "Process Control & Instrumentation Lab",
+    "Mass Transfer Operations Lab",
+    "Heat Transfer Lab",
+    "Reaction Engineering Lab",
+    "Aspen HYSYS simulation centre"
+  ],
+  associationInfo: [
+    "Chemical Engineering Students' Society (CHESS) organises technical events and industrial visits every semester."
   ],
   courseInfo: {
-    branch: "BE",
-    courseName: "Chemical Engineering",
+    branch: "Chemical Engineering",
+    courseName: "B.E. Chemical Engineering",
     intake: 60,
-    establishmentYear: "2000-2001",
-  },
+    establishmentYear: 1999
+  }
 };
 
 export const chemicalOutcomes = {
