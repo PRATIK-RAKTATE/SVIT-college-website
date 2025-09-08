@@ -30,6 +30,7 @@ import Placement from "./Components/SideBar/Placement.jsx";
 import AcademicBooks from "./Components/SideBar/Academic.jsx";
 import EResources from "./Components/SideBar/E-resources.jsx";
 import MainContactUs from "./Components/ContactUs/MainContactUs.jsx"
+import MainAdmission from "./Components/Admission/MainAdmission.jsx";
 
 
 
@@ -52,7 +53,7 @@ function App() {
         />
         <Route path="/about/Infrastructure" element={<AboutInfrastructure />} />
         <Route path="/about/Linkages" element={<AboutLinkages />} />
-        <Route path="/about/Examination" element={<Examination />} />
+        <Route path="/Examination" element={<Examination />} />
         <Route path="/Library" element={<Library />} />
         <Route
           path="/Library/AdvisoryCommittee"
@@ -64,6 +65,7 @@ function App() {
         <Route path="/Library/Section" element={<LibrarySection />} />
         <Route path="/Library/OPAC" />
         <Route path="/ContactUs" element={<MainContactUs/>} />
+        <Route path="/admission/Admissiondetails" element={<MainAdmission/>} />
 
         {Object.entries(DEPARTMENTS).map(([key, data]) => (
           <Route
