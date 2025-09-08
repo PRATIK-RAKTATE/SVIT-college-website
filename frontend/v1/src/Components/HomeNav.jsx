@@ -261,9 +261,9 @@ export default function HomeNav() {
         <NavLink to="/erp" className={({isActive}) => `${isActive ? "text-red-500" : "text-black"}`}>ERP</NavLink>
         <NavLink to="/library" className={({isActive}) => `${isActive ? "text-red-500" : "text-black"}`}>Library</NavLink>
         <NavLink to="/gallery" className={({isActive}) => `${isActive ? "text-red-500" : "text-black"}`}>Gallery</NavLink>
+        <NavLink to="Examination" className={({isActive}) => `${isActive ? "text-red-500" : "text-black"}`}>Examination</NavLink>
         <NavLink to="/contactus" className={({isActive}) => `${isActive ? "text-red-500" : "text-black"}`}>Contact us</NavLink>
         <NavLink to="/about" className={({isActive}) => `${isActive ? "text-red-500" : "text-black"}`}>About us</NavLink>
-        <NavLink to="Examination" className={({isActive}) => `${isActive ? "text-red-500" : "text-black"}`}>Examination</NavLink>
         <NavLink to="/sm" className={({isActive}) => `${isActive ? "text-red-500" : "text-black"}`}>Site map</NavLink>
       </div>
 
