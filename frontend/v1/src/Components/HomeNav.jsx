@@ -17,7 +17,6 @@ export default function HomeNav() {
     }
   }, [isOpen]);
 
-
   const menuItems = [
     {
       key: "dept",
@@ -74,101 +73,113 @@ export default function HomeNav() {
       key: "links",
       label: "Important Links",
       items: [
-        { text: "AICTE", url: "/links/aicte" },
-        { text: "DTE", url: "/links/dte" },
-        { text: "NBA", url: "/links/nba" },
-        { text: "UGC", url: "/links/ugc" },
-        { text: "Shikshan Shulk Samiti", url: "/links/shikshan-shulk" },
-        { text: "Unipune", url: "/links/unipune" },
+        { text: "AICTE", url: "https://www.aicte.gov.in/" },
+        { text: "DTE", url: "https://dte.maharashtra.gov.in/" },
+        { text: "NBA", url: "https://www.nbaind.org/" },
+        { text: "UGC", url: "https://www.ugc.gov.in/" },
+        { text: "Shikshan Shulk Samiti", url: "https://sssamiti.org/" },
+        { text: "Pravesh Niyantran Samiti", url: "https://maha-ara.org/ara-authorities/" },
+        { text: "Unipune", url: "https://www.unipune.ac.in/" },
       ],
     },
     {
       key: "add",
       label: "Admission",
       items: [
-        
-        { text: "Admission Details", url: "/links/aicte" },
-        { text: "Admission 2025-26 (Institute Level Non CAP Admission)", url: "/links/dte" },
-        { text: "Admission Enquiry Form", url: "/links/nba" },
+        { text: "Admission Details", url: "/admission/Admissiondetails" },
+        { 
+          text: "Admission 2025-26 (Institute Level Non CAP Admission)", 
+          url: "https://svitnashik.in/MainNav/Admission%202025-26%20(Institute%20Level%20Non%20CAP%20Admission).pdf" 
+        },
+        { 
+          text: "Admission Enquiry Form", 
+          url: "https://docs.google.com/forms/d/e/1FAIpQLScy0O757Bw1lNMDHdvIUB0k-YfC0MwKDVo-mIyYMq8bYIozcg/viewform" 
+        },
       ],
     },
   ];
 
-
+  // helper function: check if external
+  const isExternal = (url) => url.startsWith("http");
 
   return (
     <nav className="bg-white px-4 py-3 shadow-md relative z-50">
-   
+      {/* Desktop menu */}
       <div className="hidden md:flex md:justify-center md:gap-6 font-medium">
-        
         <NavLink to="/" className={({ isActive }) =>
-            `${isActive ? "text-red-500" : "text-black"}`
-          }>Home
-          </NavLink>
-      
-    
-      {menuItems.map((menu)=>(
-        <ul className="relative group cursor-pointer">
-            <div className="  flex items-center hover:text-blue-400">
+          `${isActive ? "text-red-500" : "text-black"}`}>
+          Home
+        </NavLink>
+
+        {menuItems.map((menu) => (
+          <ul key={menu.key} className="relative group cursor-pointer">
+            <div className="flex items-center hover:text-blue-400">
               {menu.label} <ChevronDown size={16} className="ml-1" />
             </div>
 
-            <ul className="absolute left-0 pt-2 bg-white shadow-md rounded-md opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto transition-opacity duration-200 z-50 ">
-              {menu.items.map((item,id)=>(
-                <NavLink to={item.url} className={({ isActive }) =>
-            `${isActive ? "text-red-500" : "text-black"} `
-          }>
-                  <li className="px-4 py-2 hover:bg-gray-100 w-70">
-                    {item.text}
-                  </li>
+            <ul className="absolute left-0 pt-2 bg-white shadow-md rounded-md opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto transition-opacity duration-200 z-50">
+              {menu.items.map((item, id) =>
+                isExternal(item.url) ? (
+                  <a 
+                    key={id}
+                    href={item.url} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                  >
+                    <li className="px-4 py-2 hover:bg-gray-100 w-70">{item.text}</li>
+                  </a>
+                ) : (
+                  <NavLink 
+                    key={id} 
+                    to={item.url} 
+                    className={({ isActive }) =>
+                      `${isActive ? "text-red-500" : "text-black"}`
+                    }
+                  >
+                    <li className="px-4 py-2 hover:bg-gray-100 w-70">{item.text}</li>
                   </NavLink>
-              ))}
+                )
+              )}
             </ul>
-        </ul>
-      ))}
-     
-     <NavLink to="/rti" className={({isActive})=>`${isActive ? "text-red-500 ": "text-black"}`}>RTI</NavLink>
-     <NavLink to="/erp" className={({isActive})=>`${isActive ? "text-red-500 ": "text-black"}`}>ERP</NavLink>
-     <NavLink to="/library" className={({isActive})=>`${isActive ? "text-red-500 ": "text-black"}`}>Library</NavLink>
-     <NavLink to="/gallery" className={({isActive})=>`${isActive ? "text-red-500 ": "text-black"}`}>Gallery</NavLink>
-     <NavLink to="/contactus" className={({isActive})=>`${isActive ? "text-red-500 ": "text-black"}`}>Contact us</NavLink>
+          </ul>
+        ))}
 
-     <NavLink to="/about" className={({isActive})=>`${isActive ? "text-red-500 ": "text-black"}`}>About us</NavLink>
-     <NavLink to="/about/Examination" className={({isActive})=>`${isActive ? "text-red-500 ": "text-black"}`}>Examination</NavLink>
-
-     <NavLink to="/sm" className={({isActive})=>`${isActive ? "text-red-500 ": "text-black"}`}>Site map</NavLink>
-     
-
+        {/* Static menu links */}
+        <NavLink to="/rti" className={({isActive}) => `${isActive ? "text-red-500" : "text-black"}`}>RTI</NavLink>
+        <NavLink to="/erp" className={({isActive}) => `${isActive ? "text-red-500" : "text-black"}`}>ERP</NavLink>
+        <NavLink to="/library" className={({isActive}) => `${isActive ? "text-red-500" : "text-black"}`}>Library</NavLink>
+        <NavLink to="/gallery" className={({isActive}) => `${isActive ? "text-red-500" : "text-black"}`}>Gallery</NavLink>
+        <NavLink to="/contactus" className={({isActive}) => `${isActive ? "text-red-500" : "text-black"}`}>Contact us</NavLink>
+        <NavLink to="/about" className={({isActive}) => `${isActive ? "text-red-500" : "text-black"}`}>About us</NavLink>
+        <NavLink to="Examination" className={({isActive}) => `${isActive ? "text-red-500" : "text-black"}`}>Examination</NavLink>
+        <NavLink to="/sm" className={({isActive}) => `${isActive ? "text-red-500" : "text-black"}`}>Site map</NavLink>
       </div>
-  
+
+      {/* Mobile Menu Button */}
       <div className="md:hidden flex justify-end">
-        <div className="flex justify-center ">
+        <div className="flex justify-center">
           <h1 className="pt-2 mr-65">Menu</h1>
           <button onClick={toggleMenu} className="p-2">
-          {isOpen ? <X size={28} /> : <Menu size={28} />}
-        </button>
+            {isOpen ? <X size={28} /> : <Menu size={28} />}
+          </button>
         </div>
       </div>
 
-  
+      {/* Mobile Side Menu */}
       <div
         className={`fixed top-0 left-0 w-3/4 h-screen bg-white text-black transform ${
           isOpen ? "translate-x-0" : "-translate-x-full"
         } transition-transform duration-300 ease-in-out z-50 p-6 flex flex-col gap-6`}
       >
-        {/* Home */}
-        <NavLink to="/" className="text-xs font-semibold">
-          Home
-        </NavLink>
+        <NavLink to="/" className="text-xs font-semibold">Home</NavLink>
 
-        {/* Mobile dropdowns (expand on click) */}
         {menuItems.map((menu) => (
           <div key={menu.key} className="flex flex-col gap-1">
             <button
               onClick={() =>
                 setMobileOpenMenu(mobileOpenMenu === menu.key ? null : menu.key)
               }
-              className="flex items-center justify-between w-full text-xs font-semibold"
+              className="flex items-center justify-between w-full text-xs font-semibold "
             >
               {menu.label}
               <ChevronDown
@@ -181,23 +192,31 @@ export default function HomeNav() {
 
             {mobileOpenMenu === menu.key && (
               <ul className="pl-4 mt-2 space-y-2 text-sm">
-                {menu.items.map((item, idx) => (
-                  <li key={idx} className="cursor-pointer">
-                    <Link to={item.url}>{item.text}</Link>
-                  </li>
-                ))}
+                {menu.items.map((item, idx) =>
+                  isExternal(item.url) ? (
+                    <li key={idx}>
+                      <a href={item.url} target="_blank" rel="noopener noreferrer">
+                        {item.text}
+                      </a>
+                    </li>
+                  ) : (
+                    <li key={idx}>
+                      <Link to={item.url}>{item.text}</Link>
+                    </li>
+                  )
+                )}
               </ul>
             )}
           </div>
         ))}
 
-     <NavLink to="/rti" className={({isActive})=>`${isActive ? "text-red-500 ": "text-black"}"`}>RTI</NavLink>
-     <NavLink to="/erp" className={({isActive})=>`${isActive ? "text-red-500 ": "text-black"}`}>ERP</NavLink>
-     <NavLink to="/li" className={({isActive})=>`${isActive ? "text-red-500 ": "text-black"}`}>Library</NavLink>
-     <NavLink to="/ga" className={({isActive})=>`${isActive ? "text-red-500 ": "text-black"}`}>Gallery</NavLink>
-     <NavLink to="/contactus" className={({isActive})=>`${isActive ? "text-red-500 ": "text-black"}`}>Contact us</NavLink>
-     <NavLink to="/au" className={({isActive})=>`${isActive ? "text-red-500 ": "text-black"}`}>About us</NavLink>
-     <NavLink to="/sm" className={({isActive})=>`${isActive ? "text-red-500 ": "text-black"}`}>Site map</NavLink>
+        <NavLink to="/rti" className={({isActive}) => `${isActive ? "text-red-500" : "text-black"}`}>RTI</NavLink>
+        <NavLink to="/erp" className={({isActive}) => `${isActive ? "text-red-500" : "text-black"}`}>ERP</NavLink>
+        <NavLink to="/li" className={({isActive}) => `${isActive ? "text-red-500" : "text-black"}`}>Library</NavLink>
+        <NavLink to="/ga" className={({isActive}) => `${isActive ? "text-red-500" : "text-black"}`}>Gallery</NavLink>
+        <NavLink to="/contactus" className={({isActive}) => `${isActive ? "text-red-500" : "text-black"}`}>Contact us</NavLink>
+        <NavLink to="/au" className={({isActive}) => `${isActive ? "text-red-500" : "text-black"}`}>About us</NavLink>
+        <NavLink to="/sm" className={({isActive}) => `${isActive ? "text-red-500" : "text-black"}`}>Site map</NavLink>
       </div>
     </nav>
   );
