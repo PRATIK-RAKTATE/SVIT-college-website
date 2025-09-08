@@ -61,8 +61,8 @@ const HodSection = () => {
       </h3>
 
       <div className="relative">
-        <FaQuoteLeft className="absolute -top-4 -left-4 text-5xl text-purple-200" />
-        <p className="text-gray-700 leading-relaxed text-lg italic pl-8">
+        {/* <FaQuoteLeft className="absolute -top-4 -left-4 text-5xl text-purple-200" /> */}
+        <p className="text-gray-700 leading-relaxed text-lg italic ">
           The department of Computer Engineering, established in 1999, is one of
           the oldest and most reputed departments of the institute.
         </p>

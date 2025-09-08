@@ -5,9 +5,13 @@ import SideLink from "./Useful";
 import ImagText from "./ImgText";
 import Imp from "./News";
 import MinorMajor from "./Minor&Major";
+import Carousel from "../department/HeroCarousel";
 
-export default function Home() {
+export default function Home({slides}) {
   return (
+    <>
+
+    <Carousel slides={slides}/>
     <div className="m-3">
       <WT />
       <div className="md:flex md:justify-between mt-5">
@@ -25,5 +29,6 @@ export default function Home() {
         </div>
       </div>
     </div>
+    </>
   );
 }
