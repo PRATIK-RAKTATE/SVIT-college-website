@@ -77,58 +77,35 @@ export const itFaculty = [
 
 export const itCourse = {
   introduction: [
-    "Information Technology has already influenced us in a number of important ways. It has changed the way we do research, introducing powerful new resources such as simulation and modeling software, design and synthesis tools.",
-    "Information Technology allows integrated syllabus development & delivery. IT has also changed the characteristics of our most visible output, which, of course, are our students.",
-    "We are graduating IT scientists and IT engineers at all levels and on the whole, technology-skilled students who expect a changing environment to be an ongoing part of their careers and their lives.",
+    "Information Technology department focuses on applied computing, data science and modern web technologies to create industry-ready graduates."
   ],
   overview: [
-    "The department caters to the needs of the Information Technology sector by imparting requisite knowledge to students in the fields of software development, IT, and IT-enabled services (ITES).",
-    "The department was established in 2009. Since inception, it has made tremendous progress in terms of good academic results.",
-    "Companies need IT engineers for software development, managing computer networks, coding software, website development, and automation of processes. Demand for IT professionals remains high throughout the decade.",
-    "IT graduates also have large scope for overseas jobs in countries like USA, UK, Canada, Germany, Japan, Singapore, Australia, etc.",
+    "Started in 2002 with 60 seats, the department is known for its strong industry linkage and 100% placement record since 2015."
+  ],
+  majorActivities: [
+    "National seminar on Data Science (NSDS)",
+    "Monthly DevOps meet-ups",
+    "Cloud-native hackathon (Cloud-Nite)",
+    "Industry immersion programme (IIP)",
+    "Google Developer Student Club (GDSC) events"
   ],
   majorFacilities: [
-    "Well Furnished and Upgraded Labs",
-    "All Labs are in LAN",
-    "Department Library",
-    "Internet Facility for students",
-    "Wi-Fi Facility for students",
+    "DevOps & Cloud Lab (Kubernetes cluster)",
+    "Data Science Lab with GPU workstations",
+    "Full-stack development studio",
+    "Cyber-Physical Systems lab",
+    "24×7 high-speed internet (1 Gbps)"
   ],
-  labs: [
-    {
-      name: "PL LAB",
-      details: [
-        "Dual boot operating system",
-        "Windows 8.1 legal operating system (64 bit) & Fedora 19 (64 bit)",
-        "Software: Turbo C, XAMPP, MongoDB, MySQL, Eclipse, etc.",
-      ],
-    },
-    {
-      name: "SW LAB",
-      details: [
-        "Dual boot operating system",
-        "Windows 8.1 legal operating system (64 bit) & Ubuntu 14 (64 bit)",
-        "Software: Turbo C, XAMPP, MongoDB, MySQL, Eclipse, etc.",
-      ],
-    },
-    {
-      name: "MULTIMEDIA LAB",
-      details: ["Digital trainer kit", "Digital IC tester"],
-    },
-  ],
-  association: [
-    "INFORMATION TECHNOLOGY STUDENT ASSOCIATION (ITSA)",
-    "Organized National Level Technical Event 'EXEBURENCE - 2012'",
-    "Organized Social Event 'Ankur…Ek navi Suruvat'",
-    "Organized a social event for farmers suffering from drought",
-    "Celebrating Teachers Day, Engineers Day, Fresher’s Party and Farewell every year",
+  associationInfo: [
+    "Information Technology Students' Forum (ITSF) was established in 2004.",
+    "ITSF regularly organises coding marathons, industrial tours and alumni interactions."
   ],
   courseInfo: {
-    branch: "BE",
-    courseName: "Information Technology",
+    branch: "Information Technology",
+    courseName: "B.E. Information Technology",
     intake: 60,
-    establishmentYear: 2009,
-  },
+    establishmentYear: 2002
+  }
 };
 
 export const itOutcomes = {
