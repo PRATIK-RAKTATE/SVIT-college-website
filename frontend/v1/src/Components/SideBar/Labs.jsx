@@ -22,7 +22,7 @@ export default function Lab() {
       labData = itLabs;
       deptName = "Information Engineering";
       break;
-    case "chemicalEngineering":
+    case "chemical-engineering":
       labData = chemicalLabs;
       deptName = "Chemical Engineering";
       break;

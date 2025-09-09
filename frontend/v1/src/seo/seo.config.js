@@ -36,7 +36,7 @@ const SEO_CONFIG = {
       url: "https://svitnashik.in",
       image: "https://pravaraengg.org.in/assets/img/PRES.png",
     },
-    chemicalEngineering: {
+    "chemical-engineering": {
       title: "Chemical Engineering Department | SVIT Nashik",
       description:
         "Explore Chemical Engineering at SVIT. Faculty, labs, syllabus, placements, and more.",

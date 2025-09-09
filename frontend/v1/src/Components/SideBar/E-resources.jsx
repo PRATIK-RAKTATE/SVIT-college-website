@@ -22,7 +22,7 @@ export default function EResources() {
       data: itEResources,
       name: "Information Technology",
     },
-    chemicalEngineering: {
+    "chemical-engineering": {
       data: chemicalEResources,
       name: "Chemical Engineering",
     },

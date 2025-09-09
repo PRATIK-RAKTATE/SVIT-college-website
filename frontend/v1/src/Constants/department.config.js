@@ -6,11 +6,11 @@ import informationTechnology from "./informationTechnology";
 import mba from "./mba";
 
 const DEPARTMENTS = {
-  firstYear,
-  computerEngineering,
-  chemicalEngineering,
-  electronicsAndComputerEngineering,
-  informationTechnology,
+  "first-year": firstYear,
+  "computer-engineering": computerEngineering,
+  "chemical-engineering": chemicalEngineering,
+  "electronics-computer-engineering": electronicsAndComputerEngineering,
+  "information-technology": informationTechnology,
   mba,
 };
 

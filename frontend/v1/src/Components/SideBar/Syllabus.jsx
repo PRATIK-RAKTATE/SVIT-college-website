@@ -27,7 +27,7 @@ export default function Syllabus() {
       syllabusData = itSyllabus;
       deptName = "Information Technology";
       break;
-    case "chemicalEngineering":
+    case "chemical-engineering":
       syllabusData = chemSyllabus;
       deptName = "Chemical Engineering";
       break;

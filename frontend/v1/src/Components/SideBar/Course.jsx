@@ -19,7 +19,7 @@ const deptMap = {
   informationTechnology: { data: itCourse, name: "Information Technology" },
   mba: { data: mbaCourse, name: "M.B.A" },
   firstYear: { data: feCourse, name: "First Year" },
-  chemicalEngineering: { data: chemCourse, name: "Chemical Engineering" },
+  "chemical-engineering": { data: chemCourse, name: "Chemical Engineering" },
   electronicsAndComputerEngineering: {
     data: eceCourse,
     name: "Electronics & Computer Engineering",
