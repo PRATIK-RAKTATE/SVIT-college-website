@@ -210,9 +210,9 @@ export const chemicalEvents = [
     title: "Chemical Safety Seminar",
     date: "2025-07-25",
     images: [
-      "https://svitnashik.in/Images/Events/Department/Chemical/Chemical%20Safety%20Seminar/1.jpg",
-      "https://svitnashik.in/Images/Events/Department/Chemical/Chemical%20Safety%20Seminar/2.jpg",
-      "https://svitnashik.in/Images/Events/Department/Chemical/Chemical%20Safety%20Seminar/3.jpg",
+      "https://svitnashik.in/Images/Events/department/Chemical/Chemical%20Safety%20Seminar/1.jpg",
+      "https://svitnashik.in/Images/Events/department/Chemical/Chemical%20Safety%20Seminar/2.jpg",
+      "https://svitnashik.in/Images/Events/department/Chemical/Chemical%20Safety%20Seminar/3.jpg",
     ],
   },
   {

@@ -166,9 +166,9 @@ export const eceEvents = [
     title: "Embedded Systems Hackathon",
     date: "2025-07-30",
     images: [
-      "https://svitnashik.in/Images/Events/Department/ECE/Embedded%20Systems%20Hackathon/1.jpg",
-      "https://svitnashik.in/Images/Events/Department/ECE/Embedded%20Systems%20Hackathon/2.jpg",
-      "https://svitnashik.in/Images/Events/Department/ECE/Embedded%20Systems%20Hackathon/3.jpg",
+      "https://svitnashik.in/Images/Events/department/ECE/Embedded%20Systems%20Hackathon/1.jpg",
+      "https://svitnashik.in/Images/Events/department/ECE/Embedded%20Systems%20Hackathon/2.jpg",
+      "https://svitnashik.in/Images/Events/department/ECE/Embedded%20Systems%20Hackathon/3.jpg",
     ],
   },
   {

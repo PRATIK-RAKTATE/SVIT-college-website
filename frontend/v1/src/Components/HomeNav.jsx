@@ -35,12 +35,12 @@ export default function HomeNav() {
       key: "dept",
       label: "Departments",
       items: [
-        { text: "Basic Science and Humanities(FE)", url: "/Department/firstYear" },
-        { text: "Computer Engineering", url: "/Department/computerEngineering" },
-        { text: "Chemical Engineering", url: "/Department/chemicalEngineering" },
-        { text: "Electronics & Computer Engineering", url: "/Department/electronicsAndComputerEngineering" },
-        { text: "Information Technology Engineering", url: "/Department/informationTechnology" },
-        { text: "M.B.A.", url: "/Department/mba" },
+        { text: "Basic Science and Humanities(FE)", url: "/department/firstYear" },
+        { text: "Computer Engineering", url: "/department/computerEngineering" },
+        { text: "Chemical Engineering", url: "/department/chemicalEngineering" },
+        { text: "Electronics & Computer Engineering", url: "/department/electronicsAndComputerEngineering" },
+        { text: "Information Technology Engineering", url: "/department/informationTechnology" },
+        { text: "M.B.A.", url: "/department/mba" },
       ],
     },
     {
