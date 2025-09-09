@@ -45,7 +45,7 @@ const HodSection = () => {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
       viewport={{ once: true }}
-      className="relative rounded-3xl w-[390px] md:w-[1200px] bg-white shadow-lg  p-8 md:p-12"
+      className="relative rounded-3xl w-[370px] md:w-[1200px] bg-white shadow-lg  p-8 md:p-12"
     >
       <div className="flex items-center gap-3  mb-6">
         <span className="bg-gradient-to-br from-purple-600 to-indigo-600 text-white p-3 rounded-xl shadow-md">

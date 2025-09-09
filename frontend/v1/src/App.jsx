@@ -32,6 +32,7 @@ import EResources from "./Components/SideBar/E-resources.jsx";
 import MainContactUs from "./Components/ContactUs/MainContactUs.jsx"
 import MainAdmission from "./Components/Admission/MainAdmission.jsx";
 import home from './Constants/home.js'
+import LibraryFaculty from './Components/Library/Faculty.jsx'
 
 
 
@@ -60,7 +61,7 @@ function App() {
           path="/Library/AdvisoryCommittee"
           element={<LibraryAdvisoryComitee />}
         />
-        <Route path="/Library/Faculty" element={<Faculty />} />
+        <Route path="/Library/Faculty" element={<LibraryFaculty />} />
         <Route path="/Library/Objectives" element={<LibraryObjectives />} />
         <Route path="/Library/Facilities" element={<LibraryFacilities />} />
         <Route path="/Library/Section" element={<LibrarySection />} />
