@@ -47,7 +47,7 @@ const CoursesOffered = () => {
           className="text-center mb-16"
         >
           <h2 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-cyan-400 via-blue-400 to-purple-400 bg-clip-text text-transparent mb-4">
-            Courses Offered
+            SVIT Nashik Engineering Courses Offered
           </h2>
           <p className="text-xl text-slate-300 max-w-2xl mx-auto">
             Discover our industry-focused engineering and management programs designed for your success
