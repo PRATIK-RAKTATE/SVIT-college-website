@@ -5,12 +5,12 @@ import HomeSideBar from "../department/Sidebar.jsx";
 import AccordionItem from "./AccordionItem"; // adjust path as needed
 
 // Import syllabus data files
-import { csSyllabus } from "../Side Bar Constants/csDept.js";
-import { itSyllabus } from "../Side Bar Constants/itDept.js";
-import { eceSyllabus } from "../Side Bar Constants/eceDept.js";
-import { mbaSyllabus } from "../Side Bar Constants/mbaDept.js";
-import { chemSyllabus } from "../Side Bar Constants/chemDept.js";
-import { feSyllabus } from "../Side Bar Constants/feDept.js";
+import { csSyllabus } from "../Sidebar-Constants/csDept.js";
+import { itSyllabus } from "../Sidebar-Constants/itDept.js";
+import { eceSyllabus } from "../Sidebar-Constants/eceDept.js";
+import { mbaSyllabus } from "../Sidebar-Constants/mbaDept.js";
+import { chemSyllabus } from "../Sidebar-Constants/chemDept.js";
+import { feSyllabus } from "../Sidebar-Constants/feDept.js";
 
 export default function Syllabus() {
   const { deptId } = useParams();

@@ -4,12 +4,12 @@ import { useParams } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight, Sparkles } from "lucide-react";
 import HomeSideBar from "../department/Sidebar.jsx";
-import { csEvents } from "../Side Bar Constants/csDept.js";
-import { itEvents } from "../Side Bar Constants/itDept.js";
-import { chemicalEvents } from "../Side Bar Constants/chemDept.js";
-import { eceEvents } from "../Side Bar Constants/eceDept.js";
-import { feEvents } from "../Side Bar Constants/feDept.js";
-import { mbaEvents } from "../Side Bar Constants/mbaDept.js";
+import { csEvents } from "../Sidebar-Constants/csDept.js";
+import { itEvents } from "../Sidebar-Constants/itDept.js";
+import { chemicalEvents } from "../Sidebar-Constants/chemDept.js";
+import { eceEvents } from "../Sidebar-Constants/eceDept.js";
+import { feEvents } from "../Sidebar-Constants/feDept.js";
+import { mbaEvents } from "../Sidebar-Constants/mbaDept.js";
 
 export default function Events() {
   const { deptId } = useParams();

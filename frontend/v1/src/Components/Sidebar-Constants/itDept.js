@@ -4,7 +4,7 @@ export const itFaculty = [
     name: "Dr. Pratibha V. Kashid",
     designation: "Assistant Professor",
     qualification:
-      "PhD(Computer Science), M.E. Software System, B.E. Computer Engineering",
+      "PhD (Computer Science), M.E. Software System, B.E. Computer Engineering",
     experience: "16 Years",
   },
   {
@@ -77,35 +77,35 @@ export const itFaculty = [
 
 export const itCourse = {
   introduction: [
-    "Information Technology department focuses on applied computing, data science and modern web technologies to create industry-ready graduates."
+    "Information Technology department focuses on applied computing, data science and modern web technologies to create industry-ready graduates.",
   ],
   overview: [
-    "Started in 2002 with 60 seats, the department is known for its strong industry linkage and 100% placement record since 2015."
+    "Started in 2002 with 60 seats, the department is known for its strong industry linkage and 100% placement record since 2015.",
   ],
   majorActivities: [
     "National seminar on Data Science (NSDS)",
     "Monthly DevOps meet-ups",
     "Cloud-native hackathon (Cloud-Nite)",
     "Industry immersion programme (IIP)",
-    "Google Developer Student Club (GDSC) events"
+    "Google Developer Student Club (GDSC) events",
   ],
   majorFacilities: [
     "DevOps & Cloud Lab (Kubernetes cluster)",
     "Data Science Lab with GPU workstations",
     "Full-stack development studio",
     "Cyber-Physical Systems lab",
-    "24×7 high-speed internet (1 Gbps)"
+    "24×7 high-speed internet (1 Gbps)",
   ],
   associationInfo: [
     "Information Technology Students' Forum (ITSF) was established in 2004.",
-    "ITSF regularly organises coding marathons, industrial tours and alumni interactions."
+    "ITSF regularly organises coding marathons, industrial tours and alumni interactions.",
   ],
   courseInfo: {
     branch: "Information Technology",
     courseName: "B.E. Information Technology",
     intake: 60,
-    establishmentYear: 2002
-  }
+    establishmentYear: 2002,
+  },
 };
 
 export const itOutcomes = {
@@ -218,19 +218,42 @@ export const itEvents = [
   },
 ];
 
-
 // itDept.js
 export const itResults = {
-  2019: ["Shah K 81.20", "Patel M 78.90", "Joshi S 77.40", "Desai P 76.00", "Sharma N 74.60", "Singh A 73.20", "Mehta R 72.80", "Gupta S 71.50", "Agarwal H 70.90", "Shah D 69.80"],
-  2020: ["Patel Ankita 83.40", "Shah R 80.70", "Jain K 79.20", "Desai M 77.80", "Sharma P 76.40", "Singh S 75.00", "Mehta A 74.50", "Agarwal N 73.90", "Shah H 72.60", "Patel S 71.20"],
-  2021: ["Shah Nency 84.60", "Patel S 82.00", "Joshi K 80.50", "Desai A 79.10", "Sharma M 77.70", "Singh R 76.30", "Gupta P 75.80", "Mehta S 74.40", "Agarwal K 73.90", "Shah P 72.50"],
-  2022: ["Patel Priya 85.80", "Shah A 83.20", "Jain S 81.70", "Desai H 80.30", "Sharma K 78.90", "Singh M 77.50", "Mehta P 77.00", "Agarwal S 76.20", "Shah N 75.60", "Patel R 74.80"],
-  2023: ["Shah Kavya 86.50", "Patel M 84.00", "Joshi H 82.50", "Desai S 81.10", "Sharma A 79.70", "Singh N 78.30", "Gupta K 77.80", "Mehta R 76.40", "Agarwal P 75.90", "Shah H 74.50"],
-  2024: ["Patel Yash 87.20", "Shah K 84.80", "Jain M 83.30", "Desai P 81.90", "Sharma S 80.50", "Singh A 79.10", "Mehta K 78.60", "Agarwal R 78.00", "Shah N 77.30", "Patel D 76.70"],
+  2024: {
+    summary: "Excellent performance by IT department in 2024.",
+    se: { pass: "92.3%", toppers: ["Aarav Sharma 9.81", "Diya Patel 9.75"] },
+    te: { pass: "89.7%", toppers: ["Krishna Iyer 9.79"] },
+    be: { pass: "95.1%", toppers: ["Ishani Joshi 9.88", "Rahul Desai 9.82"] },
+  },
+  2023: {
+    summary: "Consistent results across all semesters.",
+    se: { pass: "91.8%", toppers: ["Vivaan Gupta 9.76"] },
+    te: {
+      pass: "88.4%",
+      toppers: ["Ananya Reddy 9.71", "Siddharth Banerjee 9.70"],
+    },
+    be: { pass: "94.6%", toppers: ["Neha Kulkarni 9.85"] },
+  },
+  2022: {
+    summary: "Strong placement year with high CGPAs.",
+    se: { pass: "90.5%", toppers: ["Arjun Menon 9.72"] },
+    te: { pass: "87.9%", toppers: ["Megha Raut 9.68"] },
+    be: { pass: "93.8%", toppers: ["Dev Chopra 9.80", "Priya Jain 9.78"] },
+  },
+  2021: {
+    summary: "Online-era results remain commendable.",
+    se: { pass: "89.2%", toppers: ["Tanvi Gore 9.65"] },
+    te: { pass: "86.5%", toppers: ["Raj Malhotra 9.63"] },
+    be: { pass: "92.4%", toppers: ["Simran Bhat 9.77"] },
+  },
+  2020: {
+    summary: "First lock-down batch – still stellar.",
+    se: { pass: "88.0%", toppers: ["Saanvi Chauhan 9.60"] },
+    te: { pass: "85.3%", toppers: ["Amit Singh 9.58"] },
+    be: { pass: "91.7%", toppers: ["Kavya Nair 9.75"] },
+  },
 };
-
-
-
 
 export const itPlacement = {
   2024: {
@@ -284,7 +307,7 @@ export const itPlacement = {
 };
 
 export const itBooks = {
-   1: {
+  1: {
     sem1: [{ name: "SE SEM-I_Academic Book", link: "/books/cs/maths1.pdf" }],
     sem2: [{ name: "SE SEM-II_Academic Book", link: "/books/cs/maths2.pdf" }],
   },
@@ -298,11 +321,35 @@ export const itBooks = {
   },
 };
 
-
 export const itEResources = [
-  { srNo: 1, facultyName: "Dr. K. P. Shah", blogLink: "https://kpshahit.wordpress.com", youtubeLink: "https://youtube.com/c/kpshahit" },
-  { srNo: 2, facultyName: "Prof. M. S. Patel", blogLink: "https://mspatelit.blogspot.com", youtubeLink: "https://youtube.com/c/mspatelit" },
-  { srNo: 3, facultyName: "Dr. A. H. Joshi", blogLink: "https://ahjosheit.medium.com", youtubeLink: "https://youtube.com/c/ahjosheit" },
-  { srNo: 4, facultyName: "Prof. P. K. Desai", blogLink: "https://desaipkit.wordpress.com", youtubeLink: "https://youtube.com/c/desaipkit" },
-  { srNo: 5, facultyName: "Dr. S. N. Shah", blogLink: "https://snshahit.blogspot.com", youtubeLink: "https://youtube.com/c/snshahit" },
+  {
+    srNo: 1,
+    facultyName: "Dr. K. P. Shah",
+    blogLink: "https://kpshahit.wordpress.com",
+    youtubeLink: "https://youtube.com/c/kpshahit",
+  },
+  {
+    srNo: 2,
+    facultyName: "Prof. M. S. Patel",
+    blogLink: "https://mspatelit.blogspot.com",
+    youtubeLink: "https://youtube.com/c/mspatelit",
+  },
+  {
+    srNo: 3,
+    facultyName: "Dr. A. H. Joshi",
+    blogLink: "https://ahjosheit.medium.com",
+    youtubeLink: "https://youtube.com/c/ahjosheit",
+  },
+  {
+    srNo: 4,
+    facultyName: "Prof. P. K. Desai",
+    blogLink: "https://desaipkit.wordpress.com",
+    youtubeLink: "https://youtube.com/c/desaipkit",
+  },
+  {
+    srNo: 5,
+    facultyName: "Dr. S. N. Shah",
+    blogLink: "https://snshahit.blogspot.com",
+    youtubeLink: "https://youtube.com/c/snshahit",
+  },
 ];

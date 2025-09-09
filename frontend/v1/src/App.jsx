@@ -31,7 +31,8 @@ import AcademicBooks from "./Components/SideBar/Academic.jsx";
 import EResources from "./Components/SideBar/E-resources.jsx";
 import MainContactUs from "./Components/ContactUs/MainContactUs.jsx"
 import MainAdmission from "./Components/Admission/MainAdmission.jsx";
-
+import home from './Constants/home.js'
+import LibraryFaculty from './Components/Library/Faculty.jsx'
 
 
 
@@ -40,7 +41,8 @@ function App() {
     <>
       <Header />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Home 
+         slides={home.carousel}/>} />
         <Route path="/about" element={<WholeSociety />} />
         <Route path="/about/AbouttheSociety" element={<WholeSociety />} />
         <Route path="/about/VissionMission" element={<MissionVissionAO />} />
@@ -59,13 +61,16 @@ function App() {
           path="/Library/AdvisoryCommittee"
           element={<LibraryAdvisoryComitee />}
         />
-        <Route path="/Library/Faculty" element={<Faculty />} />
+        <Route path="/Library/Faculty" element={<LibraryFaculty />} />
         <Route path="/Library/Objectives" element={<LibraryObjectives />} />
         <Route path="/Library/Facilities" element={<LibraryFacilities />} />
         <Route path="/Library/Section" element={<LibrarySection />} />
         <Route path="/Library/OPAC" />
         <Route path="/ContactUs" element={<MainContactUs/>} />
         <Route path="/admission/Admissiondetails" element={<MainAdmission/>} />
+        
+
+        
 
         {Object.entries(DEPARTMENTS).map(([key, data]) => (
           <Route

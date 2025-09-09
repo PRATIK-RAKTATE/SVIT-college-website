@@ -3,7 +3,7 @@ import React from "react";
 export default function BalasahebIntro() {
   return (
     <>
-      <div className="w-[1300px] ml-28 h-[507px] mt-12 bg-white rounded-2xl shadow-2xl overflow-hidden flex items-center gap-6 p-6">
+      <div className="md:w-[1300px] md:h-[507px] md:ml-28 mt-12 bg-white rounded-2xl shadow-2xl overflow-hidden flex flex-col md:flex md:flex-row items-center gap-6 p-6">
         {/* Image */}
         <img
           src="https://svitnashik.in/Images/Profile%20Images/Inception/Balasaheb_Vikhe_Patil.jpg"
@@ -31,7 +31,7 @@ export default function BalasahebIntro() {
           </p>
         </div>
       </div>
-      <div className="w-[1300px] ml-28 h-[507px] mt-12 bg-white rounded-2xl shadow-2xl overflow-hidden flex items-center gap-6 p-6">
+      <div className="md:w-[1300px] md:h-[507px] mt-12 md:ml-28 bg-white rounded-2xl shadow-2xl overflow-hidden flex flex-col md:flex md:flex-row items-center gap-6 p-6">
         {/* Image */}
         <img
           src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqofdJ5wmGSuzRc5TKDshY7nVaZK6xrkNQzA&s"

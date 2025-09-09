@@ -4,12 +4,12 @@ import { motion } from "framer-motion";
 import HomeSideBar from "../department/Sidebar.jsx";
 
 // ---- import all department book objects ----
-import { csBooks } from "../Side Bar Constants/csDept.js";
-import { itBooks } from "../Side Bar Constants/itDept.js";
-import { chemicalBooks } from "../Side Bar Constants/chemDept.js";
-import { eceBooks } from "../Side Bar Constants/eceDept.js";
-import { feBooks } from "../Side Bar Constants/feDept.js";
-import { mbaBooks } from "../Side Bar Constants/mbaDept.js";
+import { csBooks } from "../Sidebar-Constants/csDept.js";
+import { itBooks } from "../Sidebar-Constants/itDept.js";
+import { chemicalBooks } from "../Sidebar-Constants/chemDept.js";
+import { eceBooks } from "../Sidebar-Constants/eceDept.js";
+import { feBooks } from "../Sidebar-Constants/feDept.js";
+import { mbaBooks } from "../Sidebar-Constants/mbaDept.js";
 
 export default function AcademicBooks() {
   const { deptId } = useParams();
@@ -19,13 +19,21 @@ export default function AcademicBooks() {
     computerEngineering: { data: csBooks, name: "Computer Engineering" },
     informationTechnology: { data: itBooks, name: "Information Technology" },
     chemicalEngineering: { data: chemicalBooks, name: "Chemical Engineering" },
-    electronicsAndComputerEngineering: { data: eceBooks, name: "Electronics & Computer Engineering" },
+    electronicsAndComputerEngineering: {
+      data: eceBooks,
+      name: "Electronics & Computer Engineering",
+    },
     firstYear: { data: feBooks, name: "First Year" },
     mba: { data: mbaBooks, name: "M.B.A" },
   };
 
-  const { data: bookData, name: deptName } = deptMap[deptId] || { data: {}, name: "Department" };
-  const semesters = Object.keys(bookData).map(Number).sort((a, b) => a - b);
+  const { data: bookData, name: deptName } = deptMap[deptId] || {
+    data: {},
+    name: "Department",
+  };
+  const semesters = Object.keys(bookData)
+    .map(Number)
+    .sort((a, b) => a - b);
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">

@@ -117,7 +117,7 @@ export default function StylishTable() {
   ];
 
   return (
-    <div className="min-h-screen w-full bg-white flex items-center justify-center p-6">
+    <div className="min-h-screen md:w-full w-[450px] bg-white flex items-center justify-center md:p-6">
       <div className="w-full max-w-7xl bg-white rounded-2xl shadow-2xl overflow-hidden">
         <h2 className="text-3xl font-extrabold text-center py-6 bg-gradient-to-r from-indigo-600 to-purple-600 text-white tracking-wide">
           Pravara Institutions

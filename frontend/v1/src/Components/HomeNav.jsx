@@ -1,21 +1,34 @@
 import { useEffect, useState } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
-import { NavLink, Link } from "react-router-dom";
+import { NavLink, Link, useLocation } from "react-router-dom";
 
 export default function HomeNav() {
   const [isOpen, setIsOpen] = useState(false);
   const [mobileOpenMenu, setMobileOpenMenu] = useState(null);
+  const [isClosing, setIsClosing] = useState(false);
+  const location = useLocation();
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
   useEffect(() => {
     if (isOpen) {
-      document.body.classList.add("no-scroll");
+      document.body.classList.add("overflow-hidden");
     } else {
-      document.body.classList.remove("no-scroll");
+      document.body.classList.remove("overflow-hidden");
       setMobileOpenMenu(null);
     }
   }, [isOpen]);
+
+  useEffect(() => {
+    if (isOpen) {
+      setIsClosing(true);
+      setTimeout(() => {
+        setIsOpen(false);
+        setMobileOpenMenu(null);
+        setIsClosing(false);
+      }, 300);
+    }
+  }, [location]);
 
   const menuItems = [
     {
@@ -87,14 +100,8 @@ export default function HomeNav() {
       label: "Admission",
       items: [
         { text: "Admission Details", url: "/admission/Admissiondetails" },
-        { 
-          text: "Admission 2025-26 (Institute Level Non CAP Admission)", 
-          url: "https://svitnashik.in/MainNav/Admission%202025-26%20(Institute%20Level%20Non%20CAP%20Admission).pdf" 
-        },
-        { 
-          text: "Admission Enquiry Form", 
-          url: "https://docs.google.com/forms/d/e/1FAIpQLScy0O757Bw1lNMDHdvIUB0k-YfC0MwKDVo-mIyYMq8bYIozcg/viewform" 
-        },
+        { text: "Admission 2025-26 (Institute Level Non CAP Admission)", url: "https://svitnashik.in/MainNav/Admission%202025-26%20(Institute%20Level%20Non%20CAP%20Admission).pdf" },
+        { text: "Admission Enquiry Form", url: "https://docs.google.com/forms/d/e/1FAIpQLScy0O757Bw1lNMDHdvIUB0k-YfC0MwKDVo-mIyYMq8bYIozcg/viewform" },
       ],
     },
     {
@@ -102,123 +109,48 @@ export default function HomeNav() {
       label: "IQAC",
       items: [
         { text: "IQAC Cell", url: "/admission/Admissiondetails" },
-        { 
-          text: "IQAC Cell 2017", 
-          url: "https://svitnashik.in/IQAC/IQAC_Cell.pdf" 
-        },
-        { 
-          text: "Revised IQAC Cell 2018", 
-          url: "https://svitnashik.in/IQAC/IQAC_Cell_2018.pdf" 
-        },
-        { 
-          text: "Quality Policy ", 
-          url: "https://svitnashik.in/IQAC/Quality_Policy.pdf" 
-        },
-        { 
-          text: "IQAC Annual Report ", 
-          url: "https://svitnashik.in/IQAC/IQAC_AR.pdf" 
-        },
-        { 
-          text: "College Annual Report", 
-          url: "https://svitnashik.in/IQAC/IQAC_CAR.pdf" 
-        },
-        { 
-          text: "Annual Report 2022-23", 
-          url: "https://svitnashik.in/IQAC/Annual%20Report-2022-23.pdf" 
-        },
-        { 
-          text: "Annual Report 2023-24", 
-          url: "https://svitnashik.in/IQAC/Annual%20Report-2023-24.pdf" 
-        },
-        { 
-          text: "IQAC Minutes of Meetings", 
-          url: "" 
-        },
-        { 
-          text: "IQAC Cell:2017-18 Minutes of Meetings", 
-          url: "https://svitnashik.in/IQAC/IQAC_MOM_2018.pdf" 
-        },
-        { 
-          text: "Revised IQAC Cell:2018-19 Minutes of Meetings", 
-          url: "vitnashik.in/IQAC/IQAC_MOM_2018.pdf" 
-        },
-        { 
-          text: "IQAC Cell:2019-20 Minutes of Meetings", 
-          url: "https://svitnashik.in/IQAC/IQAC_MOM_2019_20.pdf" 
-        },
-        { 
-          text: "AQAR Report: 2018-2019", 
-          url: "https://svitnashik.in/IQAC/SVIT_AQAR_Report_2018_2019.pdf" 
-        },
-        { 
-          text: "AQAR Report: 2019-2020", 
-          url: "https://svitnashik.in/IQAC/SVIT_AQAR_Report_2019_2020.pdf" 
-        },
-        { 
-          text: "IQAC Cell:2020-21 Minutes of Meetings", 
-          url: "https://svitnashik.in/IQAC/IQAC_MOM_2020_21.pdf" 
-        },
-        { 
-          text: "AQAR Report: 2020-2021", 
-          url: "https://svitnashik.in/IQAC/SVIT_AQAR_Report_2020_2021.pdf" 
-        },
-        { 
-          text: "AQAR Report: 2021-2022", 
-          url: "https://svitnashik.in/IQAC/SVIT_AQAR_Report_2021_2022.pdf" 
-        },
-        { 
-          text: "IQAC Cell:2021-22 Minutes of Meetings", 
-          url: "https://svitnashik.in/IQAC/IQAC_MOM_2021-22.pdf" 
-        },
-        { 
-          text: "Academic_Calender_2022-23", 
-          url: "https://svitnashik.in/IQAC/Academic_Calender_2022-23.pdf" 
-        },
-        { 
-          text: "Academic_Calender_2023-24", 
-          url: "https://svitnashik.in/IQAC/Academic_Calender_2023-24.pdf" 
-        },
-        { 
-          text: "NAAC Steering Committee 2022-23", 
-          url: "https://svitnashik.in/IQAC/NAAC%20Steering%20Committee%202022-23.pdf" 
-        },
-        { 
-          text: "NAAC IQAC Cell -Revised 2022-23", 
-          url: "https://svitnashik.in/IQAC/NAAC%20IQAC%20Cell%20-Revised%202022-23.pdf" 
-        },
-        { 
-          text: "IQAC Minutes of Meeting 25 Aug 2022", 
-          url: "https://svitnashik.in/IQAC/IQAC%20Minutes%20of%20Meeting%2025%20Aug%202022.pdf" 
-        },
-        { 
-          text: "IQAC Minutes of Meeting 16 Feb 2023", 
-          url: "https://svitnashik.in/IQAC/IQAC%20Minutes%20of%20Meeting%2016%20Feb%202023.pdf" 
-        },
-        { 
-          text: "AQAR Report: 2022-23", 
-          url: "https://svitnashik.in/IQAC/SVIT_AQAR_Report_2022_23.pdf" 
-        },
-        { 
-          text: "IQAC Minutes of Meeting 23 Jan 2024", 
-          url: "https://svitnashik.in/IQAC/IQAC%20Minutes%20of%20Meeting%2023%20Jan%202024.pdf" 
-        },
-        { 
-          text: "AQAR Report: 2023-24", 
-          url: "https://svitnashik.in/IQAC/SVIT_AQAR_Report_2023-24.pdf" 
-        },
+        { text: "IQAC Cell 2017", url: "https://svitnashik.in/IQAC/IQAC_Cell.pdf" },
+        { text: "Revised IQAC Cell 2018", url: "https://svitnashik.in/IQAC/IQAC_Cell_2018.pdf" },
+        { text: "Quality Policy", url: "https://svitnashik.in/IQAC/Quality_Policy.pdf" },
+        { text: "IQAC Annual Report", url: "https://svitnashik.in/IQAC/IQAC_AR.pdf" },
+        { text: "College Annual Report", url: "https://svitnashik.in/IQAC/IQAC_CAR.pdf" },
+        { text: "Annual Report 2022-23", url: "https://svitnashik.in/IQAC/Annual%20Report-2022-23.pdf" },
+        { text: "Annual Report 2023-24", url: "https://svitnashik.in/IQAC/Annual%20Report-2023-24.pdf" },
+        { text: "IQAC Minutes of Meetings", url: "" },
+        { text: "IQAC Cell:2017-18 Minutes of Meetings", url: "https://svitnashik.in/IQAC/IQAC_MOM_2018.pdf" },
+        { text: "Revised IQAC Cell:2018-19 Minutes of Meetings", url: "https://vitnashik.in/IQAC/IQAC_MOM_2018.pdf" },
+        { text: "IQAC Cell:2019-20 Minutes of Meetings", url: "https://svitnashik.in/IQAC/IQAC_MOM_2019_20.pdf" },
+        { text: "AQAR Report: 2018-2019", url: "https://svitnashik.in/IQAC/SVIT_AQAR_Report_2018_2019.pdf" },
+        { text: "AQAR Report: 2019-2020", url: "https://svitnashik.in/IQAC/SVIT_AQAR_Report_2019_2020.pdf" },
+        { text: "IQAC Cell:2020-21 Minutes of Meetings", url: "https://svitnashik.in/IQAC/IQAC_MOM_2020_21.pdf" },
+        { text: "AQAR Report: 2020-2021", url: "https://svitnashik.in/IQAC/SVIT_AQAR_Report_2020_2021.pdf" },
+        { text: "AQAR Report: 2021-2022", url: "https://svitnashik.in/IQAC/SVIT_AQAR_Report_2021_2022.pdf" },
+        { text: "IQAC Cell:2021-22 Minutes of Meetings", url: "https://svitnashik.in/IQAC/IQAC_MOM_2021-22.pdf" },
+        { text: "Academic_Calender_2022-23", url: "https://svitnashik.in/IQAC/Academic_Calender_2022-23.pdf" },
+        { text: "Academic_Calender_2023-24", url: "https://svitnashik.in/IQAC/Academic_Calender_2023-24.pdf" },
+        { text: "NAAC Steering Committee 2022-23", url: "https://svitnashik.in/IQAC/NAAC%20Steering%20Committee%202022-23.pdf" },
+        { text: "NAAC IQAC Cell -Revised 2022-23", url: "https://svitnashik.in/IQAC/NAAC%20IQAC%20Cell%20-Revised%202022-23.pdf" },
+        { text: "IQAC Minutes of Meeting 25 Aug 2022", url: "https://svitnashik.in/IQAC/IQAC%20Minutes%20of%20Meeting%2025%20Aug%202022.pdf" },
+        { text: "IQAC Minutes of Meeting 16 Feb 2023", url: "https://svitnashik.in/IQAC/IQAC%20Minutes%20of%20Meeting%2016%20Feb%202023.pdf" },
+        { text: "AQAR Report: 2022-23", url: "https://svitnashik.in/IQAC/SVIT_AQAR_Report_2022_23.pdf" },
+        { text: "IQAC Minutes of Meeting 23 Jan 2024", url: "https://svitnashik.in/IQAC/IQAC%20Minutes%20of%20Meeting%2023%20Jan%202024.pdf" },
+        { text: "AQAR Report: 2023-24", url: "https://svitnashik.in/IQAC/SVIT_AQAR_Report_2023-24.pdf" },
       ],
     },
   ];
 
-  // helper function: check if external
   const isExternal = (url) => url.startsWith("http");
 
   return (
     <nav className="bg-white px-4 py-3 shadow-md relative z-50">
-      {/* Desktop menu */}
+      {/* Desktop Menu */}
       <div className="hidden md:flex md:justify-center md:gap-6 font-medium">
-        <NavLink to="/" className={({ isActive }) =>
-          `${isActive ? "text-red-500" : "text-black"}`}>
+        <NavLink
+          to="/"
+          className={({ isActive }) =>
+            `${isActive ? "text-[#4F39F6]" : "text-black"}`
+          }
+        >
           Home
         </NavLink>
 
@@ -229,26 +161,29 @@ export default function HomeNav() {
             </div>
 
             <ul className="absolute left-0 pt-2 bg-white shadow-md rounded-md opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto transition-opacity duration-200 z-50 max-h-96 overflow-y-auto">
-
               {menu.items.map((item, id) =>
                 isExternal(item.url) ? (
-                  <a 
+                  <a
                     key={id}
-                    href={item.url} 
-                    target="_blank" 
+                    href={item.url}
+                    target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <li className="px-4 py-2 hover:bg-gray-100 w-70">{item.text}</li>
+                    <li className="px-4 py-2 hover:bg-gray-100 w-70">
+                      {item.text}
+                    </li>
                   </a>
                 ) : (
-                  <NavLink 
-                    key={id} 
-                    to={item.url} 
+                  <NavLink
+                    key={id}
+                    to={item.url}
                     className={({ isActive }) =>
-                      `${isActive ? "text-red-500" : "text-black"}`
+                      `${isActive ? "text-[#4F39F6]" : "text-black"}`
                     }
                   >
-                    <li className="px-4 py-2 hover:bg-gray-100 w-70">{item.text}</li>
+                    <li className="px-4 py-2 hover:bg-gray-100 w-70">
+                      {item.text}
+                    </li>
                   </NavLink>
                 )
               )}
@@ -256,15 +191,71 @@ export default function HomeNav() {
           </ul>
         ))}
 
-        {/* Static menu links */}
-        <NavLink to="https://svitnashik.in/Documents/RTI.pdf" className={({isActive}) => `${isActive ? "text-red-500" : "text-black"}`}>RTI</NavLink>
-        <NavLink to="/erp" className={({isActive}) => `${isActive ? "text-red-500" : "text-black"}`}>ERP</NavLink>
-        <NavLink to="/library" className={({isActive}) => `${isActive ? "text-red-500" : "text-black"}`}>Library</NavLink>
-        <NavLink to="/gallery" className={({isActive}) => `${isActive ? "text-red-500" : "text-black"}`}>Gallery</NavLink>
-        <NavLink to="Examination" className={({isActive}) => `${isActive ? "text-red-500" : "text-black"}`}>Examination</NavLink>
-        <NavLink to="/contactus" className={({isActive}) => `${isActive ? "text-red-500" : "text-black"}`}>Contact us</NavLink>
-        <NavLink to="/about" className={({isActive}) => `${isActive ? "text-red-500" : "text-black"}`}>About us</NavLink>
-        {/* <NavLink to="/sm" className={({isActive}) => `${isActive ? "text-red-500" : "text-black"}`}>Site map</NavLink> */}
+        <NavLink
+          to="/library"
+          className={({ isActive }) =>
+            `${isActive ? "text-[#4F39F6]" : "text-black"}`
+          }
+        >
+          Library
+        </NavLink>
+        <NavLink
+          to="/gallery"
+          className={({ isActive }) =>
+            `${isActive ? "text-[#4F39F6]" : "text-black"}`
+          }
+        >
+          Gallery
+        </NavLink>
+        <NavLink
+          to="/Examination"
+          className={({ isActive }) =>
+            `${isActive ? "text-[#4F39F6]" : "text-black"}`
+          }
+        >
+          Examination
+        </NavLink>
+        <NavLink
+          to="/rti"
+          className={({ isActive }) =>
+            `${isActive ? "text-[#4F39F6]" : "text-black"}`
+          }
+        >
+          RTI
+        </NavLink>
+        <NavLink
+          to="/erp"
+          className={({ isActive }) =>
+            `${isActive ? "text-[#4F39F6]" : "text-black"}`
+          }
+        >
+          ERP
+        </NavLink>
+        <NavLink
+          to="/about"
+          className={({ isActive }) =>
+            `${isActive ? "text-[#4F39F6]" : "text-black"}`
+          }
+        >
+          About us
+        </NavLink>
+        <NavLink
+          to="/contactus"
+          className={({ isActive }) =>
+            `${isActive ? "text-[#4F39F6]" : "text-black"}`
+          }
+        >
+          Contact us
+        </NavLink>
+        <NavLink
+          to="/sm"
+          className={({ isActive }) =>
+            `${isActive ? "text-[#4F39F6]" : "text-black"}`
+          }
+        >
+          Site map
+        </NavLink>
+
       </div>
 
       {/* Mobile Menu Button */}
@@ -279,11 +270,18 @@ export default function HomeNav() {
 
       {/* Mobile Side Menu */}
       <div
-        className={`fixed top-0 left-0 w-3/4 h-screen bg-white text-black transform ${
-          isOpen ? "translate-x-0" : "-translate-x-full"
-        } transition-transform duration-300 ease-in-out z-50 p-6 flex flex-col gap-6`}
+        className={`fixed top-0 left-0 h-full w-3/4 bg-white text-black transform transition-transform duration-300 ease-in-out z-50 p-6 flex flex-col gap-6 overflow-y-auto ${
+          isOpen && !isClosing ? "translate-x-0" : "-translate-x-full"
+        }`}
       >
-        <NavLink to="/" className="text-xs font-semibold">Home</NavLink>
+        <NavLink
+          to="/"
+          className={({ isActive }) =>
+            `${isActive ? "text-[#4F39F6]" : "text-black"}`
+          }
+        >
+          Home
+        </NavLink>
 
         {menuItems.map((menu) => (
           <div key={menu.key} className="flex flex-col gap-1">
@@ -291,7 +289,7 @@ export default function HomeNav() {
               onClick={() =>
                 setMobileOpenMenu(mobileOpenMenu === menu.key ? null : menu.key)
               }
-              className="flex items-center justify-between w-full text-xs font-semibold "
+              className="flex items-center justify-between w-full text-xs font-semibold"
             >
               {menu.label}
               <ChevronDown
@@ -307,13 +305,24 @@ export default function HomeNav() {
                 {menu.items.map((item, idx) =>
                   isExternal(item.url) ? (
                     <li key={idx}>
-                      <a href={item.url} target="_blank" rel="noopener noreferrer">
+                      <a
+                        href={item.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         {item.text}
                       </a>
                     </li>
                   ) : (
                     <li key={idx}>
-                      <Link to={item.url}>{item.text}</Link>
+                      <NavLink
+                        className={({ isActive }) =>
+                          `${isActive ? "text-[#4F39F6]" : "text-black"}`
+                        }
+                        to={item.url}
+                      >
+                        {item.text}
+                      </NavLink>
                     </li>
                   )
                 )}
@@ -322,13 +331,70 @@ export default function HomeNav() {
           </div>
         ))}
 
-        <NavLink to="/rti" className={({isActive}) => `${isActive ? "text-red-500" : "text-black"}`}>RTI</NavLink>
-        <NavLink to="/erp" className={({isActive}) => `${isActive ? "text-red-500" : "text-black"}`}>ERP</NavLink>
-        <NavLink to="/li" className={({isActive}) => `${isActive ? "text-red-500" : "text-black"}`}>Library</NavLink>
-        <NavLink to="/ga" className={({isActive}) => `${isActive ? "text-red-500" : "text-black"}`}>Gallery</NavLink>
-        <NavLink to="/contactus" className={({isActive}) => `${isActive ? "text-red-500" : "text-black"}`}>Contact us</NavLink>
-        <NavLink to="/au" className={({isActive}) => `${isActive ? "text-red-500" : "text-black"}`}>About us</NavLink>
-        <NavLink to="/sm" className={({isActive}) => `${isActive ? "text-red-500" : "text-black"}`}>Site map</NavLink>
+        <NavLink
+          to="/library"
+          className={({ isActive }) =>
+            `${isActive ? "text-[#4F39F6]" : "text-black"}`
+          }
+        >
+          Library
+        </NavLink>
+        <NavLink
+          to="/Examination"
+          className={({ isActive }) =>
+            `${isActive ? "text-[#4F39F6]" : "text-black"}`
+          }
+        >
+          Examination
+        </NavLink>
+        <NavLink
+          to="/gallery"
+          className={({ isActive }) =>
+            `${isActive ? "text-[#4F39F6]" : "text-black"}`
+          }
+        >
+          Gallery
+        </NavLink>
+        <NavLink
+          to="/rti"
+          className={({ isActive }) =>
+            `${isActive ? "text-[#4F39F6]" : "text-black"}`
+          }
+        >
+          RTI
+        </NavLink>
+        <NavLink
+          to="/erp"
+          className={({ isActive }) =>
+            `${isActive ? "text-[#4F39F6]" : "text-black"}`
+          }
+        >
+          ERP
+        </NavLink>
+        <NavLink
+          to="/about"
+          className={({ isActive }) =>
+            `${isActive ? "text-[#4F39F6]" : "text-black"}`
+          }
+        >
+          About us
+        </NavLink>
+        <NavLink
+          to="/contactus"
+          className={({ isActive }) =>
+            `${isActive ? "text-[#4F39F6]" : "text-black"}`
+          }
+        >
+          Contact us
+        </NavLink>
+        <NavLink
+          to="/sm"
+          className={({ isActive }) =>
+            `${isActive ? "text-[#4F39F6]" : "text-black"}`
+          }
+        >
+          Site map
+        </NavLink>
       </div>
     </nav>
   );

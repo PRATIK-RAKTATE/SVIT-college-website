@@ -24,7 +24,7 @@ export default function Useful() {
 
   return (
     <div className="mt-5 ml-4 gap-3">
-      <div className="bg-black p-1 mt-2">
+      <div className="bg-[#4F39F6] p-1 mt-2">
         <h1 className="font-sans text-white border-white border-l-2 shadow p-2 ">
           Useful Links
         </h1>
@@ -32,17 +32,18 @@ export default function Useful() {
       <div className="pl-35">
         <ChevronUp size={20} className="ml-1" />
       </div>
-      <div className=" md:w-full h-90 rounded-md shadow-sm justify-center p-1 mt-2 mb-2 overflow-auto relative">
-        {LinkList.map((item, i) => (
-          <ul>
-            <li className="p-2">
+      <div className="md:w-full h-90 rounded-md shadow-sm justify-center p-1 mt-2 mb-2 overflow-auto relative">
+        <ul>
+          {LinkList.map((item, i) => (
+            <li key={i} className="p-2">
               <Link to={item.url} className="hover:text-blue-500">
                 {item.text}
               </Link>
             </li>
-          </ul>
-        ))}
+          ))}
+        </ul>
       </div>
+
       <div className="pl-35">
         <ChevronDown size={20} className="ml-1" />
       </div>

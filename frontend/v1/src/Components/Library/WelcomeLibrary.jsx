@@ -3,7 +3,7 @@ import React from "react";
 
 const WelcomeLibrary = () => {
   return (
-    <div className="relative max-w-6xl h-64 sm:h-80 md:h-96 mt-8 mx-auto rounded-2xl overflow-hidden shadow-xl">
+    <div className="relative w-[359px]  md:w-[1100px] h-64 sm:h-80 md:h-96 mt-8 mx-auto rounded-2xl overflow-hidden shadow-xl">
       {/* Background Image with soft dark overlay */}
       <div
         className="absolute inset-0 bg-cover bg-center animate-zoomBg"
