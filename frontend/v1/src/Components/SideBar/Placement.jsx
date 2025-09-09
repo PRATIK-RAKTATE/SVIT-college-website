@@ -23,7 +23,7 @@ export default function Placement() {
       data: chemicalPlacement,
       name: "Chemical Engineering",
     },
-    electronicsAndComputerEngineering: {
+    "electronics-and-computer-engineering": {
       data: ecePlacement,
       name: "Electronics & Computer Engineering",
     },

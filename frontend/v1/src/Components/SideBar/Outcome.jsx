@@ -17,7 +17,7 @@ const deptMap = {
   computerEngineering: { data: csOutcomes, name: "Computer Engineering" },
   informationTechnology: { data: itOutcomes, name: "Information Technology" },
   "chemical-engineering": { data: chemicalOutcomes, name: "Chemical Engineering" },
-  electronicsAndComputerEngineering: {
+  "electronics-and-computer-engineering": {
     data: eceOutcomes,
     name: "Electronics & Computer Engineering",
   },

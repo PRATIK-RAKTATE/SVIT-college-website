@@ -26,7 +26,7 @@ export default function EResources() {
       data: chemicalEResources,
       name: "Chemical Engineering",
     },
-    electronicsAndComputerEngineering: {
+    "electronics-and-computer-engineering": {
       data: eceEResources,
       name: "Electronics & Computer Engineering",
     },

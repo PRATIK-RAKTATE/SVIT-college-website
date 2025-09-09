@@ -31,7 +31,7 @@ export default function Syllabus() {
       syllabusData = chemSyllabus;
       deptName = "Chemical Engineering";
       break;
-    case "electronicsAndComputerEngineering":
+    case "electronics-and-computer-engineering":
       syllabusData = eceSyllabus;
       deptName = "Electronics And Computer Engineering";
       break;

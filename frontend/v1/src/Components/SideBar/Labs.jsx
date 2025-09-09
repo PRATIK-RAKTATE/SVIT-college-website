@@ -26,7 +26,7 @@ export default function Lab() {
       labData = chemicalLabs;
       deptName = "Chemical Engineering";
       break;
-    case "electronicsAndComputerEngineering":
+    case "electronics-and-computer-engineering":
       labData = eceLabs;
       deptName = "Electronics And Computer Engineering";
       break;

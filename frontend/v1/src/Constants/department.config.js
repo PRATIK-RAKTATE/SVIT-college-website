@@ -9,7 +9,7 @@ const DEPARTMENTS = {
   "first-year": firstYear,
   "computer-engineering": computerEngineering,
   "chemical-engineering": chemicalEngineering,
-  "electronics-computer-engineering": electronicsAndComputerEngineering,
+  "electronics-and-computer-engineering": electronicsAndComputerEngineering,
   "information-technology": informationTechnology,
   mba,
 };

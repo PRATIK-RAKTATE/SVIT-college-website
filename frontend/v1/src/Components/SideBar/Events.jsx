@@ -30,7 +30,7 @@ export default function Events() {
       eventData = chemicalEvents;
       deptName = "Chemical Engineering";
       break;
-    case "electronicsAndComputerEngineering":
+    case "electronics-and-computer-engineering":
       eventData = eceEvents;
       deptName = "Electronics And Computer Engineering";
       break;
