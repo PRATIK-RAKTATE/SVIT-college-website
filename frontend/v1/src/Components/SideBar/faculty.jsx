@@ -19,7 +19,7 @@ const deptMap = {
     data: eceFaculty,
     name: "Electronics & Computer Engineering",
   },
-  firstYear: { data: firstYearFaculty, name: "First Year" },
+  "first-year": { data: firstYearFaculty, name: "First Year" },
   mba: { data: mbaFaculty, name: "M.B.A" },
 };
 

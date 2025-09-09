@@ -30,7 +30,7 @@ export default function Lab() {
       labData = eceLabs;
       deptName = "Electronics And Computer Engineering";
       break;
-    case "firstYear":
+    case "first-year":
       labData = feLabs;
       deptName = "First Year";
       break;

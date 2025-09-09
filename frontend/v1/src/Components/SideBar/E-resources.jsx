@@ -30,7 +30,7 @@ export default function EResources() {
       data: eceEResources,
       name: "Electronics & Computer Engineering",
     },
-    firstYear: { data: feEResources, name: "First Year" },
+    "first-year": { data: feEResources, name: "First Year" },
     mba: { data: mbaEResources, name: "M.B.A" },
   };
 

@@ -21,7 +21,7 @@ const DEPT_MAP = {
     data: eceResults,
     name: "Electronics & Computer Engineering",
   },
-  firstYear: { data: feResults, name: "First Year" },
+  "first-year": { data: feResults, name: "First Year" },
   mba: { data: mbaResults, name: "M.B.A" },
 };
 

@@ -35,7 +35,7 @@ export default function Syllabus() {
       syllabusData = eceSyllabus;
       deptName = "Electronics And Computer Engineering";
       break;
-    case "firstYear":
+    case "first-year":
       syllabusData = feSyllabus;
       deptName = "First Year";
       break;

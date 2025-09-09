@@ -34,7 +34,7 @@ export default function Events() {
       eventData = eceEvents;
       deptName = "Electronics And Computer Engineering";
       break;
-    case "firstYear":
+    case "first-year":
       eventData = feEvents;
       deptName = "First Year";
       break;

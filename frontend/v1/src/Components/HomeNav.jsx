@@ -35,7 +35,7 @@ export default function HomeNav() {
       key: "dept",
       label: "Departments",
       items: [
-        { text: "Basic Science and Humanities(FE)", url: "/department/firstYear" },
+        { text: "Basic Science and Humanities(FE)", url: "/department/first-year" },
         { text: "Computer Engineering", url: "/department/computerEngineering" },
         { text: "Chemical Engineering", url: "/department/chemical-engineering" },
         { text: "Electronics & Computer Engineering", url: "/department/electronicsAndComputerEngineering" },

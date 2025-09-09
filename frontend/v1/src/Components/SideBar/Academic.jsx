@@ -23,7 +23,7 @@ export default function AcademicBooks() {
       data: eceBooks,
       name: "Electronics & Computer Engineering",
     },
-    firstYear: { data: feBooks, name: "First Year" },
+    "first-year": { data: feBooks, name: "First Year" },
     mba: { data: mbaBooks, name: "M.B.A" },
   };
 

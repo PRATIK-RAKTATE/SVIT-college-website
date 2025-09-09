@@ -8,7 +8,7 @@ const SEO_CONFIG = {
     image: "https://pravaraengg.org.in/assets/img/PRES.png",
   },
   departments: {
-    firstYear: {
+    "first-year": {
       title: "First Year Engineering Department | SVIT Nashik",
       description:
         "Explore First Year Engineering at SVIT. Faculty, labs, syllabus, placements, and more.",

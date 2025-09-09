@@ -27,7 +27,7 @@ export default function Placement() {
       data: ecePlacement,
       name: "Electronics & Computer Engineering",
     },
-    firstYear: { data: fePlacement, name: "First Year" },
+    "first-year": { data: fePlacement, name: "First Year" },
     mba: { data: mbaPlacement, name: "M.B.A" },
   };
 
