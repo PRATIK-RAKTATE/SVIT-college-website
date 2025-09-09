@@ -22,7 +22,7 @@ const Hod = ({ Hodimg, Hodname, hodQ }) => {
   };
 
   return (
-    <section className="max-w-5xl max-h-116 mt-13 px-6 py-14 flex justify-center items-center bg-gradient-to-br from-slate-100 to-slate-200">
+    <section className="md:w-[1050px]   md:h-[400px] mt-13 px-6 py-14 flex justify-center items-center bg-gradient-to-br from-slate-100 to-slate-200">
       <motion.div
         variants={container}
         initial="hidden"

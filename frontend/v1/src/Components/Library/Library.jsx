@@ -8,7 +8,7 @@ import WelcomeLibrary from "./WelcomeLibrary";
 const Library = () => {
   return (
     <>
-      <div className="flex flex-row">
+      <div className="flex flex-col md:flex md:flex-row lg:flex lg:flex-row ">
         <LibrarySideBar />
         <WelcomeLibrary />
       </div>

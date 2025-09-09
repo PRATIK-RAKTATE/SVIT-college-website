@@ -15,8 +15,14 @@ const scrollReveal = {
   visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
 };
 
-export default function Home() {
+import Carousel from "../department/HeroCarousel";
+
+
+export default function Home({slides}) {
   return (
+    <>
+
+    <Carousel slides={slides}/>
     <div className="m-3">
       {/* 1  Hero text – no scroll trigger (already top) */}
       <WT />
@@ -60,5 +66,6 @@ export default function Home() {
         <StudentDiversity />
       </motion.div>
     </div>
+    </>
   );
 }

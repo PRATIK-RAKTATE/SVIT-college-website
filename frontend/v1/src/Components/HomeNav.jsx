@@ -128,6 +128,117 @@ export default function HomeNav() {
         },
       ],
     },
+    {
+      key: "IQAC",
+      label: "IQAC",
+      items: [
+        { text: "IQAC Cell", url: "/admission/Admissiondetails" },
+        { 
+          text: "IQAC Cell 2017", 
+          url: "https://svitnashik.in/IQAC/IQAC_Cell.pdf" 
+        },
+        { 
+          text: "Revised IQAC Cell 2018", 
+          url: "https://svitnashik.in/IQAC/IQAC_Cell_2018.pdf" 
+        },
+        { 
+          text: "Quality Policy ", 
+          url: "https://svitnashik.in/IQAC/Quality_Policy.pdf" 
+        },
+        { 
+          text: "IQAC Annual Report ", 
+          url: "https://svitnashik.in/IQAC/IQAC_AR.pdf" 
+        },
+        { 
+          text: "College Annual Report", 
+          url: "https://svitnashik.in/IQAC/IQAC_CAR.pdf" 
+        },
+        { 
+          text: "Annual Report 2022-23", 
+          url: "https://svitnashik.in/IQAC/Annual%20Report-2022-23.pdf" 
+        },
+        { 
+          text: "Annual Report 2023-24", 
+          url: "https://svitnashik.in/IQAC/Annual%20Report-2023-24.pdf" 
+        },
+        { 
+          text: "IQAC Minutes of Meetings", 
+          url: "" 
+        },
+        { 
+          text: "IQAC Cell:2017-18 Minutes of Meetings", 
+          url: "https://svitnashik.in/IQAC/IQAC_MOM_2018.pdf" 
+        },
+        { 
+          text: "Revised IQAC Cell:2018-19 Minutes of Meetings", 
+          url: "vitnashik.in/IQAC/IQAC_MOM_2018.pdf" 
+        },
+        { 
+          text: "IQAC Cell:2019-20 Minutes of Meetings", 
+          url: "https://svitnashik.in/IQAC/IQAC_MOM_2019_20.pdf" 
+        },
+        { 
+          text: "AQAR Report: 2018-2019", 
+          url: "https://svitnashik.in/IQAC/SVIT_AQAR_Report_2018_2019.pdf" 
+        },
+        { 
+          text: "AQAR Report: 2019-2020", 
+          url: "https://svitnashik.in/IQAC/SVIT_AQAR_Report_2019_2020.pdf" 
+        },
+        { 
+          text: "IQAC Cell:2020-21 Minutes of Meetings", 
+          url: "https://svitnashik.in/IQAC/IQAC_MOM_2020_21.pdf" 
+        },
+        { 
+          text: "AQAR Report: 2020-2021", 
+          url: "https://svitnashik.in/IQAC/SVIT_AQAR_Report_2020_2021.pdf" 
+        },
+        { 
+          text: "AQAR Report: 2021-2022", 
+          url: "https://svitnashik.in/IQAC/SVIT_AQAR_Report_2021_2022.pdf" 
+        },
+        { 
+          text: "IQAC Cell:2021-22 Minutes of Meetings", 
+          url: "https://svitnashik.in/IQAC/IQAC_MOM_2021-22.pdf" 
+        },
+        { 
+          text: "Academic_Calender_2022-23", 
+          url: "https://svitnashik.in/IQAC/Academic_Calender_2022-23.pdf" 
+        },
+        { 
+          text: "Academic_Calender_2023-24", 
+          url: "https://svitnashik.in/IQAC/Academic_Calender_2023-24.pdf" 
+        },
+        { 
+          text: "NAAC Steering Committee 2022-23", 
+          url: "https://svitnashik.in/IQAC/NAAC%20Steering%20Committee%202022-23.pdf" 
+        },
+        { 
+          text: "NAAC IQAC Cell -Revised 2022-23", 
+          url: "https://svitnashik.in/IQAC/NAAC%20IQAC%20Cell%20-Revised%202022-23.pdf" 
+        },
+        { 
+          text: "IQAC Minutes of Meeting 25 Aug 2022", 
+          url: "https://svitnashik.in/IQAC/IQAC%20Minutes%20of%20Meeting%2025%20Aug%202022.pdf" 
+        },
+        { 
+          text: "IQAC Minutes of Meeting 16 Feb 2023", 
+          url: "https://svitnashik.in/IQAC/IQAC%20Minutes%20of%20Meeting%2016%20Feb%202023.pdf" 
+        },
+        { 
+          text: "AQAR Report: 2022-23", 
+          url: "https://svitnashik.in/IQAC/SVIT_AQAR_Report_2022_23.pdf" 
+        },
+        { 
+          text: "IQAC Minutes of Meeting 23 Jan 2024", 
+          url: "https://svitnashik.in/IQAC/IQAC%20Minutes%20of%20Meeting%2023%20Jan%202024.pdf" 
+        },
+        { 
+          text: "AQAR Report: 2023-24", 
+          url: "https://svitnashik.in/IQAC/SVIT_AQAR_Report_2023-24.pdf" 
+        },
+      ],
+    },
   ];
 
   // helper function to check if URL is external
@@ -152,7 +263,8 @@ export default function HomeNav() {
               {menu.label} <ChevronDown size={16} className="ml-1" />
             </div>
 
-            <ul className="absolute left-0 pt-2 bg-white shadow-md rounded-md opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto transition-opacity duration-200 z-50">
+            <ul className="absolute left-0 pt-2 bg-white shadow-md rounded-md opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto transition-opacity duration-200 z-50 max-h-96 overflow-y-auto">
+
               {menu.items.map((item, id) =>
                 isExternal(item.url) ? (
                   <a
@@ -378,6 +490,7 @@ export default function HomeNav() {
         >
           Site map
         </NavLink>
+
       </div>
     </nav>
   );

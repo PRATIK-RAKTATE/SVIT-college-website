@@ -10,6 +10,7 @@ import { motion } from "framer-motion";
 
 const TimelineItem = ({ icon, title, description, gradient }) => {
   return (
+    <>
     <motion.div
       initial={{ opacity: 0, x: -40 }}
       whileInView={{ opacity: 1, x: 0 }}
@@ -27,9 +28,13 @@ const TimelineItem = ({ icon, title, description, gradient }) => {
       {/* Content */}
       <div>
         <h3 className="text-2xl font-bold text-gray-900 mb-2">{title}</h3>
-        <p className="text-gray-600 text-lg leading-relaxed">{description}</p>
+        
       </div>
     </motion.div>
+    <div>
+      <p className="text-gray-600 text-lg leading-relaxed">{description}</p>
+    </div>
+    </>
   );
 };
 
@@ -40,9 +45,9 @@ const HodSection = () => {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
       viewport={{ once: true }}
-      className="relative rounded-3xl bg-white shadow-lg p-8 md:p-12"
+      className="relative rounded-3xl w-[390px] md:w-[1200px] bg-white shadow-lg  p-8 md:p-12"
     >
-      <div className="flex items-center gap-3 mb-6">
+      <div className="flex items-center gap-3  mb-6">
         <span className="bg-gradient-to-br from-purple-600 to-indigo-600 text-white p-3 rounded-xl shadow-md">
           <FaChalkboardTeacher className="text-xl" />
         </span>
@@ -56,8 +61,8 @@ const HodSection = () => {
       </h3>
 
       <div className="relative">
-        <FaQuoteLeft className="absolute -top-4 -left-4 text-5xl text-purple-200" />
-        <p className="text-gray-700 leading-relaxed text-lg italic pl-8">
+        {/* <FaQuoteLeft className="absolute -top-4 -left-4 text-5xl text-purple-200" /> */}
+        <p className="text-gray-700 leading-relaxed text-lg italic ">
           The department of Computer Engineering, established in 1999, is one of
           the oldest and most reputed departments of the institute.
         </p>
@@ -84,7 +89,7 @@ const HodSection = () => {
 
 const VisionMissionHOD = ({ vision, mission }) => {
   return (
-    <section className="py-20 px-6 max-w-6xl mx-auto space-y-20">
+    <section className="py-20  max-w-6xl mx-auto space-y-20">
       {/* Intro */}
       <div className="text-center mb-12">
         <motion.h2
