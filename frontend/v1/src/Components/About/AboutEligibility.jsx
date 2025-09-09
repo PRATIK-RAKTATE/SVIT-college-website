@@ -2,7 +2,7 @@ import React from "react";
 
 export default function EligibilityCriteria() {
   return (
-    <div className="w-full max-w-7xl ml-0 lg:ml-26 mt-5 bg-white rounded-2xl shadow-2xl overflow-hidden">
+    <div className=" w-[390px] mb-4 ml-5 md:w-full max-w-7xl md:ml-0 lg:ml-26 mt-5 bg-white rounded-2xl shadow-2xl overflow-hidden">
       <h3 className="text-2xl font-extrabold text-center py-4 bg-gradient-to-r from-indigo-600 to-purple-600 text-white tracking-wide">
         Eligibility Criteria
       </h3>
