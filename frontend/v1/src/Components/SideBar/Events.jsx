@@ -22,7 +22,7 @@ export default function Events() {
       eventData = csEvents;
       deptName = "Computer Engineering";
       break;
-    case "informationTechnology":
+    case "information-technology":
       eventData = itEvents;
       deptName = "Information Engineering";
       break;

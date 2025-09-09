@@ -17,7 +17,7 @@ export default function AcademicBooks() {
   /*  map department → books + name  */
   const deptMap = {
     "computer-engineering": { data: csBooks, name: "Computer Engineering" },
-    informationTechnology: { data: itBooks, name: "Information Technology" },
+    "information-technology": { data: itBooks, name: "Information Technology" },
     "chemical-engineering": { data: chemicalBooks, name: "Chemical Engineering" },
     "electronics-and-computer-engineering": {
       data: eceBooks,

@@ -15,7 +15,7 @@ import { mbaResults } from "../Sidebar-Constants/mbaDept";
 
 const DEPT_MAP = {
   computerEngineering: { data: csResults, name: "Computer Engineering" },
-  informationTechnology: { data: itResults, name: "Information Technology" },
+  "information-technology": { data: itResults, name: "Information Technology" },
   "chemical-engineering": { data: chemicalResults, name: "Chemical Engineering" },
   "electronics-and-computer-engineering": {
     data: eceResults,

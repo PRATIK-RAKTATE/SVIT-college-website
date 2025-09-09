@@ -23,7 +23,7 @@ export default function Syllabus() {
       syllabusData = csSyllabus;
       deptName = "Computer Engineering";
       break;
-    case "informationTechnology":
+    case "information-technology":
       syllabusData = itSyllabus;
       deptName = "Information Technology";
       break;

@@ -13,7 +13,7 @@ import { mbaFaculty } from "../Sidebar-Constants/mbaDept.js";
 
 const deptMap = {
   computerEngineering: { data: csFaculty, name: "Computer Engineering" },
-  informationTechnology: { data: itFaculty, name: "Information Technology" },
+  "information-technology": { data: itFaculty, name: "Information Technology" },
   "chemical-engineering": { data: chemFaculty, name: "Chemical Engineering" },
   "electronics-and-computer-engineering": {
     data: eceFaculty,

@@ -18,7 +18,7 @@ export default function Lab() {
       labData = csLabs;
       deptName = "Computer Engineering";
       break;
-    case "informationTechnology":
+    case "information-technology":
       labData = itLabs;
       deptName = "Information Engineering";
       break;

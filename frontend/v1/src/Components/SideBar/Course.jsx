@@ -16,7 +16,7 @@ import { FireExtinguisher } from "lucide-react";
 
 const deptMap = {
   computerEngineering: { data: csCourse, name: "Computer Engineering" },
-  informationTechnology: { data: itCourse, name: "Information Technology" },
+  "information-technology": { data: itCourse, name: "Information Technology" },
   mba: { data: mbaCourse, name: "M.B.A" },
   "first-year": { data: feCourse, name: "First Year" },
   "chemical-engineering": { data: chemCourse, name: "Chemical Engineering" },

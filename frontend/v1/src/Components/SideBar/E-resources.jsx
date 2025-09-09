@@ -18,7 +18,7 @@ export default function EResources() {
   /*  map department → resources + name  */
   const deptMap = {
     computerEngineering: { data: csEResources, name: "Computer Engineering" },
-    informationTechnology: {
+    "information-technology": {
       data: itEResources,
       name: "Information Technology",
     },
