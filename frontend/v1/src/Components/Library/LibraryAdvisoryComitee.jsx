@@ -6,7 +6,7 @@ import WelcomeLibrary from "./WelcomeLibrary";
 const LibraryAdvisoryComitee = () => {
   return (
     <>
-      <div className="flex flex-row">
+      <div className="md:flex md:flex-row felx flex-col m-1">
         <LibrarySideBar />
         <WelcomeLibrary />
       </div>

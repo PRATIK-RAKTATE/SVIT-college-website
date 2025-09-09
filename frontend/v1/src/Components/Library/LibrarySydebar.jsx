@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 export default function LibrarySideBar() {
   return (
-    <div className="mt-28 md:mt-14 mr-10 mb-10 md:ml-25 ml-10 w-fit">
+    <div className="mt-28 md:mt-14 mr-10 mb-10 md:ml-5 ml-10 w-fit">
       <ul className="h-auto w-72 flex flex-col gap-4 pl-5">
         <li className="border-l-4 border-[#4F39F6] hover:bg-black hover:text-white p-2 pl-2 shadow text-sm">
           <Link to={"/library"}>Department Profile </Link>
