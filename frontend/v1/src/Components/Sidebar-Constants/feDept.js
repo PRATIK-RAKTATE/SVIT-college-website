@@ -43,35 +43,31 @@ export const firstYearFaculty = [
   },
 ];
 
-
-
-
 export const feCourse = {
   introduction: [
-    "First Year Engineering provides strong foundation in basic sciences and core engineering principles."
+    "First Year Engineering provides strong foundation in basic sciences and core engineering principles.",
   ],
   overview: [
-    "The department nurtures fundamental concepts through interactive learning and foundation laboratories."
+    "The department nurtures fundamental concepts through interactive learning and foundation laboratories.",
   ],
   majorActivities: [
     "Freshers' induction programme",
     "Foundation day celebrations",
     "Parent-teacher meet",
     "Basic science exhibition",
-    "Sports & cultural week"
+    "Sports & cultural week",
   ],
   majorFacilities: [
     "Engineering Physics Lab",
     "Engineering Chemistry Lab",
     "Language Lab",
     "Workshop Practice Lab",
-    "Central Computer Facility"
+    "Central Computer Facility",
   ],
   associationInfo: [
-    "First Year Students' Council (FYSC) organises orientation, mentor-mentee sessions and co-curricular activities."
+    "First Year Students' Council (FYSC) organises orientation, mentor-mentee sessions and co-curricular activities.",
   ],
-  courseInfo: {
-  }
+  courseInfo: {},
 };
 
 export const feOutcomes = {
@@ -179,42 +175,79 @@ export const feEvents = [
   },
 ];
 
-
 export const feResults = {
   2024: {
     summary: "First-year pass percentage climbed to 88 %.",
-    students: ["Aaradhya Singh 9.71", "Vivaan Shah 9.64", "Anika Gupta 9.58"]
+    students: ["Aaradhya Singh 9.71", "Vivaan Shah 9.64", "Anika Gupta 9.58"],
   },
   2023: {
     summary: "Strong fundamentals reflected in scores.",
-    students: ["Priya Yadav 9.66", "Arnav Chaudhary 9.59", "Diya Verma 9.52"]
+    students: ["Priya Yadav 9.66", "Arnav Chaudhary 9.59", "Diya Verma 9.52"],
   },
   2022: {
     summary: "Physics-II average crossed 70 % for first time.",
-    students: ["Krish Mehta 9.61", "Avni Sharma 9.55", "Reyansh Patil 9.48"]
+    students: ["Krish Mehta 9.61", "Avni Sharma 9.55", "Reyansh Patil 9.48"],
   },
   2021: {
     summary: "Online proctoring ran smoothly.",
-    students: ["Saanvi Reddy 9.57", "Ayaan Khan 9.50", "Kavya Patel 9.44"]
+    students: ["Saanvi Reddy 9.57", "Ayaan Khan 9.50", "Kavya Patel 9.44"],
   },
   2020: {
     summary: "First fully-online batch.",
-    students: ["Ananya Kashyap 9.53", "Vedansh Rao 9.46", "Trisha Nair 9.40"]
-  }
+    students: ["Ananya Kashyap 9.53", "Vedansh Rao 9.46", "Trisha Nair 9.40"],
+  },
 };
-
-
 
 export const fePlacement = {
-  2019: { total: 0, placed: 0, highest: "-", average: "-", companies: [], toppers: [] },
-  2020: { total: 0, placed: 0, highest: "-", average: "-", companies: [], toppers: [] },
-  2021: { total: 0, placed: 0, highest: "-", average: "-", companies: [], toppers: [] },
-  2022: { total: 0, placed: 0, highest: "-", average: "-", companies: [], toppers: [] },
-  2023: { total: 0, placed: 0, highest: "-", average: "-", companies: [], toppers: [] },
-  2024: { total: 0, placed: 0, highest: "-", average: "-", companies: [], toppers: [] },
+  2019: {
+    total: 0,
+    placed: 0,
+    highest: "-",
+    average: "-",
+    companies: [],
+    toppers: [],
+  },
+  2020: {
+    total: 0,
+    placed: 0,
+    highest: "-",
+    average: "-",
+    companies: [],
+    toppers: [],
+  },
+  2021: {
+    total: 0,
+    placed: 0,
+    highest: "-",
+    average: "-",
+    companies: [],
+    toppers: [],
+  },
+  2022: {
+    total: 0,
+    placed: 0,
+    highest: "-",
+    average: "-",
+    companies: [],
+    toppers: [],
+  },
+  2023: {
+    total: 0,
+    placed: 0,
+    highest: "-",
+    average: "-",
+    companies: [],
+    toppers: [],
+  },
+  2024: {
+    total: 0,
+    placed: 0,
+    highest: "-",
+    average: "-",
+    companies: [],
+    toppers: [],
+  },
 };
-
-
 
 export const feBooks = {
   1: {
@@ -228,16 +261,56 @@ export const feBooks = {
   3: {
     sem1: [{ name: "BE SEM-I_Academic Book", link: "/books/cs/dbms.pdf" }],
     sem2: [{ name: "BE SEM-II_Academic Book", link: "/books/cs/os.pdf" }],
-  }
+  },
 };
 
 export const feEResources = [
-  { srNo: 1, facultyName: "Mr. Kailas P. Tambe", blogLink: "https://kailastambe.wordpress.com/about/", youtubeLink: "https://www.youtube.com/@kailastambe953" },
-  { srNo: 2, facultyName: "Mr. Sharadchandra Trimbak Karle ", blogLink: "https://wordpress.com/post/sharadkarlein.wordpress.com/61", youtubeLink: "https://www.youtube.com/@sharadkarle@3319" },
-  { srNo: 3, facultyName: "Mr. Vitthal Vikhe  kerunath	", blogLink: "https://www.blogger.com/blog/posts/3531857538195003683", youtubeLink: "https://www.youtube.com/@bsvikhe319" },
-  { srNo: 4, facultyName: "Mr. Amol Jagannath Shelke", blogLink: "https://www.blogger.com/blog/posts/7652536332362470379", youtubeLink: "https://www.youtube.com/@amolshelke5147" },
-  { srNo: 5, facultyName: "	Mr. Balasaheb Sahebrao Vikhe", blogLink: "https://www.blogger.com/blog/settings/821445469439231510", youtubeLink: "https://www.youtube.com/@bsvikhe319" },
-  { srNo: 5, facultyName: "	Ms. Rupali Yogesh Shinde", blogLink: "https://youtube.com/@rupalishinde-o6c?si=MzNcBEDxoOjkZ4KP", youtubeLink: "https://youtube.com/@rupalishinde-o6c?si=MzNcBEDxoOjkZ4KP" },
-  { srNo: 5, facultyName: "		Ms. Ashwini V Waje", blogLink: "https://ashwiniwaje.blogspot.com/", youtubeLink: "http://www.youtube.com/@ashwinighotekar-w2f" },
-  { srNo: 5, facultyName: "Mr. Pravin Ramdas Dukare", blogLink: "https://pravindukare.blogspot.com/", youtubeLink: "http://www.youtube.com/@PravinDukarePD" },
+  {
+    srNo: 1,
+    facultyName: "Mr. Kailas P. Tambe",
+    blogLink: "https://kailastambe.wordpress.com/about/",
+    youtubeLink: "https://www.youtube.com/@kailastambe953",
+  },
+  {
+    srNo: 2,
+    facultyName: "Mr. Sharadchandra Trimbak Karle ",
+    blogLink: "https://wordpress.com/post/sharadkarlein.wordpress.com/61",
+    youtubeLink: "https://www.youtube.com/@sharadkarle@3319",
+  },
+  {
+    srNo: 3,
+    facultyName: "Mr. Vitthal Vikhe  kerunath	",
+    blogLink: "https://www.blogger.com/blog/posts/3531857538195003683",
+    youtubeLink: "https://www.youtube.com/@bsvikhe319",
+  },
+  {
+    srNo: 4,
+    facultyName: "Mr. Amol Jagannath Shelke",
+    blogLink: "https://www.blogger.com/blog/posts/7652536332362470379",
+    youtubeLink: "https://www.youtube.com/@amolshelke5147",
+  },
+  {
+    srNo: 5,
+    facultyName: "	Mr. Balasaheb Sahebrao Vikhe",
+    blogLink: "https://www.blogger.com/blog/settings/821445469439231510",
+    youtubeLink: "https://www.youtube.com/@bsvikhe319",
+  },
+  {
+    srNo: 5,
+    facultyName: "	Ms. Rupali Yogesh Shinde",
+    blogLink: "https://youtube.com/@rupalishinde-o6c?si=MzNcBEDxoOjkZ4KP",
+    youtubeLink: "https://youtube.com/@rupalishinde-o6c?si=MzNcBEDxoOjkZ4KP",
+  },
+  {
+    srNo: 5,
+    facultyName: "		Ms. Ashwini V Waje",
+    blogLink: "https://ashwiniwaje.blogspot.com/",
+    youtubeLink: "http://www.youtube.com/@ashwinighotekar-w2f",
+  },
+  {
+    srNo: 5,
+    facultyName: "Mr. Pravin Ramdas Dukare",
+    blogLink: "https://pravindukare.blogspot.com/",
+    youtubeLink: "http://www.youtube.com/@PravinDukarePD",
+  },
 ];

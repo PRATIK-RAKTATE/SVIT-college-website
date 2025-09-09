@@ -17,9 +17,12 @@ const DEPT_MAP = {
   computerEngineering: { data: csResults, name: "Computer Engineering" },
   informationTechnology: { data: itResults, name: "Information Technology" },
   chemicalEngineering: { data: chemicalResults, name: "Chemical Engineering" },
-  electronicsAndComputerEngineering: { data: eceResults, name: "Electronics & Computer Engineering" },
+  electronicsAndComputerEngineering: {
+    data: eceResults,
+    name: "Electronics & Computer Engineering",
+  },
   firstYear: { data: feResults, name: "First Year" },
-  mba: { data: mbaResults, name: "M.B.A" }
+  mba: { data: mbaResults, name: "M.B.A" },
 };
 
 /* ----------  tiny helper  ---------- */
@@ -66,20 +69,20 @@ export default function Results() {
             const p = parseResult(raw);
             return p.cgpa > max.cgpa ? { ...p, raw } : max;
           },
-          { name: "-", cgpa: 0, raw: "" }
-        )
+          { name: "-", cgpa: 0, raw: "" },
+        ),
       }))
     : [
         {
           sec: "Topper",
-          ...((yrData.students || []).reduce(
+          ...(yrData.students || []).reduce(
             (max, raw) => {
               const p = parseResult(raw);
               return p.cgpa > max.cgpa ? { ...p, raw } : max;
             },
-            { name: "-", cgpa: 0, raw: "" }
-          ))
-        }
+            { name: "-", cgpa: 0, raw: "" },
+          ),
+        },
       ];
 
   /* ----  section title  ---- */
@@ -140,14 +143,20 @@ export default function Results() {
                       key={item.sec}
                       initial={{ opacity: 0, x: -30 }}
                       animate={{ opacity: 1, x: 0 }}
-                      transition={{ delay: idx * 0.08, type: "spring", stiffness: 120 }}
+                      transition={{
+                        delay: idx * 0.08,
+                        type: "spring",
+                        stiffness: 120,
+                      }}
                       className="border-b last:border-none hover:bg-gray-50 transition"
                     >
                       <td className="px-4 py-3 font-semibold">{item.sec}</td>
                       <td className="px-4 py-3">{item.name}</td>
                       <td className="px-4 py-3">
                         <div className="flex items-center gap-2">
-                          <span className="font-bold text-indigo-600">{item.cgpa}</span>
+                          <span className="font-bold text-indigo-600">
+                            {item.cgpa}
+                          </span>
                           <Medal className="w-4 h-4 text-yellow-500" />
                         </div>
                       </td>
@@ -235,8 +244,12 @@ export default function Results() {
                       transition={{ delay: 0.1 }}
                       className="bg-indigo-50 rounded-xl p-4 border border-indigo-200"
                     >
-                      <h3 className="text-lg font-bold text-indigo-800 mb-2">{sem.toUpperCase()}</h3>
-                      <p className="text-sm text-indigo-600 mb-3">Pass: {yrData[sem]?.pass ?? "-"}</p>
+                      <h3 className="text-lg font-bold text-indigo-800 mb-2">
+                        {sem.toUpperCase()}
+                      </h3>
+                      <p className="text-sm text-indigo-600 mb-3">
+                        Pass: {yrData[sem]?.pass ?? "-"}
+                      </p>
                       <ul className="list-disc list-inside text-sm text-gray-700 space-y-1">
                         {yrData[sem]?.toppers?.map((t, i) => (
                           <li key={i}>{t}</li>
@@ -255,7 +268,9 @@ export default function Results() {
                   transition={{ delay: 0.1 }}
                   className="bg-indigo-50 rounded-xl p-4 border border-indigo-200"
                 >
-                  <h3 className="text-lg font-bold text-indigo-800 mb-2">Topper</h3>
+                  <h3 className="text-lg font-bold text-indigo-800 mb-2">
+                    Topper
+                  </h3>
                   <ul className="list-disc list-inside text-sm text-gray-700">
                     {yrData.students.map((t, i) => (
                       <li key={i}>{t}</li>

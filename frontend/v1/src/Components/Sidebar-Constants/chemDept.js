@@ -98,34 +98,34 @@ export const chemFaculty = [
 
 export const chemCourse = {
   introduction: [
-    "Chemical Engineering department nurtures process engineers equipped with latest simulation and safety techniques."
+    "Chemical Engineering department nurtures process engineers equipped with latest simulation and safety techniques.",
   ],
   overview: [
-    "Founded in 1999, the department offers B.E. Chemical Engineering with 60 seats and is accredited by NBA."
+    "Founded in 1999, the department offers B.E. Chemical Engineering with 60 seats and is accredited by NBA.",
   ],
   majorActivities: [
     "National conference on Chemical Engineering (NCCE)",
     "Annual industrial training programme",
     "Process simulation workshop (Aspen Plus)",
     "Safety & hazard analysis seminar",
-    "Alumni-industry interaction day"
+    "Alumni-industry interaction day",
   ],
   majorFacilities: [
     "Process Control & Instrumentation Lab",
     "Mass Transfer Operations Lab",
     "Heat Transfer Lab",
     "Reaction Engineering Lab",
-    "Aspen HYSYS simulation centre"
+    "Aspen HYSYS simulation centre",
   ],
   associationInfo: [
-    "Chemical Engineering Students' Society (CHESS) organises technical events and industrial visits every semester."
+    "Chemical Engineering Students' Society (CHESS) organises technical events and industrial visits every semester.",
   ],
   courseInfo: {
     branch: "Chemical Engineering",
     courseName: "B.E. Chemical Engineering",
     intake: 60,
-    establishmentYear: 1999
-  }
+    establishmentYear: 1999,
+  },
 };
 
 export const chemicalOutcomes = {
@@ -237,42 +237,39 @@ export const chemicalEvents = [
   },
 ];
 
-
-
 // chemDept.js
 export const chemicalResults = {
   2024: {
     summary: "Chemical Engg posts best university results.",
     se: { pass: "91.2%", toppers: ["Aarush Singh 9.80"] },
     te: { pass: "88.5%", toppers: ["Meher Kaur 9.73"] },
-    be: { pass: "94.7%", toppers: ["Vikram Seth 9.87"] }
+    be: { pass: "94.7%", toppers: ["Vikram Seth 9.87"] },
   },
   2023: {
     summary: "Pilot-plant projects scored high.",
     se: { pass: "90.6%", toppers: ["Zara Ahmed 9.75"] },
     te: { pass: "87.4%", toppers: ["Rohan Sen 9.70"] },
-    be: { pass: "93.9%", toppers: ["Anjali Bhatt 9.83"] }
+    be: { pass: "93.9%", toppers: ["Anjali Bhatt 9.83"] },
   },
   2022: {
     summary: "Strong industry internship feedback.",
     se: { pass: "89.8%", toppers: ["Kiara Mehta 9.68"] },
     te: { pass: "86.9%", toppers: ["Sahil Bagga 9.65"] },
-    be: { pass: "92.5%", toppers: ["Tara Lal 9.79"] }
+    be: { pass: "92.5%", toppers: ["Tara Lal 9.79"] },
   },
   2021: {
     summary: "Online labs handled smoothly.",
     se: { pass: "88.4%", toppers: ["Advait Roy 9.62"] },
     te: { pass: "85.7%", toppers: ["Darshana Nayak 9.58"] },
-    be: { pass: "91.8%", toppers: ["Pranav Guha 9.72"] }
+    be: { pass: "91.8%", toppers: ["Pranav Guha 9.72"] },
   },
   2020: {
     summary: "Green-tech projects won hackathons.",
     se: { pass: "87.5%", toppers: ["Sanya Thakur 9.55"] },
     te: { pass: "84.9%", toppers: ["Faizan Qureshi 9.51"] },
-    be: { pass: "90.6%", toppers: ["Vaishali Kohli 9.68"] }
-  }
+    be: { pass: "90.6%", toppers: ["Vaishali Kohli 9.68"] },
+  },
 };
-
 
 export const chemicalPlacement = {
   2024: {
@@ -325,9 +322,8 @@ export const chemicalPlacement = {
   },
 };
 
-
 export const chemicalBooks = {
- 1: {
+  1: {
     sem1: [{ name: "SE SEM-I_Academic Book", link: "/books/cs/maths1.pdf" }],
     sem2: [{ name: "SE SEM-II_Academic Book", link: "/books/cs/maths2.pdf" }],
   },
@@ -341,11 +337,35 @@ export const chemicalBooks = {
   },
 };
 
-
 export const chemicalEResources = [
-  { srNo: 1, facultyName: "Dr. K. R. Patel", blogLink: "https://krpatelchem.wordpress.com", youtubeLink: "https://youtube.com/c/krpatelchem" },
-  { srNo: 2, facultyName: "Prof. M. H. Desai", blogLink: "https://mhdesaich.blogspot.com", youtubeLink: "https://youtube.com/c/mhdesaich" },
-  { srNo: 3, facultyName: "Dr. A. S. Shah", blogLink: "https://asshahchem.medium.com", youtubeLink: "https://youtube.com/c/asshahchem" },
-  { srNo: 4, facultyName: "Prof. P. M. Joshi", blogLink: "https://pmjoshichem.wordpress.com", youtubeLink: "https://youtube.com/c/pmjoshichem" },
-  { srNo: 5, facultyName: "Dr. R. K. Shah", blogLink: "https://rkshahchem.blogspot.com", youtubeLink: "https://youtube.com/c/rkshahchem" },
+  {
+    srNo: 1,
+    facultyName: "Dr. K. R. Patel",
+    blogLink: "https://krpatelchem.wordpress.com",
+    youtubeLink: "https://youtube.com/c/krpatelchem",
+  },
+  {
+    srNo: 2,
+    facultyName: "Prof. M. H. Desai",
+    blogLink: "https://mhdesaich.blogspot.com",
+    youtubeLink: "https://youtube.com/c/mhdesaich",
+  },
+  {
+    srNo: 3,
+    facultyName: "Dr. A. S. Shah",
+    blogLink: "https://asshahchem.medium.com",
+    youtubeLink: "https://youtube.com/c/asshahchem",
+  },
+  {
+    srNo: 4,
+    facultyName: "Prof. P. M. Joshi",
+    blogLink: "https://pmjoshichem.wordpress.com",
+    youtubeLink: "https://youtube.com/c/pmjoshichem",
+  },
+  {
+    srNo: 5,
+    facultyName: "Dr. R. K. Shah",
+    blogLink: "https://rkshahchem.blogspot.com",
+    youtubeLink: "https://youtube.com/c/rkshahchem",
+  },
 ];

@@ -3,7 +3,8 @@ export const eceFaculty = [
     sr: 1,
     name: "Dr. Rana S. Mahajan",
     designation: "Assistant Professor & HOD",
-    qualification: "PhD (E&CE), ME(Digital Communication), Diploma in Values and Spiritual Education, Member of ISTE, IETE.",
+    qualification:
+      "PhD (E&CE), ME(Digital Communication), Diploma in Values and Spiritual Education, Member of ISTE, IETE.",
     experience: "14 Years",
   },
   {
@@ -38,7 +39,8 @@ export const eceFaculty = [
     sr: 6,
     name: "Dr. Trupti K. Wable",
     designation: "Assistant Professor",
-    qualification: "Ph. D (E&CE), ME(VLSI & Embedded), BE (Electronics), Diploma (Electronics), Member of ISTE, IETE, IAEEE, IAENG.",
+    qualification:
+      "Ph. D (E&CE), ME(VLSI & Embedded), BE (Electronics), Diploma (Electronics), Member of ISTE, IETE, IAEEE, IAENG.",
     experience: "13 Years",
   },
   {
@@ -50,37 +52,36 @@ export const eceFaculty = [
   },
 ];
 
-
 export const eceCourse = {
   introduction: [
-    "Electronics & Computer Engineering department delivers cutting-edge education in VLSI, embedded systems and wireless communication."
+    "Electronics & Computer Engineering department delivers cutting-edge education in VLSI, embedded systems and wireless communication.",
   ],
   overview: [
-    "Established in 2004, the programme is uniquely positioned to bridge electronics hardware and computer software domains."
+    "Established in 2004, the programme is uniquely positioned to bridge electronics hardware and computer software domains.",
   ],
   majorActivities: [
     "Annual VLSI design contest (VLSI-Con)",
     "IoT & Embedded Systems workshop",
     "National conference on Communication Systems (NCCS)",
     "Industry sponsored projects fair",
-    "IEEE student branch events"
+    "IEEE student branch events",
   ],
   majorFacilities: [
     "VLSI Design Lab with Cadence tools",
     "Embedded Systems Lab (ARM, RISC-V)",
     "Communication Systems Lab",
     "IoT Innovation Centre",
-    "Antenna & Microwave lab"
+    "Antenna & Microwave lab",
   ],
   associationInfo: [
-    "Electronics & Computer Engineering Students' Association (ECESA) conducts hackathons, industrial tours and expert lectures regularly."
+    "Electronics & Computer Engineering Students' Association (ECESA) conducts hackathons, industrial tours and expert lectures regularly.",
   ],
   courseInfo: {
     branch: "Electronics & Computer Engineering",
     courseName: "B.E. Electronics & Computer Engineering",
     intake: 120,
-    establishmentYear: 2004
-  }
+    establishmentYear: 2004,
+  },
 };
 
 export const eceOutcomes = {
@@ -192,43 +193,39 @@ export const eceEvents = [
   },
 ];
 
-
-
-
 // eceDept.js
 export const eceResults = {
   2024: {
     summary: "Computer Engineering breaks all records in 2024.",
     se: { pass: "93.5%", toppers: ["Reyansh Das 9.90", "Sara Khan 9.83"] },
     te: { pass: "90.8%", toppers: ["Anika Rao 9.84"] },
-    be: { pass: "96.0%", toppers: ["Dhruv Shah 9.92"] }
+    be: { pass: "96.0%", toppers: ["Dhruv Shah 9.92"] },
   },
   2023: {
     summary: "Consistent 90+ pass percentage maintained.",
     se: { pass: "92.7%", toppers: ["Ayaan Ali 9.78"] },
     te: { pass: "89.9%", toppers: ["Trisha Sinha 9.74", "Ved Prakash 9.71"] },
-    be: { pass: "95.3%", toppers: ["Aditi Som 9.86"] }
+    be: { pass: "95.3%", toppers: ["Aditi Som 9.86"] },
   },
   2022: {
     summary: "Strong research-oriented final-year projects.",
     se: { pass: "91.4%", toppers: ["Kabir Khanna 9.73"] },
     te: { pass: "88.6%", toppers: ["Diya Dutta 9.69"] },
-    be: { pass: "94.1%", toppers: ["Mihir Basu 9.81", "Avni Pandey 9.79"] }
+    be: { pass: "94.1%", toppers: ["Mihir Basu 9.81", "Avni Pandey 9.79"] },
   },
   2021: {
     summary: "Industry-collab labs boosted practical scores.",
     se: { pass: "90.1%", toppers: ["Pari Mishra 9.67"] },
     te: { pass: "87.2%", toppers: ["Yash Gadgil 9.64"] },
-    be: { pass: "93.5%", toppers: ["Lavanya Shetty 9.76"] }
+    be: { pass: "93.5%", toppers: ["Lavanya Shetty 9.76"] },
   },
   2020: {
     summary: "First batch under outcome-based model.",
     se: { pass: "89.3%", toppers: ["Rohan Mistry 9.61"] },
     te: { pass: "86.8%", toppers: ["Ishaan Awasthi 9.59"] },
-    be: { pass: "92.9%", toppers: ["Nandini Devi 9.74"] }
-  }
+    be: { pass: "92.9%", toppers: ["Nandini Devi 9.74"] },
+  },
 };
-
 
 export const ecePlacement = {
   2024: {
@@ -281,9 +278,8 @@ export const ecePlacement = {
   },
 };
 
-
 export const eceBooks = {
- 1: {
+  1: {
     sem1: [{ name: "SE SEM-I_Academic Book", link: "/books/cs/maths1.pdf" }],
     sem2: [{ name: "SE SEM-II_Academic Book", link: "/books/cs/maths2.pdf" }],
   },
@@ -297,11 +293,35 @@ export const eceBooks = {
   },
 };
 
-
 export const eceEResources = [
-  { srNo: 1, facultyName: "Dr. N. P. Patel", blogLink: "https://nppatelece.wordpress.com", youtubeLink: "https://youtube.com/c/nppatelece" },
-  { srNo: 2, facultyName: "Prof. M. K. Shah", blogLink: "https://mkshahece.blogspot.com", youtubeLink: "https://youtube.com/c/mkshahece" },
-  { srNo: 3, facultyName: "Dr. A. B. Joshi", blogLink: "https://abjoshece.medium.com", youtubeLink: "https://youtube.com/c/abjoshece" },
-  { srNo: 4, facultyName: "Prof. S. T. Patel", blogLink: "https://stpatelce.wordpress.com", youtubeLink: "https://youtube.com/c/stpatelce" },
-  { srNo: 5, facultyName: "Dr. H. R. Desai", blogLink: "https://hrdesaiece.blogspot.com", youtubeLink: "https://youtube.com/c/hrdesaiece" },
+  {
+    srNo: 1,
+    facultyName: "Dr. N. P. Patel",
+    blogLink: "https://nppatelece.wordpress.com",
+    youtubeLink: "https://youtube.com/c/nppatelece",
+  },
+  {
+    srNo: 2,
+    facultyName: "Prof. M. K. Shah",
+    blogLink: "https://mkshahece.blogspot.com",
+    youtubeLink: "https://youtube.com/c/mkshahece",
+  },
+  {
+    srNo: 3,
+    facultyName: "Dr. A. B. Joshi",
+    blogLink: "https://abjoshece.medium.com",
+    youtubeLink: "https://youtube.com/c/abjoshece",
+  },
+  {
+    srNo: 4,
+    facultyName: "Prof. S. T. Patel",
+    blogLink: "https://stpatelce.wordpress.com",
+    youtubeLink: "https://youtube.com/c/stpatelce",
+  },
+  {
+    srNo: 5,
+    facultyName: "Dr. H. R. Desai",
+    blogLink: "https://hrdesaiece.blogspot.com",
+    youtubeLink: "https://youtube.com/c/hrdesaiece",
+  },
 ];

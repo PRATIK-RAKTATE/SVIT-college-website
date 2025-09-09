@@ -5,7 +5,8 @@ export const mbaFaculty = [
     sr: 1,
     name: "Dr. Vishakha A. Gaidhani",
     designation: "HOD & Assistant Professor",
-    qualification: "Ph.D. (Organizational Management), M.B.A. (IT), B.Sc (Electronics)",
+    qualification:
+      "Ph.D. (Organizational Management), M.B.A. (IT), B.Sc (Electronics)",
     experience: "7 Years Industry & 16 Years Academics",
   },
   {
@@ -19,56 +20,58 @@ export const mbaFaculty = [
     sr: 3,
     name: "Dr. Amol P. Kare",
     designation: "Assistant Professor",
-    qualification: "Ph.D. (Comm. & Mgmt.), M.B.A. (HR), D.L.L. & L.W., P.G.D.P.C.",
+    qualification:
+      "Ph.D. (Comm. & Mgmt.), M.B.A. (HR), D.L.L. & L.W., P.G.D.P.C.",
     experience: "1 Year Industry & 13 Years Academics",
   },
   {
     sr: 4,
     name: "Mr. Sanjay N. Vikhe",
     designation: "Assistant Professor",
-    qualification: "Ph.D. (Pursuing), M.B.A. (Marketing), B.Sc (Chemistry), D Pharmacy",
+    qualification:
+      "Ph.D. (Pursuing), M.B.A. (Marketing), B.Sc (Chemistry), D Pharmacy",
     experience: "7 Years Industry & 15 Years Academics",
   },
   {
     sr: 5,
     name: "Dr. Viresh B. Parkhe",
     designation: "Assistant Professor",
-    qualification: "Ph.D. (Organizational Management), M.B.A. (Marketing), BHMS",
+    qualification:
+      "Ph.D. (Organizational Management), M.B.A. (Marketing), BHMS",
     experience: "13 Years Academics",
   },
 ];
 
-
 export const mbaCourse = {
   introduction: [
-    "The MBA programme focuses on developing managerial leaders equipped with analytical, strategic and entrepreneurial skills."
+    "The MBA programme focuses on developing managerial leaders equipped with analytical, strategic and entrepreneurial skills.",
   ],
   overview: [
-    "Two-year full-time MBA started in 2008 with specialisations in Marketing, Finance, HR and Operations."
+    "Two-year full-time MBA started in 2008 with specialisations in Marketing, Finance, HR and Operations.",
   ],
   majorActivities: [
     "National Management Convention (NMC)",
     "CEO speaker series",
     "Live consultancy projects",
     "Entrepreneurship development workshops",
-    "Industry immersion programme"
+    "Industry immersion programme",
   ],
   majorFacilities: [
     "Management Development Centre",
     "Case-study room with video-conferencing",
     "Business Simulation Lab",
     "Entrepreneurship Incubation Centre",
-    "Digital Library with Bloomberg terminal"
+    "Digital Library with Bloomberg terminal",
   ],
   associationInfo: [
-    "MBA Students' Association (MBASA) organises business quizzes, management games and corporate interface events."
+    "MBA Students' Association (MBASA) organises business quizzes, management games and corporate interface events.",
   ],
   courseInfo: {
     branch: "Management Studies",
     courseName: "Master of Business Administration (MBA)",
     intake: 60,
-    establishmentYear: 2008
-  }
+    establishmentYear: 2008,
+  },
 };
 
 export const mbaOutcomes = {
@@ -105,25 +108,27 @@ export const mbaLabs = [
   {
     name: "Practice Lab",
     img: "/robots.jpg",
-    description: "State-of-the-art robotics research..."
+    description: "State-of-the-art robotics research...",
   },
-  {                                    // ← add this
+  {
+    // ← add this
     name: "Network Lab",
     img: "/security.jpg",
-    description: "Pen-testing, forensics, secure-coding..."
+    description: "Pen-testing, forensics, secure-coding...",
   },
-  {                                    // ← and/or this
+  {
+    // ← and/or this
     name: "Data-Science Lab",
     img: "/data.jpg",
-    description: "Big-data analytics, ML pipelines..."
+    description: "Big-data analytics, ML pipelines...",
   },
-  {                                    // ← and/or this
+  {
+    // ← and/or this
     name: "Data-Science Lab",
     img: "/data.jpg",
-    description: "Big-data analytics, ML pipelines..."
-  }
+    description: "Big-data analytics, ML pipelines...",
+  },
 ];
-
 
 export const mbaSyllabus = [
   {
@@ -178,31 +183,28 @@ export const mbaEvents = [
   },
 ];
 
-
 export const mbaResults = {
   2024: {
     summary: "MBA placement season driven by 95 % pass.",
-    students: ["Rohit Bansal 9.42", "Sheetal K 9.35"]
+    students: ["Rohit Bansal 9.42", "Sheetal K 9.35"],
   },
   2023: {
     summary: "Marketing majors led the GPA charts.",
-    students: ["Devika Pillai 9.38", "Nitin G 9.31"]
+    students: ["Devika Pillai 9.38", "Nitin G 9.31"],
   },
   2022: {
     summary: "Finance electives scored highest.",
-    students: ["Megha S 9.33", "Rajat M 9.27"]
+    students: ["Megha S 9.33", "Rajat M 9.27"],
   },
   2021: {
     summary: "Consulting projects boosted averages.",
-    students: ["Simran J 9.29", "Ajay R 9.22"]
+    students: ["Simran J 9.29", "Ajay R 9.22"],
   },
   2020: {
     summary: "Case-study method showed impact.",
-    students: ["Pooja C 9.25", "Kunal V 9.18"]
-  }
+    students: ["Pooja C 9.25", "Kunal V 9.18"],
+  },
 };
-
-
 
 export const mbaPlacement = {
   2024: {
@@ -268,13 +270,37 @@ export const mbaBooks = {
     sem1: [{ name: "BE SEM-I_Academic Book", link: "/books/cs/dbms.pdf" }],
     sem2: [{ name: "BE SEM-II_Academic Book", link: "/books/cs/os.pdf" }],
   },
-}
-
+};
 
 export const mbaEResources = [
-  { srNo: 1, facultyName: "Dr. R. K. Shah", blogLink: "https://rkshahmba.wordpress.com", youtubeLink: "https://youtube.com/c/rkshahmba" },
-  { srNo: 2, facultyName: "Prof. A. M. Patel", blogLink: "https://ampatelmba.blogspot.com", youtubeLink: "https://youtube.com/c/ampatelmba" },
-  { srNo: 3, facultyName: "Dr. S. T. Joshi", blogLink: "https://stjoshibba.medium.com", youtubeLink: "https://youtube.com/c/stjoshibba" },
-  { srNo: 4, facultyName: "Prof. M. H. Desai", blogLink: "https://mhdesaimba.wordpress.com", youtubeLink: "https://youtube.com/c/mhdesaimba" },
-  { srNo: 5, facultyName: "Dr. P. K. Shah", blogLink: "https://pkshahmba.blogspot.com", youtubeLink: "https://youtube.com/c/pkshahmba" },
+  {
+    srNo: 1,
+    facultyName: "Dr. R. K. Shah",
+    blogLink: "https://rkshahmba.wordpress.com",
+    youtubeLink: "https://youtube.com/c/rkshahmba",
+  },
+  {
+    srNo: 2,
+    facultyName: "Prof. A. M. Patel",
+    blogLink: "https://ampatelmba.blogspot.com",
+    youtubeLink: "https://youtube.com/c/ampatelmba",
+  },
+  {
+    srNo: 3,
+    facultyName: "Dr. S. T. Joshi",
+    blogLink: "https://stjoshibba.medium.com",
+    youtubeLink: "https://youtube.com/c/stjoshibba",
+  },
+  {
+    srNo: 4,
+    facultyName: "Prof. M. H. Desai",
+    blogLink: "https://mhdesaimba.wordpress.com",
+    youtubeLink: "https://youtube.com/c/mhdesaimba",
+  },
+  {
+    srNo: 5,
+    facultyName: "Dr. P. K. Shah",
+    blogLink: "https://pkshahmba.blogspot.com",
+    youtubeLink: "https://youtube.com/c/pkshahmba",
+  },
 ];

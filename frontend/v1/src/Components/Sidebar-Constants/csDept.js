@@ -31,14 +31,16 @@ export const csFaculty = [
     sr: 5,
     name: "Mr. Tambe Pravin M.",
     designation: "Assistant Professor",
-    qualification: "PhD (Pursuing), M.E. (Computer Engineering), BE(Computer Engineering)",
+    qualification:
+      "PhD (Pursuing), M.E. (Computer Engineering), BE(Computer Engineering)",
     experience: "10.5 Years",
   },
   {
     sr: 6,
     name: "Ms. Prabha B. Gadakh",
     designation: "Assistant Professor",
-    qualification: "M.E.(Computer Science & Engineering), B.E.(Information Technology), Diploma (Computer Technology)",
+    qualification:
+      "M.E.(Computer Science & Engineering), B.E.(Information Technology), Diploma (Computer Technology)",
     experience: "4.6 Years",
   },
   {
@@ -59,7 +61,8 @@ export const csFaculty = [
     sr: 9,
     name: "Ms. Pallavi Akshay Pathare",
     designation: "Assistant Professor",
-    qualification: "PhD (Pursuing), M.E. (Computer Engineering), BE(Computer Engineering)",
+    qualification:
+      "PhD (Pursuing), M.E. (Computer Engineering), BE(Computer Engineering)",
     experience: "4 Years",
   },
   {
@@ -78,41 +81,40 @@ export const csFaculty = [
   },
 ];
 
-
 export const csCourse = {
   introduction: [
     "The Computer Engineering department offers a rigorous undergraduate programme designed to produce industry-ready software professionals and researchers.",
-    "Our curriculum emphasises core computer science fundamentals, modern programming paradigms, and emerging technologies such as AI, cloud computing and cyber-security."
+    "Our curriculum emphasises core computer science fundamentals, modern programming paradigms, and emerging technologies such as AI, cloud computing and cyber-security.",
   ],
   overview: [
     "Established in 2001, the department is NBA accredited and offers B.E. Computer Engineering with an intake of 180 students.",
-    "State-of-the-art laboratories, industry collaborations and active research centres provide an enriching learning ecosystem."
+    "State-of-the-art laboratories, industry collaborations and active research centres provide an enriching learning ecosystem.",
   ],
   majorActivities: [
     "Annual national conference on AI & ML (NCALM)",
     "Monthly hackathon series (Hack-Night)",
     "Industry expert talks every Saturday (Tech-Talks)",
     "Summer internship fair with 40+ companies",
-    "Open-source contribution drives (OSS-Camp)"
+    "Open-source contribution drives (OSS-Camp)",
   ],
   majorFacilities: [
     "High Performance Computing Lab (128 GPU nodes)",
     "IoT & Robotics Lab with ROS based drones",
     "Cyber-Security Range with live malware sandbox",
     "Amazon Web Services (AWS) Academy cloud lab",
-    "24×7 central computing facility (500+ terminals)"
+    "24×7 central computing facility (500+ terminals)",
   ],
   associationInfo: [
     "The Computer Engineering Students' Association (CESA) was formed in 2003 and currently has 800+ active members.",
     "CESA organises technical events, coding competitions, industrial visits and soft-skill workshops throughout the year.",
-    "Annual flagship events include CODE-FEST, TECHNOPHILIA and PROJECT-EXPO which attract participation from across the state."
+    "Annual flagship events include CODE-FEST, TECHNOPHILIA and PROJECT-EXPO which attract participation from across the state.",
   ],
   courseInfo: {
     branch: "Computer Engineering",
     courseName: "B.E. Computer Engineering",
     intake: 180,
-    establishmentYear: 2001
-  }
+    establishmentYear: 2001,
+  },
 };
 
 // csDept.js
@@ -226,34 +228,33 @@ export const csResults = {
     summary: "Computer Engineering breaks all records in 2024.",
     se: { pass: "93.5%", toppers: ["Reyansh Das 9.90", "Sara Khan 9.83"] },
     te: { pass: "90.8%", toppers: ["Anika Rao 9.84"] },
-    be: { pass: "96.0%", toppers: ["Dhruv Shah 9.92"] }
+    be: { pass: "96.0%", toppers: ["Dhruv Shah 9.92"] },
   },
   2023: {
     summary: "Consistent 90+ pass percentage maintained.",
     se: { pass: "92.7%", toppers: ["Ayaan Ali 9.78"] },
     te: { pass: "89.9%", toppers: ["Trisha Sinha 9.74", "Ved Prakash 9.71"] },
-    be: { pass: "95.3%", toppers: ["Aditi Som 9.86"] }
+    be: { pass: "95.3%", toppers: ["Aditi Som 9.86"] },
   },
   2022: {
     summary: "Strong research-oriented final-year projects.",
     se: { pass: "91.4%", toppers: ["Kabir Khanna 9.73"] },
     te: { pass: "88.6%", toppers: ["Diya Dutta 9.69"] },
-    be: { pass: "94.1%", toppers: ["Mihir Basu 9.81", "Avni Pandey 9.79"] }
+    be: { pass: "94.1%", toppers: ["Mihir Basu 9.81", "Avni Pandey 9.79"] },
   },
   2021: {
     summary: "Industry-collab labs boosted practical scores.",
     se: { pass: "90.1%", toppers: ["Pari Mishra 9.67"] },
     te: { pass: "87.2%", toppers: ["Yash Gadgil 9.64"] },
-    be: { pass: "93.5%", toppers: ["Lavanya Shetty 9.76"] }
+    be: { pass: "93.5%", toppers: ["Lavanya Shetty 9.76"] },
   },
   2020: {
     summary: "First batch under outcome-based model.",
     se: { pass: "89.3%", toppers: ["Rohan Mistry 9.61"] },
     te: { pass: "86.8%", toppers: ["Ishaan Awasthi 9.59"] },
-    be: { pass: "92.9%", toppers: ["Nandini Devi 9.74"] }
-  }
+    be: { pass: "92.9%", toppers: ["Nandini Devi 9.74"] },
+  },
 };
-
 
 export const csPlacement = {
   2024: {
@@ -261,16 +262,36 @@ export const csPlacement = {
     placed: 162,
     highest: "₹ 44 LPA",
     average: "₹ 8.2 LPA",
-    companies: ["Amazon", "Microsoft", "Deutsche Bank", "Morgan Stanley", "Sprinklr"],
-    toppers: ["Raj Chauhan  ₹ 44 LPA", "Rishi Shah  ₹ 39 LPA", "K Patel  ₹ 36 LPA"],
+    companies: [
+      "Amazon",
+      "Microsoft",
+      "Deutsche Bank",
+      "Morgan Stanley",
+      "Sprinklr",
+    ],
+    toppers: [
+      "Raj Chauhan  ₹ 44 LPA",
+      "Rishi Shah  ₹ 39 LPA",
+      "K Patel  ₹ 36 LPA",
+    ],
   },
   2023: {
     total: 175,
     placed: 155,
     highest: "₹ 42 LPA",
     average: "₹ 7.8 LPA",
-    companies: ["Amazon", "Microsoft", "Goldman Sachs", "Sprinklr", "Salesforce"],
-    toppers: ["Shah Dev  ₹ 42 LPA", "Patel Dhruv  ₹ 38 LPA", "Desai K  ₹ 35 LPA"],
+    companies: [
+      "Amazon",
+      "Microsoft",
+      "Goldman Sachs",
+      "Sprinklr",
+      "Salesforce",
+    ],
+    toppers: [
+      "Shah Dev  ₹ 42 LPA",
+      "Patel Dhruv  ₹ 38 LPA",
+      "Desai K  ₹ 35 LPA",
+    ],
   },
   2022: {
     total: 170,
@@ -278,7 +299,11 @@ export const csPlacement = {
     highest: "₹ 40 LPA",
     average: "₹ 7.5 LPA",
     companies: ["Amazon", "Microsoft", "Sprinklr", "Goldman Sachs", "Oracle"],
-    toppers: ["Shah Het  ₹ 40 LPA", "Patel Heli  ₹ 37 LPA", "Desai S  ₹ 34 LPA"],
+    toppers: [
+      "Shah Het  ₹ 40 LPA",
+      "Patel Heli  ₹ 37 LPA",
+      "Desai S  ₹ 34 LPA",
+    ],
   },
   2021: {
     total: 165,
@@ -286,7 +311,11 @@ export const csPlacement = {
     highest: "₹ 38 LPA",
     average: "₹ 7.1 LPA",
     companies: ["Amazon", "Microsoft", "Sprinklr", "Oracle", "Deutsche Bank"],
-    toppers: ["Shah Dev  ₹ 38 LPA", "Patel Priya  ₹ 35 LPA", "Joshi M  ₹ 32 LPA"],
+    toppers: [
+      "Shah Dev  ₹ 38 LPA",
+      "Patel Priya  ₹ 35 LPA",
+      "Joshi M  ₹ 32 LPA",
+    ],
   },
   2020: {
     total: 160,
@@ -306,8 +335,6 @@ export const csPlacement = {
   },
 };
 
-
-
 export const csBooks = {
   1: {
     sem1: [{ name: "SE SEM-I_Academic Book", link: "/books/cs/maths1.pdf" }],
@@ -321,15 +348,37 @@ export const csBooks = {
     sem1: [{ name: "BE SEM-I_Academic Book", link: "/books/cs/dbms.pdf" }],
     sem2: [{ name: "BE SEM-II_Academic Book", link: "/books/cs/os.pdf" }],
   },
-  
 };
 
-
 export const csEResources = [
-  { srNo: 1, facultyName: "Dr. A. B. Chauhan", blogLink: "https://drchauhanblogs.wordpress.com", youtubeLink: "https://youtube.com/c/drchauhan" },
-  { srNo: 2, facultyName: "Prof. M. K. Shah", blogLink: "https://mkshahcs.blogspot.com", youtubeLink: "https://youtube.com/c/mkshahcs" },
-  { srNo: 3, facultyName: "Dr. P. R. Desai", blogLink: "https://desaiprcs.medium.com", youtubeLink: "https://youtube.com/c/desaipr" },
-  { srNo: 4, facultyName: "Prof. S. T. Solanki", blogLink: "https://solankist.wordpress.com", youtubeLink: "https://youtube.com/c/solankist" },
-  { srNo: 5, facultyName: "Dr. H. M. Patel", blogLink: "https://hmpatelcs.blogspot.com", youtubeLink: "https://youtube.com/c/hmpatelcs" },
+  {
+    srNo: 1,
+    facultyName: "Dr. A. B. Chauhan",
+    blogLink: "https://drchauhanblogs.wordpress.com",
+    youtubeLink: "https://youtube.com/c/drchauhan",
+  },
+  {
+    srNo: 2,
+    facultyName: "Prof. M. K. Shah",
+    blogLink: "https://mkshahcs.blogspot.com",
+    youtubeLink: "https://youtube.com/c/mkshahcs",
+  },
+  {
+    srNo: 3,
+    facultyName: "Dr. P. R. Desai",
+    blogLink: "https://desaiprcs.medium.com",
+    youtubeLink: "https://youtube.com/c/desaipr",
+  },
+  {
+    srNo: 4,
+    facultyName: "Prof. S. T. Solanki",
+    blogLink: "https://solankist.wordpress.com",
+    youtubeLink: "https://youtube.com/c/solankist",
+  },
+  {
+    srNo: 5,
+    facultyName: "Dr. H. M. Patel",
+    blogLink: "https://hmpatelcs.blogspot.com",
+    youtubeLink: "https://youtube.com/c/hmpatelcs",
+  },
 ];
-

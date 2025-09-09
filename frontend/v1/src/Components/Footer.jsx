@@ -1,13 +1,26 @@
 import React from "react";
 
 import { Link } from "react-router-dom";
-import { FaYoutube, FaTwitter, FaInstagram, FaMapMarkerAlt, FaPhone, FaEnvelope } from "react-icons/fa";
-import { motion } from "framer-motion";      // npm i framer-motion
+import {
+  FaYoutube,
+  FaTwitter,
+  FaInstagram,
+  FaMapMarkerAlt,
+  FaPhone,
+  FaEnvelope,
+  FaGoogle,
+} from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
+import { motion } from "framer-motion"; // npm i framer-motion
 import ViewCounter from "./viewCounter/viewCounter";
 
 export default function Footer() {
   const iconVariants = {
-    hover: { scale: 1.25, rotate: 15, transition: { type: "spring", stiffness: 300 } },
+    hover: {
+      scale: 1.25,
+      rotate: 15,
+      transition: { type: "spring", stiffness: 300 },
+    },
   };
 
   const linkBlock = [
@@ -35,7 +48,7 @@ export default function Footer() {
       title: "Resources",
       links: [
         { name: "News & Events", to: "/news" },
-        { name: "Academic Calendar", to:"/calendar" },
+        { name: "Academic Calendar", to: "/calendar" },
         { name: "E-Brochure", to: "/e-brochure" },
         { name: "Placement Brochure", to: "/placement-brochure" },
         { name: "Group Linkages", to: "/linkages" },
@@ -103,21 +116,32 @@ export default function Footer() {
             <ul className="space-y-3 text-slate-300">
               <li className="flex items-center gap-3">
                 <FaMapMarkerAlt className="text-cyan-400" />
-                <span className="text-sm">Chincholi, Sinnar, Nashik – 422102</span>
+                <span className="text-sm">
+                  Chincholi, Sinnar, Nashik – 422102
+                </span>
               </li>
               <li className="flex items-center gap-3">
                 <FaPhone className="text-cyan-400" />
-                <a href="tel:+912551271278" className="hover:text-white">+91 2551 271278</a>
+                <a href="tel:+912551271278" className="hover:text-white">
+                  +91 2551 271278
+                </a>
               </li>
               <li className="flex items-center gap-3">
                 <FaEnvelope className="text-cyan-400" />
-                <a href="mailto:principal.svitnashik@pravara.in" className="hover:text-white">principal.svitnashik@pravara.in</a>
+                <a
+                  href="mailto:principal.svitnashik@pravara.in"
+                  className="hover:text-white"
+                >
+                  principal.svitnashik@pravara.in
+                </a>
               </li>
             </ul>
 
             {/* social */}
             <div className="mt-6">
-              <h4 className="mb-3 text-xs uppercase tracking-wider text-slate-400">Follow Us</h4>
+              <h4 className="mb-3 text-xs uppercase tracking-wider text-slate-400">
+                Follow Us
+              </h4>
               <div className="flex gap-4">
                 <motion.a
                   variants={iconVariants}
@@ -144,6 +168,17 @@ export default function Footer() {
                 <motion.a
                   variants={iconVariants}
                   whileHover="hover"
+                  href="https://www.google.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Google"
+                  className="text-2xl text-slate-300 hover:text-amber-300"
+                >
+                  <FaGoogle />
+                </motion.a>
+                <motion.a
+                  variants={iconVariants}
+                  whileHover="hover"
                   href="https://www.instagram.com/"
                   target="_blank"
                   rel="noreferrer"
@@ -151,6 +186,17 @@ export default function Footer() {
                   className="text-2xl text-slate-300 hover:text-pink-500"
                 >
                   <FaInstagram />
+                </motion.a>
+                <motion.a
+                  variants={iconVariants}
+                  whileHover="hover"
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                  aria-label="Email"
+                  className="text-2xl text-slate-300 hover:text-red-500"
+                >
+                  <MdEmail />
                 </motion.a>
               </div>
             </div>
@@ -184,7 +230,10 @@ export default function Footer() {
             opacity=".5"
             className="fill-blue-500"
           />
-          <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" className="fill-blue-600" />
+          <path
+            d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+            className="fill-blue-600"
+          />
         </svg>
       </div>
     </footer>
