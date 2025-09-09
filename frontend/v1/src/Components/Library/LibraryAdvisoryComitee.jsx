@@ -6,10 +6,18 @@ import WelcomeLibrary from "./WelcomeLibrary";
 const LibraryAdvisoryComitee = () => {
   return (
     <>
-      <div className="md:flex md:flex-row felx flex-col m-1">
-        <LibrarySideBar />
-        <WelcomeLibrary />
+      <div className="flex flex-col md:flex-row m-1">
+        {/* Welcome first on mobile, second on desktop */}
+        <div className="order-1 md:order-2 flex-1">
+          <WelcomeLibrary />
+        </div>
+
+        {/* Sidebar second on mobile, first on desktop */}
+        <div className="order-2 md:order-1 w-full md:w-1/4">
+          <LibrarySideBar />
+        </div>
       </div>
+
       <div>
         <AdvisoryCommittee />
       </div>
