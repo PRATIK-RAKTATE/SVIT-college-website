@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 export default function MinorMajor() {
   return (
     <div className="md:mt-10 mt-5">
-      <div className="bg-black">
-        <h1 className="font-sans text-white border-white border-l-2 shadow p-2 ">
+      <div className="bg-[#4F39F6] p-2">
+        <h1 className="font-sans text-white border-white border-l-2  p-1 ">
           Important Links
         </h1>
       </div>

@@ -4,28 +4,37 @@ import { useParams } from "react-router-dom";
 import { motion } from "framer-motion";
 import HomeSideBar from "../department/Sidebar.jsx";
 
-import { csFaculty } from "../Side Bar Constants/csDept.js";
-import { itFaculty } from "../Side Bar Constants/itDept.js";
-import { chemFaculty } from "../Side Bar Constants/chemDept.js";
-import { eceFaculty } from "../Side Bar Constants/eceDept.js";
-import { firstYearFaculty } from "../Side Bar Constants/feDept.js";
-import { mbaFaculty } from "../Side Bar Constants/mbaDept.js";
+import { csFaculty } from "../Sidebar-Constants/csDept.js";
+import { itFaculty } from "../Sidebar-Constants/itDept.js";
+import { chemFaculty } from "../Sidebar-Constants/chemDept.js";
+import { eceFaculty } from "../Sidebar-Constants/eceDept.js";
+import { firstYearFaculty } from "../Sidebar-Constants/feDept.js";
+import { mbaFaculty } from "../Sidebar-Constants/mbaDept.js";
 
 const deptMap = {
   computerEngineering: { data: csFaculty, name: "Computer Engineering" },
   informationTechnology: { data: itFaculty, name: "Information Technology" },
   chemicalEngineering: { data: chemFaculty, name: "Chemical Engineering" },
-  electronicsAndComputerEngineering: { data: eceFaculty, name: "Electronics & Computer Engineering" },
+  electronicsAndComputerEngineering: {
+    data: eceFaculty,
+    name: "Electronics & Computer Engineering",
+  },
   firstYear: { data: firstYearFaculty, name: "First Year" },
-  mba: { data: mbaFaculty, name: "M.B.A" }
+  mba: { data: mbaFaculty, name: "M.B.A" },
 };
 
 export default function Faculty() {
   const { deptId } = useParams();
-  const { data: facultyData, name: deptName } = deptMap[deptId] || { data: [], name: "Department" };
+  const { data: facultyData, name: deptName } = deptMap[deptId] || {
+    data: [],
+    name: "Department",
+  };
 
   /*  table row animation  */
-  const row = { hidden: { opacity: 0, y: 20 }, show: { opacity: 1, y: 0, transition: { type: "spring", stiffness: 120 } } };
+  const row = {
+    hidden: { opacity: 0, y: 20 },
+    show: { opacity: 1, y: 0, transition: { type: "spring", stiffness: 120 } },
+  };
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
@@ -69,18 +78,27 @@ export default function Faculty() {
                 {facultyData.map((faculty, index) => (
                   <motion.tr
                     key={faculty.sr}
-                    variants={{ hidden: { opacity: 0, y: 20 }, show: { opacity: 1, y: 0 } }}
+                    variants={{
+                      hidden: { opacity: 0, y: 20 },
+                      show: { opacity: 1, y: 0 },
+                    }}
                     initial="hidden"
                     whileInView="show"
                     viewport={{ once: true }}
                     transition={{ delay: index * 0.05 }}
                     className={`border-b last:border-none ${index % 2 === 0 ? "bg-gray-50" : "bg-white"} hover:bg-blue-50 transition`}
                   >
-                    <td className="p-4 text-gray-700 font-medium">{faculty.sr}</td>
+                    <td className="p-4 text-gray-700 font-medium">
+                      {faculty.sr}
+                    </td>
                     <td className="p-4 text-gray-800">{faculty.name}</td>
                     <td className="p-4 text-gray-700">{faculty.designation}</td>
-                    <td className="p-4 text-gray-600">{faculty.qualification}</td>
-                    <td className="p-4 text-gray-700 font-semibold">{faculty.experience}</td>
+                    <td className="p-4 text-gray-600">
+                      {faculty.qualification}
+                    </td>
+                    <td className="p-4 text-gray-700 font-semibold">
+                      {faculty.experience}
+                    </td>
                   </motion.tr>
                 ))}
               </tbody>

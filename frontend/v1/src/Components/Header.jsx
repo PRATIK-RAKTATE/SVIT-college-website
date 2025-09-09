@@ -1,38 +1,46 @@
+// Header.jsx
 import HomeNav from "./HomeNav";
 
 export default function Header() {
   return (
     <>
-      <div className="flex w-full h-auto relative md:flex-row z-0 justify-between bg-gradient-to-r from-slate-900 via-blue-900 to-slate-900 p-4 md:pl-20 md:pr-20">
-      
-        {/* left logo */}
-        <div className="flex-shrink-0">
-          <img
-            className="h-16 md:h-20 w-auto"
-            src="https://pravaraengg.org.in/assets/img/PRES.png"
-            alt=""
-          />
-        </div>
+      <header className="w-full bg-gradient-to-r from-slate-900 via-blue-900 to-slate-900 px-4 py-4 md:px-12 lg:px-20">
+        <div className="flex items-center justify-between gap-4">
 
-        {/* Mid text */}
-        <div className="text-center md:text-center flex-1">
-          <p className="text-sm md:text-base pb-1 md:pb-2 text-white">
-            Loknete Dr. Balasaheb Vikhe Patil (Padma Bhushan Awardee) Pravara Rural Education Society
-          </p>
-          <p className="text-lg md:text-2xl font-bold text-white">
-            Sir Visvesvaraya Institute Of Technology, Nashik
-          </p>
-        </div>
+          {/* Left logo – mouse-aware lift */}
+          <a href="/" aria-label="Home" className="group">
+            <img
+              src="https://pravaraengg.org.in/assets/img/PRES.png"
+              alt="PRES Logo"
+              width={128}
+              height={64}
+              className="h-9 md:h-16 w-auto transition-transform duration-300 group-hover:scale-105"
+            />
+          </a>
 
-        {/* Right Logo */}
-        <div className="flex-shrink-0">
-          <img
-            className="h-12 md:h-16 w-auto"
-            src="https://pravaraengg.org.in/assets/img/SAHEB1.webp"
-            alt="Saheb Logo"
-          />
+          {/* Centre text – truncate on tiny screens */}
+          <div className="min-w-0 flex-1 text-white text-center">
+            <p className="text-[11px] sm:text-sm md:text-base leading-tight">
+              Loknete Dr. Balasaheb Vikhe Patil (Padma Bhushan Awardee)
+            </p>
+            <h1 className="text-base  md:text-2xl font-bold leading-tight">
+              Sir Visvesvaraya Institute Of Technology, Nashik
+            </h1>
+          </div>
+
+          {/* Right logo – same lift */}
+          <a href="/" aria-label="Home" className="group">
+            <img
+              src="https://pravaraengg.org.in/assets/img/SAHEB1.webp"
+              alt="Saheb Logo"
+              width={96}
+              height={64}
+              className="h-9 md:h-16 w-auto transition-transform duration-300 group-hover:scale-105"
+            />
+          </a>
         </div>
-      </div>
+      </header>
+
       <HomeNav />
     </>
   );

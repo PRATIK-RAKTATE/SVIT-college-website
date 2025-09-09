@@ -3,7 +3,7 @@ import { Link, NavLink } from "react-router-dom";
 
 export default function HomeSideBar({ deptId }) {
   const menuItems = [
-    { name: "Department Profile", path: "",},
+    { name: "Department Profile", path: "" },
     { name: "Course Details", path: "courses" },
     { name: "PEOs,POs & PSOs", path: "Outcome" },
     { name: "Faculty", path: "faculty" },
@@ -29,7 +29,9 @@ export default function HomeSideBar({ deptId }) {
                 {item.name}
               </a>
             ) : (
-              <NavLink  to={`/Department/${deptId}/${item.path}`}>{item.name}</NavLink>
+              <NavLink to={`/Department/${deptId}/${item.path}`}>
+                {item.name}
+              </NavLink>
             )}
           </li>
         ))}
