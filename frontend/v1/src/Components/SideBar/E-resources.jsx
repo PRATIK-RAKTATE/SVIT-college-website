@@ -5,12 +5,12 @@ import { motion } from "framer-motion";
 import HomeSideBar from "../department/Sidebar.jsx";
 
 // ---- import all department e-resource arrays ----
-import { csEResources } from "../Side Bar Constants/csDept.js";
-import { itEResources } from "../Side Bar Constants/itDept.js";
-import { chemicalEResources } from "../Side Bar Constants/chemDept.js";
-import { eceEResources } from "../Side Bar Constants/eceDept.js";
-import { feEResources } from "../Side Bar Constants/feDept.js";
-import { mbaEResources } from "../Side Bar Constants/mbaDept.js";
+import { csEResources } from "../Sidebar-Constants/csDept.js";
+import { itEResources } from "../Sidebar-Constants/itDept.js";
+import { chemicalEResources } from "../Sidebar-Constants/chemDept.js";
+import { eceEResources } from "../Sidebar-Constants/eceDept.js";
+import { feEResources } from "../Sidebar-Constants/feDept.js";
+import { mbaEResources } from "../Sidebar-Constants/mbaDept.js";
 
 export default function EResources() {
   const { deptId } = useParams();
@@ -18,14 +18,26 @@ export default function EResources() {
   /*  map department → resources + name  */
   const deptMap = {
     computerEngineering: { data: csEResources, name: "Computer Engineering" },
-    informationTechnology: { data: itEResources, name: "Information Technology" },
-    chemicalEngineering: { data: chemicalEResources, name: "Chemical Engineering" },
-    electronicsAndComputerEngineering: { data: eceEResources, name: "Electronics & Computer Engineering" },
+    informationTechnology: {
+      data: itEResources,
+      name: "Information Technology",
+    },
+    chemicalEngineering: {
+      data: chemicalEResources,
+      name: "Chemical Engineering",
+    },
+    electronicsAndComputerEngineering: {
+      data: eceEResources,
+      name: "Electronics & Computer Engineering",
+    },
     firstYear: { data: feEResources, name: "First Year" },
     mba: { data: mbaEResources, name: "M.B.A" },
   };
 
-  const { data: resources, name: deptName } = deptMap[deptId] || { data: [], name: "Department" };
+  const { data: resources, name: deptName } = deptMap[deptId] || {
+    data: [],
+    name: "Department",
+  };
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
@@ -62,7 +74,9 @@ export default function EResources() {
                     className="border-b border-gray-200 last:border-0 hover:bg-gray-50"
                   >
                     <td className="px-6 py-4 font-semibold">{res.srNo}</td>
-                    <td className="px-6 py-4 text-gray-800 font-medium">{res.facultyName}</td>
+                    <td className="px-6 py-4 text-gray-800 font-medium">
+                      {res.facultyName}
+                    </td>
                     <td className="px-6 py-4">
                       <a
                         href={res.blogLink}

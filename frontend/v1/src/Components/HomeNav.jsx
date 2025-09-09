@@ -1,10 +1,12 @@
 import { useEffect, useState } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
-import { NavLink, Link } from "react-router-dom";
+import { NavLink, Link, useLocation } from "react-router-dom"; // useLocation added
 
 export default function HomeNav() {
   const [isOpen, setIsOpen] = useState(false);
   const [mobileOpenMenu, setMobileOpenMenu] = useState(null);
+  const [isClosing, setIsClosing] = useState(false); // new state for animation
+  const location = useLocation(); // hook to track route changes
 
   const toggleMenu = () => setIsOpen(!isOpen);
 
@@ -17,16 +19,42 @@ export default function HomeNav() {
     }
   }, [isOpen]);
 
+  useEffect(() => {
+    if (isOpen) {
+      setIsClosing(true);
+      setTimeout(() => {
+        setIsOpen(false);
+        setMobileOpenMenu(null);
+        setIsClosing(false);
+      }, 300); // duration matching CSS transition
+    }
+  }, [location]);
+
   const menuItems = [
     {
       key: "dept",
       label: "Departments",
       items: [
-        { text: "Basic Science and Humanities(FE)", url: "/Department/firstYear" },
-        { text: "Computer Engineering", url: "/Department/computerEngineering" },
-        { text: "Chemical Engineering", url: "/Department/chemicalEngineering" },
-        { text: "Electronics & Computer Engineering", url: "/Department/electronicsAndComputerEngineering" },
-        { text: "Information Technology Engineering", url: "/Department/informationTechnology" },
+        {
+          text: "Basic Science and Humanities(FE)",
+          url: "/Department/firstYear",
+        },
+        {
+          text: "Computer Engineering",
+          url: "/Department/computerEngineering",
+        },
+        {
+          text: "Chemical Engineering",
+          url: "/Department/chemicalEngineering",
+        },
+        {
+          text: "Electronics & Computer Engineering",
+          url: "/Department/electronicsAndComputerEngineering",
+        },
+        {
+          text: "Information Technology Engineering",
+          url: "/Department/informationTechnology",
+        },
         { text: "M.B.A.", url: "/Department/mba" },
       ],
     },
@@ -78,7 +106,10 @@ export default function HomeNav() {
         { text: "NBA", url: "https://www.nbaind.org/" },
         { text: "UGC", url: "https://www.ugc.gov.in/" },
         { text: "Shikshan Shulk Samiti", url: "https://sssamiti.org/" },
-        { text: "Pravesh Niyantran Samiti", url: "https://maha-ara.org/ara-authorities/" },
+        {
+          text: "Pravesh Niyantran Samiti",
+          url: "https://maha-ara.org/ara-authorities/",
+        },
         { text: "Unipune", url: "https://www.unipune.ac.in/" },
       ],
     },
@@ -87,13 +118,13 @@ export default function HomeNav() {
       label: "Admission",
       items: [
         { text: "Admission Details", url: "/admission/Admissiondetails" },
-        { 
-          text: "Admission 2025-26 (Institute Level Non CAP Admission)", 
-          url: "https://svitnashik.in/MainNav/Admission%202025-26%20(Institute%20Level%20Non%20CAP%20Admission).pdf" 
+        {
+          text: "Admission 2025-26 (Institute Level Non CAP Admission)",
+          url: "https://svitnashik.in/MainNav/Admission%202025-26%20(Institute%20Level%20Non%20CAP%20Admission).pdf",
         },
-        { 
-          text: "Admission Enquiry Form", 
-          url: "https://docs.google.com/forms/d/e/1FAIpQLScy0O757Bw1lNMDHdvIUB0k-YfC0MwKDVo-mIyYMq8bYIozcg/viewform" 
+        {
+          text: "Admission Enquiry Form",
+          url: "https://docs.google.com/forms/d/e/1FAIpQLScy0O757Bw1lNMDHdvIUB0k-YfC0MwKDVo-mIyYMq8bYIozcg/viewform",
         },
       ],
     },
@@ -210,15 +241,19 @@ export default function HomeNav() {
     },
   ];
 
-  // helper function: check if external
+  // helper function to check if URL is external
   const isExternal = (url) => url.startsWith("http");
 
   return (
     <nav className="bg-white px-4 py-3 shadow-md relative z-50">
-      {/* Desktop menu */}
+      {/* Desktop Menu */}
       <div className="hidden md:flex md:justify-center md:gap-6 font-medium">
-        <NavLink to="/" className={({ isActive }) =>
-          `${isActive ? "text-red-500" : "text-black"}`}>
+        <NavLink
+          to="/"
+          className={({ isActive }) =>
+            `${isActive ? "text-[#4F39F6]" : "text-black"}`
+          }
+        >
           Home
         </NavLink>
 
@@ -232,39 +267,98 @@ export default function HomeNav() {
 
               {menu.items.map((item, id) =>
                 isExternal(item.url) ? (
-                  <a 
+                  <a
                     key={id}
-                    href={item.url} 
-                    target="_blank" 
+                    href={item.url}
+                    target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <li className="px-4 py-2 hover:bg-gray-100 w-70">{item.text}</li>
+                    <li className="px-4 py-2 hover:bg-gray-100 w-70">
+                      {item.text}
+                    </li>
                   </a>
                 ) : (
-                  <NavLink 
-                    key={id} 
-                    to={item.url} 
+                  <NavLink
+                    key={id}
+                    to={item.url}
                     className={({ isActive }) =>
-                      `${isActive ? "text-red-500" : "text-black"}`
+                      `${isActive ? "text-[#4F39F6]" : "text-black"}`
                     }
                   >
-                    <li className="px-4 py-2 hover:bg-gray-100 w-70">{item.text}</li>
+                    <li className="px-4 py-2 hover:bg-gray-100 w-70">
+                      {item.text}
+                    </li>
                   </NavLink>
-                )
+                ),
               )}
             </ul>
           </ul>
         ))}
 
-        {/* Static menu links */}
-        <NavLink to="https://svitnashik.in/Documents/RTI.pdf" className={({isActive}) => `${isActive ? "text-red-500" : "text-black"}`}>RTI</NavLink>
-        <NavLink to="/erp" className={({isActive}) => `${isActive ? "text-red-500" : "text-black"}`}>ERP</NavLink>
-        <NavLink to="/library" className={({isActive}) => `${isActive ? "text-red-500" : "text-black"}`}>Library</NavLink>
-        <NavLink to="/gallery" className={({isActive}) => `${isActive ? "text-red-500" : "text-black"}`}>Gallery</NavLink>
-        <NavLink to="Examination" className={({isActive}) => `${isActive ? "text-red-500" : "text-black"}`}>Examination</NavLink>
-        <NavLink to="/contactus" className={({isActive}) => `${isActive ? "text-red-500" : "text-black"}`}>Contact us</NavLink>
-        <NavLink to="/about" className={({isActive}) => `${isActive ? "text-red-500" : "text-black"}`}>About us</NavLink>
-        <NavLink to="/sm" className={({isActive}) => `${isActive ? "text-red-500" : "text-black"}`}>Site map</NavLink>
+        <NavLink
+          to="/library"
+          className={({ isActive }) =>
+            `${isActive ? "text-[#4F39F6]" : "text-black"}`
+          }
+        >
+          Library
+        </NavLink>
+        <NavLink
+          to="/gallery"
+          className={({ isActive }) =>
+            `${isActive ? "text-[#4F39F6]" : "text-black"}`
+          }
+        >
+          Gallery
+        </NavLink>
+        <NavLink
+          to="/Examination"
+          className={({ isActive }) =>
+            `${isActive ? "text-[#4F39F6]" : "text-black"}`
+          }
+        >
+          Examination
+        </NavLink>
+        <NavLink
+          to="/rti"
+          className={({ isActive }) =>
+            `${isActive ? "text-[#4F39F6]" : "text-black"}`
+          }
+        >
+          RTI
+        </NavLink>
+        <NavLink
+          to="/erp"
+          className={({ isActive }) =>
+            `${isActive ? "text-[#4F39F6]" : "text-black"}`
+          }
+        >
+          ERP
+        </NavLink>
+        <NavLink
+          to="/about"
+          className={({ isActive }) =>
+            `${isActive ? "text-[#4F39F6]" : "text-black"}`
+          }
+        >
+          About us
+        </NavLink>
+        <NavLink
+          to="/contactus"
+          className={({ isActive }) =>
+            `${isActive ? "text-[#4F39F6]" : "text-black"}`
+          }
+        >
+          Contact us
+        </NavLink>
+        <NavLink
+          to="/sm"
+          className={({ isActive }) =>
+            `${isActive ? "text-[#4F39F6]" : "text-black"}`
+          }
+        >
+          Site map
+        </NavLink>
       </div>
 
       {/* Mobile Menu Button */}
@@ -279,11 +373,18 @@ export default function HomeNav() {
 
       {/* Mobile Side Menu */}
       <div
-        className={`fixed top-0 left-0 w-3/4 h-screen bg-white text-black transform ${
-          isOpen ? "translate-x-0" : "-translate-x-full"
-        } transition-transform duration-300 ease-in-out z-50 p-6 flex flex-col gap-6`}
+        className={`fixed top-0 left-0 w-3/4 h-screen bg-white text-black transform transition-transform duration-300 ease-in-out z-50 p-6 flex flex-col gap-6 ${
+          isOpen && !isClosing ? "translate-x-0" : "-translate-x-full"
+        }`}
       >
-        <NavLink to="/" className="text-xs font-semibold">Home</NavLink>
+        <NavLink
+          to="/"
+          className={({ isActive }) =>
+            `${isActive ? "text-[#4F39F6]" : "text-black"}`
+          }
+        >
+          Home
+        </NavLink>
 
         {menuItems.map((menu) => (
           <div key={menu.key} className="flex flex-col gap-1">
@@ -307,28 +408,89 @@ export default function HomeNav() {
                 {menu.items.map((item, idx) =>
                   isExternal(item.url) ? (
                     <li key={idx}>
-                      <a href={item.url} target="_blank" rel="noopener noreferrer">
+                      <a
+                        href={item.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
                         {item.text}
                       </a>
                     </li>
                   ) : (
                     <li key={idx}>
-                      <Link to={item.url}>{item.text}</Link>
+                      <NavLink
+                        className={({ isActive }) =>
+                          `${isActive ? "text-[#4F39F6]" : "text-black"}`
+                        }
+                        to={item.url}
+                      >
+                        {item.text}
+                      </NavLink>
                     </li>
-                  )
+                  ),
                 )}
               </ul>
             )}
           </div>
         ))}
 
-        <NavLink to="https://svitnashik.in/Documents/RTI.pdf" className={({isActive}) => `${isActive ? "text-red-500" : "text-black"}`}>RTI</NavLink>
-        <NavLink to="/erp" className={({isActive}) => `${isActive ? "text-red-500" : "text-black"}`}>ERP</NavLink>
-        <NavLink to="/library" className={({isActive}) => `${isActive ? "text-red-500" : "text-black"}`}>Library</NavLink>
-        <NavLink to="/galary" className={({isActive}) => `${isActive ? "text-red-500" : "text-black"}`}>Gallery</NavLink>
-        <NavLink to="/contactus" className={({isActive}) => `${isActive ? "text-red-500" : "text-black"}`}>Contact us</NavLink>
-        <NavLink to="/about" className={({isActive}) => `${isActive ? "text-red-500" : "text-black"}`}>About us</NavLink>
-        <NavLink to="/sm" className={({isActive}) => `${isActive ? "text-red-500" : "text-black"}`}>Site map</NavLink>
+        <NavLink
+          to="/li"
+          className={({ isActive }) =>
+            `${isActive ? "text-[#4F39F6]" : "text-black"}`
+          }
+        >
+          Library
+        </NavLink>
+        <NavLink
+          to="/ga"
+          className={({ isActive }) =>
+            `${isActive ? "text-[#4F39F6]" : "text-black"}`
+          }
+        >
+          Gallery
+        </NavLink>
+        <NavLink
+          to="/rti"
+          className={({ isActive }) =>
+            `${isActive ? "text-[#4F39F6]" : "text-black"}`
+          }
+        >
+          RTI
+        </NavLink>
+        <NavLink
+          to="/erp"
+          className={({ isActive }) =>
+            `${isActive ? "text-[#4F39F6]" : "text-black"}`
+          }
+        >
+          ERP
+        </NavLink>
+        <NavLink
+          to="/au"
+          className={({ isActive }) =>
+            `${isActive ? "text-[#4F39F6]" : "text-black"}`
+          }
+        >
+          About us
+        </NavLink>
+        <NavLink
+          to="/contactus"
+          className={({ isActive }) =>
+            `${isActive ? "text-[#4F39F6]" : "text-black"}`
+          }
+        >
+          Contact us
+        </NavLink>
+        <NavLink
+          to="/sm"
+          className={({ isActive }) =>
+            `${isActive ? "text-[#4F39F6]" : "text-black"}`
+          }
+        >
+          Site map
+        </NavLink>
+
       </div>
     </nav>
   );

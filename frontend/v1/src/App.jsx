@@ -69,6 +69,8 @@ function App() {
         <Route path="/admission/Admissiondetails" element={<MainAdmission/>} />
         
 
+        
+
         {Object.entries(DEPARTMENTS).map(([key, data]) => (
           <Route
             key={key}

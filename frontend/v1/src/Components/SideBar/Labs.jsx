@@ -1,12 +1,12 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import { csLabs } from "../Side Bar Constants/csDept";
+import { csLabs } from "../Sidebar-Constants/csDept";
 import HomeSideBar from "../department/Sidebar";
-import { itLabs } from "../Side Bar Constants/itDept";
-import { chemicalLabs } from "../Side Bar Constants/chemDept";
-import { eceLabs } from "../Side Bar Constants/eceDept";
-import { feLabs } from "../Side Bar Constants/feDept";
-import { mbaLabs } from "../Side Bar Constants/mbaDept";
+import { itLabs } from "../Sidebar-Constants/itDept";
+import { chemicalLabs } from "../Sidebar-Constants/chemDept";
+import { eceLabs } from "../Sidebar-Constants/eceDept";
+import { feLabs } from "../Sidebar-Constants/feDept";
+import { mbaLabs } from "../Sidebar-Constants/mbaDept";
 
 export default function Lab() {
   const { deptId } = useParams();
@@ -18,26 +18,26 @@ export default function Lab() {
       labData = csLabs;
       deptName = "Computer Engineering";
       break;
-     case "informationTechnology":
-          labData = itLabs;
-          deptName = "Information Engineering";
-          break;
-        case "chemicalEngineering":
-          labData = chemicalLabs;
-          deptName = "Chemical Engineering";
-          break;
-        case "electronicsAndComputerEngineering":
-          labData = eceLabs;
-          deptName = "Electronics And Computer Engineering";
-          break;
-        case "firstYear":
-          labData = feLabs;
-          deptName = "First Year";
-          break;
-        case "mba":
-          labData = mbaLabs;
-          deptName = "M.B.A";
-          break;
+    case "informationTechnology":
+      labData = itLabs;
+      deptName = "Information Engineering";
+      break;
+    case "chemicalEngineering":
+      labData = chemicalLabs;
+      deptName = "Chemical Engineering";
+      break;
+    case "electronicsAndComputerEngineering":
+      labData = eceLabs;
+      deptName = "Electronics And Computer Engineering";
+      break;
+    case "firstYear":
+      labData = feLabs;
+      deptName = "First Year";
+      break;
+    case "mba":
+      labData = mbaLabs;
+      deptName = "M.B.A";
+      break;
     default:
       labData = [];
       break;

@@ -24,12 +24,12 @@ export default function HomeSideBar() {
   ];
 
   return (
-    <div className="md:w-auto">
+    <div className="md:w-auto md:mt-4">
       <ul className="h-auto w-70 flex flex-col gap-2">
         {listItems.map((item, index) => (
           <li
             key={index}
-            className="border-l-4 border-black hover:bg-black hover:text-white p-1 m-0 pl-2 shadow text-sm hover:border-red-400"
+            className="border-l-4 border-[#4F39F6] hover:bg-black hover:text-white p-1 m-0 pl-2 shadow text-sm "
           >
             <Link to={item.url}>{item.text}</Link>
           </li>
