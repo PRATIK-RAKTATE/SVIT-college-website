@@ -29,7 +29,7 @@ export default function HomeSideBar({ deptId }) {
                 {item.name}
               </a>
             ) : (
-              <NavLink to={`/Department/${deptId}/${item.path}`}>
+              <NavLink to={`/department/${deptId}/${item.path}`}>
                 {item.name}
               </NavLink>
             )}

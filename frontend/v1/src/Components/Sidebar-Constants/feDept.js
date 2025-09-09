@@ -148,9 +148,9 @@ export const feEvents = [
     title: "Orientation Program",
     date: "2025-07-15",
     images: [
-      "https://svitnashik.in/Images/Events/Department/FirstYear/Orientation/1.jpg",
-      "https://svitnashik.in/Images/Events/Department/FirstYear/Orientation/2.jpg",
-      "https://svitnashik.in/Images/Events/Department/FirstYear/Orientation/3.jpg",
+      "https://svitnashik.in/Images/Events/department/FirstYear/Orientation/1.jpg",
+      "https://svitnashik.in/Images/Events/department/FirstYear/Orientation/2.jpg",
+      "https://svitnashik.in/Images/Events/department/FirstYear/Orientation/3.jpg",
     ],
   },
   {

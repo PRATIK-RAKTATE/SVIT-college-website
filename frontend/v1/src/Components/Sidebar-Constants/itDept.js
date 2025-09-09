@@ -191,9 +191,9 @@ export const itEvents = [
     title: "Cloud Computing Workshop",
     date: "2025-07-22",
     images: [
-      "https://svitnashik.in/Images/Events/Department/IT/Cloud%20Computing%20Workshop/1.jpg",
-      "https://svitnashik.in/Images/Events/Department/IT/Cloud%20Computing%20Workshop/2.jpg",
-      "https://svitnashik.in/Images/Events/Department/IT/Cloud%20Computing%20Workshop/3.jpg",
+      "https://svitnashik.in/Images/Events/department/IT/Cloud%20Computing%20Workshop/1.jpg",
+      "https://svitnashik.in/Images/Events/department/IT/Cloud%20Computing%20Workshop/2.jpg",
+      "https://svitnashik.in/Images/Events/department/IT/Cloud%20Computing%20Workshop/3.jpg",
     ],
   },
   {

@@ -203,9 +203,9 @@ export const csEvents = [
     title: "Cyber Crime and Security",
     date: "2025-07-20",
     images: [
-      "https://svitnashik.in/Images/Events/Department/Computer/Cyber%20Crime%20and%20Security/1.jpg",
-      "https://svitnashik.in/Images/Events/Department/Computer/Cyber%20Crime%20and%20Security/2.jpg",
-      "https://svitnashik.in/Images/Events/Department/Computer/Cyber%20Crime%20and%20Security/3.jpg",
+      "https://svitnashik.in/Images/Events/department/Computer/Cyber%20Crime%20and%20Security/1.jpg",
+      "https://svitnashik.in/Images/Events/department/Computer/Cyber%20Crime%20and%20Security/2.jpg",
+      "https://svitnashik.in/Images/Events/department/Computer/Cyber%20Crime%20and%20Security/3.jpg",
     ],
   },
   {
