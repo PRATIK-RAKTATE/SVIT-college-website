@@ -12,7 +12,7 @@ const AboutInfrastructure = () => {
         <CampusInfo />
       </div>
       <div className="mt-6">
-        <HostelInfo />
+        {/* <HostelInfo /> */}
         <Campus />
       </div>
     </>

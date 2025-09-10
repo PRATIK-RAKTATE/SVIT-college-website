@@ -3,7 +3,7 @@ import React from "react";
 export default function VitthalraoIntro() {
   return (
     <>
-      <div className="md:w-[1300px] md:h-[507px]  mt-12 bg-white rounded-2xl shadow-2xl overflow-hidden flex flex-col items-center gap-6 p-6">
+      <div className="md:w-[1300px] md:h-[507px]  md:mt-12 bg-white rounded-2xl shadow-2xl overflow-hidden flex md:flex md:flex-row flex-col items-center gap-6 p-6">
         {/* Image */}
         <img
           src="https://svitnashik.in/Images/Profile%20Images/Inception/Padmashree_Vitthalrao_Vikhe_Patil.jpg"

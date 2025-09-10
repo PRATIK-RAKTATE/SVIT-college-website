@@ -10,7 +10,7 @@ const VisionMission = () => {
   };
 
   return (
-    <div className="max-w-236 text-center h-125 mt-13 w-full bg-white rounded-2xl shadow-xl p-8 md:p-12 space-y-12">
+    <div className="max-w-236 text-center h-125  w-full bg-white rounded-2xl shadow-xl p-8 md:p-12 space-y-12">
       {/* Vision */}
       <section>
         <h2 className="text-2xl md:text-3xl font-bold text-indigo-600 mb-4">
