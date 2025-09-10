@@ -1,71 +1,91 @@
-import WT from "./WT";
-import HomeSideBar from "./HomeSideBar";
-import PreDesk from "./PreDesk";
-import SideLink from "./Useful";
-import ImagText from "./ImgText";
-import Imp from "./News";
-import MinorMajor from "./Minor&Major";
-import HoverRow from "./HoverRow";
-import { motion } from "framer-motion";
-import Archivement from "./Archivement";
-import StudentDiversity from "./StudentDiversity";
+import { LazyMotion, m } from "framer-motion";
+import { Suspense, lazy } from "react";
 
-const scrollReveal = {
+// Lazy-load components to reduce initial bundle
+const WT = lazy(() => import("./WT"));
+const HomeSideBar = lazy(() => import("./HomeSideBar"));
+const PreDesk = lazy(() => import("./PreDesk"));
+const SideLink = lazy(() => import("./Useful"));
+const ImagText = lazy(() => import("./ImgText"));
+const Imp = lazy(() => import("./News"));
+const MinorMajor = lazy(() => import("./Minor&Major"));
+const HoverRow = lazy(() => import("./HoverRow"));
+const Archivement = lazy(() => import("./Archivement"));
+const StudentDiversity = lazy(() => import("./StudentDiversity"));
+const Carousel = lazy(() => import("../department/HeroCarousel"));
+
+// Load only DOM animations
+const loadFeatures = () =>
+  import("framer-motion").then((res) => res.domAnimation);
+
+// Animation container
+const container = {
   hidden: { opacity: 0, y: 60 },
-  visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.8, ease: "easeOut", staggerChildren: 0.2 },
+  },
 };
 
-import Carousel from "../department/HeroCarousel";
+// Child animation
+const item = {
+  hidden: { opacity: 0, y: 40 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
+};
 
-
-export default function Home({slides}) {
+export default function Home({ slides }) {
   return (
-    <>
+    <Suspense fallback={<div>Loading...</div>}>
+      <LazyMotion features={loadFeatures}>
+        <Carousel slides={slides} />
+        <div className="m-3">
+          <WT />
 
-    <Carousel slides={slides}/>
-    <div className="m-3">
-      {/* 1  Hero text – no scroll trigger (already top) */}
-      <WT />
+          {/* Three-column layout */}
+          <m.div
+            className="md:flex md:justify-between mt-5"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-100px" }}
+            variants={container}
+          >
+            <m.div className="flex flex-col ml-5" variants={item}>
+              <HomeSideBar />
+              <MinorMajor />
+            </m.div>
 
-      {/* 2  Three-column layout */}
-      <motion.div
-        className="md:flex md:justify-between mt-5"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, margin: "-100px" }}
-        variants={scrollReveal}
-      >
-        {/* Left  */}
-        <motion.div className="flex flex-col ml-5" variants={scrollReveal}>
-          <HomeSideBar />
-          <MinorMajor />
-        </motion.div>
+            <m.div variants={item}>
+              <PreDesk />
+              <ImagText />
+            </m.div>
 
-        {/* Center  */}
-        <motion.div variants={scrollReveal}>
-          <PreDesk />
-          <ImagText />
-        </motion.div>
+            <m.div className="flex flex-col gap-6" variants={item}>
+              <Imp />
+              <SideLink />
+            </m.div>
+          </m.div>
 
-        {/* Right  */}
-        <motion.div className="flex flex-col gap-6" variants={scrollReveal}>
-          <Imp />
-          <SideLink />
-        </motion.div>
-      </motion.div>
-
-      {/* 3  Full-width hover row */}
-      <motion.div
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, margin: "-100px" }}
-        variants={scrollReveal}
-      >
-        <HoverRow />
-        <Archivement />
-        <StudentDiversity />
-      </motion.div>
-    </div>
-    </>
+          {/* Full-width section */}
+          <m.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-100px" }}
+            variants={container}
+            className="mt-10"
+          >
+            <m.div variants={item}>
+              <HoverRow />
+            </m.div>
+            <m.div variants={item}>
+              <Archivement />
+            </m.div>
+            <m.div variants={item}>
+              <StudentDiversity />
+            </m.div>
+          </m.div>
+        </div>
+      </LazyMotion>
+    </Suspense>
   );
 }
