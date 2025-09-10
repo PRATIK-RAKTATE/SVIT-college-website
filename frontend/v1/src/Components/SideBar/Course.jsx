@@ -15,7 +15,7 @@ import { eceCourse } from "../Sidebar-Constants/eceDept.js";
 import { FireExtinguisher } from "lucide-react";
 
 const deptMap = {
-  computerEngineering: { data: csCourse, name: "Computer Engineering" },
+  "computer-engineering": { data: csCourse, name: "Computer Engineering" },
   "information-technology": { data: itCourse, name: "Information Technology" },
   mba: { data: mbaCourse, name: "M.B.A" },
   "first-year": { data: feCourse, name: "First Year" },

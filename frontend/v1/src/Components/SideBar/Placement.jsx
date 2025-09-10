@@ -14,7 +14,7 @@ export default function Placement() {
 
   // Map department IDs to their placement data
   const deptMap = {
-    computerEngineering: { data: csPlacement, name: "Computer Engineering" },
+    "computer-engineering": { data: csPlacement, name: "Computer Engineering" },
     "information-technology": {
       data: itPlacement,
       name: "Information Technology",

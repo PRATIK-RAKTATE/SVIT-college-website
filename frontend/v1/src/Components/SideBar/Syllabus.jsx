@@ -19,7 +19,7 @@ export default function Syllabus() {
   let deptName = "";
 
   switch (deptId) {
-    case "computerEngineering":
+    case "computer-engineering":
       syllabusData = csSyllabus;
       deptName = "Computer Engineering";
       break;

@@ -14,7 +14,7 @@ export default function Lab() {
   let labData = [];
   let deptName;
   switch (deptId) {
-    case "computerEngineering":
+    case "computer-engineering":
       labData = csLabs;
       deptName = "Computer Engineering";
       break;

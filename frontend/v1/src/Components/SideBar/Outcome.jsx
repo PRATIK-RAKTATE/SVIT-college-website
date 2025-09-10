@@ -14,7 +14,7 @@ import { feOutcomes } from "../Sidebar-Constants/feDept.js";
 import { mbaOutcomes } from "../Sidebar-Constants/mbaDept.js";
 
 const deptMap = {
-  computerEngineering: { data: csOutcomes, name: "Computer Engineering" },
+  "computer-engineering": { data: csOutcomes, name: "Computer Engineering" },
   "information-technology": { data: itOutcomes, name: "Information Technology" },
   "chemical-engineering": { data: chemicalOutcomes, name: "Chemical Engineering" },
   "electronics-and-computer-engineering": {
