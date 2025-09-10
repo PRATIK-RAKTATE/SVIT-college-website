@@ -9,7 +9,7 @@ pnpm-debug.log*
 package-lock.json
 yarn.lock
 pnpm-lock.yaml
-
+./frontend/v1/bundle-stats.html
 # -------------------------
 # Build Output
 # -------------------------
