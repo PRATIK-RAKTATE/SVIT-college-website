@@ -55,18 +55,18 @@ function App() {
         />
         <Route path="/about/Infrastructure" element={<AboutInfrastructure />} />
         <Route path="/about/Linkages" element={<AboutLinkages />} />
-        <Route path="/Examination" element={<Examination />} />
-        <Route path="/Library" element={<Library />} />
+        <Route path="/examination" element={<Examination />} />
+        <Route path="/library" element={<Library />} />
         <Route
-          path="/Library/AdvisoryCommittee"
+          path="/library/advisory-committee"
           element={<LibraryAdvisoryComitee />}
         />
-        <Route path="/Library/Faculty" element={<LibraryFaculty />} />
-        <Route path="/Library/Objectives" element={<LibraryObjectives />} />
-        <Route path="/Library/Facilities" element={<LibraryFacilities />} />
-        <Route path="/Library/Section" element={<LibrarySection />} />
-        <Route path="/Library/OPAC" />
-        <Route path="/ContactUs" element={<MainContactUs/>} />
+        <Route path="/library/faculty" element={<LibraryFaculty />} />
+        <Route path="/library/objectives" element={<LibraryObjectives />} />
+        <Route path="/library/facilities" element={<LibraryFacilities />} />
+        <Route path="/library/section" element={<LibrarySection />} />
+        <Route path="/library/OPAC" />
+        <Route path="/Contact-us" element={<MainContactUs/>} />
         <Route path="/admission/Admissiondetails" element={<MainAdmission/>} />
         
 

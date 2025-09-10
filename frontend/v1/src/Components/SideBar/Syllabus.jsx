@@ -19,23 +19,23 @@ export default function Syllabus() {
   let deptName = "";
 
   switch (deptId) {
-    case "computerEngineering":
+    case "computer-engineering":
       syllabusData = csSyllabus;
       deptName = "Computer Engineering";
       break;
-    case "informationTechnology":
+    case "information-technology":
       syllabusData = itSyllabus;
       deptName = "Information Technology";
       break;
-    case "chemicalEngineering":
+    case "chemical-engineering":
       syllabusData = chemSyllabus;
       deptName = "Chemical Engineering";
       break;
-    case "electronicsAndComputerEngineering":
+    case "electronics-and-computer-engineering":
       syllabusData = eceSyllabus;
       deptName = "Electronics And Computer Engineering";
       break;
-    case "firstYear":
+    case "first-year":
       syllabusData = feSyllabus;
       deptName = "First Year";
       break;

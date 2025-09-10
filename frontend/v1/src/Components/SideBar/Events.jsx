@@ -18,23 +18,23 @@ export default function Events() {
   let eventData = [];
   let deptName = "";
   switch (deptId) {
-    case "computerEngineering":
+    case "computer-engineering":
       eventData = csEvents;
       deptName = "Computer Engineering";
       break;
-    case "informationTechnology":
+    case "information-technology":
       eventData = itEvents;
       deptName = "Information Engineering";
       break;
-    case "chemicalEngineering":
+    case "chemical-engineering":
       eventData = chemicalEvents;
       deptName = "Chemical Engineering";
       break;
-    case "electronicsAndComputerEngineering":
+    case "electronics-and-computer-engineering":
       eventData = eceEvents;
       deptName = "Electronics And Computer Engineering";
       break;
-    case "firstYear":
+    case "first-year":
       eventData = feEvents;
       deptName = "First Year";
       break;

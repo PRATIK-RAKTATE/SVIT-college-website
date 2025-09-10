@@ -17,20 +17,20 @@ export default function EResources() {
 
   /*  map department → resources + name  */
   const deptMap = {
-    computerEngineering: { data: csEResources, name: "Computer Engineering" },
-    informationTechnology: {
+    "computer-engineering": { data: csEResources, name: "Computer Engineering" },
+    "information-technology": {
       data: itEResources,
       name: "Information Technology",
     },
-    chemicalEngineering: {
+    "chemical-engineering": {
       data: chemicalEResources,
       name: "Chemical Engineering",
     },
-    electronicsAndComputerEngineering: {
+    "electronics-and-computer-engineering": {
       data: eceEResources,
       name: "Electronics & Computer Engineering",
     },
-    firstYear: { data: feEResources, name: "First Year" },
+    "first-year": { data: feEResources, name: "First Year" },
     mba: { data: mbaEResources, name: "M.B.A" },
   };
 

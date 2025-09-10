@@ -8,19 +8,19 @@ export default function LibrarySideBar() {
           <Link to={"/library"}>Department Profile </Link>
         </li>
         <li className="border-l-4 border-[#4F39F6] hover:bg-black hover:text-white p-2 pl-2 shadow text-sm">
-          <Link to={"/Library/AdvisoryCommittee"}>
+          <Link to={"/library/advisory-committee"}>
             Library Advisory Committee
           </Link>
         </li>
 
         <li className="border-l-4 border-[#4F39F6] hover:bg-black hover:text-white p-2 pl-2 shadow text-sm">
-          <Link to={"/Library/Faculty"}>Faculty</Link>
+          <Link to={"/library/faculty"}>Faculty</Link>
         </li>
         <li className="border-l-4 border-[#4F39F6] hover:bg-black hover:text-white p-2 pl-2 shadow text-sm">
-          <Link to={"/Library/Objectives"}>Objectives & Rules</Link>
+          <Link to={"/library/objectives"}>Objectives & Rules</Link>
         </li>
         <li className="border-l-4 border-[#4F39F6] hover:bg-black hover:text-white p-2 pl-2 shadow text-sm">
-          <Link to={"/Library/Facilities"}>Facilities</Link>
+          <Link to={"/library/facilities"}>Facilities</Link>
         </li>
         <li className="border-l-4 border-[#4F39F6] hover:bg-black hover:text-white p-2 pl-2 shadow text-sm">
           <a
@@ -33,7 +33,7 @@ export default function LibrarySideBar() {
         </li>
 
         <li className="border-l-4 border-[#4F39F6] hover:bg-black hover:text-white p-2 pl-2 shadow text-sm">
-          <Link to={"/Library/Section"}>Section</Link>
+          <Link to={"/library/section"}>Section</Link>
         </li>
       </ul>
     </div>

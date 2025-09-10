@@ -35,11 +35,11 @@ export default function HomeNav() {
       key: "dept",
       label: "Departments",
       items: [
-        { text: "Basic Science and Humanities(FE)", url: "/department/firstYear" },
-        { text: "Computer Engineering", url: "/department/computerEngineering" },
-        { text: "Chemical Engineering", url: "/department/chemicalEngineering" },
-        { text: "Electronics & Computer Engineering", url: "/department/electronicsAndComputerEngineering" },
-        { text: "Information Technology Engineering", url: "/department/informationTechnology" },
+        { text: "Basic Science and Humanities(FE)", url: "/department/first-year" },
+        { text: "Computer Engineering", url: "/department/computer-engineering" },
+        { text: "Chemical Engineering", url: "/department/chemical-engineering" },
+        { text: "Electronics & Computer Engineering", url: "/department/electronics-and-computer-engineering" },
+        { text: "Information Technology Engineering", url: "/department/information-technology" },
         { text: "M.B.A.", url: "/department/mba" },
       ],
     },
@@ -208,7 +208,7 @@ export default function HomeNav() {
           Gallery
         </NavLink>
         <NavLink
-          to="/Examination"
+          to="/examination"
           className={({ isActive }) =>
             `${isActive ? "text-[#4F39F6]" : "text-black"}`
           }
@@ -240,7 +240,7 @@ export default function HomeNav() {
           About us
         </NavLink>
         <NavLink
-          to="/contactus"
+          to="/contact-us"
           className={({ isActive }) =>
             `${isActive ? "text-[#4F39F6]" : "text-black"}`
           }
@@ -248,7 +248,7 @@ export default function HomeNav() {
           Contact us
         </NavLink>
         <NavLink
-          to="/sm"
+          to="/sitemap"
           className={({ isActive }) =>
             `${isActive ? "text-[#4F39F6]" : "text-black"}`
           }
@@ -340,7 +340,7 @@ export default function HomeNav() {
           Library
         </NavLink>
         <NavLink
-          to="/Examination"
+          to="/examination"
           className={({ isActive }) =>
             `${isActive ? "text-[#4F39F6]" : "text-black"}`
           }
@@ -380,7 +380,7 @@ export default function HomeNav() {
           About us
         </NavLink>
         <NavLink
-          to="/contactus"
+          to="/contact-us"
           className={({ isActive }) =>
             `${isActive ? "text-[#4F39F6]" : "text-black"}`
           }
@@ -388,7 +388,7 @@ export default function HomeNav() {
           Contact us
         </NavLink>
         <NavLink
-          to="/sm"
+          to="/sitemap"
           className={({ isActive }) =>
             `${isActive ? "text-[#4F39F6]" : "text-black"}`
           }

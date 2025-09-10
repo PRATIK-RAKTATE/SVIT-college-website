@@ -14,14 +14,14 @@ import { feOutcomes } from "../Sidebar-Constants/feDept.js";
 import { mbaOutcomes } from "../Sidebar-Constants/mbaDept.js";
 
 const deptMap = {
-  computerEngineering: { data: csOutcomes, name: "Computer Engineering" },
-  informationTechnology: { data: itOutcomes, name: "Information Technology" },
-  chemicalEngineering: { data: chemicalOutcomes, name: "Chemical Engineering" },
-  electronicsAndComputerEngineering: {
+  "computer-engineering": { data: csOutcomes, name: "Computer Engineering" },
+  "information-technology": { data: itOutcomes, name: "Information Technology" },
+  "chemical-engineering": { data: chemicalOutcomes, name: "Chemical Engineering" },
+  "electronics-and-computer-engineering": {
     data: eceOutcomes,
     name: "Electronics & Computer Engineering",
   },
-  firstYear: { data: feOutcomes, name: "First Year" },
+  "first-year": { data: feOutcomes, name: "First Year" },
   mba: { data: mbaOutcomes, name: "M.B.A" },
 };
 
