@@ -208,7 +208,7 @@ export default function HomeNav() {
           Gallery
         </NavLink>
         <NavLink
-          to="/Examination"
+          to="/examination"
           className={({ isActive }) =>
             `${isActive ? "text-[#4F39F6]" : "text-black"}`
           }
@@ -240,7 +240,7 @@ export default function HomeNav() {
           About us
         </NavLink>
         <NavLink
-          to="/contactus"
+          to="/contact-us"
           className={({ isActive }) =>
             `${isActive ? "text-[#4F39F6]" : "text-black"}`
           }
@@ -340,7 +340,7 @@ export default function HomeNav() {
           Library
         </NavLink>
         <NavLink
-          to="/Examination"
+          to="/examination"
           className={({ isActive }) =>
             `${isActive ? "text-[#4F39F6]" : "text-black"}`
           }
@@ -380,7 +380,7 @@ export default function HomeNav() {
           About us
         </NavLink>
         <NavLink
-          to="/contactus"
+          to="/contact-us"
           className={({ isActive }) =>
             `${isActive ? "text-[#4F39F6]" : "text-black"}`
           }

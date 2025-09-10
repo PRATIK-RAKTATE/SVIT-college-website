@@ -6,7 +6,7 @@ const ExamLinks = () => {
   const links = [
     {
       title: "Summer-2025 End-Semester Time-Table",
-      url: "https://svit.pravara.in/Examination/TimeTable_Summer2025.pdf",
+      url: "https://svit.pravara.in/examination/TimeTable_Summer2025.pdf",
       description: "Official examination schedule for all UG & PG programmes",
     },
     {

@@ -55,7 +55,7 @@ function App() {
         />
         <Route path="/about/Infrastructure" element={<AboutInfrastructure />} />
         <Route path="/about/Linkages" element={<AboutLinkages />} />
-        <Route path="/Examination" element={<Examination />} />
+        <Route path="/examination" element={<Examination />} />
         <Route path="/library" element={<Library />} />
         <Route
           path="/library/advisory-committee"
@@ -66,7 +66,7 @@ function App() {
         <Route path="/library/facilities" element={<LibraryFacilities />} />
         <Route path="/library/section" element={<LibrarySection />} />
         <Route path="/library/OPAC" />
-        <Route path="/ContactUs" element={<MainContactUs/>} />
+        <Route path="/Contact-us" element={<MainContactUs/>} />
         <Route path="/admission/Admissiondetails" element={<MainAdmission/>} />
         
 
