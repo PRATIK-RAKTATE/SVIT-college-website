@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 export default function HomeSideBar() {
   const listItems = [
     { text: "College Affiliation Letters", url: "/college-affiliation" },
-    { text: "About the Society", url: "/about-society" },
-    { text: "Mission & Vision", url: "/mission-vision" },
+    { text: "About the Society", url: "/about" },
+    { text: "Mission & Vision", url: "/mission&vision" },
     { text: "Principal's Desk", url: "/principals-desk" },
     { text: "Admission", url: "/admission" },
     { text: "Inception", url: "/inception" },
@@ -19,7 +19,7 @@ export default function HomeSideBar() {
     { text: "IIQA", url: "/iiqa" },
     {
       text: "AICTE Online Skill Test for FE to BE Students",
-      url: "/aicte-skill-test",
+      url: "https://www.youth4work.com/onlinetalenttest",
     },
   ];
 

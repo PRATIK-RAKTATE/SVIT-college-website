@@ -37,6 +37,7 @@ import MainGalary from "./Components/galary/MainGalary.jsx";
 
 
 
+
 function App() {
   return (
     <>
@@ -70,9 +71,6 @@ function App() {
         <Route path="/Contact-us" element={<MainContactUs/>} />
         <Route path="/admission/Admissiondetails" element={<MainAdmission/>} />
         <Route path="/gallery" element={<MainGalary/>} />
-        
-
-        
 
         {Object.entries(DEPARTMENTS).map(([key, data]) => (
           <Route

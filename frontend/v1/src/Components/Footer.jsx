@@ -29,7 +29,7 @@ export default function Footer() {
       links: [
         { name: "Home", to: "/" },
         { name: "About us", to: "/about" },
-        { name: "Glimpses", to: "/glimpses" },
+        // { name: "Glimpses", to: "/glimpses" },
         { name: "Contact us", to: "/contact" },
         { name: "Site Map", to: "/sitemap" },
       ],
