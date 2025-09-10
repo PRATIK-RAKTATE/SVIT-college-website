@@ -1,5 +1,7 @@
 // Header.jsx
 import HomeNav from "./HomeNav";
+import svitLogo from '../../src/assets/svitlogo.webp';
+import saheb from '../../src/assets/saheb.webp';
 
 export default function Header() {
   return (
@@ -10,8 +12,8 @@ export default function Header() {
           {/* Left logo – mouse-aware lift */}
           <a href="/" aria-label="Home" className="group">
             <img
-              src="https://pravaraengg.org.in/assets/img/PRES.png"
-              alt="PRES Logo"
+              src={svitLogo}
+              alt="svit Logo"
               width={128}
               height={64}
               className="h-9 md:h-16 w-auto transition-transform duration-300 group-hover:scale-105"
@@ -31,7 +33,7 @@ export default function Header() {
           {/* Right logo – same lift */}
           <a href="/" aria-label="Home" className="group">
             <img
-              src="https://pravaraengg.org.in/assets/img/SAHEB1.webp"
+              src={saheb}
               alt="Saheb Logo"
               width={96}
               height={64}
