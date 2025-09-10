@@ -8,7 +8,7 @@ export default function LibrarySideBar() {
           <Link to={"/library"}>Department Profile </Link>
         </li>
         <li className="border-l-4 border-[#4F39F6] hover:bg-black hover:text-white p-2 pl-2 shadow text-sm">
-          <Link to={"/Library/AdvisoryCommittee"}>
+          <Link to={"/Library/advisory-committee"}>
             Library Advisory Committee
           </Link>
         </li>

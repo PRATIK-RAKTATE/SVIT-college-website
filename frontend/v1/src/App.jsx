@@ -58,7 +58,7 @@ function App() {
         <Route path="/Examination" element={<Examination />} />
         <Route path="/Library" element={<Library />} />
         <Route
-          path="/Library/AdvisoryCommittee"
+          path="/Library/advisory-committee"
           element={<LibraryAdvisoryComitee />}
         />
         <Route path="/Library/Faculty" element={<LibraryFaculty />} />
