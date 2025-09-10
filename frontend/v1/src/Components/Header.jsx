@@ -11,14 +11,18 @@ export default function Header() {
 
           {/* Left logo – mouse-aware lift */}
           <a href="/" aria-label="Home" className="group">
-            <img
-              src={svitLogo}
-              alt="svit Logo"
-              width={128}
-              height={64}
-              loading="lazy"
-              className="h-9 md:h-16 w-auto transition-transform duration-300 group-hover:scale-105"
-            />
+            <div className="w-32 aspect-[2/1] relative">
+              <img
+                src={svitLogo}
+                alt="SVIT Logo"
+                width="128"    
+                height="64"     
+                loading="lazy"
+                decoding="async"
+                className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-105"
+              />
+            </div>
+
           </a>
 
           {/* Centre text – truncate on tiny screens */}
