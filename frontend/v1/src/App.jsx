@@ -32,7 +32,9 @@ import EResources from "./Components/SideBar/E-resources.jsx";
 import MainContactUs from "./Components/ContactUs/MainContactUs.jsx"
 import MainAdmission from "./Components/Admission/MainAdmission.jsx";
 import home from './Constants/home.js'
-import LibraryFaculty from './Components/Library/Faculty.jsx';
+import LibraryFaculty from './Components/Library/Faculty.jsx'
+import MainGalary from "./Components/galary/MainGalary.jsx";
+
 
 
 
@@ -68,7 +70,8 @@ function App() {
         <Route path="/library/OPAC" />
         <Route path="/Contact-us" element={<MainContactUs/>} />
         <Route path="/admission/Admissiondetails" element={<MainAdmission/>} />
-                
+        <Route path="/gallery" element={<MainGalary/>} />
+
         {Object.entries(DEPARTMENTS).map(([key, data]) => (
           <Route
             key={key}
