@@ -6,6 +6,7 @@ export const itFaculty = [
     qualification:
       "PhD (Computer Science), M.E. Software System, B.E. Computer Engineering",
     experience: "16 Years",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvi7HpQ-_PMSMOFrj1hwjp6LDcI-jm3Ro0Xw&s"
   },
   {
     sr: 2,
@@ -13,6 +14,7 @@ export const itFaculty = [
     designation: "HOD & Assistant Professor",
     qualification: "PhD (Pursuing), M.E. (Computer Engineering), B.E (IT)",
     experience: "12 Years",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvi7HpQ-_PMSMOFrj1hwjp6LDcI-jm3Ro0Xw&s"
   },
   {
     sr: 3,
@@ -21,6 +23,7 @@ export const itFaculty = [
     qualification:
       "PhD (Pursuing), M.E. Computer Science and Engineering, B.E. Computer Engineering",
     experience: "14.5 Years",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvi7HpQ-_PMSMOFrj1hwjp6LDcI-jm3Ro0Xw&s"
   },
   {
     sr: 4,
@@ -29,6 +32,7 @@ export const itFaculty = [
     qualification:
       "PhD (Pursuing), M.E. Computer Engineering, B.E. Computer Engineering",
     experience: "11.4 Years",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvi7HpQ-_PMSMOFrj1hwjp6LDcI-jm3Ro0Xw&s"
   },
   {
     sr: 5,
@@ -37,6 +41,7 @@ export const itFaculty = [
     qualification:
       "PhD (Pursuing), M.E. Computer Engineering, B.E. Information Technology",
     experience: "12.5 Years",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvi7HpQ-_PMSMOFrj1hwjp6LDcI-jm3Ro0Xw&s"
   },
   {
     sr: 6,
@@ -44,6 +49,7 @@ export const itFaculty = [
     designation: "Assistant Professor",
     qualification: "M.E. Computer Engineering, B.E. Information Technology",
     experience: "7.5 Years",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvi7HpQ-_PMSMOFrj1hwjp6LDcI-jm3Ro0Xw&s"
   },
   {
     sr: 7,
@@ -51,6 +57,7 @@ export const itFaculty = [
     designation: "Assistant Professor",
     qualification: "M.E. Computer Engineering, B.E. Computer Engineering",
     experience: "7 Years",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvi7HpQ-_PMSMOFrj1hwjp6LDcI-jm3Ro0Xw&s"
   },
   {
     sr: 8,
@@ -58,6 +65,7 @@ export const itFaculty = [
     designation: "Assistant Professor",
     qualification: "M.E. Computer Engineering, B.E. Computer Engineering",
     experience: "3 Years",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvi7HpQ-_PMSMOFrj1hwjp6LDcI-jm3Ro0Xw&s"
   },
   {
     sr: 9,
@@ -65,6 +73,7 @@ export const itFaculty = [
     designation: "Assistant Professor",
     qualification: "M.E. Computer Engineering, B.E. Computer Engineering",
     experience: "3 Years",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvi7HpQ-_PMSMOFrj1hwjp6LDcI-jm3Ro0Xw&s"
   },
   {
     sr: 10,
@@ -72,6 +81,7 @@ export const itFaculty = [
     designation: "Technical Assistant",
     qualification: "Diploma in Computer Technology",
     experience: "16 Years",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvi7HpQ-_PMSMOFrj1hwjp6LDcI-jm3Ro0Xw&s"
   },
 ];
 

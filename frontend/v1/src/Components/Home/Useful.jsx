@@ -24,7 +24,7 @@ export default function Useful() {
 
   return (
     <div className="mt-5 ml-4 gap-3">
-      <div className="bg-[#4F39F6] p-1 mt-2">
+      <div className="bg-[#14244F] p-1 mt-2">
         <h1 className="font-sans text-white border-white border-l-2 shadow p-2 ">
           Useful Links
         </h1>

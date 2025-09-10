@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { useParams } from "react-router-dom";
 import HomeSideBar from "../department/Sidebar.jsx";
-import AccordionItem from "./AccordionItem"; // adjust path as needed
+import AccordionItem from "./AccordionItem.jsx"; // adjust path as needed
 
 // Import syllabus data files
 import { csSyllabus } from "../Sidebar-Constants/csDept.js";

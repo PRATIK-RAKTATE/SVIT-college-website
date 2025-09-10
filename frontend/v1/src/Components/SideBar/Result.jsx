@@ -7,11 +7,11 @@ import HomeSideBar from "../department/Sidebar.jsx";
 
 /* ----------  department sources  ---------- */
 import { itResults } from "../Sidebar-Constants/itDept.js";
-import { csResults } from "../Sidebar-Constants/csDept";
-import { chemicalResults } from "../Sidebar-Constants/chemDept";
-import { eceResults } from "../Sidebar-Constants/eceDept";
-import { feResults } from "../Sidebar-Constants/feDept";
-import { mbaResults } from "../Sidebar-Constants/mbaDept";
+import { csResults } from "../Sidebar-Constants/csDept.js";
+import { chemicalResults } from "../Sidebar-Constants/chemDept.js";
+import { eceResults } from "../Sidebar-Constants/eceDept.js";
+import { feResults } from "../Sidebar-Constants/feDept.js";
+import { mbaResults } from "../Sidebar-Constants/mbaDept.js";
 
 const DEPT_MAP = {
   computerEngineering: { data: csResults, name: "Computer Engineering" },
@@ -97,7 +97,7 @@ export default function Results() {
         <motion.h1
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="text-3xl md:text-5xl font-extrabold text-gray-800 mb-8 text-center md:text-left"
+          className="text-3xl md:text-5xl font-extrabold text-gray-800 mb-8 mt-15 text-center md:text-left"
           style={{ fontFamily: "'Inter', sans-serif" }}
         >
           {dept.name} Results

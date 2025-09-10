@@ -1,5 +1,7 @@
+// HomeSideBar.jsx
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import { motion, AnimatePresence } from "framer-motion";
 
 export default function HomeSideBar({ deptId }) {
   const menuItems = [
@@ -17,25 +19,55 @@ export default function HomeSideBar({ deptId }) {
   ];
 
   return (
-    <div className="mt-28 md:mt-14 mr-10 mb-10 md:ml-15 ml-10 w-fit">
-      <ul className="h-auto w-72 flex flex-col gap-2 pl-5">
+    <aside className="mt-10 md:mt-14 mr-10 mb-10 md:ml-15 ml-10 w-fit">
+      <motion.ul
+        initial="hidden"
+        animate="visible"
+        variants={{
+          hidden: { opacity: 0 },
+          visible: {
+            opacity: 1,
+            transition: { staggerChildren: 0.07 },
+          },
+        }}
+        className="relative h-auto w-72 flex flex-col gap-2 pl-5"
+      >
+        {/* sliding highlight */}
+        <li className="absolute left-0 top-0 h-10 w-full pointer-events-none">
+          <motion.div
+            layoutId="highlight"
+            className="absolute left-0 h-full w-1 bg-indigo-600 rounded-r-full"
+            transition={{ type: "spring", stiffness: 400, damping: 40 }}
+          />
+        </li>
+
         {menuItems.map((item, index) => (
-          <li
-            key={index}
-            className="border-l-4 border-[#4F39F6] hover:bg-black hover:text-white p-1 pl-2 shadow text-sm"
+          <motion.li
+            key={item.path + index}
+            variants={{
+              hidden: { x: -30, opacity: 0 },
+              visible: { x: 0, opacity: 1 },
+            }}
+            whileHover={{ scale: 1.03 }}
+            whileTap={{ scale: 0.97 }}
+            className="relative z-10"
           >
-            {item.external ? (
-              <a href={item.url} target="_blank" rel="noopener noreferrer">
-                {item.name}
-              </a>
-            ) : (
-              <NavLink to={`/Department/${deptId}/${item.path}`}>
-                {item.name}
-              </NavLink>
-            )}
-          </li>
+            <NavLink
+              to={`/Department/${deptId}/${item.path}`}
+              className={({ isActive }) =>
+                `flex items-center h-10 pl-4 rounded-lg text-sm font-medium transition-colors
+                ${
+                  isActive
+                    ? "text-indigo-700 bg-indigo-50"
+                    : "text-gray-700 hover:bg-gray-100"
+                }`
+              }
+            >
+              {item.name}
+            </NavLink>
+          </motion.li>
         ))}
-      </ul>
-    </div>
+      </motion.ul>
+    </aside>
   );
 }

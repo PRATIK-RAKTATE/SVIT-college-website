@@ -1,9 +1,11 @@
-// Faculty.jsx  –  heading in row with sidebar, animated table below
-import React from "react";
+// Faculty.jsx
+import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { motion } from "framer-motion";
+import { User, Users, GraduationCap, Briefcase, Calendar } from "lucide-react";
 import HomeSideBar from "../department/Sidebar.jsx";
 
+/* ---------- department data ---------- */
 import { csFaculty } from "../Sidebar-Constants/csDept.js";
 import { itFaculty } from "../Sidebar-Constants/itDept.js";
 import { chemFaculty } from "../Sidebar-Constants/chemDept.js";
@@ -12,104 +14,203 @@ import { firstYearFaculty } from "../Sidebar-Constants/feDept.js";
 import { mbaFaculty } from "../Sidebar-Constants/mbaDept.js";
 
 const deptMap = {
-  computerEngineering: { data: csFaculty, name: "Computer Engineering" },
-  informationTechnology: { data: itFaculty, name: "Information Technology" },
-  chemicalEngineering: { data: chemFaculty, name: "Chemical Engineering" },
+  computerEngineering: {
+    data: csFaculty,
+    name: "Computer Engineering",
+    color: "from-blue-900 to-blue-200",
+  },
+  informationTechnology: {
+    data: itFaculty,
+    name: "Information Technology",
+    color: "from-purple-900 to-purple-200",
+  },
+  chemicalEngineering: {
+    data: chemFaculty,
+    name: "Chemical Engineering",
+    color: "from-green-900 to-green-200",
+  },
   electronicsAndComputerEngineering: {
     data: eceFaculty,
     name: "Electronics & Computer Engineering",
+    color: "from-red-900 to-red-200",
   },
-  firstYear: { data: firstYearFaculty, name: "First Year" },
-  mba: { data: mbaFaculty, name: "M.B.A" },
+  firstYear: {
+    data: firstYearFaculty,
+    name: "First Year",
+    color: "from-yellow-900 to-yellow-200",
+  },
+  mba: {
+    data: mbaFaculty,
+    name: "M.B.A",
+    color: "from-orange-900 to-orange-200",
+  },
 };
 
 export default function Faculty() {
   const { deptId } = useParams();
-  const { data: facultyData, name: deptName } = deptMap[deptId] || {
+  const dept = deptMap[deptId] || {
     data: [],
     name: "Department",
+    color: "from-gray-500 to-gray-600",
   };
+  const [animated, setAnimated] = useState([]);
+  const [sbHeight, setSbHeight] = useState(null);
 
-  /*  table row animation  */
-  const row = {
-    hidden: { opacity: 0, y: 20 },
+  useEffect(() => {
+    const sb = document.getElementById("sidebar");
+    if (sb) setSbHeight(sb.clientHeight);
+
+    dept.data.forEach((_, i) => {
+      setTimeout(() => setAnimated((a) => [...a, i]), i * 150);
+    });
+
+    return () => setAnimated([]);
+  }, [deptId]);
+
+  const avgExp =
+    dept.data.length &&
+    (
+      dept.data.reduce(
+        (sum, f) => sum + Number(f.experience.match(/\d+/)[0]),
+        0
+      ) / dept.data.length
+    ).toFixed(1);
+
+  const card = {
+    hidden: { opacity: 0, y: 40 },
     show: { opacity: 1, y: 0, transition: { type: "spring", stiffness: 120 } },
   };
 
+  const InfoRow = ({ icon, label, value }) => (
+    <div className="flex items-start gap-3">
+      <div className="mt-0.5 text-gray-400 group-hover:text-white/70 transition-colors">
+        {icon}
+      </div>
+      <div>
+        <p className="text-xs text-gray-500 group-hover:text-white/70">{label}</p>
+        <p className="text-sm font-semibold text-gray-800 group-hover:text-white">
+          {value}
+        </p>
+      </div>
+    </div>
+  );
+
+  if (!dept.data.length) {
+    return (
+      <div className="min-h-screen flex items-center justify-center text-gray-600">
+        Faculty information not available.
+      </div>
+    );
+  }
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
-      {/*  HEADING BLOCK : sidebar + animated title (same row)  */}
+      {/* Sidebar + Heading in same row */}
       <div className="flex flex-col md:flex-row">
         <HomeSideBar deptId={deptId} />
-        <section className="flex-1 p-6 md:mt-28 md:p-10">
+        <section
+          className="flex-1 p-6 md:mt-25 md:p-10 flex flex-col justify-center"
+          style={{ maxHeight: sbHeight || "auto" }}
+        >
           <motion.h1
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
-            className="text-3xl md:text-5xl font-extrabold text-gray-800 mb-8 text-center md:text-left"
-            style={{ fontFamily: "'Inter', sans-serif" }}
+            className="text-3xl md:text-5xl font-extrabold text-gray-800 mb-4 text-center md:text-left"
           >
-            {deptName} Department Faculty
+            {dept.name} Faculty
           </motion.h1>
+          <motion.p
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="text-lg text-gray-600 text-center md:text-left"
+          >
+            Department – SVIT
+          </motion.p>
+          <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mt-4 rounded-full mx-auto md:mx-0" />
         </section>
       </div>
 
-      {/*  TABLE : full width under sidebar  */}
+      {/* Faculty Cards in full width below sidebar */}
       <div className="flex flex-col md:flex-row">
-        <div className="md:w-10 flex-shrink-0" />
-        <main className="flex-1 px-4 md:px-8 pb-12">
+        <div className="md:w-14 flex-shrink-0" />
+        <main className="flex-1 px-4 md:px-8 pb-12 space-y-8">
           <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
+            variants={card}
+            initial="hidden"
+            whileInView="show"
             viewport={{ once: true }}
-            transition={{ type: "spring", stiffness: 120 }}
-            className="bg-white rounded-2xl shadow-lg border border-gray-200 overflow-hidden"
+            className="bg-white rounded-2xl shadow-lg border border-gray-200 p-6 hover:shadow-2xl transition-all duration-300 hover:-translate-y-1"
           >
-            <table className="w-full border-collapse text-sm md:text-base">
-              <thead className="bg-[#4F39F6] text-white">
-                <tr>
-                  <th className="p-4 text-left">Sr. No</th>
-                  <th className="p-4 text-left">Name of Faculty</th>
-                  <th className="p-4 text-left">Designation</th>
-                  <th className="p-4 text-left">Qualification</th>
-                  <th className="p-4 text-left">Total Experience</th>
-                </tr>
-              </thead>
-              <tbody>
-                {facultyData.map((faculty, index) => (
-                  <motion.tr
-                    key={faculty.sr}
-                    variants={{
-                      hidden: { opacity: 0, y: 20 },
-                      show: { opacity: 1, y: 0 },
-                    }}
-                    initial="hidden"
-                    whileInView="show"
-                    viewport={{ once: true }}
-                    transition={{ delay: index * 0.05 }}
-                    className={`border-b last:border-none ${index % 2 === 0 ? "bg-gray-50" : "bg-white"} hover:bg-blue-50 transition`}
-                  >
-                    <td className="p-4 text-gray-700 font-medium">
-                      {faculty.sr}
-                    </td>
-                    <td className="p-4 text-gray-800">{faculty.name}</td>
-                    <td className="p-4 text-gray-700">{faculty.designation}</td>
-                    <td className="p-4 text-gray-600">
-                      {faculty.qualification}
-                    </td>
-                    <td className="p-4 text-gray-700 font-semibold">
-                      {faculty.experience}
-                    </td>
-                  </motion.tr>
-                ))}
-              </tbody>
-            </table>
+            <h3 className="text-2xl font-bold text-gray-800 mb-4">
+              Faculty Members
+            </h3>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {dept.data.map((f, idx) => (
+                <motion.div
+                  key={f.sr}
+                  variants={card}
+                  className="group relative bg-white rounded-xl p-4 shadow-md border border-gray-100 hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
+                >
+                  <div className={`absolute inset-0 bg-gradient-to-br ${dept.color} opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-xl`} />
+                  
+                  <div className="relative z-10 space-y-3">
+                    {/* IMAGE SECTION with Gradient Background */}
+                    {f.image && (
+                      <div className="flex justify-center mb-4 relative">
+                        <div className={`w-32 h-32 rounded-full bg-gradient-to-br ${dept.color} p-1`}>
+                          <img
+                            src={f.image}
+                            alt={f.name}
+                            className="w-full h-full object-cover rounded-full border-2 border-white"
+                          />
+                        </div>
+                        {f.designation.toLowerCase().includes("head") || f.designation.toLowerCase().includes("hod") ? (
+                          <span className="absolute bottom-0 right-0 bg-blue-600 text-white text-xs font-bold px-2 py-1 rounded-full shadow-md border border-white">
+                            HOD
+                          </span>
+                        ) : null}
+                      </div>
+                    )}
+
+                    <div className="flex items-center justify-between">
+                      <div className="flex items-center gap-3">
+                        <div className="w-10 h-10 bg-gradient-to-br from-blue-100 to-purple-100 rounded-full flex items-center justify-center group-hover:from-white/20 group-hover:to-white/20 transition-all">
+                          <span className="text-lg font-bold text-gray-700 group-hover:text-white">{f.sr}</span>
+                        </div>
+                        <User className="w-5 h-5 text-gray-400 group-hover:text-white/80 transition-colors" />
+                      </div>
+                    </div>
+                    <h4 className="text-lg font-bold text-gray-900 group-hover:text-white">{f.name}</h4>
+                    <InfoRow icon={<Briefcase />} label="Designation" value={f.designation} />
+                    <InfoRow icon={<GraduationCap />} label="Qualification" value={f.qualification} />
+                    <InfoRow icon={<Calendar />} label="Experience" value={f.experience} />
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+          </motion.div>
+
+          {/* Footer Statistics */}
+          <motion.div
+            variants={card}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true }}
+            className="bg-white rounded-2xl shadow-lg border border-gray-200 p-6 text-center"
+          >
+            <div className="inline-flex items-center gap-4 px-8 py-4 bg-white/80 backdrop-blur rounded-full shadow-lg border border-gray-200 mx-auto">
+              <Users className="w-5 h-5 text-blue-600" />
+              <span className="text-gray-700 font-medium">
+                Total <span className="font-bold text-blue-600">{dept.data.length}</span> faculty
+              </span>
+              <div className="w-px h-6 bg-gray-300" />
+              <span className="text-gray-600">
+                Avg. Experience: <span className="font-semibold">{avgExp} Years</span>
+              </span>
+            </div>
           </motion.div>
         </main>
       </div>
-
-      <style jsx>{`
-        @import url("https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap");
-      `}</style>
     </div>
   );
 }

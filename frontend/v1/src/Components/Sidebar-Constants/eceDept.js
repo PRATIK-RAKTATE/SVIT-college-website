@@ -6,6 +6,7 @@ export const eceFaculty = [
     qualification:
       "PhD (E&CE), ME(Digital Communication), Diploma in Values and Spiritual Education, Member of ISTE, IETE.",
     experience: "14 Years",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvi7HpQ-_PMSMOFrj1hwjp6LDcI-jm3Ro0Xw&s"
   },
   {
     sr: 2,
@@ -13,6 +14,7 @@ export const eceFaculty = [
     designation: "Assistant Professor",
     qualification: "M.E (Digital System), BE (E&TC), Member of ISTE, IETE.",
     experience: "21 Years",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvi7HpQ-_PMSMOFrj1hwjp6LDcI-jm3Ro0Xw&s"
   },
   {
     sr: 3,
@@ -20,6 +22,7 @@ export const eceFaculty = [
     designation: "Assistant Professor",
     qualification: "M.E (Instrumentation), B.E. (Instrumentation)",
     experience: "27 Years",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvi7HpQ-_PMSMOFrj1hwjp6LDcI-jm3Ro0Xw&s"
   },
   {
     sr: 4,
@@ -27,6 +30,7 @@ export const eceFaculty = [
     designation: "Assistant Professor",
     qualification: "M. E. (Electronics Communication), Member of ISTE, IETE.",
     experience: "16 Years",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvi7HpQ-_PMSMOFrj1hwjp6LDcI-jm3Ro0Xw&s"
   },
   {
     sr: 5,
@@ -34,6 +38,7 @@ export const eceFaculty = [
     designation: "Assistant Professor",
     qualification: "Ph. D (Pursuing), ME(Microwave), Member of ISTE, IETE.",
     experience: "15 Years",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvi7HpQ-_PMSMOFrj1hwjp6LDcI-jm3Ro0Xw&s"
   },
   {
     sr: 6,
@@ -42,6 +47,7 @@ export const eceFaculty = [
     qualification:
       "Ph. D (E&CE), ME(VLSI & Embedded), BE (Electronics), Diploma (Electronics), Member of ISTE, IETE, IAEEE, IAENG.",
     experience: "13 Years",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvi7HpQ-_PMSMOFrj1hwjp6LDcI-jm3Ro0Xw&s"
   },
   {
     sr: 7,
@@ -49,6 +55,7 @@ export const eceFaculty = [
     designation: "Lab Technician",
     qualification: "Diploma",
     experience: "11 Years",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvi7HpQ-_PMSMOFrj1hwjp6LDcI-jm3Ro0Xw&s"
   },
 ];
 

@@ -5,6 +5,7 @@ export const firstYearFaculty = [
     designation: "FE Head & Assistant Professor",
     qualification: "PhD (Pursuing), M.Sc Chemistry",
     experience: "28 Years",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvi7HpQ-_PMSMOFrj1hwjp6LDcI-jm3Ro0Xw&s"
   },
   {
     sr: 2,
@@ -12,6 +13,7 @@ export const firstYearFaculty = [
     designation: "Assistant Professor",
     qualification: "PhD (Pursuing), M.Sc Mathematics, M.Phil",
     experience: "22 Years",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvi7HpQ-_PMSMOFrj1hwjp6LDcI-jm3Ro0Xw&s"
   },
   {
     sr: 3,
@@ -19,6 +21,7 @@ export const firstYearFaculty = [
     designation: "Assistant Professor",
     qualification: "PhD (Pursuing), M.Sc (Chemistry), SET, B.Ed",
     experience: "12 Years",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvi7HpQ-_PMSMOFrj1hwjp6LDcI-jm3Ro0Xw&s"
   },
   {
     sr: 4,
@@ -26,6 +29,7 @@ export const firstYearFaculty = [
     designation: "Assistant Professor",
     qualification: "M.Sc Mathematics",
     experience: "2.5 Years",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvi7HpQ-_PMSMOFrj1hwjp6LDcI-jm3Ro0Xw&s"
   },
   {
     sr: 5,
@@ -33,6 +37,7 @@ export const firstYearFaculty = [
     designation: "Assistant Professor",
     qualification: "M.Sc Physics",
     experience: "5 Years",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvi7HpQ-_PMSMOFrj1hwjp6LDcI-jm3Ro0Xw&s"
   },
   {
     sr: 6,
@@ -40,6 +45,7 @@ export const firstYearFaculty = [
     designation: "Lab Technician",
     qualification: "M.Sc Chemistry",
     experience: "1 Year",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvi7HpQ-_PMSMOFrj1hwjp6LDcI-jm3Ro0Xw&s"
   },
 ];
 

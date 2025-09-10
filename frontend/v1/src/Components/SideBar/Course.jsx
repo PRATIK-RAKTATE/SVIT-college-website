@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { motion } from "framer-motion";
 import HomeSideBar from "../department/Sidebar.jsx";
-import AnimatedList from "./AnimatedList"; // ← imported sub-component
+import AnimatedList from "./AnimatedList.jsx"; // ← imported sub-component
 
 /*  department-wise data  */
 import { csCourse } from "../Sidebar-Constants/csDept.js";

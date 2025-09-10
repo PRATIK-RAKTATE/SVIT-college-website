@@ -52,7 +52,7 @@ export default function News() {
 
   return (
     <div className="mt-5 ml-4 gap-3">
-      <div className="bg-[#4F39F6] p-1">
+      <div className="bg-[#14244F] p-1">
         <h1 className="font-sans  text-white border-l-2 border-white shadow p-2">
           News & Announcements
         </h1>

@@ -8,6 +8,7 @@ export const mbaFaculty = [
     qualification:
       "Ph.D. (Organizational Management), M.B.A. (IT), B.Sc (Electronics)",
     experience: "7 Years Industry & 16 Years Academics",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvi7HpQ-_PMSMOFrj1hwjp6LDcI-jm3Ro0Xw&s"
   },
   {
     sr: 2,
@@ -15,6 +16,7 @@ export const mbaFaculty = [
     designation: "Assistant Professor",
     qualification: "Ph.D. (Marketing), M.B.A. (Marketing), B.Com",
     experience: "6 Years Industry & 16 Years Academics",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvi7HpQ-_PMSMOFrj1hwjp6LDcI-jm3Ro0Xw&s"
   },
   {
     sr: 3,
@@ -23,6 +25,7 @@ export const mbaFaculty = [
     qualification:
       "Ph.D. (Comm. & Mgmt.), M.B.A. (HR), D.L.L. & L.W., P.G.D.P.C.",
     experience: "1 Year Industry & 13 Years Academics",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvi7HpQ-_PMSMOFrj1hwjp6LDcI-jm3Ro0Xw&s"
   },
   {
     sr: 4,
@@ -31,6 +34,7 @@ export const mbaFaculty = [
     qualification:
       "Ph.D. (Pursuing), M.B.A. (Marketing), B.Sc (Chemistry), D Pharmacy",
     experience: "7 Years Industry & 15 Years Academics",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvi7HpQ-_PMSMOFrj1hwjp6LDcI-jm3Ro0Xw&s"
   },
   {
     sr: 5,
@@ -39,6 +43,7 @@ export const mbaFaculty = [
     qualification:
       "Ph.D. (Organizational Management), M.B.A. (Marketing), BHMS",
     experience: "13 Years Academics",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvi7HpQ-_PMSMOFrj1hwjp6LDcI-jm3Ro0Xw&s"
   },
 ];
 
