@@ -1,5 +1,4 @@
 import WT from "./WT";
-import HomeSideBar from "./HomeSideBar";
 import PreDesk from "./PreDesk";
 import SideLink from "./Useful";
 import ImagText from "./ImgText";
@@ -9,6 +8,8 @@ import HoverRow from "./HoverRow";
 import { motion } from "framer-motion";
 import Archivement from "./Archivement";
 import StudentDiversity from "./StudentDiversity";
+import HomeSideBar from "../About/AboutSisebar";
+
 
 const scrollReveal = {
   hidden: { opacity: 0, y: 60 },
@@ -36,8 +37,8 @@ export default function Home({slides}) {
         variants={scrollReveal}
       >
         {/* Left  */}
-        <motion.div className="flex flex-col ml-5" variants={scrollReveal}>
-          <HomeSideBar />
+        <motion.div className="flex flex-col ml-" variants={scrollReveal}>
+          <HomeSideBar/>
           <MinorMajor />
         </motion.div>
 
