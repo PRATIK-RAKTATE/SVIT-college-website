@@ -30,7 +30,6 @@ const deptMap = {
   },
 
   "first-year": { data: firstYearFaculty, name: "First Year" },
-  mba: { data: mbaFaculty, name: "M.B.A" },
 };
 
 export default function Faculty() {
