@@ -16,11 +16,11 @@ export default function PreDesk() {
         {/* Caption */}
         <figcaption className="mt-6 text-center">
           <p className="text-xl font-semibold text-slate-900">
-            Prof. Sharad M. Rokade
+            Dr. Ganesh B. Shinde
           </p>
-          <p className="text-base text-slate-700">Associate Professor & HOD</p>
+          <p className="text-base text-[#4F39F6]">Principal & Associate Professor</p>
           <p className="text-sm text-slate-500 mt-1">
-            M.E. (CE), PhD (Pursuing)
+            M.E. (Chemical), Ph.D. (Chemical Tech.)
           </p>
         </figcaption>
       </figure>

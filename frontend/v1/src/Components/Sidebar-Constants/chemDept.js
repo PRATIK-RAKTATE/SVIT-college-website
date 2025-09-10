@@ -5,8 +5,7 @@ export const chemFaculty = [
     designation: "Principal & Associate Professor",
     qualification: "M.E. (Chemical), Ph.D. (Chemical Tech.)",
     experience: "27 Years",
-    email: "ganesh.shinde@pravara.in",
-  },
+image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvi7HpQ-_PMSMOFrj1hwjp6LDcI-jm3Ro0Xw&s"  },
   {
     sr: 2,
     name: "Dr. Dipak K. Chandre",
@@ -14,72 +13,63 @@ export const chemFaculty = [
     qualification:
       "M.E. (Chemical), Ph.D (Chemical Tech.), PGD-Piping Design & Tech.",
     experience: "23 Years",
-    email: "dipak.chandre@pravara.in",
-  },
+image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvi7HpQ-_PMSMOFrj1hwjp6LDcI-jm3Ro0Xw&s"  },
   {
     sr: 3,
     name: "Dr. Rajendrakumar M. Abhang",
     designation: "Associate Professor",
     qualification: "M.Tech. (Chemical), Ph.D (Chemical Engg.)",
     experience: "24 Years",
-    email: "rajendrakumar.abhang@pravara.in",
-  },
+image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvi7HpQ-_PMSMOFrj1hwjp6LDcI-jm3Ro0Xw&s"  },
   {
     sr: 4,
     name: "Dr. Mahendra Guddad",
     designation: "Assistant Professor",
     qualification: "M.Tech. (Chemical), Ph.D (Chemical Engg.)",
     experience: "23 Years",
-    email: "mahendra.guddad@pravara.in",
-  },
+image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvi7HpQ-_PMSMOFrj1hwjp6LDcI-jm3Ro0Xw&s"  },
   {
     sr: 5,
     name: "Mr. Rahul D. Patil",
     designation: "Assistant Professor",
     qualification: "M.Tech. (Chemical), Ph.D (Pursuing)",
     experience: "14 Years",
-    email: "rahul.patil@pravara.in",
-  },
+image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvi7HpQ-_PMSMOFrj1hwjp6LDcI-jm3Ro0Xw&s"  },
   {
     sr: 6,
     name: "Ms. Mohini V. Waje",
     designation: "Assistant Professor",
     qualification: "M.Tech. (Chemical)",
     experience: "4 Years",
-    email: "mohini.waje@pravara.in",
-  },
+image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvi7HpQ-_PMSMOFrj1hwjp6LDcI-jm3Ro0Xw&s"  },
   {
     sr: 7,
     name: "Mr. Sushant Subhash Kurhe",
     designation: "Assistant Professor",
     qualification: "M.Tech. (Chemical)",
     experience: "3 Years",
-    email: "sushant.kurhe@pravara.in",
-  },
+image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvi7HpQ-_PMSMOFrj1hwjp6LDcI-jm3Ro0Xw&s"  },
   {
     sr: 8,
     name: "Dr. Shradha Vilas Nikam",
     designation: "Assistant Professor",
     qualification: "Ph.D (Chemical Engg.), M.Tech. (Chemical)",
     experience: "2.5 Years",
-    email: "shradha.nikam@pravara.in",
-  },
+image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvi7HpQ-_PMSMOFrj1hwjp6LDcI-jm3Ro0Xw&s"  },
   {
     sr: 9,
     name: "Mr. Nilesh M. Khalse",
     designation: "Assistant Professor",
     qualification: "M.Tech. (Chemical)",
     experience: "1 Year",
-    email: "nilesh.khalse@pravara.in",
-  },
+image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvi7HpQ-_PMSMOFrj1hwjp6LDcI-jm3Ro0Xw&s"  },
   {
     sr: 10,
     name: "Mr. Dukare N. R.",
     designation: "Technical Asst.",
     qualification: "Diploma In Chemical Engg.",
     experience: "20 Years",
-    email: "nilesh.dukare@pravara.in",
-  },
+image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvi7HpQ-_PMSMOFrj1hwjp6LDcI-jm3Ro0Xw&s"  },
   {
     sr: 11,
     name: "Mr. Saraf P. B",
@@ -90,11 +80,6 @@ export const chemFaculty = [
   },
 ];
 
-// src/constants/chemicalEngineeringDept.js
-
-// Make sure chemFaculty is exported properly
-
-// Re-exporting for use in Faculty.jsx
 
 export const chemCourse = {
   introduction: [

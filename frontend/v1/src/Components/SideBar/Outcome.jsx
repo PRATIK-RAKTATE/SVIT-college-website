@@ -3,7 +3,7 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import { motion } from "framer-motion";
 import HomeSideBar from "../department/Sidebar.jsx";
-import AnimatedList from "./AnimatedList"; // reusable animated <li>
+import AnimatedList from "./AnimatedList.jsx"; // reusable animated <li>
 
 /*  department-wise data  */
 import { csOutcomes } from "../Sidebar-Constants/csDept.js";
