@@ -1,7 +1,7 @@
 // HomeSideBar.jsx
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 
 export default function HomeSideBar({ deptId }) {
   const menuItems = [
@@ -32,7 +32,6 @@ export default function HomeSideBar({ deptId }) {
         }}
         className="relative h-auto w-72 flex flex-col gap-2 pl-5"
       >
-        {/* sliding highlight */}
         <li className="absolute left-0 top-0 h-10 w-full pointer-events-none">
           <motion.div
             layoutId="highlight"
@@ -52,17 +51,15 @@ export default function HomeSideBar({ deptId }) {
             whileTap={{ scale: 0.97 }}
             className="relative z-10"
           >
-
-            {item.external ? (
-              <a href={item.url} target="_blank" rel="noopener noreferrer">
-                {item.name}
-              </a>
-            ) : (
-              <NavLink to={`/department/${deptId}/${item.path}`}>
-                {item.name}
-              </NavLink>
-            )}
-          </li>
+            <NavLink
+              to={`/department/${deptId}/${item.path}`}
+              className={({ isActive }) =>
+                isActive ? "text-indigo-600 font-bold" : "text-gray-700"
+              }
+            >
+              {item.name}
+            </NavLink>
+          </motion.li>
         ))}
       </motion.ul>
     </aside>
