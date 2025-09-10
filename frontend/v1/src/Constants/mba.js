@@ -11,7 +11,7 @@ M.B.A. Centre is housed in spacious building consisting of well-lit and well-ven
 
 Our institute has got a separate dedicated Training & Placement cell which takes all round efforts in providing employment opportunities and industry mentored projects to all the students. Our students got placed in reputed organizations like ABB Ltd, Axis Bank, Accenture, Aegon Religare, Birla Global, Bajaj Allianz, ETON, Gateway Hotel, HDFC Bank, Hindustan National Glass, ICICI Bank, Parle Biscuits, LIC, Shopper's Stop and T.C.S etc.`,
 
-  img: "https://svitnashik.in/Images/Profile%20Images/Department/MBA/HOD_MBA.jpg",
+  img: "https://svitnashik.in/Images/Profile%20Images/department/MBA/HOD_MBA.jpg",
   hodname: "Dr. Vishakha A. Gaidhani, HOD",
   hodqualification:
     "Ph.D. (Organizational Management), M.B.A.(IT), BSc(Electronics)",

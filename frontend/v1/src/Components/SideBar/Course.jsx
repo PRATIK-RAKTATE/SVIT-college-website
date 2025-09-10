@@ -15,12 +15,12 @@ import { eceCourse } from "../Sidebar-Constants/eceDept.js";
 import { FireExtinguisher } from "lucide-react";
 
 const deptMap = {
-  computerEngineering: { data: csCourse, name: "Computer Engineering" },
-  informationTechnology: { data: itCourse, name: "Information Technology" },
+  "computer-engineering": { data: csCourse, name: "Computer Engineering" },
+  "information-technology": { data: itCourse, name: "Information Technology" },
   mba: { data: mbaCourse, name: "M.B.A" },
-  firstYear: { data: feCourse, name: "First Year" },
-  chemicalEngineering: { data: chemCourse, name: "Chemical Engineering" },
-  electronicsAndComputerEngineering: {
+  "first-year": { data: feCourse, name: "First Year" },
+  "chemical-engineering": { data: chemCourse, name: "Chemical Engineering" },
+  "electronics-and-computer-engineering": {
     data: eceCourse,
     name: "Electronics & Computer Engineering",
   },

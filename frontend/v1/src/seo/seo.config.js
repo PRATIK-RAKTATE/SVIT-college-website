@@ -8,35 +8,35 @@ const SEO_CONFIG = {
     image: "https://pravaraengg.org.in/assets/img/PRES.png",
   },
   departments: {
-    firstYear: {
+    "first-year": {
       title: "First Year Engineering Department | SVIT Nashik",
       description:
         "Explore First Year Engineering at SVIT. Faculty, labs, syllabus, placements, and more.",
       url: "https://svitnashik.in/department/computer",
       image: "https://pravaraengg.org.in/assets/img/PRES.png",
     },
-    computerEngineering: {
+    "computer-engineering": {
       title: "Computer Engineering Department | SVIT Nashik",
       description:
         "Explore Computer Engineering at SVIT. Faculty, labs, syllabus, placements, and more.",
       url: "https://svitnashik.in/department/computer",
       image: "https://pravaraengg.org.in/assets/img/PRES.png",
     },
-    informationTechnology: {
+    "information-technology": {
       title: "it | SVIT Nashik",
       description:
         "Explore Information Technology Engineering at SVIT. Faculty, labs, syllabus, placements, and more.",
       url: "https://svitnashik.in",
       image: "https://pravaraengg.org.in/assets/img/PRES.png",
     },
-    electronicsAndComputerEngineering: {
+    "electronics-and-computer-engineering": {
       title: "Electronics and Computer Engineering | SVIT Nashik",
       description:
         "Explore Electronica and Computer Engineering at SVIT. Faculty, labs, syllabus, placements, and more.",
       url: "https://svitnashik.in",
       image: "https://pravaraengg.org.in/assets/img/PRES.png",
     },
-    chemicalEngineering: {
+    "chemical-engineering": {
       title: "Chemical Engineering Department | SVIT Nashik",
       description:
         "Explore Chemical Engineering at SVIT. Faculty, labs, syllabus, placements, and more.",

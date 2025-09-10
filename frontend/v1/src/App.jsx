@@ -55,18 +55,18 @@ function App() {
         />
         <Route path="/about/Infrastructure" element={<AboutInfrastructure />} />
         <Route path="/about/Linkages" element={<AboutLinkages />} />
-        <Route path="/Examination" element={<Examination />} />
-        <Route path="/Library" element={<Library />} />
+        <Route path="/examination" element={<Examination />} />
+        <Route path="/library" element={<Library />} />
         <Route
-          path="/Library/AdvisoryCommittee"
+          path="/library/advisory-committee"
           element={<LibraryAdvisoryComitee />}
         />
-        <Route path="/Library/Faculty" element={<LibraryFaculty />} />
-        <Route path="/Library/Objectives" element={<LibraryObjectives />} />
-        <Route path="/Library/Facilities" element={<LibraryFacilities />} />
-        <Route path="/Library/Section" element={<LibrarySection />} />
-        <Route path="/Library/OPAC" />
-        <Route path="/ContactUs" element={<MainContactUs/>} />
+        <Route path="/library/faculty" element={<LibraryFaculty />} />
+        <Route path="/library/objectives" element={<LibraryObjectives />} />
+        <Route path="/library/facilities" element={<LibraryFacilities />} />
+        <Route path="/library/section" element={<LibrarySection />} />
+        <Route path="/library/OPAC" />
+        <Route path="/Contact-us" element={<MainContactUs/>} />
         <Route path="/admission/Admissiondetails" element={<MainAdmission/>} />
         
 
@@ -75,7 +75,7 @@ function App() {
         {Object.entries(DEPARTMENTS).map(([key, data]) => (
           <Route
             key={key}
-            path={`/Department/:deptId`}
+            path={`/department/:deptId`}
             element={
               <Department
                 slides={data.carousel}
@@ -90,17 +90,17 @@ function App() {
             }
           />
         ))}
-        <Route path="/Department/:deptId/Outcome" element={<Outcome />}></Route>
-        <Route path="/Department/:deptId/faculty" element={<Faculty />}></Route>
-        <Route path="/Department/:deptId/courses" element={<Course />}></Route>
-        <Route path="/Department/:deptId/labs" element={<Labs />}></Route>
+        <Route path="/department/:deptId/Outcome" element={<Outcome />}></Route>
+        <Route path="/department/:deptId/faculty" element={<Faculty />}></Route>
+        <Route path="/department/:deptId/courses" element={<Course />}></Route>
+        <Route path="/department/:deptId/labs" element={<Labs />}></Route>
 
-        <Route path="/Department/:deptId/syllabus" element={<Syllabus />}></Route>
-        <Route path="/Department/:deptId/events" element={<Events />}></Route>
-        <Route path="/Department/:deptId/results" element={<Result />}></Route>
-        <Route path="/Department/:deptId/placement"element={<Placement />}></Route>
-        <Route path="/Department/:deptId/academic-book"element={<AcademicBooks />}></Route>
-        <Route path="/Department/:deptId/e-resources"element={<EResources />}></Route>
+        <Route path="/department/:deptId/syllabus" element={<Syllabus />}></Route>
+        <Route path="/department/:deptId/events" element={<Events />}></Route>
+        <Route path="/department/:deptId/results" element={<Result />}></Route>
+        <Route path="/department/:deptId/placement"element={<Placement />}></Route>
+        <Route path="/department/:deptId/academic-book"element={<AcademicBooks />}></Route>
+        <Route path="/department/:deptId/e-resources"element={<EResources />}></Route>
 
       </Routes>
       <Footer />

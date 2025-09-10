@@ -5,37 +5,37 @@ const Section = () => {
   const images = [
     {
       id: 1,
-      src: "https://svitnashik.in/Images/Events/Department/Library/Book_Bank_Schme.jpg",
+      src: "https://svitnashik.in/Images/Events/department/Library/Book_Bank_Schme.jpg",
       alt: "Book Bank Scheme",
       caption: "Book Bank Scheme",
     },
     {
       id: 2,
-      src: "https://svitnashik.in/Images/Events/Department/Library/Digital_Library_Section.jpg",
+      src: "https://svitnashik.in/Images/Events/department/Library/Digital_Library_Section.jpg",
       alt: "Digital Library Section",
       caption: "Digital Library Section",
     },
     {
       id: 3,
-      src: "https://svitnashik.in/Images/Events/Department/Library/Individual_Study_Room.jpg",
+      src: "https://svitnashik.in/Images/Events/department/Library/Individual_Study_Room.jpg",
       alt: "Individual Study Room",
       caption: "Individual Study Room",
     },
     {
       id: 4,
-      src: "https://svitnashik.in/Images/Events/Department/Library/Issuing_Section.jpg",
+      src: "https://svitnashik.in/Images/Events/department/Library/Issuing_Section.jpg",
       alt: "Issuing Section",
       caption: "Issuing Section",
     },
     {
       id: 5,
-      src: "https://svitnashik.in/Images/Events/Department/Library/Reading_Room.jpg",
+      src: "https://svitnashik.in/Images/Events/department/Library/Reading_Room.jpg",
       alt: "Reading Room",
       caption: "Reading Room",
     },
     {
       id: 6,
-      src: "https://svitnashik.in/Images/Events/Department/Library/Stacking_Section.jpg",
+      src: "https://svitnashik.in/Images/Events/department/Library/Stacking_Section.jpg",
       alt: "Stacking Section",
       caption: "Stacking Section",
     },

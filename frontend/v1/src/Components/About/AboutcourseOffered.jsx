@@ -10,7 +10,7 @@ export default function CoursesTable() {
   ];
 
   return (
-    <div className="bg-white rounded-2xl shadow-2xl overflow-hidden w-full max-w-236 max-h-126 mt-13">
+    <div className="bg-white rounded-2xl shadow-2xl overflow-hidden md:w-full ml-4 w-[400px] md:max-w-236 max-h-126 mt-1">
       <h2 className="text-2xl font-extrabold text-center py-3 bg-gradient-to-r from-indigo-600 to-purple-600 text-white tracking-wide">
         Courses Offered
       </h2>

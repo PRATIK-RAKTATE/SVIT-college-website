@@ -16,11 +16,22 @@ export default function EResources() {
   const { deptId } = useParams();
 
   const deptMap = {
-    computerEngineering: { data: csEResources, name: "Computer Engineering" },
-    informationTechnology: { data: itEResources, name: "Information Technology" },
-    chemicalEngineering: { data: chemicalEResources, name: "Chemical Engineering" },
-    electronicsAndComputerEngineering: { data: eceEResources, name: "Electronics & Computer Engineering" },
-    firstYear: { data: feEResources, name: "First Year" },
+
+    "computer-engineering": { data: csEResources, name: "Computer Engineering" },
+    "information-technology": {
+      data: itEResources,
+      name: "Information Technology",
+    },
+    "chemical-engineering": {
+      data: chemicalEResources,
+      name: "Chemical Engineering",
+    },
+    "electronics-and-computer-engineering": {
+      data: eceEResources,
+      name: "Electronics & Computer Engineering",
+    },
+    "first-year": { data: feEResources, name: "First Year" },
+
     mba: { data: mbaEResources, name: "M.B.A" },
   };
 

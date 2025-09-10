@@ -13,7 +13,7 @@ The IT Department is committed to nurturing competent and innovative professiona
 
 Our dedicated faculty, modern infrastructure, and well-equipped laboratories ensure holistic growth and learning. We prepare students not only for successful careers in IT but also for lifelong learning and leadership roles. I wish our students a bright and successful future, filled with opportunities to make meaningful contributions to society and industry.`,
 
-  img: "https://svitnashik.in/Images/Profile%20Images/Department/IT/HOD_IT.jpg",
+  img: "https://svitnashik.in/Images/Profile%20Images/department/IT/HOD_IT.jpg",
   hodname: "Dr. Pratibha V. Kashid",
   hodqualification:
     "PhD (Computer Science), M.E. Software System, B.E. Computer Engineering",

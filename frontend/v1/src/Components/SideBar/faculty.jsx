@@ -14,36 +14,23 @@ import { firstYearFaculty } from "../Sidebar-Constants/feDept.js";
 import { mbaFaculty } from "../Sidebar-Constants/mbaDept.js";
 
 const deptMap = {
-  computerEngineering: {
-    data: csFaculty,
-    name: "Computer Engineering",
-    color: "from-blue-900 to-blue-200",
-  },
-  informationTechnology: {
-    data: itFaculty,
-    name: "Information Technology",
-    color: "from-purple-900 to-purple-200",
-  },
-  chemicalEngineering: {
-    data: chemFaculty,
-    name: "Chemical Engineering",
-    color: "from-green-900 to-green-200",
-  },
-  electronicsAndComputerEngineering: {
+
+  "computer-engineering": { data: csFaculty, name: "Computer Engineering" },
+  "information-technology": { data: itFaculty, name: "Information Technology" },
+  "chemical-engineering": { data: chemFaculty, name: "Chemical Engineering" },
+  "electronics-and-computer-engineering": {
     data: eceFaculty,
     name: "Electronics & Computer Engineering",
     color: "from-red-900 to-red-200",
-  },
-  firstYear: {
-    data: firstYearFaculty,
-    name: "First Year",
-    color: "from-yellow-900 to-yellow-200",
   },
   mba: {
     data: mbaFaculty,
     name: "M.B.A",
     color: "from-orange-900 to-orange-200",
   },
+
+  "first-year": { data: firstYearFaculty, name: "First Year" },
+  mba: { data: mbaFaculty, name: "M.B.A" },
 };
 
 export default function Faculty() {

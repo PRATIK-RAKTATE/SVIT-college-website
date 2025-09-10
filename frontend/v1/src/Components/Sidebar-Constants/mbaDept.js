@@ -161,9 +161,9 @@ export const mbaEvents = [
     title: "Leadership Workshop",
     date: "2025-07-28",
     images: [
-      "https://svitnashik.in/Images/Events/Department/MBA/Leadership%20Workshop/1.jpg",
-      "https://svitnashik.in/Images/Events/Department/MBA/Leadership%20Workshop/2.jpg",
-      "https://svitnashik.in/Images/Events/Department/MBA/Leadership%20Workshop/3.jpg",
+      "https://svitnashik.in/Images/Events/department/MBA/Leadership%20Workshop/1.jpg",
+      "https://svitnashik.in/Images/Events/department/MBA/Leadership%20Workshop/2.jpg",
+      "https://svitnashik.in/Images/Events/department/MBA/Leadership%20Workshop/3.jpg",
     ],
   },
   {

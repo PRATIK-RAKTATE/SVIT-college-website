@@ -9,7 +9,7 @@ Dean Academic is the Head of First Year Engineering. He monitors the attendance 
 
 We also believe that overall personality development of students can be achieved by giving them opportunities in all possible fields, hence we have started separate Students Association of First Year engineering students (SAFE). Under this association, we conduct expert lectures, seminars, workshops and various competitions.`,
 
-  img: "https://svitnashik.in/Images/Profile%20Images/Department/FE/K_P_TAMBE.jpg",
+  img: "https://svitnashik.in/Images/Profile%20Images/department/FE/K_P_TAMBE.jpg",
   hodname: "Mr.Kailas P. Tambe , FE Head & Assistant Professor",
   hodqualification: "M.Sc (Chemistry)",
   Department: "First Year Engineering Department",

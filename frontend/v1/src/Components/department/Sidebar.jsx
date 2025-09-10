@@ -52,20 +52,17 @@ export default function HomeSideBar({ deptId }) {
             whileTap={{ scale: 0.97 }}
             className="relative z-10"
           >
-            <NavLink
-              to={`/Department/${deptId}/${item.path}`}
-              className={({ isActive }) =>
-                `flex items-center h-10 pl-4 rounded-lg text-sm font-medium transition-colors
-                ${
-                  isActive
-                    ? "text-indigo-700 bg-indigo-50"
-                    : "text-gray-700 hover:bg-gray-100"
-                }`
-              }
-            >
-              {item.name}
-            </NavLink>
-          </motion.li>
+
+            {item.external ? (
+              <a href={item.url} target="_blank" rel="noopener noreferrer">
+                {item.name}
+              </a>
+            ) : (
+              <NavLink to={`/department/${deptId}/${item.path}`}>
+                {item.name}
+              </NavLink>
+            )}
+          </li>
         ))}
       </motion.ul>
     </aside>
