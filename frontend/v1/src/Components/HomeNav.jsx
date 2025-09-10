@@ -142,7 +142,7 @@ export default function HomeNav() {
   const isExternal = (url) => url.startsWith("http");
 
   return (
-    <nav className="bg-white px-4 py-3 shadow-md relative z-50">
+    <nav className="bg-white p-5 shadow-md relative z-50">
       {/* Desktop Menu */}
       <div className="hidden md:flex md:justify-center md:gap-6 font-medium">
         <NavLink

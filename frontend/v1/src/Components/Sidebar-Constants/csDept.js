@@ -4,7 +4,9 @@ export const csFaculty = [
     name: "Mr. Sharad M. Rokade.",
     designation: "HOD & Associate Professor",
     qualification: "PhD (Pursuing), ME(Computer), B.E (Computer Engg.)",
-    experience: "29 Years",
+    experience: "29 Years",    
+    image: "/path-to-image/john-doe.jpg"
+
   },
   {
     sr: 2,
@@ -12,6 +14,7 @@ export const csFaculty = [
     designation: "Assistant Professor",
     qualification: "ME(Computer Engineering), BE(Computer Engineering)",
     experience: "26 Years",
+    image: "/path-to-image/john-doe.jpg"
   },
   {
     sr: 3,
@@ -19,6 +22,7 @@ export const csFaculty = [
     designation: "Assistant Professor",
     qualification: "PhD (E&C), M.E.(E&TC), B.E.(E&TC)",
     experience: "13.5 Years",
+    image: "/path-to-image/john-doe.jpg"
   },
   {
     sr: 4,
@@ -26,6 +30,7 @@ export const csFaculty = [
     designation: "Assistant Professor",
     qualification: "M. Tech. (CSE), BE(Computer Engineering)",
     experience: "12.3 Years",
+    image: "/path-to-image/john-doe.jpg"
   },
   {
     sr: 5,
@@ -34,6 +39,7 @@ export const csFaculty = [
     qualification:
       "PhD (Pursuing), M.E. (Computer Engineering), BE(Computer Engineering)",
     experience: "10.5 Years",
+    image: "/path-to-image/john-doe.jpg"
   },
   {
     sr: 6,
@@ -42,6 +48,7 @@ export const csFaculty = [
     qualification:
       "M.E.(Computer Science & Engineering), B.E.(Information Technology), Diploma (Computer Technology)",
     experience: "4.6 Years",
+    image: "/path-to-image/john-doe.jpg"
   },
   {
     sr: 7,
@@ -49,13 +56,14 @@ export const csFaculty = [
     designation: "Assistant Professor",
     qualification: "M.E.(Computer Engineering), B.E.(Computer Engineering)",
     experience: "3.5 Years",
-  },
+image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvi7HpQ-_PMSMOFrj1hwjp6LDcI-jm3Ro0Xw&s"  },
   {
     sr: 8,
     name: "Mr. Asif Sayyad",
     designation: "Assistant Professor",
     qualification: "M.E. (Computer Engineering), BE(Computer Engineering)",
     experience: "4 Years",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvi7HpQ-_PMSMOFrj1hwjp6LDcI-jm3Ro0Xw&s"
   },
   {
     sr: 9,
@@ -64,6 +72,7 @@ export const csFaculty = [
     qualification:
       "PhD (Pursuing), M.E. (Computer Engineering), BE(Computer Engineering)",
     experience: "4 Years",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLE9719hikR1sZEbLNXtKA6H7dxduhCHRQTQ&s"
   },
   {
     sr: 10,
@@ -71,14 +80,14 @@ export const csFaculty = [
     designation: "Technical Assistant",
     qualification: "Diploma in Computer Technology",
     experience: "15.5 Years",
-  },
+image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvi7HpQ-_PMSMOFrj1hwjp6LDcI-jm3Ro0Xw&s"  },
   {
     sr: 11,
     name: "Ms. Sangita Anil Wadekar",
     designation: "Lab Technician",
     qualification: "Diploma",
     experience: "16.6 Years",
-  },
+image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvi7HpQ-_PMSMOFrj1hwjp6LDcI-jm3Ro0Xw&s"  },
 ];
 
 export const csCourse = {
