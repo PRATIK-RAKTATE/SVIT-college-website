@@ -16,6 +16,7 @@ export default function Header() {
               alt="svit Logo"
               width={128}
               height={64}
+              loading="lazy"
               className="h-9 md:h-16 w-auto transition-transform duration-300 group-hover:scale-105"
             />
           </a>
@@ -37,6 +38,7 @@ export default function Header() {
               alt="Saheb Logo"
               width={96}
               height={64}
+              loading="lazy"
               className="h-9 md:h-16 w-auto transition-transform duration-300 group-hover:scale-105"
             />
           </a>

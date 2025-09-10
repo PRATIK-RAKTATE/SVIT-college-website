@@ -1,4 +1,4 @@
-import React from "react";
+import principle from '../../../src/assets/svit-principle.webp';
 
 export default function PreDesk() {
   return (
@@ -7,9 +7,10 @@ export default function PreDesk() {
       <figure className="w-full max-w-2xl h">
         <div className="overflow-hidden rounded-xl shadow">
           <img
-            src="https://svitnashik.in/Images/Profile%20Images/Default/Dr_GBShinde.jpg"
+            src={principle}
             alt="Head of Department"
             className="w-full h-auto"
+            loading="lazy"
           />
         </div>
 
