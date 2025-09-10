@@ -248,7 +248,7 @@ export default function HomeNav() {
           Contact us
         </NavLink>
         <NavLink
-          to="/sm"
+          to="/sitemap"
           className={({ isActive }) =>
             `${isActive ? "text-[#4F39F6]" : "text-black"}`
           }
@@ -388,7 +388,7 @@ export default function HomeNav() {
           Contact us
         </NavLink>
         <NavLink
-          to="/sm"
+          to="/sitemap"
           className={({ isActive }) =>
             `${isActive ? "text-[#4F39F6]" : "text-black"}`
           }
