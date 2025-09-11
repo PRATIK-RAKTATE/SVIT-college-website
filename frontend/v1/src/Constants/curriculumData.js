@@ -12,10 +12,6 @@ export const curriculumData = [
         downloads: [
           { name: "List of programmes", link: "/docs/7.1.1_programmes.pdf" },
           { name: "Event reports", link: "/docs/7.1.1_reports.pdf" },
-          { name: "Event reports", link: "/docs/7.1.1_reports.pdf" },
-          { name: "Event reports", link: "/docs/7.1.1_reports.pdf" },
-          { name: "Event reports", link: "/docs/7.1.1_reports.pdf" },
-          { name: "Event reports", link: "/docs/7.1.1_reports.pdf" },
         ],
       },
       {

@@ -1,7 +1,5 @@
 // Header.jsx
 import HomeNav from "./HomeNav";
-import svitLogo from '../../src/assets/svitlogo.webp';
-import saheb from '../../src/assets/saheb.webp';
 
 export default function Header() {
   return (
@@ -13,7 +11,7 @@ export default function Header() {
           <a href="/" aria-label="Home" className="group">
             <div className="w-32 aspect-[2/1] relative">
               <img
-                src={svitLogo}
+                src="https://res.cloudinary.com/difqniecb/image/upload/v1757604275/svitlogo_vjjedj.webp"
                 alt="SVIT Logo"
                 width="128"    
                 height="64"     
@@ -38,7 +36,7 @@ export default function Header() {
           {/* Right logo – same lift */}
           <a href="/" aria-label="Home" className="group">
             <img
-              src={saheb}
+              src="https://res.cloudinary.com/difqniecb/image/upload/v1757604275/saheb_v1pbfi.webp"
               alt="Saheb Logo"
               width={96}
               height={64}
