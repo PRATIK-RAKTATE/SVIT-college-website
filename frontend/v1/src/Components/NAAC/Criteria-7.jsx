@@ -1,5 +1,5 @@
 import React from "react";
-import { criteria_7 } from "../../Constants/NAAC/criteria_7";
+import { criteria_7 } from "../../Constants/NAAC/criteria-7";
 
 /* ------------- helpers ------------- */
 const Badge = ({ val }) => {
