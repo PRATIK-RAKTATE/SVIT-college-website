@@ -73,7 +73,7 @@ export default function HomeNav() {
         { text: "IIQA", url: "/naac/iiqa" },
         { text: "NAAC SSR", url: "/naac/ssr" },
         { text: "Extended Profile", url: "/naac/profile" },
-        { text: "Criteria 1", url: "/naac" },
+        { text: "Criteria 1", url: "/naac/criteria-1" },
         { text: "Criteria 2", url: "/naac/criteria-2" },
         { text: "Criteria 3", url: "/naac/criteria-3" },
         { text: "Criteria 4", url: "/naac/criteria-4" },

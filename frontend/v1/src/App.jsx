@@ -34,8 +34,10 @@ import MainAdmission from "./Components/Admission/MainAdmission.jsx";
 import home from './Constants/home.js'
 import LibraryFaculty from './Components/Library/Faculty.jsx'
 import MainGalary from "./Components/galary/MainGalary.jsx";
-import MainNAAC from "./Components/NAAC/MainNAAC.jsx";
-
+import Criteria_2_Table from "./Components/NAAC/criteria-2.jsx";
+import Criteria_3_Table from "./Components/NAAC/criteria-3.jsx";
+import Criteria_4_Table from "./Components/NAAC/criteria-4.jsx";
+import Criteria_5_Table from "./Components/NAAC/criteria-5.jsx";
 
 
 
@@ -72,7 +74,12 @@ function App() {
         <Route path="/Contact-us" element={<MainContactUs/>} />
         <Route path="/admission/Admissiondetails" element={<MainAdmission/>} />
         <Route path="/gallery" element={<MainGalary/>} />
-        <Route path="/naac" element={<MainNAAC/>} />
+
+
+        <Route path="/naac/criteria-2" element={<Criteria_2_Table/>} />
+        <Route path="/naac/criteria-3" element={<Criteria_3_Table/>} />
+        <Route path="/naac/criteria-4" element={<Criteria_4_Table/>} />
+        <Route path="/naac/criteria-5" element={<Criteria_5_Table/>} />
 
         {Object.entries(DEPARTMENTS).map(([key, data]) => (
           <Route
