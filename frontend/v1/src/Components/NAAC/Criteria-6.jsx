@@ -1,5 +1,5 @@
 import React from "react";
-import { criteria_1 } from "../../Constants/NAAC/criteria_1";
+import { criteria_6 } from "../../Constants/NAAC/criteria-6";
 
 /* ------------- helpers ------------- */
 const Badge = ({ val }) => {
@@ -91,10 +91,10 @@ const MobileCards = ({ rows }) => (
 );
 
 /* ------------- main component ------------- */
-const Criteria_1_Table = () => {
+const Criteria_6_Table = () => {
   return (
     <div className="p-4 md:p-6 space-y-8 bg-gray-50 min-h-screen">
-      {criteria_1.map((section) => {
+      {criteria_6.map((section) => {
         const rows = section.rows;
         return (
           <div key={section.id} className="bg-white rounded-lg shadow-md p-4">
@@ -111,4 +111,4 @@ const Criteria_1_Table = () => {
   );
 };
 
-export default Criteria_1_Table;
+export default Criteria_6_Table;
