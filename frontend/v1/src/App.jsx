@@ -43,6 +43,7 @@ import Criteria_5_Table from "./Components/NAAC/criteria-5.jsx";
 import Criteria_7_Table from "./Components/NAAC/Criteria-7.jsx";
 import Criteria_1_Table from "./Components/NAAC/Criteria-1.jsx";
 import Criteria_6_Table from "./Components/NAAC/Criteria-6.jsx";
+import Extended_Profile_Table from "./Components/NAAC/Extended-Profile.jsx";
 
 
 
@@ -91,6 +92,7 @@ function App() {
         <Route path="/naac/criteria-7" element={<Criteria_7_Table/>} />
         <Route path="/naac/Criteria-1" element={<Criteria_1_Table/>} />
         <Route path="/naac/Criteria-6" element={<Criteria_6_Table/>} />
+        <Route path="/naac/profile" element={<Extended_Profile_Table/>}/>
 
         {Object.entries(DEPARTMENTS).map(([key, data]) => (
           <Route
