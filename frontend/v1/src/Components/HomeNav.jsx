@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
-import { NavLink, Link, useLocation } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 
 export default function HomeNav() {
   const [isOpen, setIsOpen] = useState(false);
@@ -44,17 +44,6 @@ export default function HomeNav() {
       ],
     },
     {
-      key: "alumni",
-      label: "Alumni",
-      items: [
-        { text: "Alumni Information", url: "/alumni/info" },
-        { text: "Alumni Registration", url: "/alumni/register" },
-        { text: "Alumni Search", url: "/alumni/search" },
-        { text: "View All Alumni", url: "/alumni/all" },
-        { text: "Alumni Chapters and Alumni Meet Info.", url: "/alumni/meet" },
-      ],
-    },
-    {
       key: "tpc",
       label: "TPC Section",
       items: [
@@ -62,6 +51,15 @@ export default function HomeNav() {
         { text: "Registration Form", url: "/tpc/register" },
         { text: "Placement Process", url: "/tpc/process" },
         { text: "List Of Companies", url: "/tpc/companies" },
+      ],
+    },
+    {
+      key: "admission",
+      label: "Admission",
+      items: [
+        { text: "Admission Details", url: "/admission/Admissiondetails" },
+        { text: "Admission 2025-26 (Institute Level Non CAP Admission)", url: "https://svitnashik.in/MainNav/Admission%202025-26%20(Institute%20Level%20Non%20CAP%20Admission).pdf" },
+        { text: "Admission Enquiry Form", url: "https://docs.google.com/forms/d/e/1FAIpQLScy0O757Bw1lNMDHdvIUB0k-YfC0MwKDVo-mIyYMq8bYIozcg/viewform" },
       ],
     },
     {
@@ -73,7 +71,6 @@ export default function HomeNav() {
         { text: "IIQA", url: "/naac/iiqa" },
         { text: "NAAC SSR", url: "/naac/ssr" },
         { text: "Extended Profile", url: "/naac/profile" },
-
         { text: "Criteria 1", url: "/naac/criteria-1" },
         { text: "Criteria 2", url: "/naac/criteria-2" },
         { text: "Criteria 3", url: "/naac/criteria-3" },
@@ -84,29 +81,7 @@ export default function HomeNav() {
       ],
     },
     {
-      key: "links",
-      label: "Important Links",
-      items: [
-        { text: "AICTE", url: "https://www.aicte.gov.in/" },
-        { text: "DTE", url: "https://dte.maharashtra.gov.in/" },
-        { text: "NBA", url: "https://www.nbaind.org/" },
-        { text: "UGC", url: "https://www.ugc.gov.in/" },
-        { text: "Shikshan Shulk Samiti", url: "https://sssamiti.org/" },
-        { text: "Pravesh Niyantran Samiti", url: "https://maha-ara.org/ara-authorities/" },
-        { text: "Unipune", url: "https://www.unipune.ac.in/" },
-      ],
-    },
-    {
-      key: "add",
-      label: "Admission",
-      items: [
-        { text: "Admission Details", url: "/admission/Admissiondetails" },
-        { text: "Admission 2025-26 (Institute Level Non CAP Admission)", url: "https://svitnashik.in/MainNav/Admission%202025-26%20(Institute%20Level%20Non%20CAP%20Admission).pdf" },
-        { text: "Admission Enquiry Form", url: "https://docs.google.com/forms/d/e/1FAIpQLScy0O757Bw1lNMDHdvIUB0k-YfC0MwKDVo-mIyYMq8bYIozcg/viewform" },
-      ],
-    },
-    {
-      key: "IQAC",
+      key: "iqac",
       label: "IQAC",
       items: [
         { text: "IQAC Cell", url: "/admission/Admissiondetails" },
@@ -138,6 +113,19 @@ export default function HomeNav() {
         { text: "AQAR Report: 2023-24", url: "https://svitnashik.in/IQAC/SVIT_AQAR_Report_2023-24.pdf" },
       ],
     },
+    {
+      key: "links",
+      label: "Important Links",
+      items: [
+        { text: "AICTE", url: "https://www.aicte.gov.in/" },
+        { text: "DTE", url: "https://dte.maharashtra.gov.in/" },
+        { text: "NBA", url: "https://www.nbaind.org/" },
+        { text: "UGC", url: "https://www.ugc.gov.in/" },
+        { text: "Shikshan Shulk Samiti", url: "https://sssamiti.org/" },
+        { text: "Pravesh Niyantran Samiti", url: "https://maha-ara.org/ara-authorities/" },
+        { text: "Unipune", url: "https://www.unipune.ac.in/" },
+      ],
+    },
   ];
 
   const isExternal = (url) => url.startsWith("http");
@@ -155,42 +143,77 @@ export default function HomeNav() {
           Home
         </NavLink>
 
-        {menuItems.map((menu) => (
-          <ul key={menu.key} className="relative group cursor-pointer">
-            <div className="flex items-center hover:text-blue-400">
-              {menu.label} <ChevronDown size={16} className="ml-1" />
-            </div>
-
-            <ul className="absolute left-0 pt-2 bg-white shadow-md rounded-md opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto transition-opacity duration-200 z-50 max-h-96 overflow-y-auto">
-              {menu.items.map((item, id) =>
-                isExternal(item.url) ? (
-                  <a
-                    key={id}
-                    href={item.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <li className="px-4 py-2 hover:bg-gray-100 w-70">
-                      {item.text}
-                    </li>
-                  </a>
-                ) : (
-                  <NavLink
-                    key={id}
-                    to={item.url}
-                    className={({ isActive }) =>
-                      `${isActive ? "text-[#4F39F6]" : "text-black"}`
-                    }
-                  >
-                    <li className="px-4 py-2 hover:bg-gray-100 w-70">
-                      {item.text}
-                    </li>
-                  </NavLink>
-                )
-              )}
-            </ul>
+        <ul className="relative group cursor-pointer">
+          <div className="flex items-center hover:text-blue-400">
+            Departments <ChevronDown size={16} className="ml-1" />
+          </div>
+          <ul className="absolute left-0 pt-2 bg-white shadow-md rounded-md opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto transition-opacity duration-200 z-50 max-h-96 overflow-y-auto">
+            {menuItems.find(m => m.key === "dept").items.map((item, idx) =>
+              <NavLink
+                key={idx}
+                to={item.url}
+                className={({ isActive }) =>
+                  `${isActive ? "text-[#4F39F6]" : "text-black"}`
+                }
+              >
+                <li className="px-4 py-2 hover:bg-gray-100 w-70">{item.text}</li>
+              </NavLink>
+            )}
           </ul>
-        ))}
+        </ul>
+
+        <NavLink
+          to="/alumni"
+          className={({ isActive }) =>
+            `${isActive ? "text-[#4F39F6]" : "text-black"}`
+          }
+        >
+          Alumni
+        </NavLink>
+
+        <ul className="relative group cursor-pointer">
+          <div className="flex items-center hover:text-blue-400">
+            TPC Section <ChevronDown size={16} className="ml-1" />
+          </div>
+          <ul className="absolute left-0 pt-2 bg-white shadow-md rounded-md opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto transition-opacity duration-200 z-50 max-h-96 overflow-y-auto">
+            {menuItems.find(m => m.key === "tpc").items.map((item, idx) =>
+              <NavLink
+                key={idx}
+                to={item.url}
+                className={({ isActive }) =>
+                  `${isActive ? "text-[#4F39F6]" : "text-black"}`
+                }
+              >
+                <li className="px-4 py-2 hover:bg-gray-100 w-70">{item.text}</li>
+              </NavLink>
+            )}
+          </ul>
+        </ul>
+
+        <ul className="relative group cursor-pointer">
+          <div className="flex items-center hover:text-blue-400">
+            Admission <ChevronDown size={16} className="ml-1" />
+          </div>
+          <ul className="absolute left-0 pt-2 bg-white shadow-md rounded-md opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto transition-opacity duration-200 z-50 max-h-96 overflow-y-auto">
+            {menuItems.find(m => m.key === "admission").items.map((item, idx) =>
+              isExternal(item.url) ? (
+                <a key={idx} href={item.url} target="_blank" rel="noopener noreferrer">
+                  <li className="px-4 py-2 hover:bg-gray-100 w-70">{item.text}</li>
+                </a>
+              ) : (
+                <NavLink
+                  key={idx}
+                  to={item.url}
+                  className={({ isActive }) =>
+                    `${isActive ? "text-[#4F39F6]" : "text-black"}`
+                  }
+                >
+                  <li className="px-4 py-2 hover:bg-gray-100 w-70">{item.text}</li>
+                </NavLink>
+              )
+            )}
+          </ul>
+        </ul>
 
         <NavLink
           to="/library"
@@ -200,6 +223,7 @@ export default function HomeNav() {
         >
           Library
         </NavLink>
+
         <NavLink
           to="/gallery"
           className={({ isActive }) =>
@@ -208,14 +232,39 @@ export default function HomeNav() {
         >
           Gallery
         </NavLink>
-        <NavLink
-          to="/examination"
-          className={({ isActive }) =>
-            `${isActive ? "text-[#4F39F6]" : "text-black"}`
-          }
-        >
-          Examination
-        </NavLink>
+
+        <ul className="relative group cursor-pointer">
+          <div className="flex items-center hover:text-blue-400">
+            NAAC <ChevronDown size={16} className="ml-1" />
+          </div>
+          <ul className="absolute left-0 pt-2 bg-white shadow-md rounded-md opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto transition-opacity duration-200 z-50 max-h-96 overflow-y-auto">
+            {menuItems.find(m => m.key === "naac").items.map((item, idx) =>
+              <NavLink
+                key={idx}
+                to={item.url}
+                className={({ isActive }) =>
+                  `${isActive ? "text-[#4F39F6]" : "text-black"}`
+                }
+              >
+                <li className="px-4 py-2 hover:bg-gray-100 w-70">{item.text}</li>
+              </NavLink>
+            )}
+          </ul>
+        </ul>
+
+        <ul className="relative group cursor-pointer">
+          <div className="flex items-center hover:text-blue-400">
+            IQAC <ChevronDown size={16} className="ml-1" />
+          </div>
+          <ul className="absolute left-0 pt-2 bg-white shadow-md rounded-md opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto transition-opacity duration-200 z-50 max-h-96 overflow-y-auto">
+            {menuItems.find(m => m.key === "iqac").items.map((item, idx) =>
+              <a key={idx} href={item.url} target="_blank" rel="noopener noreferrer">
+                <li className="px-4 py-2 hover:bg-gray-100 w-70">{item.text}</li>
+              </a>
+            )}
+          </ul>
+        </ul>
+
         <NavLink
           to="/rti"
           className={({ isActive }) =>
@@ -224,22 +273,29 @@ export default function HomeNav() {
         >
           RTI
         </NavLink>
+
         <NavLink
-          to="/erp"
+          to="/examination"
           className={({ isActive }) =>
             `${isActive ? "text-[#4F39F6]" : "text-black"}`
           }
         >
-          ERP
+          Examination
         </NavLink>
-        <NavLink
-          to="/about"
-          className={({ isActive }) =>
-            `${isActive ? "text-[#4F39F6]" : "text-black"}`
-          }
-        >
-          About us
-        </NavLink>
+
+        <ul className="relative group cursor-pointer">
+          <div className="flex items-center hover:text-blue-400">
+            Important Links <ChevronDown size={16} className="ml-1" />
+          </div>
+          <ul className="absolute left-0 pt-2 bg-white shadow-md rounded-md opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto transition-opacity duration-200 z-50 max-h-96 overflow-y-auto">
+            {menuItems.find(m => m.key === "links").items.map((item, idx) =>
+              <a key={idx} href={item.url} target="_blank" rel="noopener noreferrer">
+                <li className="px-4 py-2 hover:bg-gray-100 w-70">{item.text}</li>
+              </a>
+            )}
+          </ul>
+        </ul>
+
         <NavLink
           to="/contact-us"
           className={({ isActive }) =>
@@ -248,6 +304,16 @@ export default function HomeNav() {
         >
           Contact us
         </NavLink>
+
+        <NavLink
+          to="/about"
+          className={({ isActive }) =>
+            `${isActive ? "text-[#4F39F6]" : "text-black"}`
+          }
+        >
+          About us
+        </NavLink>
+
         <NavLink
           to="/sitemap"
           className={({ isActive }) =>
@@ -256,7 +322,6 @@ export default function HomeNav() {
         >
           Site map
         </NavLink>
-
       </div>
 
       {/* Mobile Menu Button */}
@@ -284,53 +349,124 @@ export default function HomeNav() {
           Home
         </NavLink>
 
-        {menuItems.map((menu) => (
-          <div key={menu.key} className="flex flex-col gap-1">
-            <button
-              onClick={() =>
-                setMobileOpenMenu(mobileOpenMenu === menu.key ? null : menu.key)
-              }
-              className="flex items-center justify-between w-full text-xs font-semibold"
-            >
-              {menu.label}
-              <ChevronDown
-                size={20}
-                className={`transition-transform ${
-                  mobileOpenMenu === menu.key ? "rotate-180" : ""
-                }`}
-              />
-            </button>
+        {/* Departments */}
+        <div className="flex flex-col gap-1">
+          <button
+            onClick={() =>
+              setMobileOpenMenu(mobileOpenMenu === "dept" ? null : "dept")
+            }
+            className="flex items-center justify-between w-full text-xs font-semibold"
+          >
+            Departments
+            <ChevronDown
+              size={20}
+              className={`transition-transform ${
+                mobileOpenMenu === "dept" ? "rotate-180" : ""
+              }`}
+            />
+          </button>
+          {mobileOpenMenu === "dept" && (
+            <ul className="pl-4 mt-2 space-y-2 text-sm">
+              {menuItems.find(m => m.key === "dept").items.map((item, idx) =>
+                <li key={idx}>
+                  <NavLink
+                    to={item.url}
+                    className={({ isActive }) =>
+                      `${isActive ? "text-[#4F39F6]" : "text-black"}`
+                    }
+                  >
+                    {item.text}
+                  </NavLink>
+                </li>
+              )}
+            </ul>
+          )}
+        </div>
 
-            {mobileOpenMenu === menu.key && (
-              <ul className="pl-4 mt-2 space-y-2 text-sm">
-                {menu.items.map((item, idx) =>
-                  isExternal(item.url) ? (
-                    <li key={idx}>
-                      <a
-                        href={item.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        {item.text}
-                      </a>
-                    </li>
-                  ) : (
-                    <li key={idx}>
-                      <NavLink
-                        className={({ isActive }) =>
-                          `${isActive ? "text-[#4F39F6]" : "text-black"}`
-                        }
-                        to={item.url}
-                      >
-                        {item.text}
-                      </NavLink>
-                    </li>
-                  )
-                )}
-              </ul>
-            )}
-          </div>
-        ))}
+        <NavLink
+          to="/alumni"
+          className={({ isActive }) =>
+            `${isActive ? "text-[#4F39F6]" : "text-black"}`
+          }
+        >
+          Alumni
+        </NavLink>
+
+        {/* TPC Section */}
+        <div className="flex flex-col gap-1">
+          <button
+            onClick={() =>
+              setMobileOpenMenu(mobileOpenMenu === "tpc" ? null : "tpc")
+            }
+            className="flex items-center justify-between w-full text-xs font-semibold"
+          >
+            TPC Section
+            <ChevronDown
+              size={20}
+              className={`transition-transform ${
+                mobileOpenMenu === "tpc" ? "rotate-180" : ""
+              }`}
+            />
+          </button>
+          {mobileOpenMenu === "tpc" && (
+            <ul className="pl-4 mt-2 space-y-2 text-sm">
+              {menuItems.find(m => m.key === "tpc").items.map((item, idx) =>
+                <li key={idx}>
+                  <NavLink
+                    to={item.url}
+                    className={({ isActive }) =>
+                      `${isActive ? "text-[#4F39F6]" : "text-black"}`
+                    }
+                  >
+                    {item.text}
+                  </NavLink>
+                </li>
+              )}
+            </ul>
+          )}
+        </div>
+
+        {/* Admission */}
+        <div className="flex flex-col gap-1">
+          <button
+            onClick={() =>
+              setMobileOpenMenu(mobileOpenMenu === "admission" ? null : "admission")
+            }
+            className="flex items-center justify-between w-full text-xs font-semibold"
+          >
+            Admission
+            <ChevronDown
+              size={20}
+              className={`transition-transform ${
+                mobileOpenMenu === "admission" ? "rotate-180" : ""
+              }`}
+            />
+          </button>
+          {mobileOpenMenu === "admission" && (
+            <ul className="pl-4 mt-2 space-y-2 text-sm">
+              {menuItems.find(m => m.key === "admission").items.map((item, idx) =>
+                isExternal(item.url) ? (
+                  <li key={idx}>
+                    <a href={item.url} target="_blank" rel="noopener noreferrer">
+                      {item.text}
+                    </a>
+                  </li>
+                ) : (
+                  <li key={idx}>
+                    <NavLink
+                      to={item.url}
+                      className={({ isActive }) =>
+                        `${isActive ? "text-[#4F39F6]" : "text-black"}`
+                      }
+                    >
+                      {item.text}
+                    </NavLink>
+                  </li>
+                )
+              )}
+            </ul>
+          )}
+        </div>
 
         <NavLink
           to="/library"
@@ -340,14 +476,7 @@ export default function HomeNav() {
         >
           Library
         </NavLink>
-        <NavLink
-          to="/examination"
-          className={({ isActive }) =>
-            `${isActive ? "text-[#4F39F6]" : "text-black"}`
-          }
-        >
-          Examination
-        </NavLink>
+
         <NavLink
           to="/gallery"
           className={({ isActive }) =>
@@ -356,6 +485,70 @@ export default function HomeNav() {
         >
           Gallery
         </NavLink>
+
+        {/* NAAC */}
+        <div className="flex flex-col gap-1">
+          <button
+            onClick={() =>
+              setMobileOpenMenu(mobileOpenMenu === "naac" ? null : "naac")
+            }
+            className="flex items-center justify-between w-full text-xs font-semibold"
+          >
+            NAAC
+            <ChevronDown
+              size={20}
+              className={`transition-transform ${
+                mobileOpenMenu === "naac" ? "rotate-180" : ""
+              }`}
+            />
+          </button>
+          {mobileOpenMenu === "naac" && (
+            <ul className="pl-4 mt-2 space-y-2 text-sm">
+              {menuItems.find(m => m.key === "naac").items.map((item, idx) =>
+                <li key={idx}>
+                  <NavLink
+                    to={item.url}
+                    className={({ isActive }) =>
+                      `${isActive ? "text-[#4F39F6]" : "text-black"}`
+                    }
+                  >
+                    {item.text}
+                  </NavLink>
+                </li>
+              )}
+            </ul>
+          )}
+        </div>
+
+        {/* IQAC */}
+        <div className="flex flex-col gap-1">
+          <button
+            onClick={() =>
+              setMobileOpenMenu(mobileOpenMenu === "iqac" ? null : "iqac")
+            }
+            className="flex items-center justify-between w-full text-xs font-semibold"
+          >
+            IQAC
+            <ChevronDown
+              size={20}
+              className={`transition-transform ${
+                mobileOpenMenu === "iqac" ? "rotate-180" : ""
+              }`}
+            />
+          </button>
+          {mobileOpenMenu === "iqac" && (
+            <ul className="pl-4 mt-2 space-y-2 text-sm">
+              {menuItems.find(m => m.key === "iqac").items.map((item, idx) =>
+                <li key={idx}>
+                  <a href={item.url} target="_blank" rel="noopener noreferrer">
+                    {item.text}
+                  </a>
+                </li>
+              )}
+            </ul>
+          )}
+        </div>
+
         <NavLink
           to="/rti"
           className={({ isActive }) =>
@@ -364,22 +557,45 @@ export default function HomeNav() {
         >
           RTI
         </NavLink>
+
         <NavLink
-          to="/erp"
+          to="/examination"
           className={({ isActive }) =>
             `${isActive ? "text-[#4F39F6]" : "text-black"}`
           }
         >
-          ERP
+          Examination
         </NavLink>
-        <NavLink
-          to="/about"
-          className={({ isActive }) =>
-            `${isActive ? "text-[#4F39F6]" : "text-black"}`
-          }
-        >
-          About us
-        </NavLink>
+
+        {/* Important Links */}
+        <div className="flex flex-col gap-1">
+          <button
+            onClick={() =>
+              setMobileOpenMenu(mobileOpenMenu === "links" ? null : "links")
+            }
+            className="flex items-center justify-between w-full text-xs font-semibold"
+          >
+            Important Links
+            <ChevronDown
+              size={20}
+              className={`transition-transform ${
+                mobileOpenMenu === "links" ? "rotate-180" : ""
+              }`}
+            />
+          </button>
+          {mobileOpenMenu === "links" && (
+            <ul className="pl-4 mt-2 space-y-2 text-sm">
+              {menuItems.find(m => m.key === "links").items.map((item, idx) =>
+                <li key={idx}>
+                  <a href={item.url} target="_blank" rel="noopener noreferrer">
+                    {item.text}
+                  </a>
+                </li>
+              )}
+            </ul>
+          )}
+        </div>
+
         <NavLink
           to="/contact-us"
           className={({ isActive }) =>
@@ -388,6 +604,16 @@ export default function HomeNav() {
         >
           Contact us
         </NavLink>
+
+        <NavLink
+          to="/about"
+          className={({ isActive }) =>
+            `${isActive ? "text-[#4F39F6]" : "text-black"}`
+          }
+        >
+          About us
+        </NavLink>
+
         <NavLink
           to="/sitemap"
           className={({ isActive }) =>

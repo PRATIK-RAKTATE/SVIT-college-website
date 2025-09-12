@@ -34,6 +34,7 @@ import MainAdmission from "./Components/Admission/MainAdmission.jsx";
 import home from './Constants/home.js'
 import LibraryFaculty from './Components/Library/Faculty.jsx'
 import MainGalary from "./Components/galary/MainGalary.jsx";
+import Alumni from "./Components/Alumni/alumni.jsx";
 
 import Criteria_2_Table from "./Components/NAAC/criteria-2.jsx";
 import Criteria_3_Table from "./Components/NAAC/criteria-3.jsx";
@@ -76,6 +77,9 @@ function App() {
         <Route path="/library/facilities" element={<LibraryFacilities />} />
         <Route path="/library/section" element={<LibrarySection />} />
         <Route path="/library/OPAC" />
+
+        <Route path="/alumni" element={<Alumni/>}/> 
+
         <Route path="/Contact-us" element={<MainContactUs/>} />
         <Route path="/admission/Admissiondetails" element={<MainAdmission/>} />
         <Route path="/gallery" element={<MainGalary/>} />
