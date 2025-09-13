@@ -160,7 +160,7 @@ export const csOutcomes = {
 
 export const csLabs = [
   {
-    name: "Practice Lab",
+    name: "Practical Lab",
     img: "/robots.jpg",
     description: "State-of-the-art robotics research...",
   },

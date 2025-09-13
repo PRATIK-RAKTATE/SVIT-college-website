@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 
 const links = [
@@ -21,53 +21,62 @@ const links = [
 
 export default function HomeSideBar() {
   const [open, setOpen] = useState(false);
+  const location = useLocation(); // get current route
 
   useEffect(() => {
     document.body.style.overflow = open ? "hidden" : "auto";
   }, [open]);
 
+  const linkClasses = (isActive = false) =>
+    `block border-l-4 border-[#4F39F6] p-2 pl-3 shadow rounded transition-all duration-200 ${
+      isActive ? "bg-black text-white" : "hover:bg-black hover:text-white"
+    }`;
+
   /* ---------- Desktop Sidebar ---------- */
   const Desktop = () => (
     <div className="hidden md:block mt-28 md:mt-14 mr-10 mb-10 md:ml-25 ml-10 w-fit">
       <ul className="h-auto w-72 flex flex-col gap-2 pl-5">
-        {links.map((l, i) => (
-          <li
-            key={i}
-            className="border-l-4 border-[#4F39F6] hover:bg-black hover:text-white p-2 pl-3 shadow rounded transition-all duration-200 text-sm"
-          >
-            {l.href ? (
-              <a href={l.href} target="_blank" rel="noopener noreferrer">
-                {l.label}
-              </a>
-            ) : (
-              <Link to={l.to}>{l.label}</Link>
-            )}
-          </li>
-        ))}
+        {links.map((l, i) =>
+          l.href ? (
+            <a
+              key={i}
+              href={l.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={linkClasses()}
+            >
+              {l.label}
+            </a>
+          ) : (
+            <Link
+              key={i}
+              to={l.to}
+              className={linkClasses(location.pathname === l.to)}
+            >
+              {l.label}
+            </Link>
+          )
+        )}
       </ul>
     </div>
   );
 
-  /* ---------- Mobile Sidebar with Animated About Button ---------- */
+  /* ---------- Mobile Sidebar ---------- */
   const Mobile = () => (
     <div className="md:hidden flex justify-center mt-6 relative">
-      {/* Animated About Button */}
+      {/* Toggle Button */}
       <motion.button
         onClick={() => setOpen(!open)}
         className="flex items-center gap-3 px-6 py-3 bg-gradient-to-r from-blue-500 to-blue-700 text-white font-medium rounded-xl shadow-lg relative overflow-hidden"
         whileHover={{ scale: 1.07, boxShadow: "0px 10px 20px rgba(0,0,0,0.3)" }}
         whileTap={{ scale: 0.95 }}
       >
-        {/* Pulsating Glow */}
         <motion.span
           className="absolute inset-0 bg-white opacity-10 rounded-xl"
           animate={{ opacity: [0.05, 0.2, 0.05] }}
           transition={{ duration: 2, repeat: Infinity }}
         />
-
         <span className="relative z-10">About</span>
-
-        {/* Rotating Hamburger / Close Icon */}
         <motion.svg
           className="w-6 h-6 text-white relative z-10"
           fill="none"
@@ -84,7 +93,7 @@ export default function HomeSideBar() {
         </motion.svg>
       </motion.button>
 
-      {/* Dropdown Menu */}
+      {/* Dropdown */}
       <AnimatePresence>
         {open && (
           <motion.div
@@ -104,27 +113,31 @@ export default function HomeSideBar() {
               }}
               className="bg-white rounded-xl shadow-2xl p-6 w-80 max-h-[80vh] overflow-y-auto"
             >
-              {links.map((l, i) => (
-                <motion.li
-                  key={i}
-                  variants={{
-                    hidden: { opacity: 0, y: -10 },
-                    visible: { opacity: 1, y: 0 },
-                  }}
-                  whileHover={{ scale: 1.05 }}
-                  className="mb-3 last:mb-0 border-l-4 border-[#4F39F6] hover:bg-black hover:text-white p-2 pl-3 rounded-r-lg shadow text-base transition-all duration-200"
-                >
-                  {l.href ? (
-                    <a href={l.href} target="_blank" rel="noopener noreferrer" onClick={() => setOpen(false)}>
+              {links.map((l, i) =>
+                l.href ? (
+                  <motion.div key={i} whileHover={{ scale: 1.05 }} className="mb-3 last:mb-0">
+                    <a
+                      href={l.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      onClick={() => setOpen(false)}
+                      className={linkClasses()}
+                    >
                       {l.label}
                     </a>
-                  ) : (
-                    <Link to={l.to} onClick={() => setOpen(false)}>
+                  </motion.div>
+                ) : (
+                  <motion.div key={i} whileHover={{ scale: 1.05 }} className="mb-3 last:mb-0">
+                    <Link
+                      to={l.to}
+                      onClick={() => setOpen(false)}
+                      className={linkClasses(location.pathname === l.to)}
+                    >
                       {l.label}
                     </Link>
-                  )}
-                </motion.li>
-              ))}
+                  </motion.div>
+                )
+              )}
             </motion.ul>
           </motion.div>
         )}
