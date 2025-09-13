@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { FaFacebookF } from "react-icons/fa";
 import {
   Youtube,
   Twitter,
@@ -43,21 +44,21 @@ export default function Footer() {
     {
       title: "Resources",
       links: [
-        { name: "News & Events", to: "/news" },
-        { name: "Academic Calendar", to: "/calendar" },
+        { name: "News & Events", to: "http://sppudocs.unipune.ac.in/sites/news_events/_layouts/mobile/view.aspx?List=8cb25e94%2Dd463%2D4e34%2Dbf31%2D6ee5ffd89473&View=20478e4a%2D644c%2D4095%2Dadb8%2D3bfa0428acb2" },
+        { name: "Academic Calendar", to: "https://www.unipune.ac.in/university_files/academic_calender.htm" },
         { name: "E-Brochure", to: "/e-brochure" },
         { name: "Placement Brochure", to: "/placement-brochure" },
-        { name: "Group Linkages", to: "/linkages" },
+        { name: "Group Linkages", to: "/about/Linkages" },
       ],
     },
     {
       title: "Departments",
       links: [
-        { name: "Computer Engineering", to: "/comp" },
-        { name: "Chemical Engineering", to: "/chem" },
-        { name: "E&TC Engineering", to: "/entc" },
-        { name: "IT Engineering", to: "/it" },
-        { name: "MBA", to: "/mba" },
+        { name: "Computer Engineering", to: "/department/computer-engineering" },
+        { name: "Chemical Engineering", to: "/department/chemical-engineering" },
+        { name: "ECE Engineering", to: "/department/electronics-and-computer-engineering" },
+        { name: "IT Engineering", to: "/department/information-technology" },
+        { name: "MBA", to: "/department/mba" },
       ],
     },
   ];
@@ -148,7 +149,7 @@ export default function Footer() {
               <motion.a
                 variants={iconVariants}
                 whileHover="hover"
-                href="https://twitter.com/"
+                href="https://x.com/SVIT_sinnar"
                 target="_blank"
                 rel="noreferrer"
                 aria-label="Twitter"
@@ -159,13 +160,24 @@ export default function Footer() {
               <motion.a
                 variants={iconVariants}
                 whileHover="hover"
-                href="https://www.instagram.com/"
+                href="https://www.instagram.com/svitsinnar"
                 target="_blank"
                 rel="noreferrer"
                 aria-label="Instagram"
                 className="text-2xl text-slate-300 hover:text-pink-500"
               >
                 <Instagram />
+              </motion.a>
+              <motion.a
+                variants={iconVariants}
+                whileHover="hover"
+                href="https://www.facebook.com/SVITSinnar"
+                target="_blank"
+                rel="noreferrer"
+                aria-label="Facebook"
+                className="text-2xl text-slate-300 hover:text-blue-500"
+              >
+                <FaFacebookF />
               </motion.a>
               <motion.a
                 variants={iconVariants}
