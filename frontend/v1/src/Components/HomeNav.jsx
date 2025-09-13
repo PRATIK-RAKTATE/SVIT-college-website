@@ -47,10 +47,10 @@ export default function HomeNav() {
       key: "tpc",
       label: "TPC Section",
       items: [
-        { text: "TPC Information", url: "/tpc/info" },
-        { text: "Registration Form", url: "/tpc/register" },
-        { text: "Placement Process", url: "/tpc/process" },
+        { text: "TPC Information", url: "/TPC/TPC-Brief-Information" },
+        { text: "Placement Process", url: "tpc/process" },
         { text: "List Of Companies", url: "/tpc/companies" },
+        { text: "Summary", url: "/tpc/Summary" },
       ],
     },
     {
