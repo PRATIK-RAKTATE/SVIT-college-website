@@ -33,11 +33,11 @@ export default function Footer() {
     {
       title: "Institute",
       links: [
-        { name: "Mission & Vision", to: "/mission-vision" },
-        { name: "Principal's Desk", to: "/principal-desk" },
-        { name: "Admission", to: "/admission" },
-        { name: "Curriculum", to: "/curriculum" },
-        { name: "Infrastructure", to: "/infrastructure" },
+        { name: "Mission & Vision", to: "/about/VissionMission" },
+        { name: "Principal's Desk", to: "/about/principleDesk" },
+        { name: "Admission", to: "/about/Admission" },
+        { name: "Curriculum", to: "/about/Curriculum&Syllabus" },
+        { name: "Infrastructure", to: "/about/Infrastructure" },
       ],
     },
     {
