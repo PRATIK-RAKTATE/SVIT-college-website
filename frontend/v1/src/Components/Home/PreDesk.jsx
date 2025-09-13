@@ -5,7 +5,7 @@ export default function PreDesk() {
       <figure className="w-full max-w-2xl h">
         <div className="overflow-hidden rounded-xl shadow">
           <img
-            src="https://res.cloudinary.com/difqniecb/image/upload/v1757604275/svit-principle_wgmuuc.webp"
+            src="../../../public/svit-principal-1.webp"
             alt="Head of Department"
             className="w-full h-auto"
             loading="lazy"

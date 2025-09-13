@@ -11,7 +11,7 @@ export default function Header() {
           <a href="/" aria-label="Home" className="group">
             <div className="w-32 aspect-[2/1] relative">
               <img
-                src="https://res.cloudinary.com/difqniecb/image/upload/v1757604275/svitlogo_vjjedj.webp"
+                src="../../public/svitlogo.webp"
                 alt="SVIT Logo"
                 width="128"    
                 height="64"     
@@ -36,7 +36,7 @@ export default function Header() {
           {/* Right logo – same lift */}
           <a href="/" aria-label="Home" className="group">
             <img
-              src="https://res.cloudinary.com/difqniecb/image/upload/v1757604275/saheb_v1pbfi.webp"
+              src="../../public/SAHEB1.webp"
               alt="Saheb Logo"
               width={96}
               height={64}
