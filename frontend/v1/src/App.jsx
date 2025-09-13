@@ -43,6 +43,11 @@ import Criteria_7_Table from "./Components/NAAC/Criteria-7.jsx";
 import Criteria_1_Table from "./Components/NAAC/Criteria-1.jsx";
 import Criteria_6_Table from "./Components/NAAC/Criteria-6.jsx";
 
+import TrainingPlacement from "./Components/TPC/TPCBriefInfo.jsx";
+import PlacementRoadmap from "./Components/TPC/Placement.jsx";
+import RecruiterWall from "./Components/TPC/TPCComponies.jsx";
+import PlacementSummary from "./Components/TPC/Summary.jsx";
+
 
 
 
@@ -87,6 +92,11 @@ function App() {
         <Route path="/naac/criteria-7" element={<Criteria_7_Table/>} />
         <Route path="/naac/Criteria-1" element={<Criteria_1_Table/>} />
         <Route path="/naac/Criteria-6" element={<Criteria_6_Table/>} />
+
+        <Route path="/TPC/TPC-Brief-Information" element={<TrainingPlacement/>} />
+        <Route path="tpc/process" element={<PlacementRoadmap/>} />
+        <Route path="/tpc/companies" element={<RecruiterWall/>} />
+        <Route path="/tpc/Summary" element={<PlacementSummary/>} />
 
         {Object.entries(DEPARTMENTS).map(([key, data]) => (
           <Route
