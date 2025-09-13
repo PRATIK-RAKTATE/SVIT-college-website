@@ -34,7 +34,7 @@ import MainAdmission from "./Components/Admission/MainAdmission.jsx";
 import home from './Constants/home.js'
 import LibraryFaculty from './Components/Library/Faculty.jsx'
 import MainGalary from "./Components/galary/MainGalary.jsx";
-import Alumni from "./Components/Alumni/alumni.jsx";
+import Alumni from "./Components/Alumni/Alumni.jsx";
 
 import Criteria_2_Table from "./Components/NAAC/criteria-2.jsx";
 import Criteria_3_Table from "./Components/NAAC/criteria-3.jsx";
