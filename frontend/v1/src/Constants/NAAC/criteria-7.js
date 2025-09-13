@@ -12,11 +12,11 @@ export const criteria_7 = [
         downloads: [
           {
             name: "List of gender equity promotion Programs",
-            link: "../NAAC/Criteria_7/7.1.1_List_of_gender_equity_promotion_Programs.pdf",
+            link: "../../../public/NAAC/criteria-7/7.1.1 QnM/7.1.1_List_of_gender_equity_promotion_Programs.pdf",
           },
           {
             name: "Report of the events",
-            link: "../NAAC/Criteria_7/7.1.1_Report_of_the_events.pdf",
+            link: "../../../public/NAAC/criteria-7/7.1.1 QnM/7.1.1_Report_of_the_events.pdf",
           },
         ],
       },
@@ -27,35 +27,35 @@ export const criteria_7 = [
         downloads: [
           {
             name: "ACTION_PLAN_2021-22",
-            link: "../NAAC/Criteria_7/ACTION_PLAN_2021-22.pdf",
+            link: "../../../public/NAAC/criteria-7/7.1.1/ACTION_PLAN_2021-22.pdf",
           },
           {
             name: "ACTION_PLAN_2022-23",
-            link: "../NAAC/Criteria_7/7.1.1_Action_Plan_2022-23.pdf",
+            link: "../../../public/NAAC/criteria-7/7.1.1/7.1.1_Action_Plan_2022-23.pdf",
           },
           {
             name: "ACTION_PLAN_2023-24",
-            link: "../NAAC/Criteria_7/7.1.1_Action_Plan_2023-24.pdf",
+            link: "../../../public/NAAC/criteria-7/7.1.1/7.1.1_Action_Plan_2023-24.pdf",
           },
           {
             name: "ACTION_PLAN_2024-25",
-            link: "../NAAC/Criteria_7/7.1.1_Action_Plan_2024-25.pdf",
+            link: "../../../public/NAAC/criteria-7/7.1.1/7.1.1_Action_Plan_2024-25.pdf",
           },
           {
             name: "7.1.1_Additional_Information_2021-22",
-            link: "../NAAC/Criteria_7/7.1.1_Additional_Information.pdf",
+            link: "../../../public/NAAC/criteria-7/7.1.1/7.1.1_Additional_Information.pdf",
           },
           {
             name: "7.1.1_Additional_Information_2022-23",
-            link: "../NAAC/Criteria_7/7.1.1_Additional_Information_2022-23.pdf",
+            link: "../../../public/NAAC/criteria-7/7.1.1/7.1.1_Additional_Information_2022-23.pdf",
           },
           {
             name: "7.1.1_Additional_Information_2023-24",
-            link: "../NAAC/Criteria_7/7.1.1_Additional_Information_2023-24.pdf",
+            link: "../../../public/NAAC/criteria-7/7.1.1/7.1.1_Additional_Information_2023-24.pdf",
           },
           {
             name: "Facilities",
-            link: "../NAAC/Criteria_7/Facilities.pdf",
+            link: "../../../public/NAAC/criteria-7/7.1.1/Facilities.pdf",
           },
         ],
       },
@@ -67,11 +67,11 @@ export const criteria_7 = [
         downloads: [
           {
             name: "Gender Sensitivity in Providing Facilities",
-            link: "../NAAC/Criteria_7/7.1.2_Gender_Sensitivity_Facilities1.pdf",
+            link: "../../../public/NAAC/criteria-7/7.1.2 QlM/7.1.2_Gender_Sensitivity_Facilities1.pdf",
           },
           {
             name: "Gender Sensitivity",
-            link: "../NAAC/Criteria_7/7.1.2_Gender_Sensitivity_Description.pdf",
+            link: "../../../public/NAAC/criteria-7/7.1.2 QlM/7.1.2_Gender_Sensitivity_Description.pdf",
           },
         ],
       },
@@ -80,30 +80,30 @@ export const criteria_7 = [
         description:
           "Percentage of annual power requirement of the Institution met by the renewable energy sources (current year data). 7.1.3.1: Annual power requirement met by renewable energy sources (in KWH)",
         downloads: [
-          { name: "Summary", link: "../NAAC/Criteria_7/7.1.3_Summary.pdf" },
+          { name: "Summary", link: "../../../public/NAAC/criteria-7/7.1.3/7.1.3_Summary.pdf" },
           {
             name: "Electrical Audit report",
-            link: "../NAAC/Criteria_7/7.1.3_Electrical_Audit_report.pdf",
+            link: "../../../public/NAAC/criteria-7/7.1.3/7.1.3_Electrical_Audit_report.pdf",
           },
           {
             name: "Solar Panel Photos",
-            link: "../NAAC/Criteria_7/7.1.3_Solar_Panel_Photos.pdf",
+            link: "../../../public/NAAC/criteria-7/7.1.3/7.1.3_Solar_Panel_Photos.pdf",
           },
           {
             name: "Solar Panel Installation and Commissioning Certificate",
-            link: "../NAAC/Criteria_7/7.1.3_Solar_Panel_Installation_Commissioning_Certificate.pdf",
+            link: "../../../public/NAAC/criteria-7/7.1.3/7.1.3_Solar_Panel_Installation_Commissioning_Certificate.pdf",
           },
           {
             name: "EA & GA Audit Certificate",
-            link: "../NAAC/Criteria_7/7.1.3_EA_GA_Audit_Certificate.pdf",
+            link: "../../../public/NAAC/criteria-7/7.1.3/7.1.3_EA_GA_Audit_Certificate.pdf",
           },
           {
             name: "Energy & Green Audit Report_2022-23",
-            link: "../NAAC/Criteria_7/Energy & Green Audit Report_2022-23.pdf",
+            link: "../../../public/NAAC/criteria-7/7.1.3/Energy & Green Audit Report_2022-23.pdf",
           },
           {
             name: "GA Certificate_SVIT_22-23",
-            link: "../NAAC/Criteria_7/GA Certificate_SVIT_22-23.pdf",
+            link: "../../../public/NAAC/criteria-7/7.1.3/GA Certificate_SVIT_22-23.pdf",
           },
         ],
       },
@@ -112,14 +112,14 @@ export const criteria_7 = [
         description:
           "Percentage of annual lighting power requirements met through LED bulbs (Current year data). 7.1.4.1: Annual lighting power requirement met through LED bulbs (in KWH)",
         downloads: [
-          { name: "Summary", link: "../NAAC/Criteria_7/7.1.4_Summary.pdf" },
+          { name: "Summary", link: "../../../public/NAAC/criteria-7/7.1.4/7.1.4_Summary.pdf" },
           {
             name: "Electrical Audit report",
-            link: "../NAAC/Criteria_7/7.1.4_Electrical_Audit_report.pdf",
+            link: "../../../public/NAAC/criteria-7/7.1.4/7.1.4_Electrical_Audit_report.pdf",
           },
           {
             name: "LED Bulb Purchase Order",
-            link: "../NAAC/Criteria_7/7.1.4_LED_PO.pdf",
+            link: "../../../public/NAAC/criteria-7/7.1.4/7.1.4_LED_PO.pdf",
           },
         ],
       },
@@ -131,11 +131,11 @@ export const criteria_7 = [
         downloads: [
           {
             name: "Store Scrap Reports",
-            link: "../NAAC/Criteria_7/7.1.5_Store_Scrap_Reports.pdf",
+            link: "../../../public/NAAC/criteria-7/7.1.5 QlM/7.1.5_Store_Scrap_Reports.pdf",
           },
           {
             name: "Waste Management Steps",
-            link: "../NAAC/Criteria_7/7.1.5_Waste_Management_Steps.pdf",
+            link: "../../../public/NAAC/criteria-7/7.1.5 QlM/7.1.5_Waste_Management_Steps.pdf",
           },
         ],
       },
@@ -144,8 +144,8 @@ export const criteria_7 = [
         description:
           "Rain water harvesting structures and utilization in the campus",
         downloads: [
-          { name: "Report", link: "../NAAC/Criteria_7/7.1.6_Report.pdf" },
-          { name: "Photo", link: "../NAAC/Criteria_7/7.1.6_Photo.pdf" },
+          { name: "Report", link: "../../../public/NAAC/criteria-7/7.1.6/7.1.6_Report.pdf" },
+          { name: "Photo", link: "../../../public/NAAC/criteria-7/7.1.6/7.1.6_Photo.pdf" },
         ],
       },
       {
@@ -154,15 +154,15 @@ export const criteria_7 = [
         downloads: [
           {
             name: "Tree Plantation reports",
-            link: "../NAAC/Criteria_7/7.1.7_Tree_Plantation_reports.pdf",
+            link: "../../../public/NAAC/criteria-7/7.1.7/7.1.7_Tree_Plantation_reports.pdf",
           },
           {
             name: "Bus Facility",
-            link: "../NAAC/Criteria_7/7.1.7_Bus_Facility.pdf",
+            link: "../../../public/NAAC/criteria-7/7.1.7/7.1.7_Bus_Facility.pdf",
           },
           {
             name: "Green Practices",
-            link: "../NAAC/Criteria_7/7.1.7_Green_Practices.pdf",
+            link: "../../../public/NAAC/criteria-7/7.1.7/7.1.7_Green_Practices.pdf",
           },
         ],
       },
@@ -171,24 +171,24 @@ export const criteria_7 = [
         description:
           "Average percentage expenditure on green initiatives and waste management excluding salary component during the last five years (INR in Lakhs)",
         downloads: [
-          { name: "Summary", link: "../NAAC/Criteria_7/7.1.8_Summary.pdf" },
+          { name: "Summary", link: "../../../public/NAAC/criteria-7/7.1.8/7.1.8_Summary.pdf" },
           {
             name: "Green_Audit_report",
-            link: "../NAAC/Criteria_7/7.1.8_Green_Audit_report.pdf",
+            link: "../../../public/NAAC/criteria-7/7.1.8/7.1.8_Green_Audit_report.pdf",
           },
         ],
       },
       {
-        criterion: "7.1.9",
+        criterion: "7.1.9 (B)",
         description: "Resources available in the institution",
         downloads: [
           {
             name: "Rest Rooms",
-            link: "../NAAC/Criteria_7/7.1.9_Rest_Rooms.pdf",
+            link: "../../../public/NAAC/criteria-7/7.1.9 (B)/7.1.9_Rest_Rooms.pdf",
           },
-          { name: "Wheel Chair", link: "../NAAC/Criteria_7/Wheelchair.jpg" },
-          { name: "Ramp", link: "../NAAC/Criteria_7/Ramp.jpg" },
-          { name: "Provision for Lift", link: "../NAAC/Criteria_7/lift.jpg" },
+          { name: "Wheel Chair", link: "../../../public/NAAC/criteria-7/7.1.9 (B)/Wheelchair.jpg" },
+          { name: "Ramp", link: "../../../public/NAAC/criteria-7/7.1.9 (B)/Ramp.jpg" },
+          { name: "Provision for Lift", link: "../../../public/NAAC/criteria-7/7.1.9 (B)/lift.jpg" },
         ],
       },
       {
@@ -198,27 +198,27 @@ export const criteria_7 = [
         downloads: [
           {
             name: "Sensitization_Activities",
-            link: "../NAAC/Criteria_7/Sensitization_Activities.pdf",
+            link: "../../../public/NAAC/criteria-7/7.1.9/Sensitization_Activities.pdf",
           },
           {
             name: "7.1.9_Activity_Organised_Report_2021-22",
-            link: "../NAAC/Criteria_7/7.1.9_Activity_Organised_Report.pdf",
+            link: "../../../public/NAAC/criteria-7/7.1.9/7.1.9_Activity_Organised_Report.pdf",
           },
           {
             name: "7.1.9_Activities_2022-23",
-            link: "../NAAC/Criteria_7/7.1.9 Activity_2022-23.pdf",
+            link: "../../../public/NAAC/criteria-7/7.1.9/7.1.9 Activity_2022-23.pdf",
           },
           {
             name: "7.1.9_Activity_Organised_Report_2022-23",
-            link: "../NAAC/Criteria_7/7.1.9_Activity_Organised_Report_2022-23.pdf",
+            link: "../../../public/NAAC/criteria-7/7.1.9/7.1.9_Activity_Organised_Report_2022-23.pdf",
           },
           {
             name: "7.1.9_Activities_2023-24",
-            link: "../NAAC/Criteria_7/7.1.9 Activity_2023-24.pdf",
+            link: "../../../public/NAAC/criteria-7/7.1.9/7.1.9 Activity_2023-24.pdf",
           },
           {
             name: "7.1.9_Activity_Organised_Report_2023-24",
-            link: "../NAAC/Criteria_7/7.1.9_Activity_Organised_Report_2023-24.pdf",
+            link: "../../../public/NAAC/criteria-7/7.1.9/7.1.9_Activity_Organised_Report_2023-24.pdf",
           },
         ],
       },
@@ -229,11 +229,11 @@ export const criteria_7 = [
         downloads: [
           {
             name: "Initiatives_to address_Locational_Advantages & Disadvantages",
-            link: "../NAAC/Criteria_7/7.1.10_Initiatives_toaddress_Locational_Advantages.pdf",
+            link: "../../../public/NAAC/criteria-7/7.1.10/7.1.10_Initiatives_toaddress_Locational_Advantages.pdf",
           },
           {
             name: "Initiative reports",
-            link: "../NAAC/Criteria_7/7.1.10_Initiative_reports.pdf",
+            link: "../../../public/NAAC/criteria-7/7.1.10/7.1.10_Initiative_reports.pdf",
           },
         ],
       },
@@ -244,11 +244,11 @@ export const criteria_7 = [
         downloads: [
           {
             name: "List of Initiatives",
-            link: "../NAAC/Criteria_7/7.1.11_List_initiatives.pdf",
+            link: "../../../public/NAAC/criteria-7/7.1.11/7.1.11_List_initiatives.pdf",
           },
           {
             name: "Report_Local Community",
-            link: "../NAAC/Criteria_7/7.1.11_Event_Reports.pdf",
+            link: "../../../public/NAAC/criteria-7/7.1.11/7.1.11_Event_Reports.pdf",
           },
         ],
       },
@@ -259,7 +259,7 @@ export const criteria_7 = [
         downloads: [
           {
             name: "Code of Conduct",
-            link: "http://svitnashik.in/Documents/CodeOfConduct.pdf",
+            link: "../../../public/NAAC/criteria-7/CodeOfConduct.pdf",
           },
         ],
       },
@@ -270,7 +270,7 @@ export const criteria_7 = [
         downloads: [
           {
             name: "Core Values",
-            link: "../NAAC/Criteria_7/7.1.13_Core_Values.pdf",
+            link: "../../../public/NAAC/criteria-7/7.1.13_Core_Values.pdf",
           },
         ],
       },
@@ -281,11 +281,11 @@ export const criteria_7 = [
         downloads: [
           {
             name: "List of activities",
-            link: "../NAAC/Criteria_7/7.1.14_List_of_activities.pdf",
+            link: "../../../public/NAAC/criteria-7/7.1.14/7.1.14_List_of_activities.pdf",
           },
           {
             name: "Reports of activities",
-            link: "../NAAC/Criteria_7/7.1.14_Reports_of_activities.pdf",
+            link: "../../../public/NAAC/criteria-7/7.1.14/7.1.14_Reports_of_activities.pdf",
           },
         ],
       },
@@ -296,11 +296,11 @@ export const criteria_7 = [
         downloads: [
           {
             name: "Course on Human Values and professional ethics",
-            link: "../NAAC/Criteria_7/7.1.15_Courses_on_Human_Values.pdf",
+            link: "../../../public/NAAC/criteria-7/7.1.15/7.1.15_Courses_on_Human_Values.pdf",
           },
           {
             name: "Syllabus",
-            link: "../NAAC/Criteria_7/7.1.15_Syllabus.pdf",
+            link: "../../../public/NAAC/criteria-7/7.1.15/7.1.15_Syllabus.compressed.pdf",
           },
         ],
       },
@@ -311,11 +311,11 @@ export const criteria_7 = [
         downloads: [
           {
             name: "Approval & Affiliation Letter",
-            link: "../NAAC/Criteria_7/7.1.16_Approval_Affiliation_Letter.pdf",
+            link: "../../../public/NAAC/criteria-7/7.1.16/7.1.16_Approval_Affiliation_Letter.pdf",
           },
           {
             name: "Statutory Bodies",
-            link: "../NAAC/Criteria_7/7.1.16_Statutory_Bodies.pdf",
+            link: "../../../public/NAAC/criteria-7/7.1.16/7.1.16_Statutory_Bodies.pdf",
           },
         ],
       },
@@ -326,19 +326,19 @@ export const criteria_7 = [
         downloads: [
           {
             name: "List of Activities",
-            link: "../NAAC/Criteria_7/7.1.17_List_of_Activities.pdf",
+            link: "../../../public/NAAC/criteria-7/7.1.17/7.1.17_List_of_Activities.pdf",
           },
           {
             name: "Code of conduct for All",
-            link: "../NAAC/Criteria_7/7.1.17_Code_of_conduct_for_All.pdf",
+            link: "../../../public/NAAC/criteria-7/7.1.17/7.1.17_Code_of_conduct_for_All.pdf",
           },
           {
             name: "Reports of Activities",
-            link: "../NAAC/Criteria_7/7.1.17_Reports_of_Activities.pdf",
+            link: "../../../public/NAAC/criteria-7/7.1.17/7.1.17_Reports_of_Activities.pdf",
           },
           {
             name: "Event Circulars",
-            link: "../NAAC/Criteria_7/7.1.17_Circulars.pdf",
+            link: "../../../public/NAAC/criteria-7/7.1.17/7.1.17_Circulars.pdf",
           },
         ],
       },
@@ -349,15 +349,15 @@ export const criteria_7 = [
         downloads: [
           {
             name: "Description of Efforts of the institution",
-            link: "../NAAC/Criteria_7/7.1.18_Description_of_Efforts_of_the_institution.pdf",
+            link: "../../../public/NAAC/criteria-7/7.1.18/7.1.18_Description_of_Efforts_of_the_institution.pdf",
           },
           {
             name: "List of Activities",
-            link: "../NAAC/Criteria_7/7.1.18_List_of_Activities.pdf",
+            link: "../../../public/NAAC/criteria-7/7.1.18/7.1.18_List_of_Activities.pdf",
           },
           {
             name: "Reports of activities",
-            link: "../NAAC/Criteria_7/7.1.18_Reports_of_activities.pdf",
+            link: "../../../public/NAAC/criteria-7/7.1.18/7.1.18_Reports_of_activities.pdf",
           },
         ],
       },
@@ -368,11 +368,11 @@ export const criteria_7 = [
         downloads: [
           {
             name: "Description of Efforts of the institution",
-            link: "../NAAC/Criteria_7/7.1.19_Description_of_the_institution.pdf",
+            link: "../../../public/NAAC/criteria-7/7.1.19/7.1.19_Description_of_the_institution.pdf",
           },
           {
             name: "Financial Audit Reports",
-            link: "../NAAC/Criteria_7/Financial_Audit_Reports.pdf",
+            link: "../../../public/NAAC/criteria-7/7.1.19/Financial_Audit_Reports.pdf",
           },
         ],
       },
@@ -389,47 +389,47 @@ export const criteria_7 = [
         downloads: [
           {
             name: "Best Practices",
-            link: "../NAAC/Criteria_7/7.2.1_Best_Practices.pdf",
+            link: "../../../public/NAAC/criteria-7/7.2.1/7.2.1_Best_Practices.pdf",
           },
           {
             name: "Best Practices Photos",
-            link: "../NAAC/Criteria_7/7.2.1_Best_Practices_Photos.pdf",
+            link: "../../../public/NAAC/criteria-7/7.2.1/7.2.1_Best_Practices_Photos.pdf",
           },
           {
             name: "Best Practices(2018-19)",
-            link: "../NAAC/Criteria_7/7.2.1_2018-19.pdf",
+            link: "../../../public/NAAC/criteria-7/7.2.1/7.2.1_2018-19.pdf",
           },
           {
             name: "Best Practices Evidence(2020-21)",
-            link: "../NAAC/Criteria_7/Best_Practices_Evidence_2020-21.pdf",
+            link: "../../../public/NAAC/criteria-7/7.2.1/Best_Practices_Evidence_2020-21.pdf",
           },
           {
             name: "Best Practices(2020-21)",
-            link: "../NAAC/Criteria_7/Best_Practices__2020-21.pdf",
+            link: "../../../public/NAAC/criteria-7/7.2.1/Best_Practices__2020-21.pdf",
           },
           {
             name: "Best Practices(2021-22)",
-            link: "../NAAC/Criteria_7/7.2.1_Best Practices_2021-22.pdf",
+            link: "../../../public/NAAC/criteria-7/7.2.1/7.2.1_Best Practices_2021-22.pdf",
           },
           {
             name: "Best Practices Evidence(2021-22)",
-            link: "../NAAC/Criteria_7/7.2.1_Evidences_2021-22.pdf",
+            link: "../../../public/NAAC/criteria-7/7.2.1/7.2.1_Evidences_2021-22.pdf",
           },
           {
             name: "Best Practices(2022-23)",
-            link: "../NAAC/Criteria_7/7.2.1_Best Practices_2022-23.pdf",
+            link: "../../../public/NAAC/criteria-7/7.2.1/7.2.1_Best Practices_2022-23.pdf",
           },
           {
             name: "Best Practices Evidence(2022-23)",
-            link: "../NAAC/Criteria_7/7.2.1_Evidences_2022-23.pdf",
+            link: "../../../public/NAAC/criteria-7/7.2.1/7.2.1_Evidences_2022-23.pdf",
           },
           {
             name: "Best Practices(2023-24)",
-            link: "../NAAC/Criteria_7/7.2.1_Best Practices_2023-24.pdf",
+            link: "../../../public/NAAC/criteria-7/7.2.1/7.2.1_Best Practices_2023-24.pdf",
           },
           {
             name: "Best Practices Evidence(2023-24)",
-            link: "../NAAC/Criteria_7/7.2.1_Evidences_2023-24.pdf",
+            link: "../../../public/NAAC/criteria-7/7.2.1/7.2.1_Evidences_2023-24.pdf",
           },
         ],
       },
@@ -446,7 +446,7 @@ export const criteria_7 = [
         downloads: [
           {
             name: "Institutional Distinctiveness",
-            link: "../NAAC/Criteria_7/7.3.1_Institutional_Distinctiveness.pdf",
+            link: "../../../public/NAAC/criteria-7/7.3.1_Institutional_Distinctiveness.pdf",
           },
         ],
       },
