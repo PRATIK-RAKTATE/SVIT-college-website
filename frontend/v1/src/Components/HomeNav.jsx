@@ -326,19 +326,17 @@ export default function HomeNav() {
 
       {/* Mobile Menu Button */}
       <div className="md:hidden flex justify-end">
-        <div className="flex justify-center">
-          <h1 className="pt-2 mr-65">Menu</h1>
-          <button onClick={toggleMenu} className="p-2">
-            {isOpen ? <X size={28} /> : <Menu size={28} />}
-          </button>
-        </div>
+        <button onClick={toggleMenu} className="p-2">
+          {isOpen ? <X size={28} /> : <Menu size={28} />}
+        </button>
       </div>
+
+
 
       {/* Mobile Side Menu */}
       <div
-        className={`fixed top-0 left-0 h-full w-3/4 bg-white text-black transform transition-transform duration-300 ease-in-out z-50 p-6 flex flex-col gap-6 overflow-y-auto ${
-          isOpen && !isClosing ? "translate-x-0" : "-translate-x-full"
-        }`}
+        className={`fixed top-0 left-0 h-full w-3/4 bg-white text-black transform transition-transform duration-300 ease-in-out z-50 p-6 flex flex-col gap-6 overflow-y-auto ${isOpen && !isClosing ? "translate-x-0" : "-translate-x-full"
+          }`}
       >
         <NavLink
           to="/"
@@ -360,9 +358,8 @@ export default function HomeNav() {
             Departments
             <ChevronDown
               size={20}
-              className={`transition-transform ${
-                mobileOpenMenu === "dept" ? "rotate-180" : ""
-              }`}
+              className={`transition-transform ${mobileOpenMenu === "dept" ? "rotate-180" : ""
+                }`}
             />
           </button>
           {mobileOpenMenu === "dept" && (
@@ -403,9 +400,8 @@ export default function HomeNav() {
             TPC Section
             <ChevronDown
               size={20}
-              className={`transition-transform ${
-                mobileOpenMenu === "tpc" ? "rotate-180" : ""
-              }`}
+              className={`transition-transform ${mobileOpenMenu === "tpc" ? "rotate-180" : ""
+                }`}
             />
           </button>
           {mobileOpenMenu === "tpc" && (
@@ -437,9 +433,8 @@ export default function HomeNav() {
             Admission
             <ChevronDown
               size={20}
-              className={`transition-transform ${
-                mobileOpenMenu === "admission" ? "rotate-180" : ""
-              }`}
+              className={`transition-transform ${mobileOpenMenu === "admission" ? "rotate-180" : ""
+                }`}
             />
           </button>
           {mobileOpenMenu === "admission" && (
@@ -497,9 +492,8 @@ export default function HomeNav() {
             NAAC
             <ChevronDown
               size={20}
-              className={`transition-transform ${
-                mobileOpenMenu === "naac" ? "rotate-180" : ""
-              }`}
+              className={`transition-transform ${mobileOpenMenu === "naac" ? "rotate-180" : ""
+                }`}
             />
           </button>
           {mobileOpenMenu === "naac" && (
@@ -531,9 +525,8 @@ export default function HomeNav() {
             IQAC
             <ChevronDown
               size={20}
-              className={`transition-transform ${
-                mobileOpenMenu === "iqac" ? "rotate-180" : ""
-              }`}
+              className={`transition-transform ${mobileOpenMenu === "iqac" ? "rotate-180" : ""
+                }`}
             />
           </button>
           {mobileOpenMenu === "iqac" && (
@@ -578,9 +571,8 @@ export default function HomeNav() {
             Important Links
             <ChevronDown
               size={20}
-              className={`transition-transform ${
-                mobileOpenMenu === "links" ? "rotate-180" : ""
-              }`}
+              className={`transition-transform ${mobileOpenMenu === "links" ? "rotate-180" : ""
+                }`}
             />
           </button>
           {mobileOpenMenu === "links" && (
