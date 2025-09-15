@@ -2,7 +2,7 @@ import React from "react";
 
 export default function RectangleContainer() {
   return (
-    <div className=" max-w-242 w-full mt- h-[910px] md:max-h-126 bg-white rounded-2xl shadow-xl p-10 border border-gray-100">
+    <div className=" max-w-242 w-full mt- h-[910px] md:max-h-126 md:mt-13 bg-white rounded-2xl shadow-xl p-10 border border-gray-100">
       {/* Heading */}
       <h1 className="text-3xl font-extrabold text-gray-800 text-center mb-6 relative">
         About the Society

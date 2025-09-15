@@ -167,32 +167,7 @@ export default function CourseDetails() {
             transition={{ type: "spring", stiffness: 120 }}
             className="mt-10 overflow-x-auto"
           >
-            <table className="w-full text-left border-collapse border border-gray-300 bg-white rounded-2xl shadow-md overflow-hidden">
-              <thead className="bg-blue-900 text-white">
-                <tr>
-                  <th className="p-4 border border-gray-300">Branch</th>
-                  <th className="p-4 border border-gray-300">Course</th>
-                  <th className="p-4 border border-gray-300">Intake</th>
-                  <th className="p-4 border border-gray-300">Since</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr className="bg-gray-50 hover:bg-gray-100 transition">
-                  <td className="p-4 border border-gray-300">
-                    {courseData.courseInfo.branch}
-                  </td>
-                  <td className="p-4 border border-gray-300">
-                    {courseData.courseInfo.courseName}
-                  </td>
-                  <td className="p-4 border border-gray-300">
-                    <AnimatedStat value={courseData.courseInfo.intake} />
-                  </td>
-                  <td className="p-4 border border-gray-300">
-                    {courseData.courseInfo.establishmentYear}
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+            
           </motion.div>
         </main>
       </div>
