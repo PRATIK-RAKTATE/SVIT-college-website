@@ -136,6 +136,7 @@ export default function HomeNav() {
   ];
 
   const isExternal = (url) => url.startsWith("http");
+  const isInternalPDF = (url) => url.includes("../../public");
 
   return (
     <nav className="bg-white p-5 shadow-md relative z-50">
@@ -246,15 +247,21 @@ export default function HomeNav() {
           </div>
           <ul className="absolute left-0 pt-2 bg-white shadow-md rounded-md opacity-0 group-hover:opacity-100 pointer-events-none group-hover:pointer-events-auto transition-opacity duration-200 z-50 max-h-96 overflow-y-auto">
             {menuItems.find(m => m.key === "naac").items.map((item, idx) =>
-              <NavLink
-                key={idx}
-                to={item.url}
-                className={({ isActive }) =>
-                  `${isActive ? "text-[#4F39F6]" : "text-black"}`
-                }
-              >
-                <li className="px-4 py-2 hover:bg-gray-100 w-70">{item.text}</li>
-              </NavLink>
+              isInternalPDF(item.url) ? (
+                <a key={idx} href={item.url} target="_blank" rel="noopener noreferrer">
+                  <li className="px-4 py-2 hover:bg-gray-100 w-70">{item.text}</li>
+                </a>
+              ) : (
+                <NavLink
+                  key={idx}
+                  to={item.url}
+                  className={({ isActive }) =>
+                    `${isActive ? "text-[#4F39F6]" : "text-black"}`
+                  }
+                >
+                  <li className="px-4 py-2 hover:bg-gray-100 w-70">{item.text}</li>
+                </NavLink>
+              )
             )}
           </ul>
         </ul>
@@ -512,16 +519,24 @@ export default function HomeNav() {
           {mobileOpenMenu === "naac" && (
             <ul className="pl-4 mt-2 space-y-2 text-sm">
               {menuItems.find(m => m.key === "naac").items.map((item, idx) =>
-                <li key={idx}>
-                  <NavLink
-                    to={item.url}
-                    className={({ isActive }) =>
-                      `${isActive ? "text-[#4F39F6]" : "text-black"}`
-                    }
-                  >
-                    {item.text}
-                  </NavLink>
-                </li>
+                isInternalPDF(item.url) ? (
+                  <li key={idx}>
+                    <a href={item.url} target="_blank" rel="noopener noreferrer">
+                      {item.text}
+                    </a>
+                  </li>
+                ) : (
+                  <li key={idx}>
+                    <NavLink
+                      to={item.url}
+                      className={({ isActive }) =>
+                        `${isActive ? "text-[#4F39F6]" : "text-black"}`
+                      }
+                    >
+                      {item.text}
+                    </NavLink>
+                  </li>
+                )
               )}
             </ul>
           )}

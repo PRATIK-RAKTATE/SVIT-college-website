@@ -42,6 +42,7 @@ const DesktopTable = ({ rows }) => {
                     <li key={j}>
                       <a
                         href={d.link}
+                        target="blank"
                         className="text-indigo-600 hover:underline"
                       >
                         {d.name}
@@ -78,7 +79,7 @@ const MobileCards = ({ rows }) => (
           <ul className="list-disc list-inside space-y-1">
             {row.downloads.map((d, j) => (
               <li key={j}>
-                <a href={d.link} className="text-indigo-600 hover:underline">
+                <a href={d.link} target="blank" className="text-indigo-600 hover:underline">
                   {d.name}
                 </a>
               </li>
