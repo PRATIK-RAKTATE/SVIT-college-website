@@ -8,7 +8,7 @@ export const Extended_Profile = [
         title: "Number of courses offered by the institution across all programs during the last five years",
         description: "Number of courses offered by the institution across all programs during the last five years",
         downloads: [
-          { name: "Number of courses offered by the institution across all programs during the last five years", link: "" },
+          { name: "Number of courses offered by the institution across all programs during the last five years", link: "../../../public/Extended Profile/1.1_List_of_courses.pdf" },
         ] // Add links if available
       }
     ]
@@ -22,7 +22,7 @@ export const Extended_Profile = [
         title: "Number of students year-wise during the last five years",
         description: "Number of students year-wise during the last five years",
         downloads: [
-            { name: "Number of students year-wise during the last five years", link: "" },
+            { name: "Number of students year-wise during the last five years", link: "../../../public/Extended Profile/2.1_Number_of_students.pdf" },
         ]
       },
       {
@@ -30,7 +30,7 @@ export const Extended_Profile = [
         title: "Number of Seats Earmarked for Reserved Category as per GOI/ State Govt. Rule",
         description: "Number of Seats Earmarked for Reserved Category as per GOI/ State Govt. Rule during the year 2020-21",
         downloads: [
-            {name:"Number of Seats Earmarked for Reserved Category as per GOI/ State Govt. Rule during the year 2020-21", link:""}
+            {name:"Number of Seats Earmarked for Reserved Category as per GOI/ State Govt. Rule during the year 2020-21", link:"../../../public/Extended Profile/2.2_Number_of_Seats.pdf"}
         ]
       },
       {
@@ -38,7 +38,7 @@ export const Extended_Profile = [
         title: "Number of outgoing / final year students year-wise during the last five years",
         description: "Number of outgoing / final year students year-wise during the last five years",
         downloads: [
-            {name:"Number of outgoing / final year students year-wise during the last five years", link:""}
+            {name:"Number of outgoing / final year students year-wise during the last five years", link:"../../../public/Extended Profile/2.3_Number_of_outgoing_students.pdf"}
 
         ]
       }
@@ -53,7 +53,7 @@ export const Extended_Profile = [
         title: "Number of full time teachers year-wise during the last five years",
         description: "Number of full time teachers year-wise during the last five years",
         downloads: [
-            {name:"Number of full time teachers year-wise during the last five years", link:""}
+            {name:"Number of full time teachers year-wise during the last five years", link:"../../../public/Extended Profile/facultycount_2016-17.pdf"}
         ]
       },
       {
