@@ -11,10 +11,10 @@ export default function Header() {
           <a href="/" aria-label="Home" className="group">
             <div className="w-32 aspect-[2/1] relative">
               <img
-                src="../../public/svitlogo.webp"
+                src="../../svitlogo.webp"
                 alt="SVIT Logo"
-                width="128"    
-                height="64"     
+                width="128"
+                height="64"
                 loading="lazy"
                 decoding="async"
                 className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-105"
@@ -35,14 +35,7 @@ export default function Header() {
 
           {/* Right logo – same lift */}
           <a href="/" aria-label="Home" className="group">
-            <img
-              src="../../public/SAHEB1.webp"
-              alt="Saheb Logo"
-              width={96}
-              height={64}
-              loading="lazy"
-              className="h-9 md:h-16 w-auto transition-transform duration-300 group-hover:scale-105"
-            />
+            <img src="/SAHEB1.webp" alt="Saheb Logo" width={100} loading="lazy" />
           </a>
         </div>
       </header>
